@@ -29,7 +29,8 @@ Fishbase, WOrRms, Avibase, are taxon-specific tools that provide references. How
 For plants we have different worldwide references: World of Plant, Plants of the World Online, LCVP, The Plant List (which is outdated).
 
 
-## What to do
+
+## What should we do?
 
 A review of tools and strategies for automatic name cleaning could be useful to point to tools used in the literature as well as what is missing.
 
