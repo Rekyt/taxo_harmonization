@@ -14,11 +14,15 @@ Another issue is the fact that we sometimes record information that is coarser s
 
 ## Tools
 
+Great summary of tools available in R in the [rOpenSci Taxonomy CRAN Task View](https://github.com/ropensci/taxonomy).
+
 Turboveg2/Tuboveg3 are tools built for vegetation relevés and they have an integration of taxonomic concepts such as species names, genera, etc. so they make data aggregation easier (and species assignment easier as well).
 
-taxonstand is a package that helps standardizing names against a given reference.
+[`Taxonstand`](https://cran.r-project.org/package=Taxonstand) is a package that helps standardizing names against a given reference.
 
 taxize is the swiss army knife of taxonomic name cleaning.
+
+taxadb
 
 ropensci/rgnparser
 
