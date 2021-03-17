@@ -51,3 +51,39 @@ plot(package_network, package = taxo_pkgs)
 
 taxo_pkgs_only <- subset(package_network, package = taxo_pkgs, only = TRUE)
 plot(taxo_pkgs_only, package = taxo_pkgs)
+
+# Try searching GitHub packages ------------------------------------------------
+
+
+gh_query = gh::gh("GET /search/repositories", q = "taxonomy+language:R")
+
+# Format query
+gh_df = lapply(search_terms, function(term) {
+  
+  # Query R Repo that have the term in either name/description or in README
+  gh_query = gh::gh("GET /search/repositories", q = paste0(term, "+language:R"),
+                    per_page = 100)
+  
+  add_items= list()
+  
+  if (gh_query$total_count > 100) {
+    n_pages = 1 + gh_query$total_count %/% 100
+    
+    add_items = lapply(
+      2:n_pages,
+      function(n_page) {
+        gh::gh("GET /search/repositories", q = paste0(term, "+language:R"),
+               per_page = 100, page = n_page)$items
+      }
+    )
+  }
+
+  all_items = c(gh_query["items"], add_items)
+  
+  lapply(all_items, function(x) {
+    data.frame(search_term = term, name = x$name, repo_name = x$full_name,
+               description = x$description)
+  }) %>%
+    bind_rows()
+}) %>%
+  bind_rows()
