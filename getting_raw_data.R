@@ -78,12 +78,33 @@ gh_df = lapply(search_terms, function(term) {
     )
   }
 
-  all_items = c(gh_query["items"], add_items)
+  all_items = purrr::flatten(c(gh_query["items"], add_items))
   
   lapply(all_items, function(x) {
+    
     data.frame(search_term = term, name = x$name, repo_name = x$full_name,
                description = x$description)
   }) %>%
     bind_rows()
 }) %>%
-  bind_rows()
+  bind_rows() %>%
+  distinct()
+
+distinct_pkgs = gh_df %>%
+  select(-search_term) %>%
+  distinct() %>%
+  as_tibble()
+
+# Next step is repo probably a package (does it has a DESCRIPTION file?)
+is_pkg = distinct_pkgs %>%
+  pull(repo_name) %>%
+  lapply(function(repo_name) {
+    
+    Sys.sleep(5)
+    
+    has_description = gh::gh(
+      "GET /search/code", q = paste0("filename:DESCRIPTION+repo:", repo_name)
+    )
+    
+    length(has_description$items) > 0
+  })
