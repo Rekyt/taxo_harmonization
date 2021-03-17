@@ -96,15 +96,19 @@ distinct_pkgs = gh_df %>%
   as_tibble()
 
 # Next step is repo probably a package (does it has a DESCRIPTION file?)
-is_pkg = distinct_pkgs %>%
+is_pkg_v = distinct_pkgs %>%
   pull(repo_name) %>%
   lapply(function(repo_name) {
     
-    Sys.sleep(5)
+    Sys.sleep(2)
     
     has_description = gh::gh(
       "GET /search/code", q = paste0("filename:DESCRIPTION+repo:", repo_name)
     )
     
     length(has_description$items) > 0
-  })
+  }) %>%
+  unlist()
+
+distinct_pkgs = distinct_pkgs %>%
+  mutate(is_pkg = is_pkg_vec)
