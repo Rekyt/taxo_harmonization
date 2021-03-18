@@ -52,8 +52,8 @@ plot(package_network, package = taxo_pkgs)
 taxo_pkgs_only <- subset(package_network, package = taxo_pkgs, only = TRUE)
 plot(taxo_pkgs_only, package = taxo_pkgs)
 
-# Try searching GitHub packages ------------------------------------------------
 
+# GitHub packages with GH API --------------------------------------------------
 
 gh_query = gh::gh("GET /search/repositories", q = "taxonomy+language:R")
 
@@ -112,3 +112,12 @@ is_pkg_v = distinct_pkgs %>%
 
 distinct_pkgs = distinct_pkgs %>%
   mutate(is_pkg = is_pkg_vec)
+
+
+# With rdrr.io -----------------------------------------------------------------
+
+# https://rdrr.io/api/find/?repos=bioc%2Crforge%2Cgithub&page=0&fuzzy_slug=taxa
+base_url = "https://rdrr.io/api/find/"
+
+ko = httr::GET(base_url, query = list(repos = "bioc,rforge,github", page = 0,
+                                      fuzzy_slug = "taxa"))
