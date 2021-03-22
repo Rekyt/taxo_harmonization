@@ -23,9 +23,12 @@ cran_pkgs = search_terms %>%
 # Get raw data
 pkg_df = readxl::read_xlsx("data/Table comparing taxonomic tools.xlsx",
                            na = c("", "NA"))
-cran_pkg = pkg_df %>%
-  filter(`Should we include this package in our review?` == "include",
-         !is.na(`Release URL (CRAN / Bioconductor)`))
+
+inc_pkg = pkg_df %>%
+  filter(`Should we include this package in our review?` == "include")
+
+cran_pkg = inc_pkg %>%
+  filter(!is.na(`Release URL (CRAN / Bioconductor)`))
 
 # Get package dependency
 deps_pkgs = cran_pkg %>%
@@ -52,6 +55,25 @@ plot(package_network, package = taxo_pkgs)
 taxo_pkgs_only <- subset(package_network, package = taxo_pkgs, only = TRUE)
 plot(taxo_pkgs_only, package = taxo_pkgs)
 
+
+# Using {pkgdepends} -----------------------------------------------------------
+
+all_pkgs = inc_pkg %>%
+  mutate(sub_name = case_when(
+    `Package Name` == "traitdataform" ~ "EcologicalTraitData/traitdataform",
+    `Package Name` == "taxizedb" ~ "ropensci/taxizedb",
+    !is.na(`Release URL (CRAN / Bioconductor)`) ~ `Package Name`,
+    !is.na(`Development Version`) ~ gsub("https://github.com/", "",
+                                         `Development Version`),
+    TRUE ~ NA_character_
+  )) %>%
+  add_row(sub_name = "joelnitta/jntools") %>%
+  pull(sub_name) %>%
+ pkgdepends::new_pkg_deps()
+
+all_pkgs$resolve()
+all_pkgs$solve()
+all_pkgs$draw()
 
 # GitHub packages with GH API --------------------------------------------------
 
