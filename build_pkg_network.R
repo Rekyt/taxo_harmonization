@@ -2,7 +2,7 @@
 
 # Load packages ----------------------------------------------------------------
 library("dplyr")
-
+library("ggraph")
 
 # Load and wrangle data --------------------------------------------------------
 
@@ -71,15 +71,16 @@ all_pkgs$draw()
 
 all_pkgs_df = all_pkgs$get_resolution()
 
+
+# Create actual igraph network -------------------------------------------------
+
+# Edge list data.frame
 dep_df = all_pkgs_df %>%
   select(pkg = ref, deps) %>%
   tidyr::unnest(deps) %>%
   select(pkg, package, type) %>%
   mutate(type = tolower(type)) %>%
   distinct()
-
-
-# Create actual igraph network -------------------------------------------------
 
 # Vertex attribute data frame
 pkg_info_df = bind_rows(
@@ -109,4 +110,31 @@ dep_graph = dep_df %>%
   filter(type != "enhances", type != "linkingto") %>%
   igraph::graph_from_data_frame(vertices = pkg_info_df)
 
-# Visualization
+# Make smaller graph with only taxonomic packages that directly depends
+# from each other
+taxo_df = dep_df %>%
+  filter(pkg %in% inc_pkg$`Package Name` & package %in% inc_pkg$`Package Name`)
+
+# Make an attribute df with database
+access_df = inc_pkg %>%
+  select(`Package Name`, `Which authority?`) %>%
+  mutate(db_list = stringr::str_split(`Which authority?`, ",")) %>%
+  mutate(db_list = purrr::map(db_list, stringr::str_trim, side = "both")) %>%
+  select(-`Which authority?`) %>%
+  mutate(type = "accesses") %>%
+  tidyr::unnest(c(db_list))
+
+db_links = data.frame(
+  final_db = c("GBIF"),
+  source_db = c("COL"),
+  type = "includes"
+)
+
+# Network Visualization --------------------------------------------------------
+tg_dep = dep_graph %>%
+  tidygraph::as_tbl_graph()
+  
+tg_dep %>%
+  ggraph(layout = "kk") +
+  geom_edge_link() + 
+  geom_node_point(aes(colour = category))
