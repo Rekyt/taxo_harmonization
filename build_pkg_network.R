@@ -125,8 +125,8 @@ access_df = inc_pkg %>%
   tidyr::unnest(c(db_list))
 
 db_links = data.frame(
-  final_db = c("GBIF"),
-  source_db = c("COL"),
+  final_db = c("GBIF", "COL"),
+  source_db = c("COL", "WoRMS"),
   type = "includes"
 )
 
