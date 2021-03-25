@@ -72,7 +72,7 @@ all_pkgs$draw()
 all_pkgs_df = all_pkgs$get_resolution()
 
 
-# Create actual igraph network -------------------------------------------------
+# Package igraph network -------------------------------------------------------
 
 # Edge list data.frame
 dep_df = all_pkgs_df %>%
@@ -115,6 +115,7 @@ dep_graph = dep_df %>%
 taxo_df = dep_df %>%
   filter(pkg %in% inc_pkg$`Package Name` & package %in% inc_pkg$`Package Name`)
 
+# Database network -------------------------------------------------------------
 # Make an attribute df with database
 access_df = inc_pkg %>%
   select(`Package Name`, `Which authority?`) %>%
@@ -124,10 +125,45 @@ access_df = inc_pkg %>%
   mutate(type = "accesses") %>%
   tidyr::unnest(c(db_list))
 
-db_links = data.frame(
-  final_db = c("GBIF", "COL"),
-  source_db = c("COL", "WoRMS"),
-  type = "includes"
+db_links = tibble::tribble(
+  ~source_db, ~target_db, ~link_type,
+  "COL",            "GBIF",        "populates",
+  "COL",            "SeaLifeBase", "populates",
+  "COL",            "EOL",         "populates",
+  "COL",            "GNR",         "populates",
+  "Index Fungorum", "Wikidata",    "populates",
+  "Index Fungorum", "COL",         "populates",
+  "FishBase",       "COL",         "populates",
+  "FishBase",       "GNR",         "populates",
+  "WoRMS",          "COL",         "populates",
+  "WoRMS",          "Wikidata",    "populates",
+  "Wikispecies",    "Wikipedia",   "populates",
+  "Wikispecies",    "Wikidata",    "populates",
+  "Wikispecies",    "GNR",         "populates",
+  "Wikipedia",      "GNR",         "populates",
+  "Wikidata",       "GNR",         "populates",
+  "TPL",            "WorldFlora",  "populates",
+  "WorldFlora",     "TNRS",        "populates",
+  "eBird/Clements", "GNR",         "populates",
+  "BirdLife",       "GNR",         "populates",
+  "ZooBank",        "GNR",         "populates",
+  "POWO",           "WCPS",        "populates",
+  "POWO",           "IPNI",        "populates",
+  "WCPS",           "COL",         "populates",
+  "IPNI",           "GNR",         "populates",
+  "AlgaeBase",      "SeaLifeBase", "populates",
+  "ITIS",           "GNR",         "populates",
+  "ITIS",           "EOL",         "populates",
+  "ITIS",           "Tropicos",    "populates",
+  "ITIS",           "NatureServe", "populates",
+  "ITIS",           "COL",         "populates",
+  "Tropicos",       "USDA",        "populates",
+  "Tropicos",       "TNRS",        "populates",
+  "Tropicos",       "GNR",         "populates",
+  "USDA",           "TNRS",        "populates",
+  "NCBI",           "GNR",         "populates",
+  "GBIF",           "GNR",         "populates",
+  "EOL",            "GNR",         "populates"
 )
 
 # Network Visualization --------------------------------------------------------
@@ -138,3 +174,5 @@ tg_dep %>%
   ggraph(layout = "kk") +
   geom_edge_link() + 
   geom_node_point(aes(colour = category))
+
+# Joining both networks --------------------------------------------------------
