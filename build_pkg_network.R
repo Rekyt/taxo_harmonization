@@ -229,3 +229,73 @@ db_graph %>%
   
 
 # Joining both networks --------------------------------------------------------
+
+all_edges = bind_rows(
+  # Links between pkgs
+  taxo_df %>%
+    rename(source = pkg, target = package) %>%
+    mutate(type = "depends"),
+  # Links between pkg and dbs
+  access_df %>%
+    rename(source = `Package Name`, target = db_list) %>%
+    filter(!is.na(target)) %>%
+    mutate(source = case_when(
+      source == "TNRS" ~ "TNRS_pkg",
+      source == "WorldFlora" ~ "WorldFlora_pkg",
+      TRUE ~ source
+    )),
+  # Links between DBs
+  db_links %>%
+    rename(source = source_db, target = target_db, type = link_type)
+)
+
+all_nodes = bind_rows(
+  # Packages list with metadata
+  inc_pkg %>%
+    select(1, 4) %>%
+    rename(
+      name = `Package Name`,
+      workflow_importance =
+        `Is this package central in taxonomic harmonization workflow?`
+  ) %>%
+    mutate(node_type = "package",
+           name = case_when(
+             name == "TNRS" ~ "TNRS_pkg",
+             name == "WorldFlora" ~ "WorldFlora_pkg",
+             TRUE ~ name
+           )),
+  # Database list
+  all_db %>%
+    rename(name = db_list) %>%
+    mutate(workflow_importance = "other", node_type = "db")
+)
+
+all_graph = igraph::graph_from_data_frame(
+  all_edges, vertices = all_nodes
+)
+
+plot_full_network = all_graph %>%
+  ggraph(layout = "igraph", algorithm = "nicely") +
+  geom_edge_link(
+    aes(color = type), alpha = 2/3,
+    arrow = arrow(type = "closed", length = unit(4, "mm"), angle = 7),
+    end_cap = circle(2, 'mm')
+  ) +
+  # Package & DBpoints
+  geom_node_point(
+    aes(shape = node_type), color = "white", fill = "black", size = 3,
+  ) +
+  # Labels
+  geom_node_text(
+    aes(label = name,
+        family = ifelse(node_type == "package", "Consolas", "Helvetica")
+    ), check_overlap = TRUE, repel = TRUE
+  ) +
+  scale_shape_manual(values = c(db = 22, package = 21),
+                     labels = c(db = "Database", package = "Package"),
+                     name = "bla") +
+  scale_color_brewer(type = "qual") +
+  theme_void() +
+  theme(legend.position = "top")
+
+plot_full_network
