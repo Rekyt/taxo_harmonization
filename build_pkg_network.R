@@ -278,7 +278,7 @@ plot_full_network = all_graph %>%
   ggraph(layout = "igraph", algorithm = "nicely") +
   geom_edge_link(
     aes(color = type), alpha = 2/3,
-    arrow = arrow(type = "closed", length = unit(4, "mm"), angle = 7),
+    arrow = arrow(type = "closed", length = unit(2, "mm"), angle = 7),
     end_cap = circle(2, 'mm')
   ) +
   # Package & DBpoints
@@ -294,7 +294,7 @@ plot_full_network = all_graph %>%
   scale_shape_manual(values = c(db = 22, package = 21),
                      labels = c(db = "Database", package = "Package"),
                      name = "bla") +
-  scale_color_brewer(type = "qual") +
+  scale_edge_color_brewer(type = "qual") +
   theme_void() +
   theme(legend.position = "top")
 
