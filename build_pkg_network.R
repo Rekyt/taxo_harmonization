@@ -115,6 +115,33 @@ dep_graph = dep_df %>%
 taxo_df = dep_df %>%
   filter(pkg %in% inc_pkg$`Package Name` & package %in% inc_pkg$`Package Name`)
 
+# Viz. Package Network ---------------------------------------------------------
+tg_dep = dep_graph %>%
+  tidygraph::as_tbl_graph()
+
+tg_dep %>%
+  ggraph(layout = "kk") +
+  geom_edge_link() + 
+  geom_node_point(aes(colour = category))
+
+taxo_graph = igraph::graph_from_data_frame(
+  taxo_df[, c(2, 1, 3)], vertices = inc_pkg)
+
+taxo_graph %>%
+  ggraph(layout = "igraph", algorithm = "nicely") +
+  geom_edge_link(
+    arrow = arrow(type = "closed", length = unit(4, "mm"), angle = 7),
+    alpha = 1/2
+  ) +
+  geom_node_point(
+    aes(
+      fill = `Is this package central in taxonomic harmonization workflow?`
+    ),
+      shape = 21, color = "white", size = 3) +
+  geom_node_label(aes(label = name), family = "Consolas", repel = TRUE) +
+  theme_void() +
+  theme(legend.position = "top")
+ 
 # Database network -------------------------------------------------------------
 # Make an attribute df with database
 access_df = inc_pkg %>%
@@ -123,7 +150,18 @@ access_df = inc_pkg %>%
   mutate(db_list = purrr::map(db_list, stringr::str_trim, side = "both")) %>%
   select(-`Which authority?`) %>%
   mutate(type = "accesses") %>%
-  tidyr::unnest(c(db_list))
+  tidyr::unnest(c(db_list)) %>%
+  mutate(db_list = case_when(
+    db_list == "FishBase (Eschmeyer's Catalog of Fishes)" ~ "FishBase",
+    db_list == "WikiData" ~ "Wikidata",
+    db_list == "INPI"     ~ "IPNI",
+    db_list == "World Flora Online" ~ "WorldFlora",
+    db_list == "vegetplant" ~ "GermanSL",
+    db_list == "Plants of the World" ~ "POWO",
+    db_list == "multiple" ~ "FinBIF",
+    db_list == "Tropics" ~ "Tropicos",
+    TRUE ~ db_list
+  ))
 
 db_links = tibble::tribble(
   ~source_db, ~target_db, ~link_type,
@@ -166,13 +204,28 @@ db_links = tibble::tribble(
   "EOL",            "GNR",         "populates"
 )
 
-# Network Visualization --------------------------------------------------------
-tg_dep = dep_graph %>%
-  tidygraph::as_tbl_graph()
+all_db = access_df %>%
+  distinct(db_list) %>%
+  bind_rows(
+    db_links %>%
+      distinct(db_list = source_db),
+    db_links %>%
+      distinct(db_list = target_db)
+  ) %>%
+  distinct() %>%
+  filter(!is.na(db_list))
+
+db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
+
+# Viz. DB network --------------------------------------------------------------
+db_graph %>%
+  tidygraph::as_tbl_graph() %>%
+  ggraph(layout = "igraph", algorithm = "nicely") +
+  geom_edge_link(arrow = arrow(type = "closed",
+                               length = unit(4, "mm"), angle = 7), alpha = 1/2) +
+  geom_node_point(shape = 21, color = "white", fill  = "black") +
+  geom_node_text(aes(label = name), check_overlap = TRUE, repel = TRUE) +
+  theme_void()
   
-tg_dep %>%
-  ggraph(layout = "kk") +
-  geom_edge_link() + 
-  geom_node_point(aes(colour = category))
 
 # Joining both networks --------------------------------------------------------
