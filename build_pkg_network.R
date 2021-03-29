@@ -19,36 +19,6 @@ cran_pkg = inc_pkg %>%
   filter(!is.na(`Release URL (CRAN / Bioconductor)`))
 
 
-# Automatic package dependency list through {crandep} --------------------------
-# Get raw data
-
-# Get package dependency
-deps_pkgs = cran_pkg %>%
-  filter(grepl("cran", `Release URL (CRAN / Bioconductor)`)) %>%
-  select(pkg_name = `Package Name`) %>%
-  mutate(dep_df = purrr::map(pkg_name,
-                             ~.x %>%
-                               crandep::get_dep(c("Imports")) %>%
-                               tibble::enframe("dep_type", "dep_name") %>%
-                               mutate(dep_type = "Imports"))) %>%
-  tidyr::unnest(dep_df)
-
-
-# Dependency network with {cranly} ---------------------------------------------
-
-p_db            = tools::CRAN_package_db()
-package_db      = cranly::clean_CRAN_db(p_db)
-package_network = cranly::build_network(package_db)
-
-taxo_pkgs = cranly::package_with(package_network, exact = TRUE,
-                                 name = cran_pkg$`Package Name`)
-
-plot(package_network, package = taxo_pkgs)
-
-taxo_pkgs_only <- subset(package_network, package = taxo_pkgs, only = TRUE)
-plot(taxo_pkgs_only, package = taxo_pkgs)
-
-
 # Dependency network with {pkgdepends} -----------------------------------------
 
 # Retrieve dependencies for all included packages
