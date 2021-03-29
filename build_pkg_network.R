@@ -7,7 +7,7 @@ library("ggraph")
 # Load and wrangle data --------------------------------------------------------
 
 # Raw data from the Google Doc sheets exported as XLSX file
-pkg_df = readxl::read_xlsx("data/Table comparing taxonomic tools.xlsx",
+pkg_df = readxl::read_xlsx("data_raw/Table comparing taxonomic tools.xlsx",
                            na = c("", "NA"))
 
 # Get the list of packages that are included in the review
@@ -40,6 +40,8 @@ all_pkgs$solve()
 all_pkgs$draw()
 
 all_pkgs_df = all_pkgs$get_resolution()
+
+saveRDS(all_pkgs_df, "data_cleaned/all_pkgs_df.Rds", compress = TRUE)
 
 
 # Package igraph network -------------------------------------------------------
@@ -85,18 +87,13 @@ dep_graph = dep_df %>%
 taxo_df = dep_df %>%
   filter(pkg %in% inc_pkg$`Package Name` & package %in% inc_pkg$`Package Name`)
 
-# Viz. Package Network ---------------------------------------------------------
-tg_dep = dep_graph %>%
-  tidygraph::as_tbl_graph()
-
-tg_dep %>%
-  ggraph(layout = "kk") +
-  geom_edge_link() + 
-  geom_node_point(aes(colour = category))
-
 taxo_graph = igraph::graph_from_data_frame(
   taxo_df[, c(2, 1, 3)], vertices = inc_pkg)
 
+saveRDS(taxo_graph, "data_cleaned/taxo_pkgs_igraph.Rds", compress = TRUE)
+
+# Viz. Package Network ---------------------------------------------------------
+# Visualize the network
 taxo_graph %>%
   ggraph(layout = "igraph", algorithm = "nicely") +
   geom_edge_link(
@@ -186,6 +183,8 @@ all_db = access_df %>%
   filter(!is.na(db_list))
 
 db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
+
+saveRDS(db_graph, "data_cleaned/db_igraph.Rds", compress = TRUE)
 
 # Viz. DB network --------------------------------------------------------------
 db_graph %>%

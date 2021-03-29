@@ -7,8 +7,13 @@ This repository contains some code to extract information on taxonomic harmoniza
 Here is the complete file list
 
 ```
-+-- build_pkg_network.R                       
-+-- data
+.
++-- build_pkg_network.R
++-- data_cleaned
+|   +-- all_pkgs_df.Rds
+|   +-- db_igraph.Rds
+|   \-- taxo_pkgs_igraph.Rds
++-- data_raw
 |   \-- Table comparing taxonomic tools.xlsx
 +-- figures
 |   +-- db_relationships.drawio
@@ -27,7 +32,9 @@ Here is the complete file list
 
 `build_pkg_network.R` contains the main script that aims to build a dependency network between taxonomic harmonization packages and taxonomic databases.
 
-The `data` folder holds a dumped copy of the table of taxonomic packages available as a Google Sheet.
+The `data_cleaned` folder holds a copy of some of the objects generated through the `build_pkg_network.R`.
+
+The `data_raw` folder holds a dumped copy of the table of taxonomic packages available as a Google Sheet.
 
 The `figures` contains different figues made using draw.io (now diagrams.net) at different points of the projects.
 
