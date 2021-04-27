@@ -1,4 +1,5 @@
 library(shiny)
+source("build_pkg_network.R")
 
 # Define server logic for tabs
 shinyServer(function(input, output, session) {
