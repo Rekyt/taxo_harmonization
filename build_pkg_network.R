@@ -93,14 +93,17 @@ taxonomy_dependencies_edge_df = dependencies_edge_df %>%
       # are written only with package name)
       dependency %in% included_pkg$`Package Name`)
 
-taxo_graph = igraph::graph_from_data_frame(
-  taxo_df[, c(2, 1, 3)], vertices = included_pkg)
+taxonomy_pkg_graph = igraph::graph_from_data_frame(
+  taxonomy_dependencies_edge_df,
+  vertices = pkg_info_df %>%
+    filter(pkg %in% c(included_pkg$network_name, included_pkg$`Package Name`)))
 
-saveRDS(taxo_graph, "data_cleaned/taxo_pkgs_igraph.Rds", compress = TRUE)
+saveRDS(taxonomy_pkg_graph, "data_cleaned/taxonomy_pkg_graph.Rds",
+        compress = TRUE)
 
 # Viz. Package Network ---------------------------------------------------------
 # Visualize the network
-taxo_graph %>%
+taxonomy_pkg_graph %>%
   ggraph(layout = "igraph", algorithm = "nicely") +
   geom_edge_link(
     arrow = arrow(type = "closed", length = unit(4, "mm"), angle = 7),
@@ -108,10 +111,10 @@ taxo_graph %>%
   ) +
   geom_node_point(
     aes(
-      fill = `Is this package central in taxonomic harmonization workflow?`
+      fill = category
     ),
       shape = 21, color = "white", size = 3) +
-  geom_node_label(aes(label = name), family = "Consolas", repel = TRUE) +
+  geom_node_label(aes(label = name), family = "monospace", repel = TRUE) +
   theme_void() +
   theme(legend.position = "top")
  
@@ -207,8 +210,11 @@ db_graph %>%
 
 all_edges = bind_rows(
   # Links between pkgs
-  taxo_df %>%
-    rename(source = pkg, target = package) %>%
+  taxonomy_dependencies_edge_df %>%
+    filter(dependency_type %in% c("imports", "depends")) %>%
+    select(-dependency_type) %>%
+    distinct() %>%
+    rename(source = source_pkg, target = dependency) %>%
     mutate(type = "depends"),
   # Links between pkg and dbs
   access_df %>%
@@ -227,7 +233,7 @@ all_edges = bind_rows(
 all_nodes = bind_rows(
   # Packages list with metadata
   included_pkg %>%
-    select(1, 4) %>%
+    select(1, 5) %>%
     rename(
       name = `Package Name`,
       workflow_importance =
@@ -243,7 +249,8 @@ all_nodes = bind_rows(
   all_db %>%
     rename(name = db_list) %>%
     mutate(workflow_importance = "other", node_type = "db")
-)
+) %>%
+  distinct()
 
 all_graph = igraph::graph_from_data_frame(
   all_edges, vertices = all_nodes
