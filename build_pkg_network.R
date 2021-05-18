@@ -7,70 +7,71 @@ library("ggraph")
 # Load and wrangle data --------------------------------------------------------
 
 # Raw data from the Google Doc sheets exported as XLSX file
-pkg_df = readxl::read_xlsx("data_raw/Table comparing taxonomic tools.xlsx",
+raw_pkg_table = readxl::read_xlsx("data_raw/Table comparing taxonomic tools.xlsx",
                            na = c("", "NA"))
 
 # Get the list of packages that are included in the review
-inc_pkg = pkg_df %>%
+included_pkg = raw_pkg_table %>%
   filter(`Should we include this package in our review?` == "include")
 
 # List of included packages that are on CRAN
-cran_pkg = inc_pkg %>%
+cran_pkg = included_pkg %>%
   filter(!is.na(`Release URL (CRAN / Bioconductor)`))
 
 
 # Dependency network with {pkgdepends} -----------------------------------------
 
-# Retrieve dependencies for all included packages
-all_pkgs = inc_pkg %>%
-  mutate(sub_name = case_when(
-    `Package Name` == "traitdataform" ~ "EcologicalTraitData/traitdataform",
+# Create column 'network_name' to extract deps with pkgdepends
+included_pkg = included_pkg %>%
+  mutate(network_name = case_when(
+    # Change taxizedb to be compatible with ropensci/taxview dependency
     `Package Name` == "taxizedb" ~ "ropensci/taxizedb",
+    # If package on CRAN directly use its name
     !is.na(`Release URL (CRAN / Bioconductor)`) ~ `Package Name`,
+    # Otherwise get GitHub andle
     !is.na(`Development Version`) ~ gsub("https://github.com/", "",
                                          `Development Version`),
     TRUE ~ NA_character_
   )) %>%
-  add_row(sub_name = "joelnitta/jntools") %>%
-  pull(sub_name) %>%
- pkgdepends::new_pkg_deps()
+  # Additional dependencies not mentioned explicitly in packages
+  add_row(network_name = "joelnitta/jntools") %>%
+  add_row(network_name = "gustavobio/tpldata")
 
-all_pkgs$resolve()
-all_pkgs$solve()
-all_pkgs$draw()
+# Retrieve dependencies for all included packages
+pkg_deps = included_pkg %>%
+  pull(network_name) %>%
+  pkgdepends::new_pkg_deps()
 
-all_pkgs_df = all_pkgs$get_resolution()
+pkg_deps$resolve()
+pkg_deps$solve()
+pkg_deps$draw()
 
-saveRDS(all_pkgs_df, "data_cleaned/all_pkgs_df.Rds", compress = TRUE)
+pkg_deps_df = pkg_deps$get_resolution()
+
+saveRDS(pkg_deps_df, "data_cleaned/pkg_deps_df.Rds", compress = TRUE)
 
 
 # Package igraph network -------------------------------------------------------
 
 # Edge list data.frame
-dep_df = all_pkgs_df %>%
+dependencies_edge_df = pkg_deps_df %>%
   select(pkg = ref, deps) %>%
   tidyr::unnest(deps) %>%
-  select(pkg, package, type) %>%
-  mutate(type = tolower(type)) %>%
+  select(source_pkg = pkg, dependency = package, dependency_type = type) %>%
+  mutate(dependency_type = tolower(dependency_type)) %>%
   distinct()
 
 # Vertex attribute data frame
 pkg_info_df = bind_rows(
-  distinct(dep_df, pkg),
-  distinct(dep_df, pkg = package)
+  distinct(dependencies_edge_df, pkg = source_pkg),
+  distinct(dependencies_edge_df, pkg = dependency)
   ) %>%
   distinct() %>%
   full_join(
-    pkg_df %>%
-      mutate(sub_name = case_when(
-        `Package Name` == "traitdataform" ~ "EcologicalTraitData/traitdataform",
-        `Package Name` == "taxizedb" ~ "ropensci/taxizedb",
-        !is.na(`Release URL (CRAN / Bioconductor)`) ~ `Package Name`,
-        !is.na(`Development Version`) ~ gsub("https://github.com/", "",
-                                             `Development Version`))) %>%
-      select(sub_name, 3:4) %>%
+    included_pkg %>%
+      select(network_name, 4:5) %>%
       rename(
-        pkg = sub_name,
+        pkg = network_name,
         inclusion = `Should we include this package in our review?`,
         category  = `Is this package central in taxonomic harmonization workflow?`
       ),
@@ -78,17 +79,22 @@ pkg_info_df = bind_rows(
   )
 
 # Actual graph object
-dep_graph = dep_df %>%
-  filter(type != "enhances", type != "linkingto") %>%
+dependency_graph = dependencies_edge_df %>%
+  filter(dependency_type != "enhances", dependency_type != "linkingto") %>%
   igraph::graph_from_data_frame(vertices = pkg_info_df)
 
 # Make smaller graph with only taxonomic packages that directly depends
 # from each other
-taxo_df = dep_df %>%
-  filter(pkg %in% inc_pkg$`Package Name` & package %in% inc_pkg$`Package Name`)
+taxonomy_dependencies_edge_df = dependencies_edge_df %>%
+  filter(
+    # Package name is within curate taxonomy package list
+    source_pkg %in% c(included_pkg$network_name, included_pkg$`Package Name`) &
+      # Dependency also! (no need to look at network_name as dependencies
+      # are written only with package name)
+      dependency %in% included_pkg$`Package Name`)
 
 taxo_graph = igraph::graph_from_data_frame(
-  taxo_df[, c(2, 1, 3)], vertices = inc_pkg)
+  taxo_df[, c(2, 1, 3)], vertices = included_pkg)
 
 saveRDS(taxo_graph, "data_cleaned/taxo_pkgs_igraph.Rds", compress = TRUE)
 
@@ -111,7 +117,7 @@ taxo_graph %>%
  
 # Database network -------------------------------------------------------------
 # Make an attribute df with database
-access_df = inc_pkg %>%
+access_df = included_pkg %>%
   select(`Package Name`, `Which authority?`) %>%
   mutate(db_list = stringr::str_split(`Which authority?`, ",")) %>%
   mutate(db_list = purrr::map(db_list, stringr::str_trim, side = "both")) %>%
@@ -220,7 +226,7 @@ all_edges = bind_rows(
 
 all_nodes = bind_rows(
   # Packages list with metadata
-  inc_pkg %>%
+  included_pkg %>%
     select(1, 4) %>%
     rename(
       name = `Package Name`,
