@@ -2,6 +2,8 @@ library(shiny)
 
 fluidPage(
   tabsetPanel(
+    # Introduction panel ----
+    tabPanel("Introduction", includeMarkdown("introduction.md")),
     tabPanel("Package network",
              sidebarLayout(
                sidebarPanel(
