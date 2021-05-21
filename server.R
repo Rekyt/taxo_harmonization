@@ -1,4 +1,5 @@
 library(shiny)
+library(visNetwork)
 source("build_pkg_network.R")
 
 # Define server logic for tabs
@@ -58,6 +59,30 @@ shinyServer(function(input, output, session) {
       theme(legend.position = "top")
   })
   
+  # Package network 3 ----
+  output$pkg_network3 <- visNetwork::renderVisNetwork({
+    taxo_df_plot <- taxo_df %>% filter(pkg %in% input$shiny_user_selection & package %in% input$shiny_user_selection)
+    inc_pkg_plot <- inc_pkg %>% filter(`Package Name` %in% union(taxo_df_plot$pkg, taxo_df_plot$package))
+    
+    taxo_graph = igraph::graph_from_data_frame(
+      taxo_df_plot[, c(2, 1, 3)], vertices = inc_pkg_plot)
+    taxo_graph %>%
+      ggraph(layout = "igraph", algorithm = "nicely") +
+      geom_edge_link(
+        arrow = arrow(type = "closed", length = unit(4, "mm"), angle = 7),
+        alpha = 1/2
+      ) +
+      geom_node_point(
+        aes(
+          fill = "Is this package central in taxonomic harmonization workflow?"
+        ),
+        shape = 21, color = "white", size = 3) +
+      geom_node_label(aes(label = name), family = "Consolas", repel = TRUE) +
+      theme_void() +
+      theme(legend.position = "top")
+    visNetwork::visIgraph(taxo_graph)
+  })
+  
   
   
   
@@ -109,7 +134,31 @@ shinyServer(function(input, output, session) {
       geom_node_text(aes(label = name), check_overlap = TRUE, repel = TRUE) +
       theme_void()
   })
+  
+  
+  
+  # Database network 3 ----
+  output$DB_network3 <- visNetwork::renderVisNetwork({
+    db_links_plot <- db_links %>% filter(source_db %in% input$user_database_selection & target_db %in% input$user_database_selection)
+    all_db_plot <- all_db %>% filter(db_list %in% union(db_links_plot$source_db, db_links_plot$target_db))
+    
+    db_graph = igraph::graph_from_data_frame(db_links_plot, vertices = all_db_plot)
+    db_graph %>%
+      tidygraph::as_tbl_graph() %>%
+      ggraph(layout = "igraph", algorithm = "nicely") +
+      geom_edge_link(arrow = arrow(type = "closed",
+                                   length = unit(4, "mm"), angle = 7), alpha = 1/2) +
+      geom_node_point(shape = 21, color = "white", fill  = "black") +
+      geom_node_text(aes(label = name), check_overlap = TRUE, repel = TRUE) +
+      theme_void()
+    visNetwork::visIgraph(db_graph)
+  })
+  
+  
+  
+  
+  
   # 3 Full network tab ----
-  output$full_network <- renderPlot(readRDS("./figures/full_network_plot.rds"))
+  output$full_network <-  visNetwork::renderVisNetwork(readRDS("./figures/plot_full_network.rds"))
   
 })

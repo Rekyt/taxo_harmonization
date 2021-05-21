@@ -100,7 +100,7 @@ taxo_df <- readRDS("data_cleaned/taxo_pkgs_df.Rds")
 
 # Database network -------------------------------------------------------------
 # Make an attribute df with database
-if (!file.exists("data_cleaned/db_df.Rdata")) {
+if (!file.exists("data_cleaned/db_df.Rdata") | !file.exists("data_cleaned/access_df.rds")) {
   access_df = inc_pkg %>%
     select(`Package Name`, `Which authority?`) %>%
     mutate(db_list = stringr::str_split(`Which authority?`, ",")) %>%
@@ -119,6 +119,7 @@ if (!file.exists("data_cleaned/db_df.Rdata")) {
       db_list == "Tropics" ~ "Tropicos",
       TRUE ~ db_list
     ))
+  saveRDS(access_df, file = "data_cleaned/access_df.rds")
   
   db_links = tibble::tribble(
     ~source_db, ~target_db, ~link_type,
@@ -182,7 +183,8 @@ load("data_cleaned/db_df.Rdata")
 
 
 # Joining both networks --------------------------------------------------------
-if (!file.exists("./figures/full_network_plot.rds")) {
+if (!file.exists("./figures/plot_full_network.rds")) {
+  access_df <- readRDS("data_cleaned/access_df.rds")
   all_edges = bind_rows(
     # Links between pkgs
     taxo_df %>%
@@ -223,38 +225,45 @@ if (!file.exists("./figures/full_network_plot.rds")) {
       mutate(workflow_importance = "other", node_type = "db")
   )
   
-  all_graph = igraph::graph_from_data_frame(
-    all_edges, vertices = all_nodes
-  )
+  nodes <- data.frame(id = all_nodes$name)
+  edges <- data.frame(from = all_edges$source, to = all_edges$target)
+  plot_full_network <- visNetwork::visNetwork(nodes, edges, width = "100%")
+
+  # using this way, the visNetwork is less visNetwork like but the links show arrows
+  # all_graph = igraph::graph_from_data_frame(
+  #   all_edges, vertices = all_nodes
+  # )
+  # 
+  # plot_full_network <- visNetwork::visIgraph(all_graph)
   
-  plot_full_network = all_graph %>%
-    ggraph(layout = "igraph", algorithm = "nicely") +
-    geom_edge_link(
-      aes(color = type), alpha = 2/3,
-      arrow = arrow(type = "closed", length = unit(2, "mm"), angle = 7),
-      end_cap = circle(2, 'mm')
-    ) +
-    # Package & DBpoints
-    geom_node_point(
-      aes(shape = node_type), color = "white", fill = "black", size = 3,
-    ) +
-    # Labels
-    geom_node_text(
-      aes(label = name,
-          family = ifelse(node_type == "package", "Consolas", "Helvetica")
-      ), check_overlap = TRUE, repel = TRUE
-    ) +
-    scale_shape_manual(values = c(db = 22, package = 21),
-                       labels = c(db = "Database", package = "Package"),
-                       name = "bla") +
-    scale_edge_color_brewer(type = "qual") +
-    theme_void() +
-    theme(legend.position = "top")
-  
-  plot_full_network
-  
+  # plot_full_network = all_graph %>%
+  #   ggraph(layout = "igraph", algorithm = "nicely") +
+  #   geom_edge_link(
+  #     aes(color = type), alpha = 2/3,
+  #     arrow = arrow(type = "closed", length = unit(2, "mm"), angle = 7),
+  #     end_cap = circle(2, 'mm')
+  #   ) +
+  #   # Package & DBpoints
+  #   geom_node_point(
+  #     aes(shape = node_type), color = "white", fill = "black", size = 3,
+  #   ) +
+  #   # Labels
+  #   geom_node_text(
+  #     aes(label = name,
+  #         family = ifelse(node_type == "package", "Consolas", "Helvetica")
+  #     ), check_overlap = TRUE, repel = TRUE
+  #   ) +
+  #   scale_shape_manual(values = c(db = 22, package = 21),
+  #                      labels = c(db = "Database", package = "Package"),
+  #                      name = "bla") +
+  #   scale_edge_color_brewer(type = "qual") +
+  #   theme_void() +
+  #   theme(legend.position = "top")
+  # 
+  # plot_full_network
+
   saveRDS(
-    file = "./figures/full_network_plot.rds",
+    file = "./figures/plot_full_network.rds",
     object = plot_full_network
   )
 }

@@ -9,7 +9,8 @@ fluidPage(
                ),
                mainPanel(
                  plotOutput("pkg_network1"),
-                 plotOutput("pkg_network2")
+                 plotOutput("pkg_network2"),
+                 visNetwork::visNetworkOutput("pkg_network3")
                )
              )
     ),
@@ -20,13 +21,14 @@ fluidPage(
                ),
                mainPanel(
                  plotOutput("DB_network1"),
-                 plotOutput("DB_network2")
+                 plotOutput("DB_network2"),
+                 visNetwork::visNetworkOutput("DB_network3")
                )
              )
     ),
     tabPanel("Full Network",
              fluidPage(
-               plotOutput("full_network")
+               visNetwork::visNetworkOutput("full_network")
              )
     )
   )
