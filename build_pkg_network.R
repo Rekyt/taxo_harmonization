@@ -101,6 +101,10 @@ taxonomy_pkg_graph = igraph::graph_from_data_frame(
 saveRDS(taxonomy_pkg_graph, "data_cleaned/taxonomy_pkg_graph.Rds",
         compress = TRUE)
 
+saveRDS(taxonomy_pkg_graph,
+        "taxtool-selecter/shiny_data/taxonomy_pkg_graph.Rds")
+
+
 # Viz. Package Network ---------------------------------------------------------
 # Visualize the network
 taxonomy_pkg_graph %>%
@@ -194,6 +198,7 @@ all_db = access_df %>%
 db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
 
 saveRDS(db_graph, "data_cleaned/db_igraph.Rds", compress = TRUE)
+saveRDS(db_graph, "taxtool-selecter/shiny_data/db_igraph.Rds")
 
 # Viz. DB network --------------------------------------------------------------
 db_graph %>%
@@ -250,11 +255,21 @@ all_nodes = bind_rows(
     rename(name = db_list) %>%
     mutate(workflow_importance = "other", node_type = "db")
 ) %>%
-  distinct()
+  distinct() %>%
+  add_row(name = "joelnitta/taxastand", workflow_importance = "secondary",
+          node_type = "package") %>%
+  add_row(name = "EDIorg/taxonomyCleanr", workflow_importance = "secondary",
+          node_type = "package") %>%
+  add_row(name = "alexpiper/taxreturn", workflow_importance = "secondary",
+          node_type = "package") %>%
+  add_row(name = "ropensci/taxview", workflow_importance = "secondary",
+          node_type = "package")
 
 all_graph = igraph::graph_from_data_frame(
   all_edges, vertices = all_nodes
 )
+
+saveRDS(all_graph, "taxtool-selecter/shiny_data/full_network.Rds")
 
 plot_full_network = all_graph %>%
   ggraph(layout = "igraph", algorithm = "nicely") +
