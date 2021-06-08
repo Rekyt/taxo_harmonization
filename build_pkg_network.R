@@ -270,6 +270,7 @@ all_nodes = bind_rows(
           node_type = "package")
 
 all_nodes$title <- all_nodes$id
+all_nodes <- rename(all_nodes, group = node_type)
 
 save(all_nodes, all_edges, file = "taxtool-selecter/shiny_data/full_network.Rdata")
 
