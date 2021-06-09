@@ -6,8 +6,11 @@ load("shiny_data/full_network.Rdata")
 # Define server logic for tabs
 shinyServer(function(input, output, session) {
   # Full network
-  output$full_table <- DT::renderDT(all_nodes, options = list(target = "row"))
-    
+  output$full_table <- DT::renderDT(
+    all_nodes[, c("label","group")],
+    options = list(target = "row")
+  )
+  
   output$full_network_interactive <-  visNetwork::renderVisNetwork(
     visNetwork(all_nodes, all_edges) %>% 
       # visGroups(groupname = "db", icon = list(code = "f108",color = "red")) %>%
