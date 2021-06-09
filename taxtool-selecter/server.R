@@ -30,13 +30,13 @@ shinyServer(function(input, output, session) {
   
   observe(output$debug_DT_row_number <- renderText(input$full_table_rows_selected))
   
-  observe({
-    selnodes <- input$full_table_rows_selected
-    visNetworkProxy("full_network_interactive") %>%
-      # visSelectNodes(id = selnodes)
-      visFocus(id = selnodes)
-    # visSelectNodes(id = unlist(all_nodes[selnodes, "id"]))
-  })
+  # observe({
+  #   selnodes <- input$full_table_rows_selected
+  #   visNetworkProxy("full_network_interactive") %>%
+  #     # visSelectNodes(id = selnodes)
+  #     visFocus(id = selnodes)
+  #   # visSelectNodes(id = unlist(all_nodes[selnodes, "id"]))
+  # })
   
   
 })
