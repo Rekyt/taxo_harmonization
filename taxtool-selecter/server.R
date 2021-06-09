@@ -10,7 +10,7 @@ shinyServer(function(input, output, session) {
     
   output$full_network_interactive <-  visNetwork::renderVisNetwork(
     visNetwork(all_nodes, all_edges) %>% 
-      visGroups(groupname = "db", icon = list(code = "f108",color = "red")) %>%
+      # visGroups(groupname = "db", icon = list(code = "f108",color = "red")) %>%
       visEdges(arrows = "to") %>%
       visInteraction(dragNodes = TRUE, 
                      dragView = TRUE, 

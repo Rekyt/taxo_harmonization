@@ -219,12 +219,16 @@ all_nodes = bind_rows(
   add_row(id = "ropensci/taxview", workflow_importance = "secondary",
           node_type = "package")
 
-all_nodes$title <- all_nodes$id
+all_nodes$title <- paste0("<p><b>", all_nodes$id,"</b><br>Some website</p>")
 all_nodes$label <- all_nodes$id
 
 all_nodes <- all_nodes %>% mutate(shape = case_when(
   node_type == "db" ~ "diamond",
-  node_type == "package" ~ "ellipse",
+  node_type == "package" ~ "dot",
+  TRUE ~ node_type
+)) %>% mutate(color = case_when(
+  node_type == "db" ~ "blue",
+  node_type == "package"~ "green",
   TRUE ~ node_type
 ))
 
