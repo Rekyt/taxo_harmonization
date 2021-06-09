@@ -10,7 +10,8 @@ fluidPage(
                column(
                  width = 4L,
                  textOutput("debug_DT_row_number"),
-                 DT::dataTableOutput("full_table")
+                 DT::dataTableOutput("full_table"),
+                 selectInput("selected_nodes", "Choose a node", c("rcol","rebird","rentrez"), multiple = TRUE)
                ),
                column(
                  width = 8L,

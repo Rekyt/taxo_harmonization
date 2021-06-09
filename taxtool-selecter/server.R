@@ -25,21 +25,21 @@ shinyServer(function(input, output, session) {
       visOptions(
         # selectedBy = "group", # Add a dropdown menu in which to select the
         # group value that we want highlighted. Any column called "group"
-        highlightNearest = FALSE,
-        nodesIdSelection = FALSE
+        highlightNearest = TRUE,
+        nodesIdSelection = TRUE
       ) %>%
       visLayout(randomSeed = 42L)
   )
   
   observe(output$debug_DT_row_number <- renderText(input$full_table_rows_selected))
   
-  # observe({
-  #   selnodes <- input$full_table_rows_selected
-  #   visNetworkProxy("full_network_interactive") %>%
-  #     # visSelectNodes(id = selnodes)
-  #     visFocus(id = selnodes)
-  #   # visSelectNodes(id = unlist(all_nodes[selnodes, "id"]))
-  # })
+  observe({
+    selnodes <- input$full_table_rows_selected
+    visNetworkProxy("full_network_interactive") %>%
+      visSelectNodes(id = pull(all_nodes[selnodes, "id"]))
+    # visSelectNodes(id = input$selected_nodes)
+    # visFocus(id = selnodes)
+  })
   
   
 })
