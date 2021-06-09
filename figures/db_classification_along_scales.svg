@@ -9,13 +9,13 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="570.83905"
-   height="324.76373"
-   viewBox="-0.5 -0.5 570.83904 324.76373"
+   height="264.76373"
+   viewBox="-0.5 -0.5 570.83904 264.76373"
    content="&lt;mxfile host=&quot;Electron&quot; modified=&quot;2021-04-01T09:45:29.843Z&quot; agent=&quot;5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.5.1 Chrome/89.0.4389.82 Electron/12.0.1 Safari/537.36&quot; etag=&quot;4MIw9LOim35s9d853vK0&quot; version=&quot;14.5.1&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;PSb1mdopnqzCHwlK36kI&quot; name=&quot;Page-1&quot;&gt;7ZpbU6MwFMc/TWfWBx0Il7aPbddWZ3Tq6O64rwgpZAykG9KL++k3lKRcQt260mLFOmPpSTiB/y85h4R0jFG4nlBnHtwSD+IO0Lx1x/jeAcA2AP+fGF5Sg9k1U4NPkZea9MzwgP5AYdSEdYE8GBcqMkIwQ/Oi0SVRBF1WsDmUklWx2ozgYqtzx4eK4cF1sGp9RB4LxF3YvVzBFUR+IJo2DE1ceejI2sIQB45HVjmTcdkxRpQQlh6F6xHEiXhSmPS88Y7S7QVQGLF9Tphe9X8G82f262oUo+vIHPoD69xKvSwdvBB3/MNZk4iEyOXmVIj06tmL1ITBNW9wGLAQc4POD2NGyTMcEUwot0Qk4jWHM4RxyeRg5Ef8p8svGXL7cAkpQ7yRgSgIkeclzQxXAWLwYe64SZsr3rW4jZJF5MHkbrTEPYmY6C+6zX+LG+EO4XqnQvpWd95hIQkhoy+8ijih2xOoZGeV6FYZelklyEE3hc0Rnc3fes5w8ANB5A10bIUOl4QhB7ePjVlio3cbZtNV2CgwfK5KIk5Ils7Txqi9JoaIYaJqFjj2F8kCRZFARQfeKpJXaVuxdpnAv2WCkTdIQnXS+bATxzz0FHpwegL0lEidybKbkKpVTgurQgppoxDzobYstlklj2jhjiB+Nar08pSYLKgLRa18mJYnyorMoT5kSsWN+tvb+H8gxheQPYGsSwNml6MDAwOmQuyGuJsc4AbQfcYoZgrCqhidI5gP0FpV8N8rYr8FsvRSiuKWGqC6x4ziQH0A6gAbM6FRQVT794LIgvN4o96AV9C1+Tor5Ed+8s0foy544T2cJV/f7qaP0zPpmV9p6jyteqrwjKbZqY9H99BHJPocY6PftLzqE05OXio69hhFw+vx2cmI3LM/lsi9A8WfCSZPBVCj6U0H8IvUJimv2kMROOpYsfWPFYv6KkdjXPuoyM/bOsCYWcmfMsnjJfbmI1zm7OnniGAaz/CyZ+TIDHyfQt9hfL4KNHyyz1I964MprX+Ngcox0HSSkYuwrQdTSv5NJ42KnPHKVFys0+0gki2zvTov37F+dOAp+I7lKaNfUnbfKblVnomUHR14Sq5XRLp2kQP9i16vJngVvg7NryIgtoofkK/h3gtPcXRocuryZTYpLRF8/7sQmoKo61UIqOlViNkvDSA1j9lVi/yHymP6zhXKthLpNU1EXRqTCwItRQJs0DCSPV4Yfq6c0y2mCrP8HL13zlEc9S/6+c9xM1DVit1n5mibNXFUHTXKsW2zr65eE0fVUZMcZcDOb5JBkZ/sjdHye5kmm80Y9ae/uvfL1JT/rPJgsxrOf0CdM98uko181aTi9qCyy+OpcVTq9HiwOesGzU5hy1ldXMrbAQ/Hhf/MNoKmkTHbTmtc/gU=&lt;/diagram&gt;&lt;/mxfile&gt;"
    id="svg1001"
    sodipodi:docname="db_classification_along_scales.svg"
-   inkscape:version="1.0 (4035a4f, 2020-05-01)"
-   inkscape:export-filename="/Users/Rekyt/Documents/Postdoc iDiv/pd_projects/taxo_harmonization/figures/db_classification_along_scales.png"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:export-filename="C:\Users\ke76dimu\Documents\projects\taxo_harmonization\figures\db_classification_along_scales.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200">
   <metadata
@@ -40,8 +40,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="1005"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
      id="namedview1003"
      showgrid="false"
      fit-margin-left="10"
@@ -49,17 +49,17 @@
      fit-margin-bottom="10"
      fit-margin-right="10"
      inkscape:zoom="1.410781"
-     inkscape:cx="248.91832"
-     inkscape:cy="107.14187"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="g2228">
+     inkscape:cx="247.85508"
+     inkscape:cy="75.494957"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
     <inkscape:grid
        type="xygrid"
        id="grid1056"
-       originx="56.850009"
-       originy="-22.523272" />
+       originx="56.850008"
+       originy="-82.523273" />
   </sodipodi:namedview>
   <defs
      id="defs833">
@@ -447,156 +447,136 @@
      id="layer1"
      inkscape:label="coordinates"
      style="display:inline"
-     transform="translate(56.850013,-22.523272)">
+     transform="translate(56.850013,-82.523274)">
     <text
        xml:space="preserve"
        id="text2304"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:18.66669999999999874px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;white-space:pre;shape-inside:url(#rect2306);fill:#010b13;fill-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:18.6667px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;white-space:pre;shape-inside:url(#rect2306);fill:#010b13;fill-opacity:1;"
        transform="translate(46.209678,50)"><tspan
-         x="144.90218"
+         x="144.93864"
          y="286.60471"><tspan
            style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';fill:#010b13;fill-opacity:1">Taxonomic Breadth</tspan></tspan></text>
     <text
-       transform="rotate(-90,26.083292,345.8557)"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:18.66669999999999874px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;white-space:pre;shape-inside:url(#rect2306-2);display:inline;fill:#010b13;fill-opacity:1;"
+       transform="rotate(-90,42.242642,362.01505)"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:18.6667px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';text-align:center;white-space:pre;shape-inside:url(#rect2306-2);display:inline;fill:#010b13;fill-opacity:1;"
        id="text2304-9"
        xml:space="preserve"><tspan
-         x="168.29742"
+         x="168.33388"
          y="286.60471"><tspan
            style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';fill:#010b13;fill-opacity:1">Spatial Scale</tspan></tspan></text>
     <g
-       id="g2584"
+       id="g1886"
        style="stroke:#010b13;stroke-opacity:1">
-      <g
-         id="g1886"
-         style="stroke:#010b13;stroke-opacity:1">
-        <path
-           sodipodi:nodetypes="cc"
-           id="path1415"
-           d="M 49.592457,264.07667 V 34.585158"
-           style="fill:none;stroke:#010b13;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
-        <path
-           style="fill:none;stroke:#010b13;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-7)"
-           d="M 49.592457,264.07667 H 500.92715"
-           id="path1415-3"
-           sodipodi:nodetypes="cc" />
-      </g>
       <path
          sodipodi:nodetypes="cc"
-         id="path2351"
-         d="m 124.44769,264.716 v 7.92358"
-         style="fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         id="path1415"
+         d="M 49.592457,264.07667 V 94.58516"
+         style="fill:none;stroke:#010b13;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
       <path
-         sodipodi:nodetypes="cc"
-         style="display:inline;fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 278.67582,264.716 v 7.92358"
-         id="path2351-8" />
-      <path
-         sodipodi:nodetypes="cc"
-         id="path2368"
-         d="m 432.90397,264.716 v 7.92358"
-         style="display:inline;fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <g
-         id="g2542"
-         style="stroke:#010b13;stroke-opacity:1">
-        <path
-           id="path2370"
-           d="M 48.98658,218.76291 H 41.063"
-           style="fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           sodipodi:nodetypes="cc" />
-        <path
-           style="fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="M 48.98658,147.38625 H 41.063"
-           id="path2396"
-           sodipodi:nodetypes="cc" />
-        <path
-           id="path2398"
-           d="M 48.98658,76.009583 H 41.063"
-           style="fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           sodipodi:nodetypes="cc" />
-      </g>
+         style="fill:none;stroke:#010b13;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-7)"
+         d="M 49.592457,264.07667 H 500.92715"
+         id="path1415-3"
+         sodipodi:nodetypes="cc" />
     </g>
+    <path
+       sodipodi:nodetypes="cc"
+       id="path2351"
+       d="m 124.44769,264.716 v 7.92358"
+       style="fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="display:inline;fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 278.67582,264.716 v 7.92358"
+       id="path2351-8" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path2368"
+       d="m 432.90397,264.716 v 7.92358"
+       style="display:inline;fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2370"
+       d="M 48.98658,218.76291 H 41.063"
+       style="fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#010b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 48.98658,147.38625 H 41.063"
+       id="path2396"
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        id="text2304-9-6"
-       style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2306-2-8);display:inline;fill:#010b13;fill-opacity:1;"
-       transform="translate(-208.63281,-202.56564)"><tspan
-         x="204.48768"
+       style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2306-2-8);display:inline;fill:#010b13;fill-opacity:1;"
+       transform="translate(-208.63281,-130.1595)"><tspan
+         x="204.50721"
          y="282.54573"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Global</tspan></tspan></text>
     <text
-       transform="translate(-216.63281,-131.18897)"
-       style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2306-2-8-5);display:inline;fill:#010b13;fill-opacity:1;"
+       transform="translate(-216.63281,-60.31929)"
+       style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2306-2-8-5);display:inline;fill:#010b13;fill-opacity:1;"
        id="text2304-9-6-6"
        xml:space="preserve"><tspan
-         x="197.82103"
+         x="197.84056"
          y="282.54573"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Regional</tspan></tspan></text>
     <text
-       xml:space="preserve"
-       id="text2304-9-6-6-5"
-       style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2306-2-8-5-4);display:inline;fill:#010b13;fill-opacity:1;"
-       transform="translate(-203.83593,-58.782835)"><tspan
-         x="208.48507"
-         y="282.54573"><tspan
-           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Local</tspan></tspan></text>
-    <text
        transform="translate(-75.334218,4.25731)"
-       style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2306-2-8-5-4-2);display:inline;fill:#010b13;fill-opacity:1;"
+       style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2306-2-8-5-4-2);display:inline;fill:#010b13;fill-opacity:1;"
        id="text2304-9-6-6-5-2"
        xml:space="preserve"><tspan
-         x="181.56906"
+         x="181.58208"
          y="282.54573"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Single
 </tspan></tspan><tspan
-         x="144.49884"
+         x="144.49233"
          y="295.87905"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Taxonomic Group
 </tspan></tspan><tspan
-         x="166.06128"
+         x="167.72144"
          y="309.21236"><tspan
-           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">(e.g., birds)</tspan></tspan></text>
+           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">(e.g. birds)</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2529"
-       style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2531);display:inline;fill:#010b13;fill-opacity:1;"
+       style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2531);display:inline;fill:#010b13;fill-opacity:1;"
        transform="translate(72.087929,4.25731)"><tspan
-         x="184.22792"
+         x="184.23769"
          y="282.54573"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Several
 </tspan></tspan><tspan
-         x="148.05614"
+         x="148.04637"
          y="295.87905"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Taxonomic Groups
 </tspan></tspan><tspan
-         x="164.29308"
+         x="165.95323"
          y="309.21236"><tspan
-           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">(e.g., animals)</tspan></tspan></text>
+           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">(e.g. animals)</tspan></tspan></text>
     <text
        transform="translate(229.15104,4.25731)"
-       style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2537);display:inline;fill:#010b13;fill-opacity:1;"
+       style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2537);display:inline;fill:#010b13;fill-opacity:1;"
        id="text2535"
        xml:space="preserve"><tspan
-         x="186.82263"
+         x="191.06091"
          y="282.54573"><tspan
-           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Many
+           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">&quot;All&quot;
 </tspan></tspan><tspan
-         x="145.22118"
+         x="145.21141"
          y="295.87905"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Taxonomic Groups
 </tspan></tspan><tspan
-         x="154.54407"
+         x="156.20422"
          y="309.21236"><tspan
-           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">(e.g., Eukaryota)</tspan></tspan></text>
+           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">(e.g. Eukaryota)</tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Database Types"
-     transform="translate(56.850013,-22.523272)"
+     transform="translate(56.850013,-82.523274)"
      style="display:inline">
     <g
-       id="g2172">
+       id="g2172"
+       transform="translate(0,71.376675)">
       <rect
          ry="15"
          rx="15"
@@ -609,19 +589,19 @@
       <text
          xml:space="preserve"
          id="text1085"
-         style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';font-variation-settings:normal;text-align:center;white-space:pre;shape-inside:url(#rect1087);opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;"
+         style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';font-variation-settings:normal;text-align:center;white-space:pre;shape-inside:url(#rect1087);opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;"
          transform="translate(-26.802641,37.234038)"><tspan
-           x="97.001111"
+           x="97.020642"
            y="36.936358"><tspan
              style="font-size:13.3333px;font-variation-settings:normal;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">Global </tspan><tspan
              style="font-size:13.3333px;font-variation-settings:normal;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">Reference
 </tspan></tspan><tspan
-           x="117.84741"
+           x="117.86043"
            y="50.269655"><tspan
              style="font-size:13.3333px;font-variation-settings:normal;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">(e.g. LCVP)</tspan></tspan></text>
     </g>
     <g
-       transform="translate(97.247524)"
+       transform="translate(97.247524,71.376675)"
        id="g2190">
       <rect
          ry="15"
@@ -640,18 +620,18 @@
       <text
          xml:space="preserve"
          id="text1085-7-6-6-8-0-0"
-         style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-0-3-4-5-2-3);display:inline;fill:#0b646a;fill-opacity:1;"
+         style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-0-3-4-5-2-3);display:inline;fill:#0b646a;fill-opacity:1;"
          transform="translate(160.04479,35.90591)"><tspan
-           x="123.10202"
+           x="122.44447"
            y="36.936358"><tspan
-             style="shape-inside:url(#rect1087-0-3-4-5-2-3);fill:#0b646a;fill-opacity:1">Global Backbone
+             style="shape-inside:url(#rect1087-0-3-4-5-2-3);fill:#0b646a;fill-opacity:1">Global Reference
 </tspan></tspan><tspan
-           x="128.20617"
+           x="128.23547"
            y="50.269655"><tspan
              style="shape-inside:url(#rect1087-0-3-4-5-2-3);fill:#0b646a;fill-opacity:1">(e.g. COL, GBIF)</tspan></tspan></text>
     </g>
     <g
-       transform="translate(2.37579)"
+       transform="translate(2.37579,70.80981)"
        id="g2194">
       <rect
          ry="15"
@@ -664,62 +644,19 @@
          style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#d8f1f3;fill-opacity:1;stroke:#0b646a;stroke-width:1.50026;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
       <text
          transform="translate(-37.266646,107.84943)"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect1087-0-3-4);shape-padding:0;shape-margin:0;inline-size:0;opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect1087-0-3-4);shape-padding:0;shape-margin:0;inline-size:0;opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;"
          id="text1085-7"
          xml:space="preserve"><tspan
-           x="99.237781"
+           x="99.257313"
            y="36.936358"><tspan
              style="baseline-shift:baseline;shape-inside:url(#rect1087-0-3-4);opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stop-color:#000000;stop-opacity:1">Regional Reference
 </tspan></tspan><tspan
-           x="109.96692"
+           x="109.97669"
            y="50.269655"><tspan
              style="baseline-shift:baseline;shape-inside:url(#rect1087-0-3-4);opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stop-color:#000000;stop-opacity:1">(e.g. GermanSL)</tspan></tspan></text>
     </g>
     <g
-       transform="translate(9.8912662)"
-       id="g2220">
-      <rect
-         ry="15"
-         rx="15"
-         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#d8f1f3;fill-opacity:1;stroke:#0b646a;stroke-width:1.46869;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-         id="rect1058-6"
-         width="134.98141"
-         height="52.574104"
-         x="47.065712"
-         y="192.47588" />
-      <text
-         xml:space="preserve"
-         id="text1085-7-6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect1087-0-3-4);shape-padding:0;shape-margin:0;inline-size:0;opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;"
-         transform="translate(-44.983947,186.82656)"><tspan
-           x="113.59972"
-           y="36.936358"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:pre;shape-inside:url(#rect1087-0-3-4);shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">Local </tspan><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:pre;shape-inside:url(#rect1087-0-3-4);shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">Checklist</tspan></tspan></text>
-    </g>
-    <g
-       transform="translate(53.537745)"
-       id="g2228">
-      <rect
-         ry="15"
-         rx="15"
-         y="192.47588"
-         x="157.64737"
-         height="52.574104"
-         width="134.98141"
-         id="rect1060-0"
-         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#d8f1f3;fill-opacity:1;stroke:#0b646a;stroke-width:1.46869;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
-      <text
-         transform="translate(65.597714,186.82656)"
-         style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-0-3-4);fill:#0b646a;fill-opacity:1;"
-         id="text1085-7-6-6"
-         xml:space="preserve"><tspan
-           x="113.59972"
-           y="36.936358"><tspan
-             style="shape-inside:url(#rect1087-0-3-4);fill:#0b646a;fill-opacity:1">Local Checklist</tspan></tspan></text>
-    </g>
-    <g
-       transform="translate(97.247524)"
+       transform="translate(97.247524,71.326055)"
        id="g2212">
       <rect
          ry="15"
@@ -733,41 +670,19 @@
       <text
          xml:space="preserve"
          id="text1085-5-4"
-         style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-5-8);fill:#0b646a;fill-opacity:1;"
+         style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-5-8);fill:#0b646a;fill-opacity:1;"
          transform="translate(181.29251,107.29737)"><tspan
-           x="94.595206"
+           x="93.937655"
            y="36.936358"><tspan
-             style="font-size:13.3333px;fill:#0b646a;fill-opacity:1">Regional </tspan><tspan
-             style="font-size:13.3333px;fill:#0b646a;fill-opacity:1">Backbone 
+             style="font-size:13.3333px;fill:#0b646a;fill-opacity:1">Regional Reference</tspan><tspan
+             style="font-size:13.3333px;fill:#0b646a;fill-opacity:1"> 
 </tspan></tspan><tspan
-           x="115.78005"
+           x="115.79958"
            y="50.269655"><tspan
              style="font-size:13.3333px;fill:#0b646a;fill-opacity:1">(e.g. TAXREF)</tspan></tspan></text>
     </g>
     <g
-       transform="translate(97.215816)"
-       id="g2236">
-      <rect
-         ry="15"
-         rx="15"
-         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#e5e5e5;fill-opacity:1;stroke:#3a3b3b;stroke-width:1.46869;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-         id="rect1062-3"
-         width="134.98141"
-         height="52.574104"
-         x="268.19745"
-         y="192.47588" />
-      <text
-         transform="translate(184.89942,186.82656)"
-         style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-5-8-9);fill:#3b3b3b;fill-opacity:1;"
-         id="text1085-5-4-7"
-         xml:space="preserve"><tspan
-           x="102.02909"
-           y="36.936358"><tspan
-             style="font-size:13.3333px;fill:#3b3b3b;fill-opacity:1">Local </tspan><tspan
-             style="font-size:13.3333px;fill:#3b3b3b;fill-opacity:1">Backbone</tspan></tspan></text>
-    </g>
-    <g
-       transform="translate(53.569438)"
+       transform="translate(53.569438,71.326055)"
        id="g2204">
       <rect
          ry="15"
@@ -781,17 +696,17 @@
       <text
          xml:space="preserve"
          id="text1085-7-6-6-8"
-         style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';font-variation-settings:normal;text-align:center;white-space:pre;shape-inside:url(#rect1087-0-3-4-5);opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;"
+         style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';font-variation-settings:normal;text-align:center;white-space:pre;shape-inside:url(#rect1087-0-3-4-5);opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;"
          transform="translate(70.03021,107.29737)"><tspan
-           x="94.630359"
+           x="94.649891"
            y="36.936358"><tspan
              style="font-variation-settings:normal;shape-inside:url(#rect1087-0-3-4-5);vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">Regional Reference </tspan></tspan><tspan
-           x="120.85425"
+           x="120.86076"
            y="50.269655"><tspan
              style="font-variation-settings:normal;shape-inside:url(#rect1087-0-3-4-5);vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">(e.g. CASD)</tspan></tspan></text>
     </g>
     <g
-       transform="translate(53.569438)"
+       transform="translate(53.569438,71.376675)"
        id="g2182">
       <rect
          ry="15"
@@ -804,22 +719,16 @@
          style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#d8f1f3;fill-opacity:1;stroke:#0b646a;stroke-width:1.46869;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" />
       <text
          transform="translate(49.563087,35.90591)"
-         style="font-size:13.33329999999999949px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-0-3-4-5-2);fill:#0b646a;fill-opacity:1;"
+         style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-0-3-4-5-2);fill:#0b646a;fill-opacity:1;"
          id="text1085-7-6-6-8-0"
          xml:space="preserve"><tspan
-           x="122.42494"
+           x="122.44447"
            y="36.936358"><tspan
              style="shape-inside:url(#rect1087-0-3-4-5-2);fill:#0b646a;fill-opacity:1">Global Reference
 </tspan></tspan><tspan
-           x="121.70879"
+           x="121.73158"
            y="50.269655"><tspan
              style="shape-inside:url(#rect1087-0-3-4-5-2);fill:#0b646a;fill-opacity:1">(e.g. SeaLifeBase)</tspan></tspan></text>
     </g>
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="Legend"
-     style="display:inline"
-     transform="translate(-242.64999,-322.02327)" />
 </svg>
