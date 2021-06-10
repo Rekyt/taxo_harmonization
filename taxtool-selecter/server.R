@@ -36,7 +36,7 @@ shinyServer(function(input, output, session) {
   observe({
     selnodes <- input$full_table_rows_selected
     visNetworkProxy("full_network_interactive") %>%
-      visSelectNodes(id = pull(all_nodes[selnodes, "id"]))
+      visSelectNodes(id = all_nodes[selnodes, ][["id"]])
     # visSelectNodes(id = input$selected_nodes)
     # visFocus(id = selnodes)
   })
