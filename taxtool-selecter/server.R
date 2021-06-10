@@ -13,7 +13,20 @@ shinyServer(function(input, output, session) {
   
   output$full_network_interactive <-  visNetwork::renderVisNetwork(
     visNetwork(all_nodes, all_edges) %>% 
-      # visGroups(groupname = "db", icon = list(code = "f108",color = "red")) %>%
+      visGroups(groupname = "db", shape = "dot", color = list(
+        background = "lawngreen",
+        border = "limegreen",
+        highlight = list(
+          background = "lawngreen",
+          border = "white"
+        ))) %>%
+      visGroups(groupname = "package", shape = "dot", color = list(
+        background = "#97C2FC",
+        border = "#2B7CE9",
+        highlight = list(
+          background = "#97C2FC",
+            border = "white"
+        ))) %>%
       visEdges(
         # color = list(highlight = "blue", hover = "blue"), # color is fixed, does not change with group
         arrows = "to"
@@ -27,12 +40,15 @@ shinyServer(function(input, output, session) {
                      navigationButtons = TRUE,
                      tooltipDelay = 300L) %>%
       visOptions(
-        # selectedBy = "group", # Add a dropdown menu in which to select the
-        # group value that we want highlighted. Any column called "group"
+        # selectedBy = "group", # Add a dropdown menu in which to select the group value that we want highlighted. Any column called "group"
         highlightNearest = list(enabled = TRUE, algorithm = "hierarchical",
-                                degree = list(from = 1, to = 1), hover = TRUE),  #, hideColor = "rgba(0,0,0,0)" # secondary edges Are hidden by usinf algo = "hierarchical" and degree = list(from = 1, to = 1)
+                                degree = list(from = 1, to = 1), hover = TRUE),  #, hideColor = "rgba(0,0,0,0)" # secondary edges are hidden by usinf algo = "hierarchical" and degree = list(from = 1, to = 1)
         nodesIdSelection = TRUE
       ) %>%
+      visLegend(
+        enabled = TRUE,
+        useGroups = TRUE,
+        zoom = FALSE) %>%
       visLayout(randomSeed = 42L)
   )
   
