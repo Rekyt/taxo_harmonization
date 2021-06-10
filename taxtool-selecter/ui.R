@@ -11,11 +11,11 @@ fluidPage(
                  width = 4L,
                  # textOutput("debug_DT_row_number"),
                  DT::dataTableOutput("full_table"),
-                 selectInput("selected_nodes", "Choose a node", c("rcol","rebird","rentrez"), multiple = TRUE)
+                 # selectInput("selected_nodes", "Choose a node", c("rcol","rebird","rentrez"), multiple = TRUE)
                ),
                column(
                  width = 8L,
-                 visNetwork::visNetworkOutput("full_network_interactive", height = "800px")
+                 visNetwork::visNetworkOutput("full_network_interactive")
                )
              )
     )
