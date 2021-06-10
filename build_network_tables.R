@@ -220,7 +220,9 @@ all_nodes = bind_rows(
           node_type = "package")
 
 all_nodes$title <- paste0("<p><b>", all_nodes$id,"</b><br>Some website</p>")
-all_nodes$label <- all_nodes$id
+all_nodes$`Package name` <- all_nodes$label <- all_nodes$id
+all_nodes$`Object type` <- all_nodes$node_type
+
 
 all_nodes <- all_nodes %>% mutate(shape = case_when(
   node_type == "db" ~ "diamond",

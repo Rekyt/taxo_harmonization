@@ -9,7 +9,7 @@ fluidPage(
                # selectInput(inputId = "selnodes", label = "Nodes selection", choices = 1:15, multiple = TRUE),
                column(
                  width = 4L,
-                 textOutput("debug_DT_row_number"),
+                 # textOutput("debug_DT_row_number"),
                  DT::dataTableOutput("full_table"),
                  selectInput("selected_nodes", "Choose a node", c("rcol","rebird","rentrez"), multiple = TRUE)
                ),

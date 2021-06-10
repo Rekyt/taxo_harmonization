@@ -7,7 +7,7 @@ load("shiny_data/full_network.Rdata")
 shinyServer(function(input, output, session) {
   # Full network
   output$full_table <- DT::renderDT(
-    all_nodes[, c("label","group")],
+    all_nodes[, c("Package name","Object type")],
     options = list(target = "row")
   )
   
@@ -26,19 +26,16 @@ shinyServer(function(input, output, session) {
         # selectedBy = "group", # Add a dropdown menu in which to select the
         # group value that we want highlighted. Any column called "group"
         highlightNearest = TRUE,
-        nodesIdSelection = TRUE
+        nodesIdSelection = FALSE
       ) %>%
       visLayout(randomSeed = 42L)
   )
   
-  observe(output$debug_DT_row_number <- renderText(input$full_table_rows_selected))
+  # observe(output$debug_DT_row_number <- renderText(input$full_table_rows_selected))
   
   observe({
-    selnodes <- input$full_table_rows_selected
     visNetworkProxy("full_network_interactive") %>%
-      visSelectNodes(id = all_nodes[selnodes, ][["id"]])
-    # visSelectNodes(id = input$selected_nodes)
-    # visFocus(id = selnodes)
+      visSelectNodes(id = all_nodes[input$full_table_rows_selected, ][["id"]])
   })
   
   
