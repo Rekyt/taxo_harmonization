@@ -8,9 +8,9 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="701.52393"
-   height="264.76373"
-   viewBox="-0.5 -0.5 701.52391 264.76373"
+   width="570.83905"
+   height="271.5596"
+   viewBox="-0.5 -0.5 570.83904 271.5596"
    content="&lt;mxfile host=&quot;Electron&quot; modified=&quot;2021-04-01T09:45:29.843Z&quot; agent=&quot;5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.5.1 Chrome/89.0.4389.82 Electron/12.0.1 Safari/537.36&quot; etag=&quot;4MIw9LOim35s9d853vK0&quot; version=&quot;14.5.1&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;PSb1mdopnqzCHwlK36kI&quot; name=&quot;Page-1&quot;&gt;7ZpbU6MwFMc/TWfWBx0Il7aPbddWZ3Tq6O64rwgpZAykG9KL++k3lKRcQt260mLFOmPpSTiB/y85h4R0jFG4nlBnHtwSD+IO0Lx1x/jeAcA2AP+fGF5Sg9k1U4NPkZea9MzwgP5AYdSEdYE8GBcqMkIwQ/Oi0SVRBF1WsDmUklWx2ozgYqtzx4eK4cF1sGp9RB4LxF3YvVzBFUR+IJo2DE1ceejI2sIQB45HVjmTcdkxRpQQlh6F6xHEiXhSmPS88Y7S7QVQGLF9Tphe9X8G82f262oUo+vIHPoD69xKvSwdvBB3/MNZk4iEyOXmVIj06tmL1ITBNW9wGLAQc4POD2NGyTMcEUwot0Qk4jWHM4RxyeRg5Ef8p8svGXL7cAkpQ7yRgSgIkeclzQxXAWLwYe64SZsr3rW4jZJF5MHkbrTEPYmY6C+6zX+LG+EO4XqnQvpWd95hIQkhoy+8ijih2xOoZGeV6FYZelklyEE3hc0Rnc3fes5w8ANB5A10bIUOl4QhB7ePjVlio3cbZtNV2CgwfK5KIk5Ils7Txqi9JoaIYaJqFjj2F8kCRZFARQfeKpJXaVuxdpnAv2WCkTdIQnXS+bATxzz0FHpwegL0lEidybKbkKpVTgurQgppoxDzobYstlklj2jhjiB+Nar08pSYLKgLRa18mJYnyorMoT5kSsWN+tvb+H8gxheQPYGsSwNml6MDAwOmQuyGuJsc4AbQfcYoZgrCqhidI5gP0FpV8N8rYr8FsvRSiuKWGqC6x4ziQH0A6gAbM6FRQVT794LIgvN4o96AV9C1+Tor5Ed+8s0foy544T2cJV/f7qaP0zPpmV9p6jyteqrwjKbZqY9H99BHJPocY6PftLzqE05OXio69hhFw+vx2cmI3LM/lsi9A8WfCSZPBVCj6U0H8IvUJimv2kMROOpYsfWPFYv6KkdjXPuoyM/bOsCYWcmfMsnjJfbmI1zm7OnniGAaz/CyZ+TIDHyfQt9hfL4KNHyyz1I964MprX+Ngcox0HSSkYuwrQdTSv5NJ42KnPHKVFys0+0gki2zvTov37F+dOAp+I7lKaNfUnbfKblVnomUHR14Sq5XRLp2kQP9i16vJngVvg7NryIgtoofkK/h3gtPcXRocuryZTYpLRF8/7sQmoKo61UIqOlViNkvDSA1j9lVi/yHymP6zhXKthLpNU1EXRqTCwItRQJs0DCSPV4Yfq6c0y2mCrP8HL13zlEc9S/6+c9xM1DVit1n5mibNXFUHTXKsW2zr65eE0fVUZMcZcDOb5JBkZ/sjdHye5kmm80Y9ae/uvfL1JT/rPJgsxrOf0CdM98uko181aTi9qCyy+OpcVTq9HiwOesGzU5hy1ldXMrbAQ/Hhf/MNoKmkTHbTmtc/gU=&lt;/diagram&gt;&lt;/mxfile&gt;"
    id="svg1001"
    sodipodi:docname="db_classification_along_scales.svg"
@@ -40,26 +40,26 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
+     inkscape:window-width="2400"
+     inkscape:window-height="1271"
      id="namedview1003"
      showgrid="false"
      fit-margin-left="10"
      fit-margin-top="10"
      fit-margin-bottom="10"
      fit-margin-right="10"
-     inkscape:zoom="0.99757281"
-     inkscape:cx="483.16604"
-     inkscape:cy="117.0444"
+     inkscape:zoom="1.410781"
+     inkscape:cx="153.14188"
+     inkscape:cy="123.23471"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g2212">
+     inkscape:current-layer="layer1">
     <inkscape:grid
        type="xygrid"
        id="grid1056"
-       originx="56.850005"
-       originy="-82.52327" />
+       originx="56.850004"
+       originy="-75.727387" />
   </sodipodi:namedview>
   <defs
      id="defs833">
@@ -275,8 +275,8 @@
        id="rect2476" />
     <rect
        id="rect2306-2-8-5-4-2"
-       height="41.820805"
-       width="120.50063"
+       height="41.111978"
+       width="129.00656"
        y="272.3985"
        x="139.84779" />
     <rect
@@ -455,8 +455,8 @@
        id="rect234" />
     <rect
        id="rect2537-2"
-       height="48.909081"
-       width="128.29773"
+       height="29.361635"
+       width="262.62375"
        y="272.3985"
        x="139.84779" />
     <rect
@@ -471,7 +471,7 @@
      id="layer1"
      inkscape:label="coordinates"
      style="display:inline"
-     transform="translate(56.850013,-82.523274)">
+     transform="translate(56.850013,-75.727391)">
     <text
        xml:space="preserve"
        id="text2304"
@@ -544,21 +544,21 @@
          y="282.54573"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Regional</tspan></tspan></text>
     <text
-       transform="translate(-75.334218,4.25731)"
+       transform="translate(-79.902895,4.25731)"
        style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2306-2-8-5-4-2);display:inline;fill:#010b13;fill-opacity:1;"
        id="text2304-9-6-6-5-2"
        xml:space="preserve"><tspan
-         x="181.58208"
+         x="185.83501"
          y="282.54573"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Single
 </tspan></tspan><tspan
-         x="144.49233"
+         x="148.74526"
          y="295.87905"><tspan
            style="font-size:13.3333px;fill:#010b13;fill-opacity:1">Taxonomic Group
 </tspan></tspan><tspan
-         x="164.37509"
+         x="141.28759"
          y="309.21236"><tspan
-           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">(e.g. plants)</tspan></tspan></text>
+           style="font-size:13.3333px;fill:#010b13;fill-opacity:1">(e.g. vascular plants)</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2529"
@@ -596,7 +596,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Database Types"
-     transform="translate(56.850013,-82.523274)"
+     transform="translate(56.850013,-75.727391)"
      style="display:inline">
     <g
        id="g2172"
@@ -618,9 +618,9 @@
            x="95.20424"
            y="36.936358"><tspan
              style="font-size:13.3333px;font-variation-settings:normal;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">LCVP, WorldFlora, </tspan></tspan><tspan
-           x="120.86824"
+           x="124.23411"
            y="50.269655"><tspan
-             style="font-size:13.3333px;font-variation-settings:normal;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">POWO, ...</tspan></tspan></text>
+             style="font-size:13.3333px;font-variation-settings:normal;vector-effect:none;fill:#0b646a;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">POWO...</tspan></tspan></text>
     </g>
     <g
        transform="translate(97.247524,71.376675)"
@@ -648,9 +648,9 @@
            y="36.936358"><tspan
              style="shape-inside:url(#rect1087-0-3-4-5-2-3);fill:#0b646a;fill-opacity:1">COL,
 </tspan></tspan><tspan
-           x="152.38906"
+           x="155.75493"
            y="50.269655"><tspan
-             style="shape-inside:url(#rect1087-0-3-4-5-2-3);fill:#0b646a;fill-opacity:1">GBIF, ...</tspan></tspan></text>
+             style="shape-inside:url(#rect1087-0-3-4-5-2-3);fill:#0b646a;fill-opacity:1">GBIF...</tspan></tspan></text>
     </g>
     <g
        transform="translate(2.37579,70.80981)"
@@ -673,9 +673,9 @@
            y="36.936358"><tspan
              style="baseline-shift:baseline;shape-inside:url(#rect1087-0-3-4);opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stop-color:#000000;stop-opacity:1">GermanSL,
 </tspan></tspan><tspan
-           x="128.5118"
+           x="131.87767"
            y="50.269655"><tspan
-             style="baseline-shift:baseline;shape-inside:url(#rect1087-0-3-4);opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stop-color:#000000;stop-opacity:1">Vascan, ...</tspan></tspan></text>
+             style="baseline-shift:baseline;shape-inside:url(#rect1087-0-3-4);opacity:1;vector-effect:none;fill:#0b646a;fill-opacity:1;stop-color:#000000;stop-opacity:1">Vascan...</tspan></tspan></text>
     </g>
     <g
        transform="translate(97.247524,71.326055)"
@@ -698,9 +698,9 @@
            y="36.936358"><tspan
              style="font-size:13.3333px;fill:#0b646a;fill-opacity:1">TAXREF, 
 </tspan></tspan><tspan
-           x="127.91543"
+           x="131.28131"
            y="50.269655"><tspan
-             style="font-size:13.3333px;fill:#0b646a;fill-opacity:1">FinBIF, ...</tspan></tspan></text>
+             style="font-size:13.3333px;fill:#0b646a;fill-opacity:1">FinBIF...</tspan></tspan></text>
     </g>
     <g
        transform="translate(53.569438,71.326055)"
@@ -748,48 +748,45 @@
            y="36.936358"><tspan
              style="shape-inside:url(#rect1087-0-3-4-5-2);fill:#0b646a;fill-opacity:1">SeaLifeBase,
 </tspan></tspan><tspan
-           x="112.02132"
+           x="115.3872"
            y="50.269655"><tspan
-             style="shape-inside:url(#rect1087-0-3-4-5-2);fill:#0b646a;fill-opacity:1">ZooBank, WoRMS, ...</tspan></tspan></text>
+             style="shape-inside:url(#rect1087-0-3-4-5-2);fill:#0b646a;fill-opacity:1">ZooBank, WoRMS...</tspan></tspan></text>
     </g>
     <g
        id="g324"
-       transform="translate(-12,29.261065)">
-      <text
-         transform="translate(438.13633,-140.61224)"
-         style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect2537-2);display:inline;fill:#010b13;fill-opacity:1;"
-         id="text2535-4"
-         xml:space="preserve"
-         x="-0.59569979"
-         y="0"><tspan
-           x="139.84766"
-           y="282.54573"><tspan
-             style="text-align:start;text-anchor:start">Taxonomic </tspan></tspan><tspan
-           x="139.84766"
-           y="295.87905"><tspan
-             style="text-align:start;text-anchor:start">Reference
-</tspan></tspan><tspan
-           x="139.84766"
-           y="309.21236"><tspan
-             style="text-align:start;text-anchor:start">Database</tspan></tspan></text>
+       transform="translate(-150.33577,-53.940882)">
       <g
-         transform="translate(-363.39576,230.0575)"
-         id="g2190-1"
-         style="display:inline">
-        <rect
-           ry="5.4009566"
-           rx="5.4009566"
-           style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#d8f1f3;fill-opacity:1;stroke:#0b646a;stroke-width:0.528822;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-           id="rect1013-4-8-6"
-           width="48.601917"
-           height="18.930031"
-           x="887.19946"
-           y="-89.083176" />
+         id="g233"
+         transform="translate(-159.63066,-6)">
+        <text
+           transform="translate(378.13633,-128.61224)"
+           style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:justify;white-space:pre;shape-inside:url(#rect2537-2);display:inline;fill:#010b13;fill-opacity:1"
+           id="text2535-4"
+           xml:space="preserve"
+           x="-0.59569979"
+           y="0"><tspan
+             x="139.84766"
+             y="282.54573"><tspan
+               style="text-align:justify;text-anchor:start">Taxonomic Reference Database</tspan></tspan></text>
         <g
-           style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-5);display:inline;fill:#ae4132;fill-opacity:1"
-           id="text1085-5-40-5"
-           transform="translate(374.28599,76.060914)"
-           aria-label="Global Backbone" />
+           transform="translate(-423.39576,228.51586)"
+           id="g2190-1"
+           style="display:inline">
+          <rect
+             ry="5.4009566"
+             rx="5.4009566"
+             style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#d8f1f3;fill-opacity:1;stroke:#0b646a;stroke-width:0.528822;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+             id="rect1013-4-8-6"
+             width="48.601917"
+             height="18.930031"
+             x="887.19946"
+             y="-89.083176" />
+          <g
+             style="font-size:13.3333px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;white-space:pre;shape-inside:url(#rect1087-5);display:inline;fill:#ae4132;fill-opacity:1"
+             id="text1085-5-40-5"
+             transform="translate(374.28599,76.060914)"
+             aria-label="Global Backbone" />
+        </g>
       </g>
     </g>
   </g>
