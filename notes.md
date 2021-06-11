@@ -41,3 +41,8 @@ For plants we have different worldwide references: World of Plant, Plants of the
 A review of tools and strategies for automatic name cleaning could be useful to point to tools used in the literature as well as what is missing.
 
 One idea (Carsten Meyer) because species names are generally thought to refer to the modern concept of the species, is to propagate the uncertainty around certain names, this could be doable if users have access to previous datasets and historical taxonomical references. A species names can thus be resolved into several names and we consider this uncertainty at each step of the analysis.
+
+# BioTIME harmonization
+The script harmonize.R perform the two workflows (called respectivaly torino and bogota). Paths are still relative to my machine. 
+Results from cleaning are saved in the folder biotime_results as csv. Two columns are present in the csv, the "parsed" is the input name as obtained using rgnparser on BioTIME species names. The second column is the match in the specific database.
+*biotime_common.csv* is the original biotime names with the parsed version from rngparser and the class and phylum to which they belong obtained using rgbif. The last colmn "common" refer to how the high taxonomies are referred (e.g. "vascular plants" for "Trachephyta").
