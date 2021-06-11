@@ -41,3 +41,8 @@ The `figures` contains different figues made using draw.io (now diagrams.net) at
 The `notes.md` contains some notes taken from the first taxonomic harmonization workshop.
 
 The `retrieve_pkgs.R` file tries to automatically retrieve taxonomic packages from CRAN and other sources automatically through some name matching. **/!\ NB: This is highly experimental and unfinished /!\**.
+
+# BioTIME harmonization
+The script harmonize.R perform the two workflows (called respectivaly torino and bogota). Paths are still relative to my machine. 
+Results from cleaning are saved in the folder biotime_results as csv. Two columns are present in the csv, the "parsed" is the input name as obtained using rgnparser on BioTIME species names. The second column is the match in the specific database.
+*biotime_common.csv* is the original biotime names with the parsed version from rngparser and the class and phylum to which they belong obtained using rgbif. The last colmn "common" refer to how the high taxonomies are referred (e.g. "vascular plants" for "Trachephyta").
