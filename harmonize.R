@@ -26,18 +26,18 @@ assign_group <- function(x){
 biotime <- read_csv("~/Documents/databases/biotime.txt", col_names = "BioTIME")
 biotime %<>% mutate(parsed = gn_parse_tidy(BioTIME)$canonicalsimple)
 
+cl <- makeCluster(6) #parallize operation thought the whole script
+
 #============================
 # TORINO PIPELINE
 #============================
 
 # get taxonomic class
-cl <- makeCluster(6)
 classes <- parSapply(
   cl,
   biotime$parsed,
   function(x) rgbif::name_backbone(x, strict = FALSE)$class #no fuzzy
 )
-stopCluster(cl)
 classes <- tibble(parsed = names(classes), class = classes) %>%
   unnest(cols = class)
 biotime %<>% left_join(classes %>% distinct_all())
@@ -65,7 +65,6 @@ biotime %<>% left_join(
                                     }))
   )
 write_csv(biotime, "~/Documents/biotime_common.csv")
-stopCluster(cl)
 
 # harmonizing against databases ---------------------
 d <- read_csv("~/Documents/biotime_common.csv")
@@ -92,7 +91,6 @@ lcvp %>%
 fishes <- d %>% 
   filter(common == "fishes") %>%
   select(parsed)
-cl <- makeCluster(6)
 fishbase <- parSapply(
    cl,
    fishes$parsed,
@@ -124,14 +122,13 @@ gbif <- parSapply(
   unmatched,
   name_backbone
 )
-stopCluster(cl)
 bind_rows(gbif) %>%
    mutate(parsed = unmatched,
           common = modify(class, assign_group)) %>%
    transmute(parsed, gbif = canonicalName) %>%
    write_csv("~/Documents/torino_gbif.csv")
 
-# GBIF + combine results --------------------
+# combine results --------------------
 biotime <- read_csv("~/Documents/biotime_common.csv")
 plants <- read_csv("~/Documents/torino_lcvp.csv")
 fishes <- read_csv("~/Documents/torino_fishbase.csv")
@@ -178,8 +175,7 @@ res %>% write_csv("~/Documents/torino_final.csv")
 # BOGOTA PIPELINE
 #============================
 d <- read_csv("~/Documents/biotime_common.csv") %>%
-   select(-class, -phylum, -common)
-cl <- makeCluster(6)
+   select(-class, -phylum, -common) #not needed in this pipeline
 lcvp <- parLapply(
    cl,
    d$parsed,
@@ -189,25 +185,76 @@ lcvp <- parLapply(
    }
 )
 lcvp <- bind_rows(lcvp[which(!is.na(lcvp))])
-write_csv(lcvp, "~/Documents/bogota_lcvp.csv")
+lcvp %>%
+   tibble() %>%
+   transmute(parsed = Submitted_Name,
+             lcvp = LCVP_Accepted_Taxon) %>%
+   distinct_all() %>%
+   arrange(parsed, lcvp) %>%
+   group_by(parsed) %>%
+   slice(1) %>%
+   ungroup() %>%
+   write_csv("~/Documents/bogota_lcvp.csv")
+
+# fishses
 fishbase <- parSapply(
    cl,
    fishes$parsed,
    function(x) rfishbase::validate_names(x)[1]
 )
-stopCluster(cl)
-#============================
-# GBIF PIPELINE
-#============================
+fishbase <- fishes %>% mutate(fishbase = fishbase)
+write_csv(fishbase, "~/Documents/bogota_fishbase")
 
-d <- read_csv("~/Documents/biotime_common.csv")
-plants <- d %>% 
-  filter(common == "vascular plants") %>% 
-  pull(parsed)
-fishes <- d %>% 
-  filter(common == "fishes") %>%
-  select(parsed)
-plants <- tibble(parsed = plants,
-                 GBIF = name_backbone(plants))
-fishes <- tibble(parsed = fishes,
-                 GBIF = name_backbone(fishes))
+# birds
+birds <- d %>%
+   filter(common == "birds") %>%
+   pull(parsed)
+ebird <- parSapply(
+    cl,
+    birds,
+    function(x) tryCatch(rebird::species_code(x),
+                         error = function(e) NA)
+)
+birds <- tibble(parsed = birds, ebird = ebird)
+write_csv(birds, "~/Documents/bogota_ebird.csv")
+
+stopCluster(cl)
+
+# combine results --------------------
+biotime <- read_csv("~/Documents/biotime_common.csv")
+plants <- read_csv("~/Documents/torino_lcvp.csv")
+fishes <- read_csv("~/Documents/torino_fishbase.csv")
+birds <- read_csv("~/Documents/torino_ebird.csv")
+
+res <- biotime %>%  
+  select(-class, -phylum, -BioTIME) %>%
+  distinct_all() %>%
+  left_join(plants %>% distinct_all()) %>%
+  left_join(fishes %>% distinct_all()) %>%
+  left_join(birds %>% distinct_all()) %>%
+  mutate(match = pmap(list(lcvp, fishbase, ebird), function(x, y, z) {
+    if (!is.na(x))
+       "LCVP"
+    else if (!is.na(y))
+       "FishBase"
+    else if (!is.na(z))
+       "eBird"
+    else
+       NA
+    }) %>% unlist()) %>%
+  select(-lcvp, -fishbase, -ebird) %>%
+  mutate(matched = ifelse(is.na(match), FALSE, TRUE)) %>%
+  distinct_all() %>%
+  group_by(match, common) %>%
+  tally() %>%
+  pivot_wider(names_from = match, values_from = n) %>%
+  mutate(unmatched = `NA`) %>%
+  select(-`NA`)
+
+res %>% 
+   pivot_longer(cols = 2:6) %>%
+   pull(value) %>%
+   sum(na.rm = TRUE)
+length(unique(biotime$parsed))
+
+res %>% write_csv("~/Documents/bogota_final.csv")
