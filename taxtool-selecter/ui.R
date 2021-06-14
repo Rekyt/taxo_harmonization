@@ -15,7 +15,7 @@ fluidPage(
                ),
                column(
                  width = 8L,
-                 visNetwork::visNetworkOutput("full_network_interactive")
+                 visNetwork::visNetworkOutput("full_network_interactive", height = "800px")
                )
              )
     )

@@ -11,8 +11,16 @@ shinyServer(function(input, output, session) {
     options = list(target = "row")
   )
   
+  
+  # legend preparation
+  ledges <- data.frame(color = c("97C2FC", "lawngreen"), 
+                       label = c("Gives to", "Takes from"), arrows = c("to", "from"), 
+                       font.align = "top")
+  
+  
   output$full_network_interactive <-  visNetwork::renderVisNetwork(
     visNetwork(all_nodes, all_edges) %>% 
+      
       visGroups(groupname = "db", shape = "dot", color = list(
         background = "lawngreen",
         border = "limegreen",
@@ -25,12 +33,13 @@ shinyServer(function(input, output, session) {
         border = "#2B7CE9",
         highlight = list(
           background = "#97C2FC",
-            border = "white"
+          border = "white"
         ))) %>%
+      
       visEdges(
-        # color = list(highlight = "blue", hover = "blue"), # color is fixed, does not change with group
         arrows = "to"
       ) %>%
+      
       visInteraction(dragNodes = TRUE, 
                      dragView = TRUE, 
                      zoomView = TRUE,
@@ -38,17 +47,19 @@ shinyServer(function(input, output, session) {
                      hideEdgesOnDrag = TRUE,
                      hideNodesOnDrag = FALSE,
                      navigationButtons = TRUE,
+                     tooltipStay = 60000L,
                      tooltipDelay = 300L) %>%
       visOptions(
         # selectedBy = "group", # Add a dropdown menu in which to select the group value that we want highlighted. Any column called "group"
         highlightNearest = list(enabled = TRUE, algorithm = "hierarchical",
-                                degree = list(from = 1, to = 1), hover = TRUE),  #, hideColor = "rgba(0,0,0,0)" # secondary edges are hidden by usinf algo = "hierarchical" and degree = list(from = 1, to = 1)
+                                degree = list(from = 1, to = 1), hover = FALSE),  #, hideColor = "rgba(0,0,0,0)" # secondary edges are hidden by usinf algo = "hierarchical" and degree = list(from = 1, to = 1)
         nodesIdSelection = TRUE
       ) %>%
       visLegend(
         enabled = TRUE,
         useGroups = TRUE,
-        zoom = FALSE) %>%
+        zoom = FALSE,
+        addEdges =  ledges) %>%
       visLayout(randomSeed = 42L)
   )
   
