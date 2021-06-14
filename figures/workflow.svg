@@ -22,6 +22,76 @@
   <defs
      id="defs4">
     <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1908"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1663"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutL"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1778"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Sstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Sstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1648"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.2) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1657"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1899"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1645"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
        inkscape:isstock="true"
        style="overflow:visible"
        id="marker13838"
@@ -1360,6 +1430,21 @@
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
          id="path6678-2-7-5" />
     </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker1908-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1663-9"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1368,11 +1453,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="299.53661"
-     inkscape:cy="187.05113"
+     inkscape:zoom="4"
+     inkscape:cx="272.1436"
+     inkscape:cy="70.5836"
      inkscape:document-units="mm"
-     inkscape:current-layer="g2172"
+     inkscape:current-layer="g13711-0"
      inkscape:window-width="1920"
      inkscape:window-height="966"
      inkscape:window-x="0"
@@ -1386,7 +1471,7 @@
      inkscape:grid-points="true"
      inkscape:grid-bbox="true"
      inkscape:guide-points="true"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-maximized="1"
      inkscape:snap-text-baseline="false">
@@ -1453,7 +1538,7 @@
        id="guide13701"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="264.56693,52.913386"
+       position="293.07031,62.390625"
        orientation="0,1"
        id="guide13760"
        inkscape:locked="false" />
@@ -1494,24 +1579,53 @@
        transform="translate(-19.161706,-11.587979)"
        id="g2172">
       <rect
-         style="opacity:1;fill:#ffffff;fill-opacity:0.96226418;stroke:none;stroke-width:0.99127179;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#ffffff;fill-opacity:0.96226418;stroke:none;stroke-width:1.13672018;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect7998"
-         width="466.36658"
-         height="300.33173"
-         x="-10.215717"
-         y="-21.275723"
+         width="541.16809"
+         height="340.34393"
+         x="18.702684"
+         y="12.855833"
          rx="0"
          ry="0"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
          inkscape:export-ydpi="300" />
       <rect
-         style="opacity:1;fill:#37b1c5;fill-opacity:0.16509435;stroke:none;stroke-width:2.05237412;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="display:inline;opacity:1;fill:#37b1c5;fill-opacity:0.16509435;stroke:none;stroke-width:1.46240151;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect3736-8-1"
+         width="309.92328"
+         height="156.88884"
+         x="145.44751"
+         y="12.855833"
+         rx="0"
+         ry="0"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <g
+         style="display:inline;fill:#d6b300;fill-opacity:0.35046764"
+         id="g8044-2"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         transform="matrix(0.87458784,0,0,0.38045194,129.37048,162.84317)">
+        <rect
+           ry="0"
+           rx="0"
+           y="17.118233"
+           x="18.702684"
+           height="303.68585"
+           width="84.152237"
+           id="rect3736-1"
+           style="opacity:1;fill:#d6b300;fill-opacity:0.35046764;stroke:none;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+      <rect
+         style="opacity:1;fill:#37b1c5;fill-opacity:0.16509435;stroke:none;stroke-width:1.09543574;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect3736-8"
-         width="352.84967"
-         height="271.41656"
-         x="103.30122"
-         y="13.314857"
+         width="236.92326"
+         height="115.15399"
+         x="219.22763"
+         y="169.57741"
          rx="0"
          ry="0"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
@@ -1529,7 +1643,7 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="105.23161"
+         x="149.23163"
          y="22.52153"
          id="text1818-8-5"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
@@ -1537,9 +1651,9 @@
          inkscape:export-ydpi="300"><tspan
            sodipodi:role="line"
            id="tspan1816-2-3"
-           x="105.23161"
+           x="149.23163"
            y="22.52153"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Taxa-specific global references</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Match species names with taxon-specific references</tspan></text>
       <g
          id="g8044"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
@@ -1552,40 +1666,92 @@
            y="17.118233"
            x="18.702684"
            height="303.68585"
-           width="84.152237"
+           width="126.35483"
            id="rect3736"
-           style="opacity:1;fill:#eb6676;fill-opacity:0.16509435;stroke:none;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+           style="opacity:1;fill:#eb6676;fill-opacity:0.16509435;stroke:none;stroke-width:1.22535825;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
         <text
            id="text1818-8"
            y="26.52153"
            x="24.442646"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-           xml:space="preserve"><tspan
+           xml:space="preserve"
+           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
              y="26.52153"
              x="24.442646"
              id="tspan1816-2"
-             sodipodi:role="line">Preprocessing</tspan></text>
+             sodipodi:role="line">Preprocessing species names</tspan></text>
+        <text
+           id="text1818-8-2"
+           y="200.09073"
+           x="148.03339"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880003"
+           xml:space="preserve"
+           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880003"
+             y="200.09073"
+             x="148.03339"
+             sodipodi:role="line"
+             id="tspan1526">Assign species to</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880003"
+             y="209.57072"
+             x="148.03339"
+             sodipodi:role="line"
+             id="tspan1528">higher taxonomic </tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880003"
+             y="219.05074"
+             x="148.03339"
+             sodipodi:role="line"
+             id="tspan2047">groups</tspan></text>
+        <rect
+           ry="0"
+           rx="0"
+           y="17.118233"
+           x="452.75436"
+           height="303.68585"
+           width="104.55016"
+           id="rect3736-5"
+           style="display:inline;opacity:1;fill:#d1a2e5;fill-opacity:0.16509435;stroke:none;stroke-width:1.11462688;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <text
+           id="text1818-8-7"
+           y="26.59701"
+           x="456.19904"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880003"
+           xml:space="preserve"
+           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880003"
+             y="26.59701"
+             x="456.19904"
+             sodipodi:role="line"
+             id="tspan1588">Resolve unmatched names</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880003"
+             y="36.077011"
+             x="456.19904"
+             sodipodi:role="line"
+             id="tspan2049">with global references</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880003"
+             y="45.557014"
+             x="456.19904"
+             sodipodi:role="line"
+             id="tspan2045">and/or meta-catalogues</tspan></text>
       </g>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="32.80225"
-         y="139.30164"
-         id="text1818"
-         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"><tspan
-           sodipodi:role="line"
-           id="tspan1816"
-           x="32.80225"
-           y="139.30164"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">BioTIME</tspan></text>
       <rect
-         y="140.58519"
-         x="25.088758"
-         height="59.32999"
-         width="42.023899"
+         y="133.33519"
+         x="22.338758"
+         height="73.829987"
+         width="45.023899"
          id="rect1013"
          style="opacity:1;vector-effect:none;fill:#acbdeb;fill-opacity:1;stroke:#323232;stroke-width:0.83539104;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          rx="8.5320015"
@@ -1631,8 +1797,8 @@
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path2733-7"
-         d="m 124.00032,141.44275 c -0.15696,-20.80241 4.10276,-39.63659 37.79527,-45.35433"
-         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2743-2)" />
+         d="M 124.00032,141.44275 C 123.98089,95.93977 227.59057,95.701294 252.60536,95.97819"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.90000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6680)"
          d="m 286.67194,218.99315 h 31.81365"
@@ -1713,141 +1879,197 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="68.580276"
-         y="168.27361"
+         x="67.873169"
+         y="167.56651"
          id="text1818-1"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
          inkscape:export-ydpi="300"><tspan
            sodipodi:role="line"
            id="tspan1816-9"
-           x="68.580276"
-           y="168.27361"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">rgnparser</tspan></text>
+           x="67.873169"
+           y="167.56651"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.56880009">rgnparser</tspan></text>
       <g
-         id="g4961"
+         style="fill:#229c26;fill-opacity:1;stroke:#323232;stroke-opacity:1"
+         id="g4162"
+         transform="matrix(0.37735361,0,0,0.37735361,127.45655,168.15262)"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
          inkscape:export-ydpi="300">
-        <g
-           transform="matrix(0.37735361,0,0,0.37735361,127.45655,168.15262)"
-           id="g4162"
-           style="fill:#229c26;fill-opacity:1;stroke:#323232;stroke-opacity:1">
-          <rect
-             y="119.41801"
-             x="310.71384"
-             height="32.447731"
-             width="110.41507"
-             id="rect1013-5-2-6"
-             style="display:inline;opacity:1;vector-effect:none;fill:#229c26;fill-opacity:0.72169812;stroke:#323232;stroke-width:1.46869004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             rx="15"
-             ry="15" />
-        </g>
-        <g
-           transform="matrix(0.37735361,0,0,0.37735361,127.45655,171.86752)"
-           id="g4156"
-           style="fill:#e2b765;fill-opacity:1;stroke:#323232;stroke-opacity:1">
-          <rect
-             y="154.57974"
-             x="310.71384"
-             height="32.877796"
-             width="109.985"
-             id="rect1013-5-2-6-7"
-             style="display:inline;opacity:1;vector-effect:none;fill:#e2b765;fill-opacity:1;stroke:#323232;stroke-width:1.46869004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             rx="15"
-             ry="15" />
-          <g
-             id="g3988"
-             transform="translate(178.66295,-24.834446)"
-             style="fill:#e2b765;fill-opacity:1;stroke:#323232;stroke-opacity:1" />
-        </g>
-        <g
-           transform="matrix(0.37735361,0,0,0.37735361,127.45655,176.23563)"
-           id="g4149"
-           style="fill:#2d477c;fill-opacity:0.495283;stroke:#323232;stroke-opacity:1">
-          <rect
-             y="187.02747"
-             x="310.71384"
-             height="32.017651"
-             width="110.41507"
-             id="rect1013-5-2-6-7-8"
-             style="display:inline;opacity:1;vector-effect:none;fill:#2d477c;fill-opacity:0.495283;stroke:#323232;stroke-width:1.46869004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             rx="15"
-             ry="15" />
-        </g>
         <rect
-           ry="5.6352658"
-           rx="5.6603041"
-           style="display:inline;opacity:1;vector-effect:none;fill:#ebebeb;fill-opacity:1;stroke:#919191;stroke-width:0.55421549;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect1013-5-2-6-7-8-6"
-           width="41.827812"
-           height="11.919688"
-           x="244.70554"
-           y="263.7771" />
-        <g
-           transform="translate(-44,28.486867)"
-           id="g1640">
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-             x="300.11908"
-             y="193.04698"
-             id="text1818-1-8"
-             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-             inkscape:export-xdpi="300"
-             inkscape:export-ydpi="300"><tspan
-               sodipodi:role="line"
-               id="tspan1816-9-8"
-               x="300.11908"
-               y="193.04698"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Plants</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-             x="301.71628"
-             y="210.20937"
-             id="text1818-1-8-4"
-             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-             inkscape:export-xdpi="300"
-             inkscape:export-ydpi="300"><tspan
-               sodipodi:role="line"
-               id="tspan1816-9-8-3"
-               x="301.71628"
-               y="210.20937"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Birds</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-             x="299.90656"
-             y="226.52025"
-             id="text1818-1-8-7"
-             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-             inkscape:export-xdpi="300"
-             inkscape:export-ydpi="300"><tspan
-               sodipodi:role="line"
-               id="tspan1816-9-8-1"
-               x="299.90656"
-               y="226.52025"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Fishes</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-             x="300.43954"
-             y="242.78477"
-             id="text1818-1-8-0"
-             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-             inkscape:export-xdpi="300"
-             inkscape:export-ydpi="300"><tspan
-               sodipodi:role="line"
-               id="tspan1816-9-8-9"
-               x="300.43954"
-               y="242.78477"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Other</tspan></text>
-        </g>
+           ry="15"
+           rx="15"
+           style="display:inline;opacity:1;vector-effect:none;fill:#229c26;fill-opacity:0.72169812;stroke:#323232;stroke-width:1.46869004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect1013-5-2-6"
+           width="110.41507"
+           height="32.447731"
+           x="310.71384"
+           y="119.41801" />
       </g>
+      <g
+         style="fill:#e2b765;fill-opacity:1;stroke:#323232;stroke-opacity:1"
+         id="g4156"
+         transform="matrix(0.37735361,0,0,0.37735361,127.45655,171.86752)"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <rect
+           ry="15"
+           rx="15"
+           style="display:inline;opacity:1;vector-effect:none;fill:#e2b765;fill-opacity:1;stroke:#323232;stroke-width:1.46869004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect1013-5-2-6-7"
+           width="109.985"
+           height="32.877796"
+           x="310.71384"
+           y="154.57974" />
+        <g
+           style="fill:#e2b765;fill-opacity:1;stroke:#323232;stroke-opacity:1"
+           transform="translate(178.66295,-24.834446)"
+           id="g3988" />
+      </g>
+      <g
+         style="fill:#2d477c;fill-opacity:0.495283;stroke:#323232;stroke-opacity:1"
+         id="g4149"
+         transform="matrix(0.37735361,0,0,0.37735361,127.45655,176.23563)"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <rect
+           ry="15"
+           rx="15"
+           style="display:inline;opacity:1;vector-effect:none;fill:#2d477c;fill-opacity:0.495283;stroke:#323232;stroke-width:1.46869004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect1013-5-2-6-7-8"
+           width="110.41507"
+           height="32.017651"
+           x="310.71384"
+           y="187.02747" />
+      </g>
+      <rect
+         y="263.7771"
+         x="244.70554"
+         height="11.919688"
+         width="41.827812"
+         id="rect1013-5-2-6-7-8-6"
+         style="display:inline;opacity:1;vector-effect:none;fill:#ebebeb;fill-opacity:1;stroke:#919191;stroke-width:0.55421549;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         rx="5.6603041"
+         ry="5.6352658"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="256.11908"
+         y="221.53384"
+         id="text1818-1-8"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           id="tspan1816-9-8"
+           x="256.11908"
+           y="221.53384"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Plants</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="257.71628"
+         y="238.69623"
+         id="text1818-1-8-4"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           id="tspan1816-9-8-3"
+           x="257.71628"
+           y="238.69623"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Birds</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="255.90656"
+         y="255.00711"
+         id="text1818-1-8-7"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           id="tspan1816-9-8-1"
+           x="255.90656"
+           y="255.00711"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Fishes</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="256.43954"
+         y="271.27164"
+         id="text1818-1-8-0"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           id="tspan1816-9-8-9"
+           x="256.43954"
+           y="271.27164"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Other</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="45.586407"
+         y="140.86957"
+         id="text1818-1-8-3"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           id="tspan1816-9-8-6"
+           x="46.374432"
+           y="140.86957"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009">Raw list of </tspan><tspan
+           sodipodi:role="line"
+           x="46.374432"
+           y="148.71358"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1268">species </tspan><tspan
+           sodipodi:role="line"
+           x="45.586407"
+           y="156.55757"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1931">names</tspan><tspan
+           sodipodi:role="line"
+           x="45.586407"
+           y="164.40158"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan2051">(including</tspan><tspan
+           sodipodi:role="line"
+           x="45.586407"
+           y="172.24559"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan2063">abbreviations,</tspan><tspan
+           sodipodi:role="line"
+           x="46.374432"
+           y="180.08958"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan2053">authors, and </tspan><tspan
+           sodipodi:role="line"
+           x="45.586407"
+           y="187.93359"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan2055">without higher</tspan><tspan
+           sodipodi:role="line"
+           x="45.586407"
+           y="195.7776"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan2057">taxonomic</tspan><tspan
+           sodipodi:role="line"
+           x="45.586407"
+           y="203.6216"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan2069">groups)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009;"
          x="287.19229"
          y="216.09354"
          id="text1818-1-79"
@@ -1858,21 +2080,21 @@
            id="tspan1816-9-7"
            x="287.19229"
            y="216.09354"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">lcvplants</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.56880009;">lcvplants</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="217.73299"
-         y="94.162964"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.2567997px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="262.67236"
+         y="94.516518"
          id="text1818-1-79-4"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
          inkscape:export-ydpi="300"><tspan
            sodipodi:role="line"
            id="tspan1816-9-7-9"
-           x="217.73299"
-           y="94.162964"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">rebird</tspan></text>
+           x="262.67236"
+           y="94.516518"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.2567997px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.56880009">rebird</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
@@ -1886,11 +2108,11 @@
            id="tspan1816-9-7-7"
            x="286.72723"
            y="250.66733"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">rfishbase</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.56880009">rfishbase</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="292.82437"
+         x="291.05664"
          y="267.71106"
          id="text1818-1-79-0"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
@@ -1898,9 +2120,9 @@
          inkscape:export-ydpi="300"><tspan
            sodipodi:role="line"
            id="tspan1816-9-7-6"
-           x="292.82437"
+           x="291.05664"
            y="267.71106"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">rgbif</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.56880009">rgbif</tspan></text>
       <rect
          y="215.33704"
          x="164.39062"
@@ -1915,22 +2137,25 @@
          inkscape:export-ydpi="300" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="208.10777"
-         y="242.74541"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="145.19664"
+         y="238.21291"
          id="text1818-1-0"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
          inkscape:export-ydpi="300"><tspan
            sodipodi:role="line"
            id="tspan1816-9-6"
-           x="208.10777"
-           y="242.74541"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">rgbif</tspan></text>
+           x="145.19664"
+           y="238.21291"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.56880009">rgbif</tspan></text>
       <g
          style="fill:#229c26;fill-opacity:1;stroke:#323232;stroke-opacity:1"
          id="g4162-4"
-         transform="matrix(0.37735361,0,0,0.37735361,203.45655,168.15262)">
+         transform="matrix(0.37735361,0,0,0.37735361,203.45655,168.15262)"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
         <rect
            ry="15"
            rx="15"
@@ -1944,7 +2169,10 @@
       <g
          style="fill:#e2b765;fill-opacity:1;stroke:#323232;stroke-opacity:1"
          id="g4156-9"
-         transform="matrix(0.37735361,0,0,0.37735361,203.45655,171.86752)">
+         transform="matrix(0.37735361,0,0,0.37735361,203.45655,171.86752)"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
         <rect
            ry="15"
            rx="15"
@@ -1962,7 +2190,10 @@
       <g
          style="fill:#2d477c;fill-opacity:0.495283;stroke:#323232;stroke-opacity:1"
          id="g4149-2"
-         transform="matrix(0.37735361,0,0,0.37735361,203.45655,176.23563)">
+         transform="matrix(0.37735361,0,0,0.37735361,203.45655,176.23563)"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
         <rect
            ry="15"
            rx="15"
@@ -1981,7 +2212,10 @@
          id="rect1013-5-2-6-7-8-6-1"
          style="display:inline;opacity:1;vector-effect:none;fill:#ebebeb;fill-opacity:1;stroke:#919191;stroke-width:0.55421549;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          rx="5.6603041"
-         ry="5.6352611" />
+         ry="5.6352611"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
@@ -2040,7 +2274,10 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Other (GBIF)</tspan></text>
       <g
          id="g10647"
-         transform="translate(-0.70168886)">
+         transform="translate(47.298311)"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
         <rect
            inkscape:export-ydpi="300"
            inkscape:export-xdpi="300"
@@ -2060,15 +2297,35 @@
            inkscape:export-xdpi="300"
            inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
            id="text1818-1-8-8-0"
-           y="49.116428"
-           x="255.08047"
+           y="33.616428"
+           x="262.22678"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
            xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="49.116428"
-             x="255.08047"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="33.616428"
+             x="263.0148"
              id="tspan1816-9-8-8-1"
-             sodipodi:role="line">LCVP</tspan></text>
+             sodipodi:role="line">Species </tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="41.460434"
+             x="262.22678"
+             sodipodi:role="line"
+             id="tspan1949">names</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="49.304436"
+             x="263.0148"
+             sodipodi:role="line"
+             id="tspan1945">matched </tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="57.148441"
+             x="262.22678"
+             sodipodi:role="line"
+             id="tspan1951">with</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="64.992447"
+             x="262.22678"
+             sodipodi:role="line"
+             id="tspan1947">LCVP</tspan></text>
       </g>
       <g
          id="g7505"
@@ -2106,35 +2363,7 @@
          height="59.32999"
          width="42.023899"
          id="rect1013-4-4-0-3"
-         style="display:inline;opacity:1;vector-effect:none;fill:#8a3520;fill-opacity:0.75;stroke:#323232;stroke-width:0.83539104;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         rx="8.5320015"
-         ry="8.5320015"
-         inkscape:transform-center-x="-73.902581"
-         inkscape:transform-center-y="97.771738"
-         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="398.29193"
-         y="213.19342"
-         id="text1818-7"
-         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"><tspan
-           sodipodi:role="line"
-           id="tspan1816-3"
-           x="398.29193"
-           y="213.19342"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Harmonized</tspan></text>
-      <rect
-         y="66.503342"
-         x="164.32748"
-         height="59.32999"
-         width="42.023899"
-         id="rect1013-4-4-0-6"
-         style="display:inline;opacity:1;vector-effect:none;fill:#eb90d0;fill-opacity:0.61792453;stroke:#323232;stroke-width:0.83539104;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="display:inline;opacity:1;vector-effect:none;fill:#b23520;fill-opacity:0.31775701;stroke:#323232;stroke-width:0.83539104;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          rx="8.5320015"
          ry="8.5320015"
          inkscape:transform-center-x="-73.902581"
@@ -2144,40 +2373,49 @@
          inkscape:export-ydpi="300" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker12888)"
-         d="m 206.60536,95.97819 c 25.58449,1.117469 7.72061,0.466592 36.10018,1.377066"
+         d="m 252.60536,95.97819 c 25.58449,1.117469 7.72061,0.466592 36.10018,1.377066"
          id="path8162"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker12888-4)"
-         d="m 206.60536,95.97819 c 21.93634,24.32905 0.52383,48.62917 36.10018,50.79642"
+         d="m 252.60536,95.97819 c 21.93634,24.32905 0.52383,48.62917 36.10018,50.79642"
          id="path8162-04"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker12888-4-8)"
-         d="m 206.60536,95.97819 c 21.93634,-24.32905 0.52383,-45.2211 36.10018,-47.38835"
+         d="m 252.60536,95.97819 c 21.93634,-24.32905 0.52383,-45.2211 36.10018,-47.38835"
          id="path8162-04-0"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="209.80119"
-         y="47.244682"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.2567997px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="254.38702"
+         y="46.537575"
          id="text1818-1-79-8"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
          inkscape:export-ydpi="300"><tspan
            sodipodi:role="line"
            id="tspan1816-9-7-62"
-           x="209.80119"
-           y="47.244682"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">lcvplants</tspan></text>
+           x="254.38702"
+           y="46.537575"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.2567997px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.56880009">lcvplants</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="290.73611"
+         x="289.67548"
          y="234.17264"
          id="text1818-1-79-4-9"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
@@ -2185,12 +2423,15 @@
          inkscape:export-ydpi="300"><tspan
            sodipodi:role="line"
            id="tspan1816-9-7-9-2"
-           x="290.73611"
+           x="289.67548"
            y="234.17264"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">rebird</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.56880009">rebird</tspan></text>
       <g
          id="g10652"
-         transform="translate(1.298311,-22)">
+         transform="translate(29.298311,-22)"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
         <rect
            inkscape:export-ydpi="300"
            inkscape:export-xdpi="300"
@@ -2203,26 +2444,15 @@
            id="rect1013-4-4-0-6-7-5"
            width="33.846313"
            height="42.114998"
-           x="242.70554"
+           x="262.70554"
            y="97.565781" />
-        <text
-           inkscape:export-ydpi="300"
-           inkscape:export-xdpi="300"
-           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-1-8-8-0-7"
-           y="121.20341"
-           x="252.23579"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="121.20341"
-             x="252.23579"
-             id="tspan1816-9-8-8-1-8"
-             sodipodi:role="line">eBird</tspan></text>
       </g>
       <g
          id="g10623"
-         transform="translate(1.298311,-34)">
+         transform="translate(49.298311,-34)"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
         <rect
            inkscape:export-ydpi="300"
            inkscape:export-xdpi="300"
@@ -2241,49 +2471,78 @@
            inkscape:export-ydpi="300"
            inkscape:export-xdpi="300"
            inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-1-8-8-0-9"
-           y="180.64055"
-           x="248.30618"
+           id="text1818-1-8-8-0-2-3"
+           y="165.50414"
+           x="260.60269"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
            xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="180.64055"
-             x="248.30618"
-             id="tspan1816-9-8-8-1-1"
-             sodipodi:role="line">FishBase</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="165.50414"
+             x="261.39072"
+             id="tspan1816-9-8-8-1-15-4"
+             sodipodi:role="line">Species </tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="173.34814"
+             x="260.60269"
+             sodipodi:role="line"
+             id="tspan1949-6-6">names</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="181.19214"
+             x="261.39072"
+             sodipodi:role="line"
+             id="tspan1945-5-6">matched </tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="189.03615"
+             x="260.60269"
+             sodipodi:role="line"
+             id="tspan1951-0-0">with</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+             y="196.88016"
+             x="260.60269"
+             sodipodi:role="line"
+             id="tspan1947-0-2">FishBase</tspan></text>
       </g>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="209.07614"
-         y="151.75801"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.2567997px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="253.2655"
+         y="152.50801"
          id="text1818-1-79-1-8"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
          inkscape:export-ydpi="300"><tspan
            sodipodi:role="line"
            id="tspan1816-9-7-7-3"
-           x="209.07614"
-           y="151.75801"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">rfishbase</tspan></text>
+           x="253.2655"
+           y="152.50801"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.2567997px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.56880009">rfishbase</tspan></text>
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 354.64234,95.97819 c -18.58903,0 -67.11968,0.581818 -76.43828,1.188"
+         d="m 391.85896,95.713025 c -18.58903,0 -56.3363,0.846983 -65.6549,1.453165"
          id="path8162-4"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 327.13363,95.978186 C 275.64171,95.362385 316.07202,148.19956 278.03345,146.77462"
+         d="M 375.13363,95.978186 C 323.64171,95.362385 364.07202,148.19956 326.03345,146.77462"
          id="path8162-04-5"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 327.13363,95.978186 c -49.10018,1.37707 -15.5952,-44.482103 -49.10018,-47.388348"
+         d="m 375.13363,95.978186 c -49.10018,1.37707 -15.5952,-44.482103 -49.10018,-47.388348"
          id="path8162-04-0-9"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <path
          style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6680-2-2-3)"
          d="m 354.64234,95.97819 41.95709,0"
@@ -2299,7 +2558,7 @@
          height="59.32999"
          width="42.023899"
          id="rect1013-4-4-0-3-0"
-         style="display:inline;opacity:1;vector-effect:none;fill:#8a3520;fill-opacity:0.75;stroke:#323232;stroke-width:0.83539104;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="display:inline;opacity:1;vector-effect:none;fill:#b23520;fill-opacity:0.31775704;stroke:#323232;stroke-width:0.83539104;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          rx="8.5320015"
          ry="8.5320015"
          inkscape:transform-center-x="-73.902581"
@@ -2307,26 +2566,15 @@
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
          inkscape:export-ydpi="300" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="397.94174"
-         y="67.567253"
-         id="text1818-7-8"
-         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"><tspan
-           sodipodi:role="line"
-           id="tspan1816-3-1"
-           x="397.94174"
-           y="67.567253"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Harmonized</tspan></text>
       <path
          style="fill:none;stroke:#4b4b4b;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 1;stroke-dashoffset:0;stroke-opacity:1"
          d="m 146.19611,169.98192 309.64255,0"
          id="path12589"
          inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
@@ -2355,197 +2603,476 @@
            x="397.03375"
            y="179.55824"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Workflow 2</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="162.77045"
-         y="306.20499"
-         id="text1818-7-9-1"
+      <g
+         id="g1210"
+         transform="matrix(0.77378094,0,0,0.77378094,27.554676,57.902185)"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"><tspan
-           sodipodi:role="line"
-           id="tspan1816-3-9-20"
-           x="162.77045"
+         inkscape:export-ydpi="300">
+        <text
+           inkscape:export-ydpi="300"
+           inkscape:export-xdpi="300"
+           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+           id="text1818-7-9-1"
            y="306.20499"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Workflow 1</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="162.7966"
-         y="344.12167"
-         id="text1818-7-9-11"
-         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"><tspan
-           sodipodi:role="line"
-           id="tspan1816-3-9-9"
-           x="162.7966"
+           x="162.77045"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
+             y="306.20499"
+             x="162.77045"
+             id="tspan1816-3-9-20"
+             sodipodi:role="line">Workflow 1</tspan></text>
+        <text
+           inkscape:export-ydpi="300"
+           inkscape:export-xdpi="300"
+           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+           id="text1818-7-9-11"
            y="344.12167"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Workflow 2</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="249.30336"
-         y="298.58276"
-         id="text1818-7-9-0"
-         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"><tspan
-           sodipodi:role="line"
-           id="tspan1816-3-9-5"
-           x="249.30336"
+           x="162.7966"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
+             y="344.12167"
+             x="162.7966"
+             id="tspan1816-3-9-9"
+             sodipodi:role="line">Workflow 2</tspan></text>
+        <text
+           inkscape:export-ydpi="300"
+           inkscape:export-xdpi="300"
+           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+           id="text1818-7-9-0"
            y="298.58276"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Matched     Non-matched      %</tspan></text>
-      <g
-         id="g13711"
-         transform="translate(0,7.4918228)">
-        <text
-           inkscape:export-ydpi="300"
-           inkscape:export-xdpi="300"
-           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-7-9-0-8-7"
-           y="306.31131"
-           x="209.84282"
+           x="249.30336"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
            xml:space="preserve"><tspan
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="306.31131"
+             y="298.58276"
+             x="249.30336"
+             id="tspan1816-3-9-5"
+             sodipodi:role="line">Matched     Non-matched</tspan></text>
+        <g
+           id="g13711-0"
+           style="display:inline"
+           transform="translate(0.01807624,7.2442511)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
              x="209.84282"
-             id="tspan1816-3-9-5-5-0"
-             sodipodi:role="line">Plants            4541                 538                89</tspan></text>
-        <text
-           inkscape:export-ydpi="300"
-           inkscape:export-xdpi="300"
-           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-7-9-0-8-7-7"
-           y="313.89148"
-           x="209.8345"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-           xml:space="preserve"><tspan
-             id="tspan13681"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="313.89148"
-             x="209.8345"
-             sodipodi:role="line">Birds                877                 367                70</tspan></text>
-        <text
-           inkscape:export-ydpi="300"
-           inkscape:export-xdpi="300"
-           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-7-9-0-8-7-2"
-           y="321.44507"
-           x="209.8493"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="321.44507"
-             x="209.8493"
-             id="tspan1816-3-9-5-5-0-6"
-             sodipodi:role="line">Fishes            5413               1025               <tspan
-   style="-inkscape-font-specification:'Open Sans, Normal';font-family:'Open Sans';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:5.33333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
-   id="tspan13830"> </tspan>84</tspan></text>
-        <text
-           inkscape:export-ydpi="300"
-           inkscape:export-xdpi="300"
-           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-7-9-0-8-7-29"
-           y="328.99991"
-           x="210.11536"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="328.99991"
-             x="210.11536"
-             id="tspan1816-3-9-5-5-0-0"
-             sodipodi:role="line">Other          25206               2142                92</tspan></text>
-      </g>
-      <g
-         transform="translate(0.01807624,45.32954)"
-         style="display:inline"
-         id="g13711-0">
-        <text
-           inkscape:export-ydpi="300"
-           inkscape:export-xdpi="300"
-           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-7-9-0-8-7-24"
-           y="306.31131"
-           x="209.84282"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
              y="306.31131"
-             x="209.84282"
-             id="tspan1816-3-9-5-5-0-7"
-             sodipodi:role="line">Plants</tspan></text>
-        <text
-           inkscape:export-ydpi="300"
-           inkscape:export-xdpi="300"
-           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-7-9-0-8-7-7-6"
-           y="313.89148"
-           x="209.8345"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-           xml:space="preserve"><tspan
-             id="tspan13681-5"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="313.89148"
+             id="text1818-7-9-0-8-7-24"
+             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"><tspan
+               sodipodi:role="line"
+               id="tspan1816-3-9-5-5-0-7"
+               x="209.84282"
+               y="306.31131"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">LCVP              4567             35003</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
              x="209.8345"
-             sodipodi:role="line">Birds</tspan></text>
-        <text
-           inkscape:export-ydpi="300"
-           inkscape:export-xdpi="300"
-           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-7-9-0-8-7-2-7"
-           y="321.44507"
-           x="209.8493"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="321.44507"
+             y="313.89148"
+             id="text1818-7-9-0-8-7-7-6"
+             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"><tspan
+               sodipodi:role="line"
+               x="209.8345"
+               y="313.89148"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
+               id="tspan13681-5">eBird                878          <tspan
+   style="font-size:6.89256229px"
+   id="tspan2174">   </tspan>38692</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
              x="209.8493"
-             id="tspan1816-3-9-5-5-0-6-1"
-             sodipodi:role="line">Fishes</tspan></text>
-        <text
-           inkscape:export-ydpi="300"
-           inkscape:export-xdpi="300"
-           inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
-           id="text1818-7-9-0-8-7-29-3"
-           y="328.99991"
-           x="210.11536"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
-             y="328.99991"
+             y="321.44507"
+             id="text1818-7-9-0-8-7-2-7"
+             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"><tspan
+               sodipodi:role="line"
+               id="tspan1816-3-9-5-5-0-6-1"
+               x="209.8493"
+               y="321.44507"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Fishbase        5414     <tspan
+   style="font-size:6.89256229px"
+   id="tspan2170">        </tspan>34156</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
              x="210.11536"
-             id="tspan1816-3-9-5-5-0-0-3"
-             sodipodi:role="line">Other</tspan></text>
+             y="328.99991"
+             id="text1818-7-9-0-8-7-29-3"
+             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"><tspan
+               sodipodi:role="line"
+               id="tspan1816-3-9-5-5-0-0-3"
+               x="210.11536"
+               y="334.63574"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009" /></text>
+        </g>
+        <path
+           sodipodi:nodetypes="cc"
+           inkscape:connector-curvature="0"
+           id="path13768"
+           d="m 157.2247,299.11605 186.89417,0.003"
+           style="fill:none;stroke:#000000;stroke-width:0.52768081;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           sodipodi:nodetypes="cc"
+           inkscape:connector-curvature="0"
+           id="path13768-2"
+           d="m 157.22469,375.11605 186.89416,0.003"
+           style="display:inline;fill:none;stroke:#000000;stroke-width:0.52768081;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <g
+           style="display:inline"
+           transform="translate(0.28963887,45.290914)"
+           id="g13711-1">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+             x="209.84282"
+             y="306.31131"
+             id="text1818-7-9-0-8-7-0"
+             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"><tspan
+               sodipodi:role="line"
+               id="tspan1816-3-9-5-5-0-5"
+               x="209.84282"
+               y="306.31131"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Plants            4542                 538                </tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+             x="209.8345"
+             y="313.89148"
+             id="text1818-7-9-0-8-7-7-8"
+             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"><tspan
+               sodipodi:role="line"
+               x="209.8345"
+               y="313.89148"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009"
+               id="tspan13681-55">Birds                877                 367                </tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+             x="209.8493"
+             y="321.44507"
+             id="text1818-7-9-0-8-7-2-0"
+             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"><tspan
+               sodipodi:role="line"
+               id="tspan1816-3-9-5-5-0-6-7"
+               x="209.8493"
+               y="321.44507"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Fishes            5413               1025               <tspan
+   id="tspan13830-3"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333349px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"> </tspan></tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+             x="210.11536"
+             y="328.99991"
+             id="text1818-7-9-0-8-7-29-8"
+             inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300"><tspan
+               sodipodi:role="line"
+               id="tspan1816-3-9-5-5-0-0-2"
+               x="210.11536"
+               y="328.99991"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58400154px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Other          25206               1604          </tspan></text>
+        </g>
       </g>
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.52768081;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 157.2247,299.11605 H 367.70436"
-         id="path13768"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.52768081;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 157.22469,375.11605 H 367.70436"
-         id="path13768-6"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
-         x="316.87286"
-         y="93.020653"
+         x="377.59473"
+         y="75.784927"
          id="text1818-1-79-4-5"
          inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
          inkscape:export-xdpi="300"
          inkscape:export-ydpi="300"><tspan
            sodipodi:role="line"
            id="tspan1816-9-7-9-6"
-           x="316.87286"
-           y="93.020653"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';stroke-width:0.56880009">Remove multiple matches</tspan></text>
+           x="378.38275"
+           y="75.784927"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009">Remove </tspan><tspan
+           sodipodi:role="line"
+           x="378.38275"
+           y="83.628929"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1383">multiple </tspan><tspan
+           sodipodi:role="line"
+           x="377.59473"
+           y="91.472939"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1385">matches</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="124.54303"
+         y="152.7092"
+         id="text1818-1-8-3-8"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           id="tspan1816-9-8-6-5"
+           x="125.33105"
+           y="152.7092"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009">List of </tspan><tspan
+           sodipodi:role="line"
+           x="125.33105"
+           y="160.55321"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1268-3">species </tspan><tspan
+           sodipodi:role="line"
+           x="124.54303"
+           y="168.3972"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1270-3">names</tspan><tspan
+           sodipodi:role="line"
+           x="125.33105"
+           y="176.24121"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1296">without </tspan><tspan
+           sodipodi:role="line"
+           x="125.33105"
+           y="184.08522"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1298">abbreviations </tspan><tspan
+           sodipodi:role="line"
+           x="124.54303"
+           y="191.92921"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1300">and authors</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333349px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="130.48363"
+         y="249.44293"
+         id="text1818-1-8-3-7"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           x="130.48363"
+           y="254.24695"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333349px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1319" /></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="420.07501"
+         y="236.17108"
+         id="text1818-1-8-3-89-1"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           x="420.07501"
+           y="236.17108"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1270-7-2">Harmonized</tspan><tspan
+           sodipodi:role="line"
+           x="420.07501"
+           y="244.01509"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1350-2">list of</tspan><tspan
+           sodipodi:role="line"
+           x="420.07501"
+           y="251.85909"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1352-1">species</tspan><tspan
+           sodipodi:role="line"
+           x="420.07501"
+           y="259.70309"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1354-5">names</tspan></text>
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 252.60536,95.97819 c -3.819,0.15057 5.1246,0.23189 -3.819,0.15057"
+         id="path8162-4-1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="185.02246"
+         y="226.92693"
+         id="text1818-1-8-3-8-3"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           id="tspan1816-9-8-6-5-7"
+           x="185.81049"
+           y="226.92693"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009">List of </tspan><tspan
+           sodipodi:role="line"
+           x="185.81049"
+           y="234.77094"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1268-3-4">species </tspan><tspan
+           sodipodi:role="line"
+           x="185.02246"
+           y="242.61493"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1270-3-1">names</tspan><tspan
+           sodipodi:role="line"
+           x="185.02246"
+           y="250.45894"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1296-1">with high</tspan><tspan
+           sodipodi:role="line"
+           x="185.02246"
+           y="258.30295"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1298-3">taxonomic</tspan><tspan
+           sodipodi:role="line"
+           x="185.02246"
+           y="266.14694"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1300-0">groups</tspan></text>
+      <rect
+         y="140.58519"
+         x="511.08875"
+         height="59.32999"
+         width="42.023899"
+         id="rect1013-9"
+         style="display:inline;opacity:1;vector-effect:none;fill:#acbdeb;fill-opacity:1;stroke:#323232;stroke-width:0.83539104;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         rx="8.5320015"
+         ry="8.5320015"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="531.51672"
+         y="156.19516"
+         id="text1818-1-8-3-89"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           x="531.51672"
+           y="156.19516"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1270-7">Harmonized</tspan><tspan
+           sodipodi:role="line"
+           x="531.51672"
+           y="164.03917"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1350">list of</tspan><tspan
+           sodipodi:role="line"
+           x="531.51672"
+           y="171.88316"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1352">species</tspan><tspan
+           sodipodi:role="line"
+           x="531.51672"
+           y="179.72717"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1354">maximizing</tspan><tspan
+           sodipodi:role="line"
+           x="531.51672"
+           y="187.57118"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1632">matches</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         x="420.12466"
+         y="92.254646"
+         id="text1818-1-8-3-89-2"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           x="420.12466"
+           y="92.254646"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1270-7-7">Harmonized</tspan><tspan
+           sodipodi:role="line"
+           x="420.12466"
+           y="100.09865"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1350-3">list of</tspan><tspan
+           sodipodi:role="line"
+           x="420.12466"
+           y="107.94266"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1352-6">species</tspan><tspan
+           sodipodi:role="line"
+           x="420.12466"
+           y="115.78666"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           id="tspan1354-4">names</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1908)"
+         d="m 441.48124,96.03796 c 39.33142,6.98757 26.18462,72.70166 68.55902,72.99209"
+         id="path1634"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1908-7)"
+         d="m 441.48124,243.50932 c 39.33142,-6.98757 26.18462,-74.18884 68.55902,-74.47927"
+         id="path1634-7"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/eb97ziwi/Pictures/workflow.png"
+         id="text1818-1-8-8-0-2"
+         y="83.754135"
+         x="308.901"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25680113px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.56880009"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           y="83.754135"
+           x="309.68903"
+           id="tspan1816-9-8-8-1-15"
+           sodipodi:role="line">Species </tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           y="91.598137"
+           x="308.901"
+           sodipodi:role="line"
+           id="tspan1949-6">names</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           y="99.442146"
+           x="309.68903"
+           sodipodi:role="line"
+           id="tspan1945-5">matched </tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           y="107.28615"
+           x="308.901"
+           sodipodi:role="line"
+           id="tspan1951-0">with</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.06720018px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle;stroke-width:0.56880009"
+           y="115.13015"
+           x="308.901"
+           sodipodi:role="line"
+           id="tspan1947-0">eBird</tspan></text>
     </g>
   </g>
 </svg>

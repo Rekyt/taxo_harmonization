@@ -26,7 +26,7 @@ assign_group <- function(x){
 biotime <- read_csv("~/Documents/databases/biotime.txt", col_names = "BioTIME")
 biotime %<>% mutate(parsed = gn_parse_tidy(BioTIME)$canonicalsimple)
 
-cl <- makeCluster(6) #parallize operation thought the whole script
+cl <- makeCluster(5) #parallize operation thought the whole script
 
 #============================
 # TORINO PIPELINE
@@ -199,51 +199,61 @@ lcvp %>%
 # fishses
 fishbase <- parSapply(
    cl,
-   fishes$parsed,
+   d$parsed,
    function(x) rfishbase::validate_names(x)[1]
 )
-fishbase <- fishes %>% mutate(fishbase = fishbase)
-write_csv(fishbase, "~/Documents/bogota_fishbase")
+fishbase <- tibble(parsed = d$parsed, fishbase = fishbase)
+write_csv(fishbase, "~/Documents/bogota_fishbase.csv")
 
 # birds
-birds <- d %>%
-   filter(common == "birds") %>%
-   pull(parsed)
 ebird <- parSapply(
     cl,
-    birds,
+    d$parsed,
     function(x) tryCatch(rebird::species_code(x),
                          error = function(e) NA)
 )
-birds <- tibble(parsed = birds, ebird = ebird)
+birds <- tibble(parsed = d$parsed, ebird = ebird)
 write_csv(birds, "~/Documents/bogota_ebird.csv")
-
-stopCluster(cl)
 
 # combine results --------------------
 biotime <- read_csv("~/Documents/biotime_common.csv")
-plants <- read_csv("~/Documents/torino_lcvp.csv")
-fishes <- read_csv("~/Documents/torino_fishbase.csv")
-birds <- read_csv("~/Documents/torino_ebird.csv")
+plants <- read_csv("~/Documents/bogota_lcvp.csv")
+fishes <- read_csv("~/Documents/bogota_fishbase.csv")
+birds <- read_csv("~/Documents/bogota_ebird.csv")
 
 res <- biotime %>%  
   select(-class, -phylum, -BioTIME) %>%
   distinct_all() %>%
   left_join(plants %>% distinct_all()) %>%
   left_join(fishes %>% distinct_all()) %>%
-  left_join(birds %>% distinct_all()) %>%
-  mutate(match = pmap(list(lcvp, fishbase, ebird), function(x, y, z) {
-    if (!is.na(x))
-       "LCVP"
-    else if (!is.na(y))
-       "FishBase"
-    else if (!is.na(z))
-       "eBird"
-    else
-       NA
-    }) %>% unlist()) %>%
-  select(-lcvp, -fishbase, -ebird) %>%
+  left_join(birds %>% distinct_all())
+# resolve conflicts
+res <- res %>%
+  mutate(conflict = pmap(list(lcvp, fishbase, ebird), 
+                         function(x, y, z) {
+                           valid <- !is.na(c(x, y, z))
+                           if (sum(valid) > 1)
+                             TRUE
+                           else
+                             FALSE
+                         }) %>% unlist() %>% as.logical()) %>%
+  filter(!conflict) %>%
+  select(-conflict)
+# summary
+res %>%
+  mutate(match = pmap(list(lcvp, fishbase, ebird), 
+                      function(x, y, z) {
+                        if (!is.na(x))
+                          "LCVP"
+                        else if (!is.na(y))
+                          "FishBase"
+                        else if (!is.na(z))
+                          "eBird"
+                        else
+                          NA
+                        }) %>% unlist()) %>%
   mutate(matched = ifelse(is.na(match), FALSE, TRUE)) %>%
+  select(-lcvp, -fishbase, -ebird) %>%
   distinct_all() %>%
   group_by(match, common) %>%
   tally() %>%
@@ -251,10 +261,34 @@ res <- biotime %>%
   mutate(unmatched = `NA`) %>%
   select(-`NA`)
 
+res %>%
+  filter(common != "vascular plants", !is.na(lcvp))
+
 res %>% 
-   pivot_longer(cols = 2:6) %>%
+   pivot_longer(cols = 2:5) %>%
    pull(value) %>%
    sum(na.rm = TRUE)
 length(unique(biotime$parsed))
 
 res %>% write_csv("~/Documents/bogota_final.csv")
+
+#============================
+# GBIF only
+#============================
+d <- read_csv("~/Documents/biotime_common.csv") %>%
+   select(-class, -phylum, -common) #not needed in this pipeline
+gbif <- parSapply(
+  cl,
+  d$parsed,
+  function(x) {
+    ans <- rgbif::name_backbone(x, strict = FALSE) #no fuzzy
+    if ("canonicalName" %in% names(ans))
+      return(ans$canonicalName)
+    else
+      return(NA)
+  }
+)
+tibble(parsed = d$parsed, gbif = unlist(gbif)) %>%
+   write_csv("~/Documents/bogota_gbif.csv")
+
+stopCluster(cl)
