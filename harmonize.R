@@ -23,7 +23,16 @@ assign_group <- function(x){
           NA)
 }
 
-biotime <- read_csv("~/Documents/databases/biotime.txt", col_names = "BioTIME")
+biotime <- read_csv("~/Documents/databases/biotime.txt", col_names = "BioTIME") %>%
+  mutate(BioTIME = gsub("Family ", "", BioTIME),
+         BioTIME = gsub("Order ", "", BioTIME),
+         BioTIME = gsub("Suborder ", "", BioTIME),
+         BioTIME = gsub("Genus ", "", BioTIME),
+         BioTIME = gsub("Phylum ", "", BioTIME),
+         BioTIME = gsub("Subphylum ", "", BioTIME),
+         BioTIME = gsub("Superfamily ", "", BioTIME),
+         BioTIME = gsub("Subclass ", "", BioTIME),
+         BioTIME = gsub("Class ", "", BioTIME))
 biotime %<>% mutate(parsed = gn_parse_tidy(BioTIME)$canonicalsimple)
 
 cl <- makeCluster(5) #parallize operation thought the whole script
@@ -32,7 +41,10 @@ cl <- makeCluster(5) #parallize operation thought the whole script
 # TORINO PIPELINE
 #============================
 
+message(" --- TORINO ---")
+
 # get taxonomic class
+message("     GBIF taxonomic group")
 classes <- parSapply(
   cl,
   biotime$parsed,
@@ -70,6 +82,8 @@ write_csv(biotime, "~/Documents/biotime_common.csv")
 d <- read_csv("~/Documents/biotime_common.csv")
 
 # vascular plants
+message("     LCVP")
+T0 <- Sys.time()
 plants <- d %>% 
   filter(common == "vascular plants") %>% 
   pull(parsed)
@@ -88,6 +102,7 @@ lcvp %>%
    write_csv("~/Documents/torino_lcvp.csv")
 
 # fishes
+message("     FishBase")
 fishes <- d %>% 
   filter(common == "fishes") %>%
   select(parsed)
@@ -98,8 +113,11 @@ fishbase <- parSapply(
 )
 fishbase <- fishes %>% mutate(fishbase = fishbase)
 write_csv(fishbase, "~/Documents/torino_fishbase")
+message("     ", Sys.time() - T0)
 
 # birds
+message("     eBird")
+T <- Sys.time()
 birds <- d %>%
    filter(common == "birds") %>%
    pull(parsed)
@@ -110,10 +128,18 @@ ebird <- parSapply(
     function(x) tryCatch(rebird::species_code(x),
                          error = function(e) NA)
 )
-birds <- tibble(parsed = birds, ebird = ebird)
+birds <- tibble(parsed = birds,
+                code = ebird) %>%
+  left_join(rebird:::tax %>%
+              filter(speciesCode %in% ebird) %>%
+              transmute(code = speciesCode, ebird = sciName)) %>%
+  select(-code)
 write_csv(birds, "~/Documents/torino_ebird.csv")
+message("     ", Sys.time() - T0)
 
 # rest with GBIF
+message("     GBIF")
+T0 <- Sys.time()
 unmatched <- biotime %>%
   filter(common %out% c("vascular plants", "fishes", "birds")) %>%
   pull(parsed)
@@ -127,13 +153,32 @@ bind_rows(gbif) %>%
           common = modify(class, assign_group)) %>%
    transmute(parsed, gbif = canonicalName) %>%
    write_csv("~/Documents/torino_gbif.csv")
+message("     ", Sys.time() - T0)
 
 # combine results --------------------
-biotime <- read_csv("~/Documents/biotime_common.csv")
+biotime <- read_csv("~/Documents/biotime_common.csv") %>%
+  mutate(species_level = modify(parsed, function(x) {
+      len <- str_split(x, " ", simplify = TRUE) %>% length()
+      if (len == 1)
+        FALSE 
+      else 
+        TRUE
+    }) %>% as.logical()) %>%
+  filter(species_level) %>%
+  select(-species_level)
 plants <- read_csv("~/Documents/torino_lcvp.csv")
 fishes <- read_csv("~/Documents/torino_fishbase.csv")
 birds <- read_csv("~/Documents/torino_ebird.csv")
-gbif <- read_csv("~/Documents/torino_gbif.csv")
+gbif <- read_csv("~/Documents/torino_gbif.csv") %>%
+  mutate(species_level = modify(gbif, function(x) {
+      len <- str_split(x, " ", simplify = TRUE) %>% length()
+      if (len == 1)
+        FALSE 
+      else 
+        TRUE
+    }) %>% as.logical()) %>%
+  filter(species_level) %>%
+  select(-species_level)
 
 res <- biotime %>%  
   select(-class, -phylum, -BioTIME) %>%
@@ -174,8 +219,11 @@ res %>% write_csv("~/Documents/torino_final.csv")
 #============================
 # BOGOTA PIPELINE
 #============================
+message(" --- BOGOTA")
 d <- read_csv("~/Documents/biotime_common.csv") %>%
    select(-class, -phylum, -common) #not needed in this pipeline
+message("     LCVP")
+T0 <- Sys.time()
 lcvp <- parLapply(
    cl,
    d$parsed,
@@ -195,8 +243,11 @@ lcvp %>%
    slice(1) %>%
    ungroup() %>%
    write_csv("~/Documents/bogota_lcvp.csv")
+message("     ", Sys.time() - T0)
 
 # fishses
+message("     FishBase")
+T0 <- Sys.time()
 fishbase <- parSapply(
    cl,
    d$parsed,
@@ -204,19 +255,37 @@ fishbase <- parSapply(
 )
 fishbase <- tibble(parsed = d$parsed, fishbase = fishbase)
 write_csv(fishbase, "~/Documents/bogota_fishbase.csv")
+message("     ", Sys.time() - T0)
 
 # birds
+message("     ebird")
+T0 <- Sys.time()
 ebird <- parSapply(
     cl,
     d$parsed,
     function(x) tryCatch(rebird::species_code(x),
                          error = function(e) NA)
 )
-birds <- tibble(parsed = d$parsed, ebird = ebird)
+birds <- tibble(parsed = d$parsed,
+                code = ebird) %>%
+  left_join(rebird:::tax %>%
+              filter(speciesCode %in% ebird) %>%
+              transmute(code = speciesCode, ebird = sciName)) %>%
+  select(-code)
 write_csv(birds, "~/Documents/bogota_ebird.csv")
+message("     ", Sys.time() - T0)
 
 # combine results --------------------
-biotime <- read_csv("~/Documents/biotime_common.csv")
+biotime <- read_csv("~/Documents/biotime_common.csv") %>%
+  mutate(species_level = modify(parsed, function(x) {
+      len <- str_split(x, " ", simplify = TRUE) %>% length()
+      if (len == 1)
+        FALSE 
+      else 
+        TRUE
+    }) %>% as.logical()) %>%
+  filter(species_level) %>%
+  select(-species_level)
 plants <- read_csv("~/Documents/bogota_lcvp.csv")
 fishes <- read_csv("~/Documents/bogota_fishbase.csv")
 birds <- read_csv("~/Documents/bogota_ebird.csv")
@@ -292,3 +361,162 @@ tibble(parsed = d$parsed, gbif = unlist(gbif)) %>%
    write_csv("~/Documents/bogota_gbif.csv")
 
 stopCluster(cl)
+
+# GBIF results -----
+biotime <- read_csv("~/Documents/biotime_common.csv")
+gbif <- read_csv("~/Documents/bogota_gbif.csv")
+gbif %>%
+  mutate(species_level = modify(gbif, function(x) {
+      len <- str_split(x, " ", simplify = TRUE) %>% length()
+      if (len == 1)
+        FALSE 
+      else 
+        TRUE
+    }) %>% as.logical()) %>%
+  filter(species_level) %>%
+  left_join(biotime) %>%
+  select(-BioTIME) %>%
+  distinct_all() %>%
+  group_by(common) %>%
+  filter(!is.na(gbif)) %>%
+  tally()
+
+########################
+# COMPARISON WORKFLOW
+########################
+biotime <- read_csv("~/Documents/biotime_common.csv") %>%
+  mutate(species_level = modify(parsed, function(x) {
+      len <- str_split(x, " ", simplify = TRUE) %>% length()
+      if (len == 1)
+        FALSE 
+      else 
+        TRUE
+    }) %>% as.logical()) %>%
+  distinct(parsed, .keep_all = TRUE) %>%
+  filter(species_level) %>%
+  select(-species_level)
+# workflow 1 -------
+plants <- read_csv("~/Documents/bogota_lcvp.csv")
+fishes <- read_csv("~/Documents/bogota_fishbase.csv")
+birds <- read_csv("~/Documents/bogota_ebird.csv")
+gbif <- read_csv("~/Documents/bogota_gbif.csv")
+gbif %>%
+  mutate(species_level = modify(gbif, function(x) {
+      len <- str_split(x, " ", simplify = TRUE) %>% length()
+      if (len == 1)
+        FALSE 
+      else 
+        TRUE
+    }) %>% as.logical()) %>%
+  filter(species_level) %>%
+  left_join(biotime) %>%
+  select(-BioTIME) %>%
+  distinct_all() %>%
+  group_by(common) %>%
+  filter(!is.na(gbif)) %>%
+  tally()
+wf1 <- biotime %>%  
+  select(-class, -phylum, -BioTIME) %>%
+  distinct_all() %>%
+  left_join(plants %>% distinct_all()) %>%
+  left_join(fishes %>% distinct_all()) %>%
+  left_join(birds %>% distinct_all()) %>%
+  left_join(gbif %>% distinct_all())
+#remove GBIF if another db found something
+wf1 <- wf1 %>%
+  mutate(remove_gbif = pmap(list(lcvp, fishbase, ebird), 
+                         function(x, y, z) {
+                           valid <- !is.na(c(x, y, z))
+                           if (any(valid))
+                             TRUE
+                           else 
+                             FALSE
+                         }) %>% unlist() %>% as.logical()) %>%
+  mutate(gbif = modify2(gbif, remove_gbif, function(x, y) {
+      if (y)
+        NA
+      else
+        x
+    })) %>% 
+  select(-remove_gbif)
+wf1 <- wf1 %>%
+  mutate(conflict = pmap(list(lcvp, fishbase, ebird), 
+                         function(x, y, z) {
+                           valid <- !is.na(c(x, y, z))
+                           if (sum(valid) > 1)
+                             TRUE
+                           else
+                             FALSE
+                         }) %>% unlist() %>% as.logical()) %>%
+  filter(!conflict) %>%
+  select(-conflict)
+
+# workflow 2 ----------
+plants <- read_csv("~/Documents/torino_lcvp.csv")
+fishes <- read_csv("~/Documents/torino_fishbase.csv")
+birds <- read_csv("~/Documents/torino_ebird.csv")
+gbif <- read_csv("~/Documents/torino_gbif.csv") %>%
+  mutate(species_level = modify(gbif, function(x) {
+      len <- str_split(x, " ", simplify = TRUE) %>% length()
+      if (len == 1)
+        FALSE 
+      else 
+        TRUE
+    }) %>% as.logical()) %>%
+  filter(species_level) %>%
+  select(-species_level)
+wf2 <- biotime %>%  
+  select(-class, -phylum, -BioTIME) %>%
+  distinct_all() %>%
+  left_join(plants %>% distinct_all()) %>%
+  left_join(fishes %>% distinct_all()) %>%
+  left_join(birds %>% distinct_all()) %>%
+  left_join(gbif %>% distinct_all())
+
+# harmonized ----------
+wf1 <- wf1 %>%
+  select(-common) %>%
+  pivot_longer(cols = 2:5, names_to = "step", values_to = "matched") %>%
+  filter(!is.na(matched)) %>%
+  select(-step)
+
+wf2 <- wf2 %>%
+  select(-common) %>%
+  pivot_longer(cols = 2:5, names_to = "step", values_to = "matched") %>%
+  filter(!is.na(matched)) %>%
+  select(-step)
+
+gbif
+
+wf1 %>%
+  mutate(matched = modify(matched, function(x) {
+      paste(str_split(x, " ", simplify = TRUE)[1:2], collapse = " ")
+    })) %>%
+  full_join(wf2 %>%
+              mutate(matched = modify(matched, function(x) {
+                paste(str_split(x, " ", simplify = TRUE)[1:2], collapse = " ")
+              })),
+            by = "parsed", suffix = c("_wf1", "_wf2")) %>%
+  filter(matched_wf1 != matched_wf2)
+
+gbif <- read_csv("~/Documents/bogota_gbif.csv") %>%
+  mutate(species_level = modify(gbif, function(x) {
+      len <- str_split(x, " ", simplify = TRUE) %>% length()
+      if (len == 1)
+        FALSE 
+      else 
+        TRUE
+    }) %>% as.logical()) %>%
+  filter(species_level) %>%
+  select(-species_level)
+
+
+wf2 %>%
+  mutate(matched = modify(matched, function(x) {
+      paste(str_split(x, " ", simplify = TRUE)[1:2], collapse = " ")
+    })) %>%
+  left_join(gbif) %>%
+  left_join(biotime %>% select(parsed, common)) %>%
+  pull(gbif) %>% table() %>% table()
+  print(n = 20000)
+

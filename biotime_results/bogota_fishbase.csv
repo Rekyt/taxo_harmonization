@@ -9752,18 +9752,18 @@ Clanculus,NA
 Clangula hyemalis,NA
 Claoxylon tenerifolium,NA
 Clarias batrachus,Clarias batrachus
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
+Anthozoa,NA
+Appendicularia,NA
+Asteroidea,NA
+Bivalvia,NA
+Cirripedia,NA
+Echinoidea,NA
+Gastropoda,NA
+Hydrozoa,NA
+Insecta,NA
+Maxillopoda,NA
+Ostracoda,NA
+Polychaeta,NA
 Clathraria,NA
 Clathria barleei,NA
 Clathria cervicornis,NA
@@ -16600,54 +16600,54 @@ Fallacia,NA
 Fallosquilla fallax,NA
 Fallotritella biscaynensis,NA
 Fallugia paradoxa,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
+Aetideidae,NA
+Anthomyiidae,NA
+Aphididae,NA
+Baetidae,NA
+Bibonidae,NA
+Braconidae,NA
+Calliopiidae,NA
+Canaceidae,NA
+Cecidomyiidae,NA
+Ceratopogonidae,NA
+Chironomidae,NA
+Cicadellidae,NA
+Corixidae,NA
+Culicidae,NA
+Cynipidae,NA
+Cypridae,NA
+Cyprididae,NA
+Dixidae,NA
+Dytiscidae,NA
+Ectinosomatidae,NA
+Ectinosomidae,NA
+Empididae,NA
+Ephemeridae,NA
+Formicidae,NA
+Gracillariidae,NA
+Halocyprididae,NA
+Hemerobiidae,NA
+Heptageniidae,NA
+Hydropsychidae,NA
+Ichneumonidae,NA
+Limnephilidae,NA
+Lysianassidae,NA
+Macrocyprididae,NA
+Milichiidae,NA
+Miridae,NA
+Muscidae,NA
+Mycetophilidae,NA
+Orthocladiinae,NA
+Pachyneuridae,NA
+Paguridae,NA
+Perlodidae,NA
+Phoridae,NA
+Psyllidae,NA
+Scatophagidae,NA
+Sciaridae,NA
+Simuliidae,NA
+Staphylinidae,NA
+Tipulidae,NA
 Faradaya splendida,NA
 Faramea calyptrata,NA
 Faramea coffeoides,NA
@@ -17657,7 +17657,7 @@ Gentianella aurea,NA
 Gentianella campestris,NA
 Gentianella tenella,NA
 Gentoo penguin,NA
-Genus nov,NA
+NA,NA
 NA,NA
 Genyagnus monopterygius,Genyagnus monopterygius
 Genyatremus luteus,Genyatremus luteus
@@ -29555,23 +29555,23 @@ Orchomene,NA
 Orchomene,NA
 Orchomene,NA
 Orcinus orca,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order lsopoda,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
+Amphipoda,NA
+Calanoida,NA
+Cumacea,NA
+Cyclopoida,NA
+Decapoda,NA
+Diptera,NA
+Ephemeroptera,NA
+Euphausiacea,NA
+Foraminiferida,NA
+Harpacticoida,NA
+Hymenoptera,NA
+Isopoda,NA
+NA,NA
+Myodocopida,NA
+Mysidacea,NA
+Podocopa,NA
+Trichoptera,NA
 Oreaster reticulatus,NA
 Orectolobus halei,Orectolobus halei
 Orectolobus japonicus,Orectolobus japonicus
@@ -32381,14 +32381,14 @@ Phylloxeridae,NA
 Phylocentropus,NA
 Phylo felix,NA
 Phylo kupferi,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
+Brachiopoda,NA
+Chaetognatha,NA
+Ctenophora,NA
+Nemata,NA
+Nemertea,NA
+Rotifera,NA
+Sipuncula,NA
+Tardigrada,NA
 Phymatodes testaceus,NA
 Phymatolithon,NA
 Phymatolithon calcareum,NA
@@ -40356,8 +40356,8 @@ Subadyte,NA
 Subadyte mexicana,NA
 Subadyte pellucida,NA
 Subcancilla interlirata,NA
-Subclass,NA
-Subclass,NA
+Hirudinea,NA
+Podocopa,NA
 Subergorgia juvenile,NA
 Subergorgia,NA
 Subergorgia suberosa,NA
@@ -40379,8 +40379,8 @@ Subeucalanus pileatus,NA
 Subeucalanus,NA
 Subeucalanus subcrassus,NA
 Subeucalanus subtenuis,NA
-Suborder,NA
-Subphylum,NA
+Cladocera,NA
+Crustacea,NA
 Subulina octana,NA
 Succisa pratensis,NA
 Sudis hyalina,Sudis hyalina
@@ -40424,7 +40424,7 @@ Sundanella sibogae,NA
 Sunesta setigera,NA
 Sunetta contempta,NA
 Sunira decipiens,NA
-Superfamily,NA
+Chalcidoidea,NA
 Suphrodytes dorsalis,NA
 Suregada multiflora,NA
 Surirella,NA

@@ -331,13 +331,13 @@ Acaudina,NA
 Acaudina,NA
 Accalathura crenulata,NA
 Acca sellowiana,NA
-Accipiter cooperii,coohaw
-Accipiter gentilis,norgos
-Accipiter gularis,japspa1
-Accipiter nisus,eurspa1
-Accipiter soloensis,grfhaw1
+Accipiter cooperii,Accipiter cooperii
+Accipiter gentilis,Accipiter gentilis
+Accipiter gularis,Accipiter gularis
+Accipiter nisus,Accipiter nisus
+Accipiter soloensis,Accipiter soloensis
 Accipiter,NA
-Accipiter striatus,shshaw
+Accipiter striatus,Accipiter striatus
 Accipiter unidentified,NA
 Accipitridae,NA
 Accipitriformes,NA
@@ -492,12 +492,12 @@ Acrocalanus longicornis,NA
 Acrocalanus monachus,NA
 Acrocalanus,NA
 Acrocephalidae,NA
-Acrocephalus bistrigiceps,bbrwar1
-Acrocephalus dumetorum,blrwar1
-Acrocephalus orientalis,orrwar1
-Acrocephalus palustris,marwar3
-Acrocephalus schoenobaenus,sedwar1
-Acrocephalus scirpaceus,eurwar1
+Acrocephalus bistrigiceps,Acrocephalus bistrigiceps
+Acrocephalus dumetorum,Acrocephalus dumetorum
+Acrocephalus orientalis,Acrocephalus orientalis
+Acrocephalus palustris,Acrocephalus palustris
+Acrocephalus schoenobaenus,Acrocephalus schoenobaenus
+Acrocephalus scirpaceus,Acrocephalus scirpaceus
 Acrocercops brongniardella,NA
 Acrochaete,NA
 Acrochaete repens,NA
@@ -721,9 +721,9 @@ Actinotia polyodon,NA
 Actinotrichia,NA
 Actinotrichia fragilis,NA
 Actisecos,NA
-Actitis hypoleucos,comsan
+Actitis hypoleucos,Actitis hypoleucos
 Actitis macularia,NA
-Actitis macularius,sposan
+Actitis macularius,Actitis macularius
 Actumnus dorsipes,NA
 Actumnus setifer,NA
 Actumnus squamosus,NA
@@ -789,8 +789,8 @@ Adrastus pallens,NA
 Adreus fascicularis,NA
 Adventor elongatus,NA
 Adyte assimilis,NA
-Aechmophorus clarkii,clagre
-Aechmophorus occidentalis,wesgre
+Aechmophorus clarkii,Aechmophorus clarkii
+Aechmophorus occidentalis,Aechmophorus occidentalis
 Aedicira,NA
 Aedicira belgicae,NA
 Aedicira pacifica,NA
@@ -827,9 +827,9 @@ Aegisthus aculeatus,NA
 Aegisthus dubius,NA
 Aegisthus mucronatus,NA
 Aegisthus,NA
-Aegithalos caudatus,lottit1
-Aegolius acadicus,nswowl
-Aegolius funereus,borowl
+Aegithalos caudatus,Aegithalos caudatus
+Aegolius acadicus,Aegolius acadicus
+Aegolius funereus,Aegolius funereus
 Aemona amathusia,NA
 Aeolidacea,NA
 Aeolidia,NA
@@ -852,7 +852,7 @@ Aequipecten opercularis,NA
 Aequorea,NA
 Aequorea macrodactyla,NA
 Aequorea vitrina,NA
-Aeronautes saxatalis,whtswi
+Aeronautes saxatalis,Aeronautes saxatalis
 Aeropedellus clavatus,NA
 Aeropsis rostrata,NA
 Aesalus asiaticus,NA
@@ -878,8 +878,8 @@ Aethes margaritana,NA
 Aethes rubigana,NA
 Aethes rutilana,NA
 Aethes smeathmanniana,NA
-Aethia cristatella,creauk
-Aethia psittacula,parauk
+Aethia cristatella,Aethia cristatella
+Aethia psittacula,Aethia psittacula
 Aethomys hindei,NA
 Aethotaxis mitopteryx,NA
 Aetideidae,NA
@@ -932,8 +932,8 @@ Agathosma serpyllacea,NA
 Agathotoma candidissima,NA
 Agatrix smithii,NA
 NA,NA
-Agelaius phoeniceus,rewbla
-Agelaius tricolor,tribla
+Agelaius phoeniceus,Agelaius phoeniceus
+Agelaius tricolor,Agelaius tricolor
 Agelasa nigriceps,NA
 Agelas mauritiana,NA
 Agelas,NA
@@ -1072,7 +1072,7 @@ Agrochola pulchella,NA
 Agrochola purpurea,NA
 Agroperina dubitans,NA
 Agroperina lateritia,NA
-Agropsar philippensis,chcsta1
+Agropsar philippensis,Agropsar philippensis
 Agropyron repens,NA
 Agropyron smithii,NA
 Agrostichthys parkeri,NA
@@ -1111,7 +1111,7 @@ Aimophila aestivalis,NA
 Aimophila botterii,NA
 Aimophila carpalis,NA
 Aimophila cassinii,NA
-Aimophila ruficeps,rucspa
+Aimophila ruficeps,Aimophila ruficeps
 Aimulosia costata,NA
 Aimulosia marsupium,NA
 Aiphanes erinacea,NA
@@ -1121,8 +1121,8 @@ Aiptasiomorpha texaensis,NA
 Aipysurus duboisii,NA
 Aipysurus eydouxii,NA
 Aipysurus laevis,NA
-Aix galericulata,manduc
-Aix sponsa,wooduc
+Aix galericulata,Aix galericulata
+Aix sponsa,Aix sponsa
 Aizoon paniculatum,NA
 Ajuga pyramidalis,NA
 Ajuga reptans,NA
@@ -1144,7 +1144,7 @@ Alangium villosum,NA
 Alaria crassifolia,NA
 Alaria esculenta,NA
 Alatocladia yessoensis,NA
-Alauda arvensis,skylar
+Alauda arvensis,Alauda arvensis
 Alaudidae,NA
 Alaysia,NA
 Albatrossia pectoralis,NA
@@ -1163,8 +1163,8 @@ Alburnus alburnus,NA
 Alcadia alta,NA
 Alcadia striata,NA
 Alcaldia striata,NA
-Alca torda,razorb
-Alcedo atthis,comkin1
+Alca torda,Alca torda
+Alcedo atthis,Alcedo atthis
 Alces alces,NA
 Alchemilla alpina,NA
 Alchemilla caucasica,NA
@@ -1227,7 +1227,7 @@ Alectoria nigricans,NA
 Alectoria nitidula,NA
 Alectoria ochroleuca,NA
 Alectoria,NA
-Alectoris chukar,chukar
+Alectoris chukar,Alectoris chukar
 Aleimma loeflingiana,NA
 Alentia gelatinosa,NA
 Alentiana aurantiaca,NA
@@ -1291,7 +1291,7 @@ Alitta succinea,NA
 Alitta virens,NA
 Alkmaria romijni,NA
 Allantactis parasitica,NA
-Alle alle,doveki
+Alle alle,Alle alle
 Allia ramosa,NA
 Alliodoris hedley,NA
 Allionia incarnata,NA
@@ -1539,10 +1539,10 @@ Amathimysis serrata,NA
 Amathimysis trigibba,NA
 Amauropsis islandica,NA
 Amauropsis islandicus,NA
-Amaurornis phoenicurus,whbwat1
+Amaurornis phoenicurus,Amaurornis phoenicurus
 NA,NA
-Amazilia violiceps,vichum
-Amazilia yucatanensis,bubhum
+Amazilia violiceps,Amazilia violiceps
+Amazilia yucatanensis,Amazilia yucatanensis
 Ambassis jacksoniensis,NA
 Ambassis urotaenia,NA
 Ambidexter symmetricus,NA
@@ -1656,7 +1656,7 @@ Ammodramus henslowii,NA
 Ammodramus leconteii,NA
 Ammodramus maritimus,NA
 Ammodramus nelsoni,NA
-Ammodramus savannarum,graspa
+Ammodramus savannarum,Ammodramus savannarum
 Ammodytes,NA
 Ammodytes americanus,NA
 Ammodytes dubius,NA
@@ -1968,7 +1968,7 @@ Amphisbetia operculata,NA
 Amphisolenia globifera,NA
 Amphisolenia,NA
 Amphispiza belli,NA
-Amphispiza bilineata,bktspa
+Amphispiza bilineata,Amphispiza bilineata
 Amphissa acuticostata,NA
 Amphissa bicolor,NA
 Amphissa columbiana,NA
@@ -2193,11 +2193,11 @@ Anarthruridae,NA
 Anarthruridae,NA
 Anarthruridae,NA
 Anas,NA
-Anas acuta,norpin
+Anas acuta,Anas acuta
 Anas americana,NA
 Anascan,NA
 Anas clypeata,NA
-Anas crecca,gnwtea
+Anas crecca,Anas crecca
 Anas cyanoptera,NA
 Anas discors,NA
 Anas falcata,NA
@@ -2211,9 +2211,9 @@ Anaspis maculata,NA
 Anaspis regimbarti,NA
 Anaspis ruficollis,NA
 Anaspis rufilabris,NA
-Anas platyrhynchos,mallar3
+Anas platyrhynchos,Anas platyrhynchos
 Anas querquedula,NA
-Anas rubripes,ambduc
+Anas rubripes,Anas rubripes
 Anas strepera,NA
 Anasterias directa,NA
 Anasterias laevigata,NA
@@ -2222,7 +2222,7 @@ Anasterias suteri,NA
 Anastrangalia dubia,NA
 Anastrangalia sanguinolenta,NA
 Anastrophyllum minutum,NA
-Anas zonorhyncha,spbduc
+Anas zonorhyncha,Anas zonorhyncha
 Anatanais pseudonormani,NA
 Anatidae,NA
 Anatina anatina,NA
@@ -2519,15 +2519,15 @@ Anotylus tetracarinatus,NA
 Anotylus vicinus,NA
 Anoura caudifer,NA
 Anous,NA
-Anous minutus,blknod
-Anous stolidus,brnnod
-Anous tenuirostris,lesnod1
+Anous minutus,Anous minutus
+Anous stolidus,Anous stolidus
+Anous tenuirostris,Anous tenuirostris
 Anoxypristis cuspidata,NA
 Anquipecten aurantiacus,NA
 Anser,NA
-Anser albifrons,gwfgoo
-Anser caerulescens,snogoo
-Anser fabalis,taibeg1
+Anser albifrons,Anser albifrons
+Anser caerulescens,Anser caerulescens
+Anser fabalis,Anser fabalis
 Anseriformes,NA
 Anseropoda aotearoa,NA
 Anseropoda placenta,NA
@@ -2632,7 +2632,7 @@ Anthozoa,NA
 Anthozoa,NA
 Anthozoa,NA
 Anthozoa,NA
-Anthracothorax viridis,greman1
+Anthracothorax viridis,Anthracothorax viridis
 Anthrenus museorum,NA
 Anthrenus tanakai,NA
 Anthrenus verbasci,NA
@@ -2645,13 +2645,13 @@ Anthuridae,NA
 Anthuridae,NA
 Anthuridae,NA
 Anthuridea,NA
-Anthus hodgsoni,olbpip
-Anthus pratensis,meapip1
-Anthus richardi,ricpip1
-Anthus rubescens,amepip
-Anthus spinoletta,watpip1
-Anthus spragueii,sprpip
-Anthus trivialis,trepip
+Anthus hodgsoni,Anthus hodgsoni
+Anthus pratensis,Anthus pratensis
+Anthus richardi,Anthus richardi
+Anthus rubescens,Anthus rubescens
+Anthus spinoletta,Anthus spinoletta
+Anthus spragueii,Anthus spragueii
+Anthus trivialis,Anthus trivialis
 Anthyllis alpestris,NA
 Anthyllis vulneraria,NA
 Antiaris toxicaria,NA
@@ -2833,9 +2833,9 @@ Aphelochaeta,NA
 Aphelochaeta,NA
 Aphelochaeta tigrina,NA
 Aphelochaeta williamsae,NA
-Aphelocoma californica,cowscj1
-Aphelocoma coerulescens,flsjay
-Aphelocoma ultramarina,mexjay3
+Aphelocoma californica,Aphelocoma californica
+Aphelocoma coerulescens,Aphelocoma coerulescens
+Aphelocoma ultramarina,Aphelocoma ultramarina
 Aphelodoris,NA
 Aphelodoris varia,NA
 Apherusa,NA
@@ -3160,22 +3160,22 @@ Apseudidae,NA
 Apseudomorpha,NA
 Apseudomorpha,NA
 Apseudomorpha,NA
-Aptenodytes forsteri,emppen1
-Aptenodytes patagonicus,kinpen1
+Aptenodytes forsteri,Aptenodytes forsteri
+Aptenodytes patagonicus,Aptenodytes patagonicus
 Apterygota,NA
 Aptocyclus ventricosus,NA
 Aptychotrema rostrata,NA
 Aptychotrema timorensis,NA
 Aptychotrema vincentiana,NA
 Apuleia leiocarpa,NA
-Apus apus,comswi
-Apus nipalensis,houswi1
-Apus pacificus,fotswi
-Aquila chrysaetos,goleag
+Apus apus,Apus apus
+Apus nipalensis,Apus nipalensis
+Apus pacificus,Apus pacificus
+Aquila chrysaetos,Aquila chrysaetos
 Aquila chrysaetus,NA
 Aquila heliacal,NA
 Aquila pomarina,NA
-Aquila rapax,taweag1
+Aquila rapax,Aquila rapax
 Aquilaria malaccensis,NA
 Arabella,NA
 Arabella endonata,NA
@@ -3288,8 +3288,8 @@ Archidistoma molli,NA
 Archidistoma psammion,NA
 Archidistoma,NA
 Archidoris pseudoargus,NA
-Archilochus alexandri,bkchum
-Archilochus colubris,rthhum
+Archilochus alexandri,Archilochus alexandri
+Archilochus colubris,Archilochus colubris
 Archips argyrospila,NA
 Archips oporana,NA
 Archips podana,NA
@@ -3347,9 +3347,9 @@ Arcturidae,NA
 Arcturocheres,NA
 Arcturus baffini,NA
 Arcuatula senhousia,NA
-Ardea alba,greegr
-Ardea cinerea,graher1
-Ardea herodias,grbher3
+Ardea alba,Ardea alba
+Ardea cinerea,Ardea cinerea
+Ardea herodias,Ardea herodias
 Ardeidae,NA
 Ardisia bartlettii,NA
 Ardisia colorata,NA
@@ -3367,9 +3367,9 @@ Ardisia standleyana,NA
 Ardissonea fulgens,NA
 Arecaceae,NA
 Arenaeus cribrarius,NA
-Arenaria interpres,rudtur
+Arenaria interpres,Arenaria interpres
 Arenaria lychnidea,NA
-Arenaria melanocephala,blktur
+Arenaria melanocephala,Arenaria melanocephala
 Arenaria serpyllifolia,NA
 Arenaria stricta,NA
 Arene,NA
@@ -3668,7 +3668,7 @@ Arphia pseudonietana,NA
 Arphia simplex,NA
 Arphia,NA
 Arphia xanthopte,NA
-Arremonops rufivirgatus,olispa
+Arremonops rufivirgatus,Arremonops rufivirgatus
 Arrenurus,NA
 Arrhamphus sclerolepis,NA
 Arrhenatherum elatius,NA
@@ -3829,8 +3829,8 @@ Ashinkailepas,NA
 Ashinkailepas seepiophila,NA
 Ash-throated,NA
 Ashtoret granulosa,NA
-Asio flammeus,sheowl
-Asio otus,loeowl
+Asio flammeus,Asio flammeus
+Asio otus,Asio otus
 Aslia lefevrei,NA
 Aspalathus abietina,NA
 Aspalathus callosa,NA
@@ -4195,7 +4195,7 @@ Athelia decipiens,NA
 Athelia epiphylla,NA
 Athelia salicum,NA
 Athenaria,NA
-Athene cunicularia,burowl
+Athene cunicularia,Athene cunicularia
 Athenoides cristatus,NA
 Atheresthes evermanni,NA
 Atheresthes stomias,NA
@@ -4404,7 +4404,7 @@ Auricularia,NA
 Auriculinella bidentata,NA
 Aurila conradi,NA
 Aurila floridana,NA
-Auriparus flaviceps,verdin
+Auriparus flaviceps,Auriparus flaviceps
 Auriporia aurulenta,NA
 Aurospio dibranchiata,NA
 Aurospio,NA
@@ -4548,13 +4548,13 @@ Axonopus,NA
 Axonopus suffultus,NA
 Axylia putris,NA
 Aygyropelecus hemigymnus,NA
-Aythya affinis,lessca
-Aythya americana,redhea
-Aythya collaris,rinduc
-Aythya ferina,compoc
-Aythya fuligula,tufduc
-Aythya marila,gresca
-Aythya valisineria,canvas
+Aythya affinis,Aythya affinis
+Aythya americana,Aythya americana
+Aythya collaris,Aythya collaris
+Aythya ferina,Aythya ferina
+Aythya fuligula,Aythya fuligula
+Aythya marila,Aythya marila
+Aythya valisineria,Aythya valisineria
 Azpeitia africana,NA
 Azpeitia,NA
 Azpeitia tabularis,NA
@@ -4624,9 +4624,9 @@ Badister nakayamai,NA
 Badister peltatus,NA
 Badister pictus,NA
 NA,NA
-Baeolophus bicolor,tuftit
-Baeolophus inornatus,oaktit
-Baeolophus ridgwayi,juntit1
+Baeolophus bicolor,Baeolophus bicolor
+Baeolophus inornatus,Baeolophus inornatus
+Baeolophus ridgwayi,Baeolophus ridgwayi
 Baetis fuscatus,NA
 Baetis muticus,NA
 Baetis rhodani,NA
@@ -4705,7 +4705,7 @@ Baloghia parviflora,NA
 Balsamorhiza sagittata,NA
 Balticina septentrionalis,NA
 Bambusicola thoracica,NA
-Bambusicola thoracicus,chbpar3
+Bambusicola thoracicus,Bambusicola thoracicus
 Banara guianensis,NA
 Banara tomentosa,NA
 Banareia australis,NA
@@ -4782,7 +4782,7 @@ Barringtonia macrostachya,NA
 Barringtonia pendula,NA
 NA,NA
 Bartramia ithyphylla,NA
-Bartramia longicauda,uplsan
+Bartramia longicauda,Bartramia longicauda
 Bartsia alpina,NA
 Basanus erotyloides,NA
 Bascanichthys bascanium,NA
@@ -5523,9 +5523,9 @@ Bombus hypnorum,NA
 Bombus hypocrita,NA
 Bombus terrestris,NA
 Bombus yezoensis,NA
-Bombycilla cedrorum,cedwax
-Bombycilla garrulus,bohwax
-Bombycilla japonica,japwax1
+Bombycilla cedrorum,Bombycilla cedrorum
+Bombycilla garrulus,Bombycilla garrulus
+Bombycilla japonica,Bombycilla japonica
 Bombycillidae,NA
 Bombycillidae,NA
 Bomolocha abalienalis,NA
@@ -5535,7 +5535,7 @@ Bonapartia,NA
 Bonapartia pedaliota,NA
 Bonapartia,NA
 Bonasa bonasia,NA
-Bonasa umbellus,rufgro
+Bonasa umbellus,Bonasa umbellus
 Bonellia thomensis,NA
 Bonelliidae,NA
 Bonnemaisonia,NA
@@ -5619,7 +5619,7 @@ Bostrichobranchus,NA
 Bostrichobranchus pilularis,NA
 Bostrycapulus aculeatus,NA
 Bostrychia scorpioides,NA
-Botaurus lentiginosus,amebit
+Botaurus lentiginosus,Botaurus lentiginosus
 Bothidae,NA
 Bothid,NA
 Bothragonus swanii,NA
@@ -5771,7 +5771,7 @@ Brachyptera risi,NA
 Brachyptera seticornis,NA
 Brachypterois serrulata,NA
 Brachypterois serrulatus,NA
-Brachyramphus marmoratus,marmur
+Brachyramphus marmoratus,Brachyramphus marmoratus
 Brachyscelus crusculum,NA
 Brachyscelus macrocephalus,NA
 Brachyscelus rapax,NA
@@ -5872,8 +5872,8 @@ Brania,NA
 Brania swedmarki,NA
 Brania tenuicirrata,NA
 Brania wellfleetensis,NA
-Branta bernicla,brant
-Branta canadensis,cangoo
+Branta bernicla,Branta bernicla
+Branta canadensis,Branta canadensis
 Brasilomysis castroi,NA
 Brassicaceae,NA
 Brassica oleracea,NA
@@ -6017,10 +6017,10 @@ NA,NA
 NA,NA
 NA,NA
 Bubbia semecarpoides,NA
-Bubo bubo,eueowl1
+Bubo bubo,Bubo bubo
 Bubo spec,NA
-Bubo virginianus,grhowl
-Bubulcus ibis,categr
+Bubo virginianus,Bubo virginianus
+Bubulcus ibis,Bubulcus ibis
 Buccinidae,NA
 Buccinum,NA
 Buccinum angulosum,NA
@@ -6042,9 +6042,9 @@ Bucculatrix nigricomella,NA
 Bucculatrix thoracella,NA
 Bucculatrix ulmella,NA
 Bucephala,NA
-Bucephala albeola,buffle
-Bucephala clangula,comgol
-Bucephala islandica,bargol
+Bucephala albeola,Bucephala albeola
+Bucephala clangula,Bucephala clangula
+Bucephala islandica,Bucephala islandica
 Buchanania axillaris,NA
 Buchanania sessilifolia,NA
 Buchenavia tomentosa,NA
@@ -6115,7 +6115,7 @@ Bullidae,NA
 Bullina lineata,NA
 Bullocks,NA
 Bullomorpha,NA
-Bulweria bulwerii,bulpet
+Bulweria bulwerii,Bulweria bulwerii
 Bunakenia,NA
 Bunakenia,NA
 Bunchosia pallescens,NA
@@ -6148,19 +6148,19 @@ Busycon spiratum,NA
 Busycotypus,NA
 Busycotypus canaliculatus,NA
 Busycotypus spiratus,NA
-Butastur indicus,gyfbuz1
+Butastur indicus,Butastur indicus
 Butea monosperma,NA
 Buteo albicaudatus,NA
-Buteo albonotatus,zothaw
-Buteo buteo,combuz1
-Buteo jamaicensis,rethaw
-Buteo lagopus,rolhaw
-Buteo lineatus,reshaw
-Buteo platypterus,brwhaw
-Buteo regalis,ferhaw
-Buteo swainsoni,swahaw
-Butorides striata,strher
-Butorides virescens,grnher
+Buteo albonotatus,Buteo albonotatus
+Buteo buteo,Buteo buteo
+Buteo jamaicensis,Buteo jamaicensis
+Buteo lagopus,Buteo lagopus
+Buteo lineatus,Buteo lineatus
+Buteo platypterus,Buteo platypterus
+Buteo regalis,Buteo regalis
+Buteo swainsoni,Buteo swainsoni
+Butorides striata,Butorides striata
+Butorides virescens,Butorides virescens
 NA,NA
 NA,NA
 Byasa alcinous,NA
@@ -6346,7 +6346,7 @@ Calamagrostis viridiflavescens,NA
 Calamoecia trifida,NA
 Calamorhynchus,NA
 Calamorhynchus pellucidus,NA
-Calamospiza melanocorys,larbun
+Calamospiza melanocorys,Calamospiza melanocorys
 Calamus arctifrons,NA
 Calamus bajonado,NA
 Calamus calamus,NA
@@ -6430,9 +6430,9 @@ Calcarea,NA
 Calcarea,NA
 Calcarea,NA
 Calcarea,NA
-Calcarius lapponicus,laplon
+Calcarius lapponicus,Calcarius lapponicus
 Calcarius mccownii,NA
-Calcarius ornatus,chclon
+Calcarius ornatus,Calcarius ornatus
 Calcidiscus leptoporus,NA
 Calciopappus,NA
 Calciopappus caudatus,NA
@@ -6443,24 +6443,24 @@ Calciosolenia murrayi,NA
 Calciosolenia,NA
 Calea uniflora,NA
 Caleschara minuta,NA
-Calidris acuminata,shtsan
-Calidris alba,sander
-Calidris alpina,dunlin
-Calidris bairdii,baisan
-Calidris canutus,redkno
-Calidris ferruginea,cursan
-Calidris fuscicollis,whrsan
-Calidris maritima,pursan
-Calidris mauri,wessan
-Calidris melanotos,pecsan
-Calidris minuta,litsti
-Calidris minutilla,leasan
-Calidris ptilocnemis,rocsan
-Calidris pusilla,semsan
-Calidris ruficollis,rensti
-Calidris subminuta,lotsti
-Calidris temminckii,temsti
-Calidris tenuirostris,grekno
+Calidris acuminata,Calidris acuminata
+Calidris alba,Calidris alba
+Calidris alpina,Calidris alpina
+Calidris bairdii,Calidris bairdii
+Calidris canutus,Calidris canutus
+Calidris ferruginea,Calidris ferruginea
+Calidris fuscicollis,Calidris fuscicollis
+Calidris maritima,Calidris maritima
+Calidris mauri,Calidris mauri
+Calidris melanotos,Calidris melanotos
+Calidris minuta,Calidris minuta
+Calidris minutilla,Calidris minutilla
+Calidris ptilocnemis,Calidris ptilocnemis
+Calidris pusilla,Calidris pusilla
+Calidris ruficollis,Calidris ruficollis
+Calidris subminuta,Calidris subminuta
+Calidris temminckii,Calidris temminckii
+Calidris tenuirostris,Calidris tenuirostris
 Califia calida,NA
 Califia schmitti,NA
 Caligidae,NA
@@ -6568,9 +6568,9 @@ Callipallene brevirostris,NA
 Callipallene emaciata,NA
 Callipallene pacifica,NA
 Callipallene phantoma,NA
-Callipepla californica,calqua
-Callipepla gambelii,gamqua
-Callipepla squamata,scaqua
+Callipepla californica,Callipepla californica
+Callipepla gambelii,Callipepla gambelii
+Callipepla squamata,Callipepla squamata
 Callirhoe alcaeoides,NA
 Callirhoe involucrata,NA
 Callista chione,NA
@@ -6747,7 +6747,7 @@ Calocera furcata,NA
 Calocera viscosa,NA
 Calochortus macrocarpus,NA
 Calochortus nuttallii,NA
-Calonectris diomedea,corshe
+Calonectris diomedea,Calonectris diomedea
 Caloneis,NA
 Calophyllum brasiliense,NA
 Calophyllum depressinervosum,NA
@@ -6815,8 +6815,8 @@ Calylophus lavandulifolius,NA
 Calylophus serrulatus,NA
 Calypogeia azurea,NA
 Calypogeia,NA
-Calypte anna,annhum
-Calypte costae,coshum
+Calypte anna,Calypte anna
+Calypte costae,Calypte costae
 Calyptogena,NA
 Calyptogena fausta,NA
 Calyptogena fossajaponica,NA
@@ -6899,7 +6899,7 @@ Camptoplites asymmetricus,NA
 Camptoplites bicornis,NA
 Camptoplites elatior,NA
 Camptoplites xenicus,NA
-Camptostoma imberbe,nobtyr
+Camptostoma imberbe,Camptostoma imberbe
 Campylacantha olivacea,NA
 Campylaephora hypnaeoides,NA
 Campylaspis,NA
@@ -6934,7 +6934,7 @@ Campylodiscus fastuosus,NA
 Campylodiscus,NA
 Campylopus schimperi,NA
 Campylorhynchus brunneica,NA
-Campylorhynchus brunneicapillus,cacwre
+Campylorhynchus brunneicapillus,Campylorhynchus brunneicapillus
 Canada,NA
 Cananga odorata,NA
 Canarium apertum,NA
@@ -7133,8 +7133,8 @@ Capreolus capreolus,NA
 Capreolus pigagrus,NA
 Capricornis crispus,NA
 Caprimulgus carolinensis,NA
-Caprimulgus europaeus,eurnig1
-Caprimulgus indicus,grynig2
+Caprimulgus europaeus,Caprimulgus europaeus
+Caprimulgus indicus,Caprimulgus indicus
 Caprimulgus vociferus,NA
 Caprinsula,NA
 Caprodon longimanus,NA
@@ -7275,13 +7275,13 @@ Cardamine hyperborea,NA
 Cardamine nymanii,NA
 Cardamine pratensis,NA
 Cardaminopsis petraea,NA
-Cardellina canadensis,canwar
-Cardellina rubrifrons,refwar
+Cardellina canadensis,Cardellina canadensis
+Cardellina rubrifrons,Cardellina rubrifrons
 Cardiidae,NA
 Cardinal,NA
 Cardinalidae,NA
-Cardinalis cardinalis,norcar
-Cardinalis sinuatus,pyrrhu
+Cardinalis cardinalis,Cardinalis cardinalis
+Cardinalis sinuatus,Cardinalis sinuatus
 Cardiomya,NA
 Cardiomya abyssicola,NA
 Cardiomya costellata,NA
@@ -7304,7 +7304,7 @@ Carditidae,NA
 Carduelini,NA
 Carduelis caniceps,NA
 Carduelis cannabina,NA
-Carduelis carduelis,eurgol
+Carduelis carduelis,Carduelis carduelis
 Carduelis chloris,NA
 Carduelis flammea,NA
 Carduelis flavirostris,NA
@@ -7438,10 +7438,10 @@ Carpoapseudes caraspinosus,NA
 Carpobrotus acinaciformis,NA
 Carpobrotus edulis,NA
 Carpodacus cassinii,NA
-Carpodacus erythrinus,comros
+Carpodacus erythrinus,Carpodacus erythrinus
 Carpodacus mexicanus,NA
 Carpodacus purpureus,NA
-Carpodacus roseus,palros2
+Carpodacus roseus,Carpodacus roseus
 Carpoides carpio,NA
 Carpoides cyprinus,NA
 Carpomitra costata,NA
@@ -7560,14 +7560,14 @@ Catharacta antarctica,NA
 Catharacta lonnbergi,NA
 Catharacta maccormicki,NA
 Catharacta skua,NA
-Cathartes aura,turvul
-Catharus bicknelli,bicthr
-Catharus fuscescens,veery
-Catharus guttatus,herthr
-Catharus minimus,gycthr
+Cathartes aura,Cathartes aura
+Catharus bicknelli,Catharus bicknelli
+Catharus fuscescens,Catharus fuscescens
+Catharus guttatus,Catharus guttatus
+Catharus minimus,Catharus minimus
 Catharus mustelinus,NA
-Catharus ustulatus,swathr
-Catherpes mexicanus,canwre
+Catharus ustulatus,Catharus ustulatus
+Catherpes mexicanus,Catherpes mexicanus
 Cathorops spixii,NA
 Catillopecten,NA
 Catocala aholibah,NA
@@ -7829,8 +7829,8 @@ Centroberyx gerrardi,NA
 Centroberyx lineatus,NA
 Centrobranchus nigro-ocellatus,NA
 Centrobranchus nigroocellatus,NA
-Centrocercus minimus,gusgro
-Centrocercus urophasianus,saggro
+Centrocercus minimus,Centrocercus minimus
+Centrocercus urophasianus,Centrocercus urophasianus
 Centrodinium elongatum,NA
 Centrodinium,NA
 Centrogenys vaigiensis,NA
@@ -7951,9 +7951,9 @@ Cepolis squamosa,NA
 Cepora nadina,NA
 Cepora nerissa,NA
 Cepphus,NA
-Cepphus carbo,spegui1
-Cepphus columba,piggui
-Cepphus grylle,blkgui
+Cepphus carbo,Cepphus carbo
+Cepphus columba,Cepphus columba
+Cepphus grylle,Cepphus grylle
 Cepphus,NA
 Ceradocus,NA
 Ceradocus semiserratus,NA
@@ -8234,10 +8234,10 @@ Cerodrillia perryae,NA
 Cerodrillia,NA
 Cerodrillia splendida,NA
 Cerodrillia thea,NA
-Cerorhinca monocerata,rhiauk
-Certhia americana,brncre
+Cerorhinca monocerata,Cerorhinca monocerata
+Certhia americana,Certhia americana
 Certhia familaris,NA
-Certhia familiaris,eurtre1
+Certhia familiaris,Certhia familiaris
 Cerulean warbler,NA
 Cervus nippon,NA
 Ceryle alcyon,NA
@@ -8536,13 +8536,13 @@ Chaetozone,NA
 Chaetozone,NA
 Chaetozone spinosa,NA
 Chaetozone vivipara,NA
-Chaetura pelagica,chiswi
-Chaetura vauxi,vauswi
+Chaetura pelagica,Chaetura pelagica
+Chaetura vauxi,Chaetura vauxi
 Chalaraspidum alatum,NA
 Chalaraspidum,NA
 Chama,NA
 Chama congregata,NA
-Chamaea fasciata,wrenti
+Chamaea fasciata,Chamaea fasciata
 Chamaebotrys boergesenii,NA
 Chamaecrista fasciculata,NA
 Chamaecrista repens,NA
@@ -8652,17 +8652,17 @@ Characodoma biavicularium,NA
 Characodoma,NA
 Charadriidae,NA
 Charadriiformes,NA
-Charadrius alexandrinus,kenplo1
-Charadrius dubius,lirplo
-Charadrius hiaticula,corplo
-Charadrius leschenaultii,grsplo
-Charadrius mongolus,lesplo
-Charadrius montanus,mouplo
-Charadrius morinellus,eurdot
-Charadrius placidus,lobplo1
-Charadrius semipalmatus,semplo
-Charadrius veredus,oriplo1
-Charadrius vociferus,killde
+Charadrius alexandrinus,Charadrius alexandrinus
+Charadrius dubius,Charadrius dubius
+Charadrius hiaticula,Charadrius hiaticula
+Charadrius leschenaultii,Charadrius leschenaultii
+Charadrius mongolus,Charadrius mongolus
+Charadrius montanus,Charadrius montanus
+Charadrius morinellus,Charadrius morinellus
+Charadrius placidus,Charadrius placidus
+Charadrius semipalmatus,Charadrius semipalmatus
+Charadrius veredus,Charadrius veredus
+Charadrius vociferus,Charadrius vociferus
 Charanycha trigrammica,NA
 Chara,NA
 Charaxes aristogiton,NA
@@ -9065,8 +9065,8 @@ Chlamys varia,NA
 Chlidonia pyriformis,NA
 Chlidonias hybridus,NA
 Chlidonias leucopteru,NA
-Chlidonias leucopterus,whwter
-Chlidonias niger,blkter
+Chlidonias leucopterus,Chlidonias leucopterus
+Chlidonias niger,Chlidonias niger
 Chloealtis conspersa,NA
 Chloeia,NA
 Chloeia flava,NA
@@ -9078,7 +9078,7 @@ Chloeia viridis,NA
 Chlopsis bicolor,NA
 Chlorella,NA
 Chlorella vulgaris,NA
-Chloris sinica,origre
+Chloris sinica,Chloris sinica
 Chloris verticillata,NA
 Chloris virgata,NA
 Chlorocladus australasicus,NA
@@ -9160,7 +9160,7 @@ Choeroniscus minor,NA
 Cholevinae,NA
 Chomelia obtusa,NA
 Chomelia sericea,NA
-Chondestes grammacus,larspa
+Chondestes grammacus,Chondestes grammacus
 Chondracanthus,NA
 Chondracanthus acicularis,NA
 Chondracanthus intermedius,NA
@@ -9238,8 +9238,8 @@ Chorda filum,NA
 Chordaria flagelliformis,NA
 Chordata,NA
 Chorda tomentosa,NA
-Chordeiles acutipennis,lesnig
-Chordeiles minor,comnig
+Chordeiles acutipennis,Chordeiles acutipennis
+Chordeiles minor,Chordeiles minor
 Chordeumida,NA
 Chordeumida,NA
 Choriceras tricorne,NA
@@ -9467,9 +9467,9 @@ Cinachyrella,NA
 Cinachyrella,NA
 Cinachyrella,NA
 Cincinnatia winkleyi,NA
-Cinclus cinclus,whtdip1
-Cinclus mexicanus,amedip
-Cinclus pallasii,brodip1
+Cinclus cinclus,Cinclus cinclus
+Cinclus mexicanus,Cinclus mexicanus
+Cinclus pallasii,Cinclus pallasii
 Cinctipora elegans,NA
 Cineraria geifolia,NA
 Cinereomyces lindbladii,NA
@@ -9521,10 +9521,10 @@ Circomphalus strigillinus,NA
 Circulus,NA
 Circulus multistriatus,NA
 Circulus suppressus,NA
-Circus aeruginosus,wemhar1
-Circus cyaneus,norhar1
+Circus aeruginosus,Circus aeruginosus
+Circus cyaneus,Circus cyaneus
 Circus melanoleucus,NA
-Circus pygargus,monhar1
+Circus pygargus,Circus pygargus
 Cirolana,NA
 Cirolana borealis,NA
 Cirolana cranchii,NA
@@ -9641,9 +9641,9 @@ Cissus repens,NA
 Cistenides,NA
 Cistenides granulata,NA
 Cistenides regalis,NA
-Cisticola juncidis,zitcis1
-Cistothorus palustris,marwre
-Cistothorus platensis,sedwre
+Cisticola juncidis,Cisticola juncidis
+Cistothorus palustris,Cistothorus palustris
+Cistothorus platensis,Cistothorus platensis
 NA,NA
 Citharexylum solanaceum,NA
 Citharichthys,NA
@@ -9749,21 +9749,21 @@ Cladotanytarsus viridiventris,NA
 Clamoris canalicollis,NA
 Clanculus clangulus,NA
 Clanculus,NA
-Clangula hyemalis,lotduc
+Clangula hyemalis,Clangula hyemalis
 Claoxylon tenerifolium,NA
 Clarias batrachus,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
-Class,NA
+Anthozoa,NA
+Appendicularia,NA
+Asteroidea,NA
+Bivalvia,NA
+Cirripedia,NA
+Echinoidea,NA
+Gastropoda,NA
+Hydrozoa,NA
+Insecta,NA
+Maxillopoda,NA
+Ostracoda,NA
+Polychaeta,NA
 Clathraria,NA
 Clathria barleei,NA
 Clathria cervicornis,NA
@@ -10120,14 +10120,14 @@ Coccorella,NA
 Coccorella atlantica,NA
 Coccorella atrata,NA
 Coccorella,NA
-Coccothraustes coccothraustes,hawfin
-Coccothraustes vespertinus,evegro
+Coccothraustes coccothraustes,Coccothraustes coccothraustes
+Coccothraustes vespertinus,Coccothraustes vespertinus
 Coccotylus truncatus,NA
 Cocculina,NA
 Cocculina beani,NA
-Coccyzus americanus,yebcuc
-Coccyzus erythropthalmus,bkbcuc
-Coccyzus vieilloti,purlic1
+Coccyzus americanus,Coccyzus americanus
+Coccyzus erythropthalmus,Coccyzus erythropthalmus
+Coccyzus vieilloti,Coccyzus vieilloti
 Cochlearia officinalis,NA
 Cochleoceps bicolor,NA
 Cochleoceps orientalis,NA
@@ -10257,7 +10257,7 @@ Coenonympha corinna,NA
 Coenonympha hero,NA
 Coenonympha pamphilus,NA
 Coenonympha tullia,NA
-Coereba flaveola,banana
+Coereba flaveola,Coereba flaveola
 Coffea arabica,NA
 Coffea,NA
 NA,NA
@@ -10271,9 +10271,9 @@ Colanthura,NA
 Colanthura,NA
 Colanthura,NA
 Colanthura tenuis,NA
-Colaptes auratus,norfli
+Colaptes auratus,Colaptes auratus
 Colaptes auratus auratus,NA
-Colaptes chrysoides,gilfli
+Colaptes chrysoides,Colaptes chrysoides
 Colchicum autumnale,NA
 Coleomegilla maculata,NA
 Coleonema album,NA
@@ -10328,7 +10328,7 @@ Colias erate,NA
 Colias eurytheme,NA
 Colias hyale,NA
 Colias philodice,NA
-Colinus virginianus,norbob
+Colinus virginianus,Colinus virginianus
 Colistium guntheri,NA
 Colistium nudipinnis,NA
 Collembola,NA
@@ -10345,7 +10345,7 @@ Collotheca mutabilis,NA
 Collotheca pelagica,NA
 Collotheca,NA
 Collozoum,NA
-Colluricincla harmonica,grysht1
+Colluricincla harmonica,Colluricincla harmonica
 NA,NA
 Colobonema sericeum,NA
 Colobonema,NA
@@ -10379,17 +10379,17 @@ Colubraria lanceolata,NA
 Colubridae,NA
 Colubrina glandulosa,NA
 Columba fasciata,NA
-Columba janthina,jawpig1
-Columba livia,rocpig
-Columba oenas,stodov1
-Columba palumbus,cowpig1
+Columba janthina,Columba janthina
+Columba livia,Columba livia
+Columba oenas,Columba oenas
+Columba palumbus,Columba palumbus
 Columbella,NA
 Columbella rusticoides,NA
 Columbellidae,NA
 Columbiaemysis ignota,NA
 Columbidae,NA
-Columbina inca,incdov
-Columbina passerina,cogdov
+Columbina inca,Columbina inca
+Columbina passerina,Columbina passerina
 Columnella magna,NA
 Colurella,NA
 Colurella,NA
@@ -10618,12 +10618,12 @@ Conostegia,NA
 Conostomum tetragonum,NA
 Conozoa texana,NA
 Contopus borealis,NA
-Contopus cooperi,olsfly
-Contopus latirostris,leapew1
-Contopus pertinax,grepew
-Contopus sordidulus,wewpew
+Contopus cooperi,Contopus cooperi
+Contopus latirostris,Contopus latirostris
+Contopus pertinax,Contopus pertinax
+Contopus sordidulus,Contopus sordidulus
 Contopus spec,NA
-Contopus virens,eawpew
+Contopus virens,Contopus virens
 Contusus richei,NA
 Conus,NA
 Conus aculeformis,NA
@@ -10722,7 +10722,7 @@ Coppingeria,NA
 NA,NA
 Coradion altivelis,NA
 Coradion chrysozonus,NA
-Coragyps atratus,blkvul
+Coragyps atratus,Coragyps atratus
 Coralinaofficinalis,NA
 Corallina,NA
 Corallinaceae,NA
@@ -10880,17 +10880,17 @@ Corticeus linearis,NA
 Cortinicara gibbosa,NA
 Corvidae,NA
 Corvidae,NA
-Corvus brachyrhynchos,amecro
-Corvus caurinus,norcro
-Corvus corax,comrav
-Corvus cornix,hoocro1
-Corvus corone,carcro1
-Corvus cryptoleucus,chirav
-Corvus dauuricus,daujac1
-Corvus frugilegus,rook1
-Corvus macrorhynchos,labcro1
-Corvus monedula,eurjac
-Corvus ossifragus,fiscro
+Corvus brachyrhynchos,Corvus brachyrhynchos
+Corvus caurinus,Corvus caurinus
+Corvus corax,Corvus corax
+Corvus cornix,Corvus cornix
+Corvus corone,Corvus corone
+Corvus cryptoleucus,Corvus cryptoleucus
+Corvus dauuricus,Corvus dauuricus
+Corvus frugilegus,Corvus frugilegus
+Corvus macrorhynchos,Corvus macrorhynchos
+Corvus monedula,Corvus monedula
+Corvus ossifragus,Corvus ossifragus
 Corvus,NA
 Corvus spec,NA
 Corycaeus,NA
@@ -11091,7 +11091,7 @@ Cottus bairdii,NA
 Cottus cognatus,NA
 Cottus gobio,NA
 Cottus scorpius,NA
-Coturnix coturnix,comqua1
+Coturnix coturnix,Coturnix coturnix
 Couepia grandiflora,NA
 Couepia platycalyx,NA
 Coullana canadensis,NA
@@ -11246,7 +11246,7 @@ Creptocampus diertisei,NA
 Creseis acicula,NA
 Creseis,NA
 Cressa dubia,NA
-Crex crex,corcra
+Crex crex,Crex crex
 Cribellopora divisopora,NA
 Cribellopora napi,NA
 Cribellopora siri,NA
@@ -11349,8 +11349,8 @@ Croton punctatus,NA
 Croton texensis,NA
 Croton triacros,NA
 Croton urucurana,NA
-Crotophaga ani,smbani
-Crotophaga sulcirostris,grbani
+Crotophaga ani,Crotophaga ani
+Crotophaga sulcirostris,Crotophaga sulcirostris
 Crouania,NA
 Crouania attenuata,NA
 Crouania,NA
@@ -11604,11 +11604,11 @@ Cucullia postera,NA
 Cucullia praecana,NA
 Cucullia similaris,NA
 Cucullia umbratica,NA
-Cuculus canorus,comcuc
-Cuculus micropterus,indcuc1
-Cuculus optatus,oricuc2
-Cuculus poliocephalus,lescuc1
-Cuculus saturatus,himcuc1
+Cuculus canorus,Cuculus canorus
+Cuculus micropterus,Cuculus micropterus
+Cuculus optatus,Cuculus optatus
+Cuculus poliocephalus,Cuculus poliocephalus
+Cuculus saturatus,Cuculus saturatus
 Cucumaria,NA
 Cucumaria calcigera,NA
 Cucumaria frondosa,NA
@@ -11763,21 +11763,21 @@ Cyanea,NA
 Cyanea capillata,NA
 Cyanea lamarckii,NA
 Cyanea,NA
-Cyanistes caeruleus,blutit
-Cyanistes cyanus,azutit2
+Cyanistes caeruleus,Cyanistes caeruleus
+Cyanistes cyanus,Cyanistes cyanus
 Cyanobacteria,NA
 Cyanocatena planctonica,NA
-Cyanocitta cristata,blujay
-Cyanocitta stelleri,stejay
-Cyanocorax yncas,grnjay
+Cyanocitta cristata,Cyanocitta cristata
+Cyanocitta stelleri,Cyanocitta stelleri
+Cyanocorax yncas,Cyanocorax yncas
 Cyanodictyon,NA
 Cyanogranis ferruginea,NA
 Cyanonephron styloides,NA
 Cyanophyceae,NA
 Cyanophycota,NA
 Cyanophyta,NA
-Cyanopica cyanus,azwmag2
-Cyanoptila cyanomelana,bawfly2
+Cyanopica cyanus,Cyanopica cyanus
+Cyanoptila cyanomelana,Cyanoptila cyanomelana
 Cyathea caracasana,NA
 Cyathea cooperi,NA
 Cyathea halonata,NA
@@ -11974,10 +11974,10 @@ Cyema atrum,NA
 Cyema,NA
 Cygnodraco mawsoni,NA
 Cygnus,NA
-Cygnus buccinator,truswa
-Cygnus columbianus,tunswa
-Cygnus cygnus,whoswa
-Cygnus olor,mutswa
+Cygnus buccinator,Cygnus buccinator
+Cygnus columbianus,Cygnus columbianus
+Cygnus cygnus,Cygnus cygnus
+Cygnus olor,Cygnus olor
 Cygnus,NA
 Cylichna,NA
 Cylichna alba,NA
@@ -12072,7 +12072,7 @@ Cymopterus montanus,NA
 Cymothoidae,NA
 Cynanchum laeve,NA
 Cynanchum obtusifolium,NA
-Cynanthus latirostris,brbhum
+Cynanthus latirostris,Cynanthus latirostris
 Cynarina,NA
 Cynglossus,NA
 Cynodon dactylon,NA
@@ -12202,7 +12202,7 @@ Cyprinocirrhites polyactis,NA
 Cyprinodon variegatus,NA
 Cyprinus carpio,NA
 Cypris,NA
-Cypseloides niger,blkswi
+Cypseloides niger,Cypseloides niger
 Cypselurus brevipinnis,NA
 Cypselurus comatus,NA
 Cypselurus hexazona,NA
@@ -12222,7 +12222,7 @@ Cyrtodaria,NA
 Cyrtodaria kurriana,NA
 Cyrtodaria siliqua,NA
 Cyrtomaia,NA
-Cyrtonyx montezumae,monqua
+Cyrtonyx montezumae,Cyrtonyx montezumae
 Cyrtopleura costata,NA
 Cyrtosphaera aculeata,NA
 Cystae,NA
@@ -12398,7 +12398,7 @@ Daphnia,NA
 Daphniidae,NA
 Daphnopsis anomala,NA
 Daphnopsis,NA
-Daption capense,cappet
+Daption capense,Daption capense
 Dardanus arrosor,NA
 Dardanus callichela,NA
 Dardanus fucosus,NA
@@ -12550,7 +12550,7 @@ Delias pasithoe,NA
 Delias,NA
 Delibus nudus,NA
 Delibus,NA
-Delichon dasypus,ashmar1
+Delichon dasypus,Delichon dasypus
 Delisea japonica,NA
 Delisea pulchra,NA
 Delolepis gigantea,NA
@@ -12586,7 +12586,7 @@ Demonax torulis,NA
 Demospongiae,NA
 Dendostrea folium,NA
 Dendragapus canadensis,NA
-Dendragapus obscurus,dusgro
+Dendragapus obscurus,Dendragapus obscurus
 Dendraster,NA
 Dendraster excentricus,NA
 Dendraster,NA
@@ -12627,8 +12627,8 @@ Dendrocnide corallodesme,NA
 Dendrocnide photinophylla,NA
 Dendrocnide sinuata,NA
 Dendrocopos kizuki,NA
-Dendrocopos leucotos,whbwoo1
-Dendrocopos major,grswoo
+Dendrocopos leucotos,Dendrocopos leucotos
+Dendrocopos major,Dendrocopos major
 Dendrocopos medius,NA
 Dendrocopos minor,NA
 Dendrocopos,NA
@@ -13309,8 +13309,8 @@ Diogenidae,NA
 Diomedea,NA
 Diomedea albatrus,NA
 Diomedea amsterdamens,NA
-Diomedea epomophora,royalb1
-Diomedea exulans,wanalb
+Diomedea epomophora,Diomedea epomophora
+Diomedea exulans,Diomedea exulans
 Diomedea immutabilis,NA
 Diomedea nigripes,NA
 Diomedea royal,NA
@@ -13704,7 +13704,7 @@ Dolabella,NA
 Dolicholagus longirostris,NA
 Dolicholatirus,NA
 Dolicholatirus,NA
-Dolichonyx oryzivorus,boboli
+Dolichonyx oryzivorus,Dolichonyx oryzivorus
 Dolichopodidae,NA
 Dolichopteryx,NA
 Dolichopteryx longipes,NA
@@ -13937,8 +13937,8 @@ Dryas,NA
 Drymaria glandulosa,NA
 Dryocoetes autographus,NA
 Dryocoetes hectographus,NA
-Dryocopus martius,blawoo1
-Dryocopus pileatus,pilwoo
+Dryocopus martius,Dryocopus martius
+Dryocopus pileatus,Dryocopus pileatus
 Dryodora glandiformis,NA
 Dryophilus pusillus,NA
 Dryophthorus konishii,NA
@@ -13987,7 +13987,7 @@ Dulichiella,NA
 Dulichiella spa,NA
 Dulzura laakona,NA
 Dulzura,NA
-Dumetella carolinensis,grycat
+Dumetella carolinensis,Dumetella carolinensis
 Dumontia contorta,NA
 Dumosus,NA
 Dunaliella,NA
@@ -14351,10 +14351,10 @@ Egira rubrica,NA
 Egira simplex,NA
 Eglisia tricarinata,NA
 Egregia menziesii,NA
-Egretta garzetta,litegr
+Egretta garzetta,Egretta garzetta
 Egretta intermedia,NA
-Egretta sacra,pacreh1
-Egretta thula,snoegr
+Egretta sacra,Egretta sacra
+Egretta thula,Egretta thula
 Ehlersia,NA
 Ehlersia cornuta,NA
 Ehlersia heterochaeta,NA
@@ -14433,8 +14433,8 @@ Elaeodendron melanocarpum,NA
 Elagatis bipinnulata,NA
 Elakatothrix gelatinosa,NA
 Elakatothrix viridis,NA
-Elanoides forficatus,swtkit
-Elanus leucurus,whtkit
+Elanoides forficatus,Elanoides forficatus
+Elanus leucurus,Elanus leucurus
 Elaphe emoryi,NA
 Elaphe obsoleta,NA
 Elasipodida,NA
@@ -14572,21 +14572,21 @@ Emathis tetuani,NA
 Emathisuteopuncta,NA
 Emballotheca,NA
 Embassichthys bathybius,NA
-Emberiza aureola,yebbun
-Emberiza cioides,meabun1
-Emberiza citrinella,yellow2
+Emberiza aureola,Emberiza aureola
+Emberiza cioides,Emberiza cioides
+Emberiza citrinella,Emberiza citrinella
 Emberizadae,NA
-Emberiza elegans,yetbun1
-Emberiza fucata,chebun2
-Emberiza hortulana,ortbun1
+Emberiza elegans,Emberiza elegans
+Emberiza fucata,Emberiza fucata
+Emberiza hortulana,Emberiza hortulana
 Emberiza leucocephala,NA
-Emberiza rustica,rusbun
-Emberiza schoeniclus,reebun
+Emberiza rustica,Emberiza rustica
+Emberiza schoeniclus,Emberiza schoeniclus
 Emberiza,NA
-Emberiza spodocephala,blfbun1
-Emberiza sulphurata,yelbun1
-Emberiza variabilis,grybun
-Emberiza yessoensis,ocrbun1
+Emberiza spodocephala,Emberiza spodocephala
+Emberiza sulphurata,Emberiza sulphurata
+Emberiza variabilis,Emberiza variabilis
+Emberiza yessoensis,Emberiza yessoensis
 Emberizidae,NA
 Embiotoca jacksoni,NA
 Embiotoca lateralis,NA
@@ -14621,18 +14621,18 @@ NA,NA
 Empididae,NA
 Empididae,NA
 Empididae,NA
-Empidonax alnorum,aldfly
-Empidonax difficilis,pasfly
-Empidonax flaviventris,yebfly
-Empidonax hammondii,hamfly
-Empidonax minimus,leafly
-Empidonax oberholseri,dusfly
-Empidonax occidentalis,corfly
+Empidonax alnorum,Empidonax alnorum
+Empidonax difficilis,Empidonax difficilis
+Empidonax flaviventris,Empidonax flaviventris
+Empidonax hammondii,Empidonax hammondii
+Empidonax minimus,Empidonax minimus
+Empidonax oberholseri,Empidonax oberholseri
+Empidonax occidentalis,Empidonax occidentalis
 Empidonax species,NA
-Empidonax traillii,wilfly
+Empidonax traillii,Empidonax traillii
 Empidonax unidentified,NA
-Empidonax virescens,acafly
-Empidonax wrightii,gryfly
+Empidonax virescens,Empidonax virescens
+Empidonax wrightii,Empidonax wrightii
 Emplectonema,NA
 Emplectonema gracile,NA
 Emplectonema neesii,NA
@@ -14866,8 +14866,8 @@ Eohaustorius sencillus,NA
 Eohaustorius,NA
 Eohaustorius washingtonianus,NA
 Eolepadidae,NA
-Eophona migratoria,yebgro1
-Eophona personata,japgro1
+Eophona migratoria,Eophona migratoria
+Eophona personata,Eophona personata
 Eopsetta jordani,NA
 Eosipho,NA
 Eosipho desbruyeresi,NA
@@ -15145,7 +15145,7 @@ Erebia ligea,NA
 Erebia niphonica,NA
 Erebia wanga,NA
 Erechtites hieracifolia,NA
-Eremophila alpestris,horlar
+Eremophila alpestris,Eremophila alpestris
 Erenna cornuta,NA
 Erenna laciniata,NA
 Erenna richardi,NA
@@ -15274,7 +15274,7 @@ Erisphex pottii,NA
 Erisphex simplex,NA
 NA,NA
 Eritettix simplex,NA
-Erithacus rubecula,eurrob1
+Erithacus rubecula,Erithacus rubecula
 Erkenia subaequiciliata,NA
 Erksonea,NA
 Ernobius abietinus,NA
@@ -15744,7 +15744,7 @@ Eudoxia macra,NA
 Eudoxoides mitra,NA
 Eudoxoides spiralis,NA
 Eudrepanulatrix rectifascia,NA
-Eudyptes chrysocome,rocpen1
+Eudyptes chrysocome,Eudyptes chrysocome
 Eudyptes glaucoides,NA
 Eudyptula cornutus,NA
 Eugenia alnifolia,NA
@@ -15988,8 +15988,8 @@ Eupatorium ivaefolium,NA
 Eupatorium ligulaefolium,NA
 Eupentacta quinquesemita,NA
 Eupetrichthys angustipes,NA
-Euphagus carolinus,rusbla
-Euphagus cyanocephalus,brebla
+Euphagus carolinus,Euphagus carolinus
+Euphagus cyanocephalus,Euphagus cyanocephalus
 Euphausia,NA
 Euphausia americana,NA
 Euphausia,NA
@@ -16026,7 +16026,7 @@ Euphilomedes longiseta,NA
 Euphilomedes producta,NA
 Euphilomedes,NA
 Eupholoe,NA
-Euphonia elegantissima,eleeup1
+Euphonia elegantissima,Euphonia elegantissima
 Euphorbia ammannioides,NA
 Euphorbia corollata,NA
 Euphorbia cyathophora,NA
@@ -16581,73 +16581,73 @@ NA,NA
 Falcaria lacertinaria,NA
 Falcidens hartmanae,NA
 Falcidens longus,NA
-Falcipennis canadensis,sprgro
-Falco amurensis,amufal1
-Falco cherrug,sakfal1
-Falco columbarius,merlin
-Falco mexicanus,prafal
-Falco naumanni,leskes1
+Falcipennis canadensis,Falcipennis canadensis
+Falco amurensis,Falco amurensis
+Falco cherrug,Falco cherrug
+Falco columbarius,Falco columbarius
+Falco mexicanus,Falco mexicanus
+Falco naumanni,Falco naumanni
 Falcon unidentified,NA
-Falco peregrinus,perfal
-Falco rusticolus,gyrfal
-Falco sparverius,amekes
-Falco subbuteo,eurhob
-Falco tinnunculus,eurkes
-Falco vespertinus,reffal1
+Falco peregrinus,Falco peregrinus
+Falco rusticolus,Falco rusticolus
+Falco sparverius,Falco sparverius
+Falco subbuteo,Falco subbuteo
+Falco tinnunculus,Falco tinnunculus
+Falco vespertinus,Falco vespertinus
 Falkia repens,NA
 Fallacia forcipata,NA
 Fallacia,NA
 Fallosquilla fallax,NA
 Fallotritella biscaynensis,NA
 Fallugia paradoxa,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
-Family,NA
+Aetideidae,NA
+Anthomyiidae,NA
+Aphididae,NA
+Baetidae,NA
+Bibonidae,NA
+Braconidae,NA
+Calliopiidae,NA
+Canaceidae,NA
+Cecidomyiidae,NA
+Ceratopogonidae,NA
+Chironomidae,NA
+Cicadellidae,NA
+Corixidae,NA
+Culicidae,NA
+Cynipidae,NA
+Cypridae,NA
+Cyprididae,NA
+Dixidae,NA
+Dytiscidae,NA
+Ectinosomatidae,NA
+Ectinosomidae,NA
+Empididae,NA
+Ephemeridae,NA
+Formicidae,NA
+Gracillariidae,NA
+Halocyprididae,NA
+Hemerobiidae,NA
+Heptageniidae,NA
+Hydropsychidae,NA
+Ichneumonidae,NA
+Limnephilidae,NA
+Lysianassidae,NA
+Macrocyprididae,NA
+Milichiidae,NA
+Miridae,NA
+Muscidae,NA
+Mycetophilidae,NA
+Orthocladiinae,NA
+Pachyneuridae,NA
+Paguridae,NA
+Perlodidae,NA
+Phoridae,NA
+Psyllidae,NA
+Scatophagidae,NA
+Sciaridae,NA
+Simuliidae,NA
+Staphylinidae,NA
+Tipulidae,NA
 Faradaya splendida,NA
 Faramea calyptrata,NA
 Faramea coffeoides,NA
@@ -16798,12 +16798,12 @@ Festuca vivipara,NA
 Fibrocapsa japonica,NA
 Fibrocapsa,NA
 Fibularia,NA
-Ficedula albicilla,taifly1
-Ficedula albicollis,colfly1
-Ficedula hypoleuca,eupfly1
-Ficedula mugimaki,mugfly
-Ficedula narcissina,narfly
-Ficedula parva,rebfly
+Ficedula albicilla,Ficedula albicilla
+Ficedula albicollis,Ficedula albicollis
+Ficedula hypoleuca,Ficedula hypoleuca
+Ficedula mugimaki,Ficedula mugimaki
+Ficedula narcissina,Ficedula narcissina
+Ficedula parva,Ficedula parva
 Ficinia anceps,NA
 Ficinia brevifolia,NA
 Ficinia bulbosa,NA
@@ -17088,9 +17088,9 @@ Fragum,NA
 Fragum unedo,NA
 Franciscodendron laurifolium,NA
 Fratercula,NA
-Fratercula arctica,atlpuf
-Fratercula cirrhata,tufpuf
-Fratercula corniculata,horpuf
+Fratercula arctica,Fratercula arctica
+Fratercula cirrhata,Fratercula cirrhata
+Fratercula corniculata,Fratercula corniculata
 Fraudella carassiops,NA
 Fraxinus americana,NA
 Fraxinus angustifolia,NA
@@ -17099,10 +17099,10 @@ Fraxinus nigra,NA
 Fraxinus pennsylvanica,NA
 Fraxinus,NA
 Fregata,NA
-Fregata magnificens,magfri
-Fregata minor,grefri
-Fregetta grallaria,wbspet1
-Fregetta tropica,bbspet1
+Fregata magnificens,Fregata magnificens
+Fregata minor,Fregata minor
+Fregetta grallaria,Fregetta grallaria
+Fregetta tropica,Fregetta tropica
 Frenulina sanguinolenta,NA
 Freyastera digitata,NA
 Freyastera,NA
@@ -17114,8 +17114,8 @@ Fridericia,NA
 Frigidalvania janmayeni,NA
 Frigidoalvania cruenta,NA
 Frillagalma vityazi,NA
-Fringilla coelebs,comcha
-Fringilla montifringilla,brambl
+Fringilla coelebs,Fringilla coelebs
+Fringilla montifringilla,Fringilla montifringilla
 Fringillidae,NA
 Fritillaria,NA
 Fritillaria atropurpurea,NA
@@ -17146,11 +17146,11 @@ Fucus evanescens,NA
 Fucus serratus,NA
 Fucus spiralis,NA
 Fucus vesiculosus,NA
-Fulica americana,y00475
-Fulica atra,eurcoo
+Fulica americana,Fulica americana
+Fulica atra,Fulica atra
 Fulmarus,NA
-Fulmarus glacialis,norful
-Fulmarus glacialoides,souful1
+Fulmarus glacialis,Fulmarus glacialis
+Fulmarus glacialoides,Fulmarus glacialoides
 Fulvia aperta,NA
 Fulvia scalata,NA
 Fulvia,NA
@@ -17367,15 +17367,15 @@ Galium virgatum,NA
 Gallardia pulchella,NA
 Galleria mellonella,NA
 Gallesia integrifolia,NA
-Gallinago delicata,wilsni1
-Gallinago gallinago,comsni
-Gallinago hardwickii,latsni1
-Gallinago media,gresni1
-Gallinago megala,swisni1
-Gallinago solitaria,solsni1
+Gallinago delicata,Gallinago delicata
+Gallinago gallinago,Gallinago gallinago
+Gallinago hardwickii,Gallinago hardwickii
+Gallinago media,Gallinago media
+Gallinago megala,Gallinago megala
+Gallinago solitaria,Gallinago solitaria
 Gallinago,NA
-Gallinago stenura,pitsni
-Gallinula chloropus,commoo3
+Gallinago stenura,Gallinago stenura
+Gallinula chloropus,Gallinula chloropus
 Gambelia wislizenii,NA
 Gambels,NA
 Gambels,NA
@@ -17490,12 +17490,12 @@ Gari virescens,NA
 Garosyrrhoe,NA
 Garosyrrhoe bigarra,NA
 Garosyrrhoe,NA
-Garrodia nereis,gybstp1
-Garrulax canorus,melthr
+Garrodia nereis,Garrodia nereis
+Garrulax canorus,Garrulax canorus
 Garrulax cineraceus,NA
 Garrulax sannio,NA
-Garrulus glandarius,eurjay1
-Garrulus lidthi,lidjay1
+Garrulus glandarius,Garrulus glandarius
+Garrulus lidthi,Garrulus lidthi
 Garuga floribunda,NA
 Garuga pinnata,NA
 Garveia franciscana,NA
@@ -17549,12 +17549,12 @@ Gaurotes virginea,NA
 Gaussia princeps,NA
 Gavia,NA
 Gavia arctia,NA
-Gavia arctica,arcloo
-Gavia immer,comloo
+Gavia arctica,Gavia arctica
+Gavia immer,Gavia immer
 Gavialiceps taeniola,NA
 Gavialiceps taiwanensis,NA
-Gavia pacifica,pacloo
-Gavia stellata,retloo
+Gavia pacifica,Gavia pacifica
+Gavia stellata,Gavia stellata
 Gaviformes,NA
 Gaviiformes,NA
 Gazelletta hexanema,NA
@@ -17657,7 +17657,7 @@ Gentianella aurea,NA
 Gentianella campestris,NA
 Gentianella tenella,NA
 Gentoo penguin,NA
-Genus nov,NA
+NA,NA
 NA,NA
 Genyagnus monopterygius,NA
 Genyatremus luteus,NA
@@ -17666,7 +17666,7 @@ Genypterus,NA
 Genypterus blacodes,NA
 Genypterus brasiliensis,NA
 Geochloa rufa,NA
-Geococcyx californianus,greroa
+Geococcyx californianus,Geococcyx californianus
 Geodia cydonium,NA
 Geodia,NA
 Geodia,NA
@@ -17688,11 +17688,11 @@ Geonoma deversa,NA
 Geonoma interrupta,NA
 Geonoma undata,NA
 Geophilomorpha,NA
-Geothlypis philadelphia,mouwar
-Geothlypis trichas,comyel
+Geothlypis philadelphia,Geothlypis philadelphia
+Geothlypis trichas,Geothlypis trichas
 Geotria australis,NA
 Geotrupidae,NA
-Geotrygon montana,ruqdov
+Geotrygon montana,Geotrygon montana
 Gephyroberyx darwinii,NA
 Gephyroberyx japonicus,NA
 Gephyrocapsa,NA
@@ -17820,10 +17820,10 @@ Glandularia bipinnatifida,NA
 Glandularia canadensis,NA
 Glans dominguensis,NA
 Glaphyrymenia pustulosa,NA
-Glareola maldivarum,oripra
+Glareola maldivarum,Glareola maldivarum
 Glaucidium californicum,NA
-Glaucidium gnoma,nopowl
-Glaucidium passerinum,eupowl1
+Glaucidium gnoma,Glaucidium gnoma
+Glaucidium passerinum,Glaucidium passerinum
 Glaucomys volans,NA
 Glauconome chinensis,NA
 Glaucopsyche alexis,NA
@@ -18311,8 +18311,8 @@ Gorgonocephalus,NA
 Gorgonocephalus arcticus,NA
 Gorgonocephalus eucnemis,NA
 Gorgonocephlus arcticus,NA
-Gorsachius goisagi,janher1
-Gorsachius melanolophus,manher1
+Gorsachius goisagi,Gorsachius goisagi
+Gorsachius melanolophus,Gorsachius melanolophus
 Gossea corynetes,NA
 Gossia bidwillii,NA
 Gossia grayi,NA
@@ -18497,7 +18497,7 @@ Grubeulepis sulcatisetis,NA
 Grubeulepis tebblei,NA
 Grubia compta,NA
 Grus canadensis,NA
-Grus grus,comcra
+Grus grus,Grus grus
 Grusonia clavata,NA
 NA,NA
 Gryllidae,NA
@@ -18557,7 +18557,7 @@ Gutierrezia sarothrae,NA
 Gutierrezia wrightii,NA
 NA,NA
 Gwynia capsula,NA
-Gygis alba,whiter
+Gygis alba,Gygis alba
 Gygis candida,NA
 Gymnacanthus detrisus,NA
 Gymnacanthus galeatus,NA
@@ -18640,7 +18640,7 @@ Gymnomuraena zebra,NA
 Gymnonereis crosslandi,NA
 Gymnopogon foliolosus,NA
 Gymnorhamphichthys britskii,NA
-Gymnorhinus cyanocephalus,pinjay
+Gymnorhinus cyanocephalus,Gymnorhinus cyanocephalus
 Gymnosarda unicolor,NA
 Gymnoscelis rufifasciata,NA
 Gymnoscopelus bolini,NA
@@ -18777,13 +18777,13 @@ Hadrotettix trifasciatus,NA
 Hadziidae,NA
 Haedropleura septangularis,NA
 Haematopus,NA
-Haematopus bachmani,blkoys
-Haematopus moquini,afroys1
-Haematopus ostralegus,euroys1
+Haematopus bachmani,Haematopus bachmani
+Haematopus moquini,Haematopus moquini
+Haematopus ostralegus,Haematopus ostralegus
 Haemescharia,NA
 Haemescharia hennedyi,NA
-Haemorhous mexicanus,houfin
-Haemorhous purpureus,purfin
+Haemorhous mexicanus,Haemorhous mexicanus
+Haemorhous purpureus,Haemorhous purpureus
 Haemulidae,NA
 Haemulon,NA
 Haemulon album,NA
@@ -18826,7 +18826,7 @@ Halcampidae,NA
 Halcampidae,NA
 Halcampoides,NA
 Halcampoides elongatus,NA
-Halcyon coromanda,rudkin1
+Halcyon coromanda,Halcyon coromanda
 Halecium,NA
 Halecium articulosum,NA
 Halecium beani,NA
@@ -18855,9 +18855,9 @@ Halfordia kendack,NA
 Halgerda carlsoni,NA
 Halgerda graphica,NA
 Halgerda willeyi,NA
-Haliaeetus albicilla,whteag
-Haliaeetus leucocephalus,baleag
-Haliaeetus pelagicus,stseag
+Haliaeetus albicilla,Haliaeetus albicilla
+Haliaeetus leucocephalus,Haliaeetus leucocephalus
+Haliaeetus pelagicus,Haliaeetus pelagicus
 Halianthella,NA
 Halicampus grayi,NA
 Halice,NA
@@ -19073,7 +19073,7 @@ Halmyrapseudes,NA
 Halmyrapseudes bahamensis,NA
 Halmyrapseudes,NA
 Haloa nigropunctata,NA
-Halobaena caerulea,blupet1
+Halobaena caerulea,Halobaena caerulea
 Halobates,NA
 Halobesium occidentale,NA
 Halocladius vitripennis,NA
@@ -19506,7 +19506,7 @@ Helladosphaera,NA
 Helminthocladia calvadosii,NA
 Helminthora divaricata,NA
 Helmithems vermivorus,NA
-Helmitheros vermivorum,woewar1
+Helmitheros vermivorum,Helmitheros vermivorum
 Helmitheros vermivorus,NA
 Helobdella stagnalis,NA
 Helobdella triserialis,NA
@@ -19947,7 +19947,7 @@ Hieracium umbellatum,NA
 Hierochloe alpina,NA
 Hierochloe odorata,NA
 Hierochloe pauciflora,NA
-Hierococcyx hyperythrus,nohcuc1
+Hierococcyx hyperythrus,Hierococcyx hyperythrus
 Hieronyma alchorneoides,NA
 Higginsia,NA
 Hildenbrandia,NA
@@ -19962,7 +19962,7 @@ Himantolophidae,NA
 Himantolophus appelii,NA
 Himantolophus groenlandicus,NA
 Himantolophus,NA
-Himantopus himantopus,bkwsti
+Himantopus himantopus,Himantopus himantopus
 Himantozoum candoides,NA
 Himantozoum clavulum,NA
 Himantozoum taurinum,NA
@@ -20047,7 +20047,7 @@ Hippoglossoides,NA
 Hippoglossus,NA
 Hippoglossus hippoglossus,NA
 Hippoglossus stenolepis,NA
-Hippolais icterina,ictwar1
+Hippolais icterina,Hippolais icterina
 Hippolyte,NA
 Hippolyte californiensis,NA
 Hippolyte clarki,NA
@@ -20118,7 +20118,7 @@ Hirtella hebeclada,NA
 Hirtella racemosa,NA
 Hirtella triandra,NA
 Hirudinea,NA
-Hirundapus caudacutus,whtnee
+Hirundapus caudacutus,Hirundapus caudacutus
 Hirundichthys affinis,NA
 Hirundichthys rondeletii,NA
 Hirundichthys,NA
@@ -20126,8 +20126,8 @@ Hirundinidae,NA
 Hirundo daurica,NA
 Hirundo fulva,NA
 Hirundo pyrrhonota,NA
-Hirundo rustica,barswa
-Hirundo tahitica,pacswa1
+Hirundo rustica,Hirundo rustica
+Hirundo tahitica,Hirundo tahitica
 Hisonotus insperatus,NA
 Histampica rugosa,NA
 Histeridae,NA
@@ -20152,7 +20152,7 @@ Histioteuthis miranda,NA
 Histioteuthis reversa,NA
 Histioteuthis,NA
 Histrio histrio,NA
-Histrionicus histrionicus,harduc
+Histrionicus histrionicus,Histrionicus histrionicus
 Hobsonia florida,NA
 Hodometrica prolixa,NA
 Hoffmannseggia drepanocarpa,NA
@@ -20459,7 +20459,7 @@ Hydriomena perfracta,NA
 Hydriomena renunciata,NA
 Hydriomena ruberata,NA
 Hydriomena speciosata,NA
-Hydrobates pelagicus,bripet
+Hydrobates pelagicus,Hydrobates pelagicus
 Hydrobatidae,NA
 Hydrobia,NA
 Hydrobia acuta,NA
@@ -20517,7 +20517,7 @@ Hydrolithon reinboldii,NA
 Hydrolithon,NA
 Hydromedusa,NA
 Hydromedusae,NA
-Hydrophasianus chirurgus,phtjac1
+Hydrophasianus chirurgus,Hydrophasianus chirurgus
 Hydrophilidae,NA
 Hydrophilidae,NA
 Hydrophis elegans,NA
@@ -20574,7 +20574,7 @@ Hylobius abietis,NA
 Hylobius ezoensis,NA
 Hylobius haroldi,NA
 Hylobius piceus,NA
-Hylocichla mustelina,woothr
+Hylocichla mustelina,Hylocichla mustelina
 Hylocomiastrum umbratum,NA
 Hylocomium pyrenaicum,NA
 Hylocomium splendens,NA
@@ -20807,7 +20807,7 @@ Hypsiboas raniceps,NA
 Hypsiboas semilineatus,NA
 Hypsicomus,NA
 Hypsicomus phaeotaenia,NA
-Hypsipetes amaurotis,brebul1
+Hypsipetes amaurotis,Hypsipetes amaurotis
 Hypsoblennius hentz,NA
 Hypsopygia costalis,NA
 Hypsurus caryi,NA
@@ -20869,13 +20869,13 @@ Ictalurus catus,NA
 Ictalurus furcatus,NA
 Ictalurus melas,NA
 Ictalurus punctatus,NA
-Icteria virens,yebcha
-Icterus bullockii,bulori
-Icterus cucullatus,hooori
-Icterus galbula,balori
-Icterus parisorum,scoori
-Icterus spurius,orcori
-Ictinia mississippiensis,miskit
+Icteria virens,Icteria virens
+Icterus bullockii,Icterus bullockii
+Icterus cucullatus,Icterus cucullatus
+Icterus galbula,Icterus galbula
+Icterus parisorum,Icterus parisorum
+Icterus spurius,Icterus spurius
+Ictinia mississippiensis,Ictinia mississippiensis
 Ictiobud cyprinellus,NA
 Ictiobus bubalus,NA
 Ictiobus cyprinellus,NA
@@ -21315,7 +21315,7 @@ Ixa inermis,NA
 Ixa monodi,NA
 Ixa pulcherrima,NA
 Ixias pyrene,NA
-Ixobrychus sinensis,yelbit
+Ixobrychus sinensis,Ixobrychus sinensis
 Ixonanthes icosandra,NA
 Ixonanthes reticulata,NA
 Ixora brevifolia,NA
@@ -21333,7 +21333,7 @@ Ixora oreogena,NA
 Ixora pendula,NA
 Ixora venulosa,NA
 Ixora warmingii,NA
-Ixoreus naevius,varthr
+Ixoreus naevius,Ixoreus naevius
 Izanami inermis,NA
 Jacaranda brasiliana,NA
 Jacaranda copaia,NA
@@ -21474,7 +21474,7 @@ Julida,NA
 Junceella juncea,NA
 Junceella juvenile,NA
 Junceella,NA
-Junco hyemalis,daejun
+Junco hyemalis,Junco hyemalis
 Juncus acutiflorus,NA
 Juncus alpinus,NA
 Juncus arcticus,NA
@@ -21509,7 +21509,7 @@ Justicia ovata,NA
 Justicia,NA
 NA,NA
 Juxtamusium coudeini,NA
-Jynx torquilla,eurwry
+Jynx torquilla,Jynx torquilla
 Kali,NA
 Kali indica,NA
 Kali macrodon,NA
@@ -21944,7 +21944,7 @@ Lagocephalus spadiceus,NA
 Lagocephalus suezensis,NA
 Lagocephalus wheeleri,NA
 Lagodon rhomboides,NA
-Lagopus lagopus,wilpta
+Lagopus lagopus,Lagopus lagopus
 Lagopus mutus,NA
 Lagotis glauca,NA
 Lagria hirta,NA
@@ -22073,10 +22073,10 @@ Lanice,NA
 Lanice conchilega,NA
 Lanice,NA
 Laniidae,NA
-Lanius bucephalus,buhshr1
-Lanius collurio,rebshr1
-Lanius excubitor,norshr1
-Lanius ludovicianus,logshr
+Lanius bucephalus,Lanius bucephalus
+Lanius collurio,Lanius collurio
+Lanius excubitor,Lanius excubitor
+Lanius ludovicianus,Lanius ludovicianus
 Lannea coromandelica,NA
 Lansium domesticum,NA
 Laodicea,NA
@@ -22126,38 +22126,38 @@ Lark,NA
 Larrea tridentata,NA
 Larsia decolorata,NA
 Larus,NA
-Larus argentatus,hergul
+Larus argentatus,Larus argentatus
 Larus atricilla,NA
 Larus audouinii,NA
-Larus cachinnans,casgul2
-Larus californicus,calgul
-Larus canus,mewgul
+Larus cachinnans,Larus cachinnans
+Larus californicus,Larus californicus
+Larus canus,Larus canus
 Larus cirrocephalus,NA
-Larus crassirostris,bktgul
-Larus delawarensis,ribgul
-Larus dominicanus,kelgul
-Larus fuscus,lbbgul
-Larus glaucescens,glwgul
-Larus glaucoides,y00478
+Larus crassirostris,Larus crassirostris
+Larus delawarensis,Larus delawarensis
+Larus dominicanus,Larus dominicanus
+Larus fuscus,Larus fuscus
+Larus glaucescens,Larus glaucescens
+Larus glaucoides,Larus glaucoides
 Larus hartlaubii,NA
-Larus heermanni,heegul
+Larus heermanni,Larus heermanni
 Larus hemprichii,NA
-Larus hyperboreus,glagul
+Larus hyperboreus,Larus hyperboreus
 Larus hyuperboreus,NA
 Larus leucopthalmus,NA
-Larus marinus,gbbgul
+Larus marinus,Larus marinus
 Larus melanocephalus,NA
-Larus michahellis,yelgul1
+Larus michahellis,Larus michahellis
 Larus minutus,NA
 Larus novaehollandiae,NA
-Larus occidentalis,wesgul
-Larus pacificus,pacgul1
+Larus occidentalis,Larus occidentalis
+Larus pacificus,Larus pacificus
 Larus philadelphia,NA
 Larus pipixcan,NA
 Larus ridibundus,NA
 Larus sabini,NA
 Larus saundersi,NA
-Larus schistisagus,slbgul
+Larus schistisagus,Larus schistisagus
 Larus thayeri,NA
 Larvacea,NA
 Lasaea adansoni,NA
@@ -22345,7 +22345,7 @@ Leionucula superba,NA
 Leiopidae,NA
 Leiosalpinx australis,NA
 Leiostomus xanthurus,NA
-Leiothrix lutea,reblei
+Leiothrix lutea,Leiothrix lutea
 Leistus crassus,NA
 Leistus niger,NA
 Leistus obtusicollis,NA
@@ -22758,7 +22758,7 @@ Leptosynapta,NA
 Leptosynapta tenuis,NA
 Leptotes pirithous,NA
 Leptothecata,NA
-Leptotila verreauxi,whtdov
+Leptotila verreauxi,Leptotila verreauxi
 Lepturacanthus savala,NA
 Leptura ochraceofasciata,NA
 Lepturobosca virens,NA
@@ -22925,8 +22925,8 @@ Leucospermum conocarpodendron,NA
 Leucospermum hypophyllocarpodendron,NA
 Leucospilapteryx omissella,NA
 Leucospora multifida,NA
-Leucosticte arctoa,asrfin1
-Leucosticte tephrocotis,gcrfin
+Leucosticte arctoa,Leucosticte arctoa
+Leucosticte tephrocotis,Leucosticte tephrocotis
 Leucothea japonica,NA
 Leucothoe,NA
 Leucothoe hyhelia,NA
@@ -23135,8 +23135,8 @@ Limnodrilus hoffmeisteri,NA
 Limnodrilus profundicola,NA
 Limnodrilus udekemianus,NA
 Limnodromus,NA
-Limnodromus scolopaceus,lobdow
-Limnodromus semipalmatus,asidow1
+Limnodromus scolopaceus,Limnodromus scolopaceus
+Limnodromus semipalmatus,Limnodromus semipalmatus
 Limnodynastes dorsalis,NA
 Limnomedusae,NA
 Limnoria,NA
@@ -23149,7 +23149,7 @@ Limnoria spa,NA
 Limnoria tripunctata,NA
 Limnoriidae,NA
 Limnosida frontosa,NA
-Limnothlypis swainsonii,swawar
+Limnothlypis swainsonii,Limnothlypis swainsonii
 Limnothrix planctonica,NA
 Limnothrix redekei,NA
 Limonium scabrum,NA
@@ -23162,10 +23162,10 @@ Limopsis minuta,NA
 Limopsis,NA
 Limopsis sulcata,NA
 Limosa,NA
-Limosa fedoa,margod
-Limosa haemastica,hudgod
-Limosa lapponica,batgod
-Limosa limosa,bktgod
+Limosa fedoa,Limosa fedoa
+Limosa haemastica,Limosa haemastica
+Limosa lapponica,Limosa lapponica
+Limosa limosa,Limosa limosa
 Limulus,NA
 Limulus polyphemus,NA
 Linanthus bigelouii,NA
@@ -23529,11 +23529,11 @@ Lobopilumnus agassizi,NA
 Lobostemon fruticosus,NA
 Lobotes surinamensis,NA
 Lobulogobius omanensis,NA
-Locustella fasciolata,grgwar1
-Locustella fluviatilis,eurwar2
-Locustella lanceolata,lanwar
-Locustella naevia,cogwar1
-Locustella ochotensis,migwar
+Locustella fasciolata,Locustella fasciolata
+Locustella fluviatilis,Locustella fluviatilis
+Locustella lanceolata,Locustella lanceolata
+Locustella naevia,Locustella naevia
+Locustella ochotensis,Locustella ochotensis
 Loecothoe richiardii,NA
 Loganiaceae,NA
 Loggerhead,NA
@@ -23584,7 +23584,7 @@ Lonchophylla robusta,NA
 Lonchopisthus meadi,NA
 Lonchopisthus micrognathus,NA
 Lonchopylla thomasi,NA
-Lonchura punctulata,nutman
+Lonchura punctulata,Lonchura punctulata
 Longipedia,NA
 Longipedia coronata,NA
 Longipedia minor,NA
@@ -23630,7 +23630,7 @@ Lophocolea bidentata,NA
 Lophocolea heterophylla,NA
 Lophodiodon calori,NA
 Lophodolus,NA
-Lophodytes cucullatus,hoomer
+Lophodytes cucullatus,Lophodytes cucullatus
 Lophogaster,NA
 Lophogaster spinosus,NA
 Lophogastrida,NA
@@ -23645,7 +23645,7 @@ Lophopanopeus bellus,NA
 Lophopanopeus leucomanus,NA
 Lophopetalum floribundum,NA
 Lophopetalum wightianum,NA
-Lophophanes cristatus,cretit2
+Lophophanes cristatus,Lophophanes cristatus
 Lophophnaes cristatus,NA
 Lophoplax,NA
 Lophosiphonia obscura,NA
@@ -23692,8 +23692,8 @@ Lovenia elongata,NA
 Loweina interrupta,NA
 Loweina rara,NA
 Loweina,NA
-Loxia curvirostra,redcro
-Loxia leucoptera,whwcro
+Loxia curvirostra,Loxia curvirostra
+Loxia leucoptera,Loxia leucoptera
 Loxigilla portoricensis,NA
 Loxoconcha guttuta,NA
 Loxoconcha impressa,NA
@@ -23938,8 +23938,8 @@ Luscina calliope,NA
 Luscinia akahige,NA
 Luscinia calliope,NA
 Luscinia cyane,NA
-Luscinia luscinia,thrnig1
-Luscinia svecica,blueth
+Luscinia luscinia,Luscinia luscinia
+Luscinia svecica,Luscinia svecica
 Lutjanidae,NA
 Lutjanus,NA
 Lutjanus adetii,NA
@@ -24277,8 +24277,8 @@ Macromphalina adamsii,NA
 Macromphalina floridana,NA
 Macromphalina palmalitoris,NA
 Macromphalina pilsbryi,NA
-Macronectes giganteus,angpet1
-Macronectes halli,norgip1
+Macronectes giganteus,Macronectes giganteus
+Macronectes halli,Macronectes halli
 Macronectes,NA
 Macroparalepis,NA
 Macroparalepis affine,NA
@@ -24690,7 +24690,7 @@ Margarites,NA
 Margarites,NA
 Margarites striatus,NA
 Margarites undulata,NA
-Margarops fuscatus,peethr1
+Margarops fuscatus,Margarops fuscatus
 Marginaster patriceae,NA
 Marginaster,NA
 Marginella,NA
@@ -24861,8 +24861,8 @@ Medusanthera gracilis,NA
 Meesia,NA
 Meesia uliginosa,NA
 Megacalanus princeps,NA
-Megaceryle alcyon,belkin1
-Megaceryle lugubris,crekin1
+Megaceryle alcyon,Megaceryle alcyon
+Megaceryle lugubris,Megaceryle lugubris
 Megacyclops gigas,NA
 Megacyclops,NA
 Megacyclops viridis,NA
@@ -24870,7 +24870,7 @@ Megadrili,NA
 Megadrili,NA
 Megadrili,NA
 Megadrili,NA
-Megadyptes antipodes,yeepen1
+Megadyptes antipodes,Megadyptes antipodes
 Megaelosia bocainensis,NA
 Megalaspis cordyla,NA
 Megalobrachium soriatum,NA
@@ -24914,7 +24914,7 @@ Meganyctiphanes norvegica,NA
 Megaptera novaeangliae,NA
 Megapterium fremontii,NA
 Megarthrus,NA
-Megascops kennicottii,wesowl1
+Megascops kennicottii,Megascops kennicottii
 Megascops spec,NA
 Megasternum concinnum,NA
 Megastomia conoidea,NA
@@ -24974,20 +24974,20 @@ Melanella jamaicensis,NA
 Melanella rosa,NA
 Melanella,NA
 Melanella,NA
-Melanerpes aurifrons,gofwoo
-Melanerpes carolinus,rebwoo
-Melanerpes erythrocephalus,rehwoo
-Melanerpes formicivorus,acowoo
-Melanerpes lewis,lewwoo
-Melanerpes portoricensis,purwoo1
-Melanerpes uropygialis,gilwoo
+Melanerpes aurifrons,Melanerpes aurifrons
+Melanerpes carolinus,Melanerpes carolinus
+Melanerpes erythrocephalus,Melanerpes erythrocephalus
+Melanerpes formicivorus,Melanerpes formicivorus
+Melanerpes lewis,Melanerpes lewis
+Melanerpes portoricensis,Melanerpes portoricensis
+Melanerpes uropygialis,Melanerpes uropygialis
 Melanerpus carolinus,NA
 Melanitis leda,NA
 Melanitta,NA
-Melanitta americana,blksco2
-Melanitta fusca,whwsco3
-Melanitta nigra,blksco1
-Melanitta perspicillata,sursco
+Melanitta americana,Melanitta americana
+Melanitta fusca,Melanitta fusca
+Melanitta nigra,Melanitta nigra
+Melanitta perspicillata,Melanitta perspicillata
 Melanocetidae,NA
 Melanocetus,NA
 Melanocetus johnsoni,NA
@@ -25057,7 +25057,7 @@ Melarhaphe neritoides,NA
 Melastoma malabathricum,NA
 Melastomataceae,NA
 Melaxinaea vitrea,NA
-Meleagris gallopavo,wiltur
+Meleagris gallopavo,Meleagris gallopavo
 Meles anakuma,NA
 Melibe australis,NA
 Melicerita angustiloba,NA
@@ -25151,9 +25151,9 @@ Melosira nummuloides,NA
 Melosira,NA
 Melosira spec,NA
 Melosira varians,NA
-Melospiza georgiana,swaspa
-Melospiza lincolnii,linspa
-Melospiza melodia,sonspa
+Melospiza georgiana,Melospiza georgiana
+Melospiza lincolnii,Melospiza lincolnii
+Melospiza melodia,Melospiza melodia
 Melphidippa,NA
 Melphidippa amorita,NA
 Melphidippa goesi,NA
@@ -25257,11 +25257,11 @@ Mercenaria mercenaria,NA
 Mercenaria,NA
 Meredithia microphylla,NA
 Meretrix lusoria,NA
-Mergellus albellus,smew
+Mergellus albellus,Mergellus albellus
 Mergus,NA
 Mergus albellus,NA
-Mergus merganser,commer
-Mergus serrator,rebmer
+Mergus merganser,Mergus merganser
+Mergus serrator,Mergus serrator
 Meriania hexamera,NA
 Meriania maxima,NA
 Meriania,NA
@@ -25572,7 +25572,7 @@ Micranellum crebricinctum,NA
 Micranthodinium,NA
 Micranthodinium spec,NA
 Micrasema longulum,NA
-Micrathene whitneyi,elfowl
+Micrathene whitneyi,Micrathene whitneyi
 Microcalanus,NA
 Microcalanus pusillus,NA
 Microcalanus pygmaeus,NA
@@ -25822,7 +25822,7 @@ Millettia,NA
 Millua ovatteria,NA
 Milnedwasia polaris,NA
 Miltochrista miniata,NA
-Milvus migrans,blakit1
+Milvus migrans,Milvus migrans
 Mimachlamys funebris,NA
 Mimachlamys gloriosa,NA
 Mimachlamys scabricostata,NA
@@ -25851,7 +25851,7 @@ Mimosella bigeminata,NA
 Mimosella bockii,NA
 Mimosella,NA
 Mimosella verticillata,NA
-Mimus polyglottos,normoc
+Mimus polyglottos,Mimus polyglottos
 Minidiscus,NA
 Minidiscus trioculatus,NA
 Minke whale,NA
@@ -25951,7 +25951,7 @@ Mixed algal,NA
 Miyakea nepa,NA
 Mnemiopsis leidyi,NA
 Mnemiopsis,NA
-Mniotilta varia,bawwar
+Mniotilta varia,Mniotilta varia
 Mniotype adusta,NA
 Mniotype ducta,NA
 Mnium blyttii,NA
@@ -26051,9 +26051,9 @@ Mollusca eggs,NA
 Mollusca indet,NA
 Mollusca,NA
 Molorchus minor,NA
-Molothrus aeneus,brocow
-Molothrus ater,bnhcow
-Molothrus bonariensis,shicow
+Molothrus aeneus,Molothrus aeneus
+Molothrus ater,Molothrus ater
+Molothrus bonariensis,Molothrus bonariensis
 Molpadia,NA
 Molpadia blakei,NA
 Molpadia borealis,NA
@@ -26245,7 +26245,7 @@ Monticellina,NA
 Monticellina,NA
 Monticellina,NA
 Monticellina tesselata,NA
-Monticola solitarius,burthr
+Monticola solitarius,Monticola solitarius
 Montipora,NA
 Montipora aequituberculata,NA
 Montipora aequtibellata,NA
@@ -26363,11 +26363,11 @@ Morula marginalba,NA
 Morula spinosa,NA
 Morum oniscus,NA
 Morus alba,NA
-Morus bassanus,norgan
-Morus capensis,capgan1
+Morus bassanus,Morus bassanus
+Morus capensis,Morus capensis
 Morus,NA
 Morus insignis,NA
-Morus serrator,ausgan1
+Morus serrator,Morus serrator
 Mosaicoporina tricephala,NA
 Mosannona garwoodii,NA
 Moseleya latistellata,NA
@@ -26379,10 +26379,10 @@ Moss diccom,NA
 Moss drecom,NA
 Moss polcom,NA
 Moss unibry,NA
-Motacilla alba,whiwag
-Motacilla cinerea,grywag
-Motacilla flava,eaywag1
-Motacilla grandis,japwag1
+Motacilla alba,Motacilla alba
+Motacilla cinerea,Motacilla cinerea
+Motacilla flava,Motacilla flava
+Motacilla grandis,Motacilla grandis
 Motacilla personata,NA
 Motacillidae,NA
 Mougeotia,NA
@@ -26547,11 +26547,11 @@ Muricidae,NA
 Muricidae spa,NA
 Muricopsis oxytatus,NA
 Musa banksii,NA
-Muscicapa dauurica,asbfly
-Muscicapa griseisticta,gysfly1
-Muscicapa sibirica,dasfly
+Muscicapa dauurica,Muscicapa dauurica
+Muscicapa griseisticta,Muscicapa griseisticta
+Muscicapa sibirica,Muscicapa sibirica
 Muscicapa,NA
-Muscicapa striata,spofly1
+Muscicapa striata,Muscicapa striata
 Muscicapidae,NA
 Muscidae,NA
 Musculista senhousia,NA
@@ -26595,7 +26595,7 @@ Mustelus,NA
 Mya,NA
 Mya arenaria,NA
 Myacea,NA
-Myadestes townsendi,towsol
+Myadestes townsendi,Myadestes townsendi
 Myadora,NA
 Myagropsis myagroides,NA
 Mya pseudoarenaria,NA
@@ -26666,15 +26666,15 @@ Myctophum,NA
 Myelois circumvoluta,NA
 Myersiella microps,NA
 Myersina filifer,NA
-Myiarchus antillarum,purfly1
-Myiarchus cinerascens,astfly
-Myiarchus crinitus,grcfly
-Myiarchus tuberculifer,ducfly
-Myiarchus tyrannulus,bncfly
+Myiarchus antillarum,Myiarchus antillarum
+Myiarchus cinerascens,Myiarchus cinerascens
+Myiarchus crinitus,Myiarchus crinitus
+Myiarchus tuberculifer,Myiarchus tuberculifer
+Myiarchus tyrannulus,Myiarchus tyrannulus
 Myidae,NA
-Myioborus pictus,paired
-Myiodynastes luteiventris,subfly
-Myiopsitta monachus,monpar
+Myioborus pictus,Myioborus pictus
+Myiodynastes luteiventris,Myiodynastes luteiventris
+Myiopsitta monachus,Myiopsitta monachus
 Mylia anomala,NA
 Mylia taylorii,NA
 Myliobatis,NA
@@ -27807,9 +27807,9 @@ Nerophis lumbriciformis,NA
 Nerophis ophidion,NA
 Nesiarchus nasutus,NA
 Nes longus,NA
-Nesofregetta fuliginosa,pospet1
+Nesofregetta fuliginosa,Nesofregetta fuliginosa
 Nesogobius hinsbyi,NA
-Nesospingus speculiferus,purtan1
+Nesospingus speculiferus,Nesospingus speculiferus
 Nessorhamphus,NA
 Nessorhamphus ingolfianus,NA
 Nessorhamphus,NA
@@ -27899,7 +27899,7 @@ Ninoe,NA
 Ninoe,NA
 Ninoe,NA
 Ninoe tridentata,NA
-Ninox scutulata,brnhao1
+Ninox scutulata,Ninox scutulata
 Niotha semisulcata,NA
 Niphades variegatus,NA
 Niphates,NA
@@ -28281,8 +28281,8 @@ Nuchequula mannusella,NA
 Nuchequula nuchalis,NA
 Nucia,NA
 Nucia speciosa,NA
-Nucifraga caryocatactes,eurnut1
-Nucifraga columbiana,clanut
+Nucifraga caryocatactes,Nucifraga caryocatactes
+Nucifraga columbiana,Nucifraga columbiana
 Nucinella adamsi,NA
 Nucinella viridis,NA
 Nucula,NA
@@ -28382,11 +28382,11 @@ Nudibranch,NA
 Nudobius lentus,NA
 Nullosetigera giesbrechti,NA
 Nullosetigera helgae,NA
-Numenius americanus,lobcur
-Numenius arquata,eurcur
-Numenius madagascariensis,faecur
-Numenius minutus,litcur
-Numenius phaeopus,whimbr
+Numenius americanus,Numenius americanus
+Numenius arquata,Numenius arquata
+Numenius madagascariensis,Numenius madagascariensis
+Numenius minutus,Numenius minutus
+Numenius phaeopus,Numenius phaeopus
 Nursia sinuata,NA
 Nursilia,NA
 Nuthatch unidentified,NA
@@ -28408,8 +28408,8 @@ Nycteola columbiana,NA
 Nycteola frigidana,NA
 Nycteola revayana,NA
 Nyctereutes procyonoides,NA
-Nycticorax nycticorax,bcnher
-Nyctidromus albicollis,compau
+Nycticorax nycticorax,Nycticorax nycticorax
+Nyctidromus albicollis,Nyctidromus albicollis
 Nyctiphanes,NA
 Nyctiphanes australis,NA
 Nyctiphanes couchi,NA
@@ -28494,15 +28494,15 @@ Oceanapia tubes,NA
 Oceanida graduata,NA
 Oceanida,NA
 Oceanida,NA
-Oceanites oceanicus,wispet
+Oceanites oceanicus,Oceanites oceanicus
 Oceanodroma,NA
-Oceanodroma castro,barpet
-Oceanodroma furcata,ftspet
-Oceanodroma homochroa,asspet
-Oceanodroma leucorhoa,lcspet
-Oceanodroma melania,bkspet
-Oceanodroma microsoma,lsspet
-Oceanodroma tethys,wrspet
+Oceanodroma castro,Oceanodroma castro
+Oceanodroma furcata,Oceanodroma furcata
+Oceanodroma homochroa,Oceanodroma homochroa
+Oceanodroma leucorhoa,Oceanodroma leucorhoa
+Oceanodroma melania,Oceanodroma melania
+Oceanodroma microsoma,Oceanodroma microsoma
+Oceanodroma tethys,Oceanodroma tethys
 Ocelli,NA
 Ocenebra,NA
 Ocenebra erinacea,NA
@@ -28708,7 +28708,7 @@ Oedipodinae,NA
 Oedogonium,NA
 Oegoconia caradjai,NA
 Oegoconia deauratella,NA
-Oenanthe oenanthe,norwhe
+Oenanthe oenanthe,Oenanthe oenanthe
 Oencarpus mapora,NA
 Oeneis melissa,NA
 Oenocarpus mapora,NA
@@ -29466,7 +29466,7 @@ Oplophorus trispinosa,NA
 Oplopomus caninoides,NA
 Oplorhiza gracilis,NA
 Oplorhiza parvula,NA
-Oporornis agilis,conwar
+Oporornis agilis,Oporornis agilis
 Oporornis formosus,NA
 Oporornis philadelphia,NA
 Oporornis tolmiei,NA
@@ -29555,23 +29555,23 @@ Orchomene,NA
 Orchomene,NA
 Orchomene,NA
 Orcinus orca,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
-Order lsopoda,NA
-Order,NA
-Order,NA
-Order,NA
-Order,NA
+Amphipoda,NA
+Calanoida,NA
+Cumacea,NA
+Cyclopoida,NA
+Decapoda,NA
+Diptera,NA
+Ephemeroptera,NA
+Euphausiacea,NA
+Foraminiferida,NA
+Harpacticoida,NA
+Hymenoptera,NA
+Isopoda,NA
+NA,NA
+Myodocopida,NA
+Mysidacea,NA
+Podocopa,NA
+Trichoptera,NA
 Oreaster reticulatus,NA
 Orectolobus halei,NA
 Orectolobus japonicus,NA
@@ -29586,8 +29586,8 @@ Oreopanax fulvus,NA
 Oreopanax,NA
 Oreophorus morum,NA
 Oreophorus reticulatus,NA
-Oreortyx pictus,mouqua
-Oreoscoptes montanus,sagthr
+Oreortyx pictus,Oreortyx pictus
+Oreoscoptes montanus,Oreoscoptes montanus
 Oreosoma atlantica,NA
 Oreosoma atlanticum,NA
 Oreothlypis ruficapilla,NA
@@ -29595,8 +29595,8 @@ Oreotlos,NA
 Orgyia antiqua,NA
 Orgyia pseudotsugata,NA
 Orinella pulchella,NA
-Oriolus chinensis,blnori1
-Oriolus oriolus,eugori2
+Oriolus chinensis,Oriolus chinensis
+Oriolus oriolus,Oriolus oriolus
 Oriopsis,NA
 Oriopsis armandi,NA
 NA,NA
@@ -29622,7 +29622,7 @@ Orochlesis takaosana,NA
 Orphuella pelidna,NA
 Orphulella pelidna,NA
 Orphulella speciosa,NA
-Ortalis vetula,placha
+Ortalis vetula,Ortalis vetula
 Orthasterias koehleri,NA
 Ortheziidae,NA
 Orthocis festivus,NA
@@ -29784,11 +29784,11 @@ Otophidium omostigma,NA
 Otopleura mitralis,NA
 Otopsis longipes,NA
 Otus asio,NA
-Otus elegans,ryusco1
+Otus elegans,Otus elegans
 Otus flammeolus,NA
 Otus kennicottii,NA
-Otus lempiji,susowl2
-Otus sunia,orsowl
+Otus lempiji,Otus lempiji
+Otus sunia,Otus sunia
 Ougeinia oojeinensis,NA
 Ougia,NA
 Ougia subaequalis,NA
@@ -29891,7 +29891,7 @@ Oxytropis maydelliana,NA
 Oxytropis nigrescens,NA
 Oxytropis,NA
 Oxyuirichthys petersi,NA
-Oxyura jamaicensis,rudduc
+Oxyura jamaicensis,Oxyura jamaicensis
 Oxyurichthys,NA
 Oxyurichthys,NA
 Oxyurichthys stigmalophius,NA
@@ -29930,15 +29930,15 @@ Pachymatisma,NA
 Pachymatisma johnstoni,NA
 Pachynus barnardi,NA
 Pachynus,NA
-Pachyptila belcheri,slbpri1
+Pachyptila belcheri,Pachyptila belcheri
 Pachyptila crassirost,NA
-Pachyptila crassirostris,fulpri1
-Pachyptila desolata,dovpri1
+Pachyptila crassirostris,Pachyptila crassirostris
+Pachyptila desolata,Pachyptila desolata
 Pachyptila eatoni,NA
-Pachyptila salvini,salpri1
+Pachyptila salvini,Pachyptila salvini
 Pachyptila,NA
-Pachyptila turtur,faipri1
-Pachyptila vittata,brbpri1
+Pachyptila turtur,Pachyptila turtur
+Pachyptila vittata,Pachyptila vittata
 Pachyptilus,NA
 Pachyptilus abbreviatus,NA
 Pachyptilus eurygnathus,NA
@@ -29977,8 +29977,8 @@ Pagellus,NA
 Pagetopsis macropterus,NA
 Pagetopsis maculatus,NA
 Pagetopsis,NA
-Pagodroma nivea,snopet1
-Pagophila eburnea,ivogul
+Pagodroma nivea,Pagodroma nivea
+Pagophila eburnea,Pagophila eburnea
 Pagophilus groenlandicus,NA
 Pagothenia bernacchii,NA
 Pagothenia borchgrevinki,NA
@@ -30171,7 +30171,7 @@ Pandemis cerasana,NA
 Pandemis cinnamomeana,NA
 Pandemis corylana,NA
 Pandemis heparana,NA
-Pandion haliaetus,osprey
+Pandion haliaetus,Pandion haliaetus
 Pandora,NA
 Pandora arenosa,NA
 Pandora bilirata,NA
@@ -30300,7 +30300,7 @@ Parabothus,NA
 Parabothus,NA
 Parabroscus crassipalpis,NA
 Parabrotula plagiophthalmus,NA
-Parabuteo unicinctus,hrshaw
+Parabuteo unicinctus,Parabuteo unicinctus
 Paracaesio xanthura,NA
 Paracalanidae,NA
 Paracalanus,NA
@@ -30926,8 +30926,8 @@ Parkermavella pseudoneptuni,NA
 Parkermavella punctigera,NA
 Parkermavella schizoporelloides,NA
 Parkermavella virago,NA
-Parkesia motacilla,louwat
-Parkesia noveboracensis,norwat
+Parkesia motacilla,Parkesia motacilla
+Parkesia noveboracensis,Parkesia noveboracensis
 Parkia speciosa,NA
 Parlibellus,NA
 Parma alboscapularis,NA
@@ -31046,8 +31046,8 @@ Parus cinctus,NA
 Parus cristatus,NA
 Parus gambeli,NA
 Parus hudsonicus,NA
-Parus major,gretit1
-Parus minor,gretit4
+Parus major,Parus major
+Parus minor,Parus minor
 Parus montanus,NA
 Parus palustris,NA
 Parus rufescens,NA
@@ -31094,24 +31094,24 @@ Pasiphaeidae,NA
 Paspalidium geminatum,NA
 Paspalum plicatulum,NA
 Paspalum setaceum,NA
-Passerculus sandwichensis,savspa
-Passer domesticus,houspa
-Passerella iliaca,foxspa
+Passerculus sandwichensis,Passerculus sandwichensis
+Passer domesticus,Passer domesticus
+Passerella iliaca,Passerella iliaca
 Passeridae,NA
 Passeriformes,NA
-Passerina amoena,lazbun
-Passerina ciris,paibun
+Passerina amoena,Passerina amoena
+Passerina ciris,Passerina ciris
 Passerina corymbosa,NA
-Passerina cyanea,indbun
-Passerina versicolor,varbun
-Passer montanus,eutspa
+Passerina cyanea,Passerina cyanea
+Passerina versicolor,Passerina versicolor
+Passer montanus,Passer montanus
 Passer rutilans,NA
 Passiflora,NA
 Pastinaca sativa,NA
 Pastinachus sephen,NA
-Pastor roseus,rossta2
+Pastor roseus,Pastor roseus
 Pataecus fronto,NA
-Patagioenas squamosa,scnpig1
+Patagioenas squamosa,Patagioenas squamosa
 Patagonula americana,NA
 Patella,NA
 Patella depressa,NA
@@ -31144,7 +31144,7 @@ Paulschulzia tenera,NA
 Pavetta graciliflora,NA
 Pavetta indica,NA
 Pavetta,NA
-Pavo cristatus,compea
+Pavo cristatus,Pavo cristatus
 Pavona,NA
 Pavona bipartita,NA
 Pavona cactus,NA
@@ -31249,7 +31249,7 @@ Pelagobia longicerrata,NA
 Pelagobia longicirrata,NA
 Pelagobia,NA
 Pelagodroma,NA
-Pelagodroma marina,wfspet
+Pelagodroma marina,Pelagodroma marina
 Pelagopleura verticalis,NA
 Pelargonium betulinum,NA
 Pelargonium capitatum,NA
@@ -31260,12 +31260,12 @@ Pelargonium tabulare,NA
 Pelargonium triste,NA
 Pelates quadrilineatus,NA
 Pelates sexlineatus,NA
-Pelecanoides georgicus,sgdpet1
+Pelecanoides georgicus,Pelecanoides georgicus
 Pelecanoides,NA
-Pelecanoides urinatrix,codpet1
-Pelecanus erythrorhynchos,amwpel
-Pelecanus occidentalis,brnpel
-Pelecanus onocrotalus,grwpel1
+Pelecanoides urinatrix,Pelecanoides urinatrix
+Pelecanus erythrorhynchos,Pelecanus erythrorhynchos
+Pelecanus occidentalis,Pelecanus occidentalis
+Pelecanus onocrotalus,Pelecanus onocrotalus
 Pelecypoda,NA
 Pelia mutica,NA
 Pellia epiphylla,NA
@@ -31480,7 +31480,7 @@ Percoidei,NA
 Percophis brasiliensis,NA
 Percopsis omiscomaycus,NA
 Percursaria percursa,NA
-Perdix perdix,grypar
+Perdix perdix,Perdix perdix
 Perebea xanthochyma,NA
 Peregrine,NA
 Pereionotus alaniphlias,NA
@@ -31510,7 +31510,7 @@ Periclimenes pandionis,NA
 Periclimenes perryae,NA
 Periclimenes,NA
 Periclimenes thermohydrophilus,NA
-Pericrocotus divaricatus,ashmin1
+Pericrocotus divaricatus,Pericrocotus divaricatus
 Peridiniella catenata,NA
 Peridiniella danica,NA
 Peridinium,NA
@@ -31550,7 +31550,7 @@ Perinereis nuntia,NA
 Perioculodes,NA
 Perioculodes cerasinus,NA
 Perioculodes longimanus,NA
-Periparus ater,coatit2
+Periparus ater,Periparus ater
 Periphylla,NA
 Periphylla periphylla,NA
 Periphylla,NA
@@ -31570,7 +31570,7 @@ Periploma,NA
 Periploma,NA
 Periplomatidae,NA
 Perisesarma bidens,NA
-Perisoreus canadensis,gryjay
+Perisoreus canadensis,Perisoreus canadensis
 Perissasterias monacantha,NA
 Perissocytheridea laevis,NA
 Peristedion,NA
@@ -31598,8 +31598,8 @@ Perizoma grandis,NA
 Perkinsiana rubra,NA
 Perlodes microcephalus,NA
 Perna canaliculus,NA
-Pernis apivorus,euhbuz1
-Pernis ptilorhynchus,orihob2
+Pernis apivorus,Pernis apivorus
+Pernis ptilorhynchus,Pernis ptilorhynchus
 Pero behrensaria,NA
 Perognathus flavescens,NA
 Perognathus flavus,NA
@@ -31697,7 +31697,7 @@ Petricola pholadiformis,NA
 Petricolaria pholadiformis,NA
 Petricolidae,NA
 Petrobius maritimus,NA
-Petrochelidon pyrrhonota,cliswa
+Petrochelidon pyrrhonota,Petrochelidon pyrrhonota
 Petrochirus diogenes,NA
 Petroderma maculiforme,NA
 Petrolisthes,NA
@@ -31744,7 +31744,7 @@ Petunia,NA
 Peucedanum officinale,NA
 Peucedanum oreoselinum,NA
 Peucedanum ostruthium,NA
-Peucedramus taeniatus,oliwar
+Peucedramus taeniatus,Peucedramus taeniatus
 Pexicopia malvella,NA
 Peyssonnelia,NA
 Peyssonnelia armorica,NA
@@ -31796,12 +31796,12 @@ Phaeoptyx conklini,NA
 Phaeoptyx xenus,NA
 Phaeostachys spinifera,NA
 Phaethon,NA
-Phaethon aethereus,rebtro
-Phaethon lepturus,whttro
-Phaethon rubricauda,rettro
+Phaethon aethereus,Phaethon aethereus
+Phaethon lepturus,Phaethon lepturus
+Phaethon rubricauda,Phaethon rubricauda
 NA,NA
 Phainopepla,NA
-Phainopepla nitens,phaino
+Phainopepla nitens,Phainopepla nitens
 Phakellia,NA
 Phakellia bowerbanki,NA
 Phakellia cribrosa,NA
@@ -31818,19 +31818,19 @@ Phalachroma rotundatum,NA
 Phalacrocoracidae,NA
 Phalacrocoracidae,NA
 Phalacrocorax,NA
-Phalacrocorax aristotelis,eursha1
+Phalacrocorax aristotelis,Phalacrocorax aristotelis
 Phalacrocorax atricep,NA
-Phalacrocorax atriceps,impcor1
-Phalacrocorax auritus,doccor
+Phalacrocorax atriceps,Phalacrocorax atriceps
+Phalacrocorax auritus,Phalacrocorax auritus
 Phalacrocorax campbel,NA
 Phalacrocorax capensi,NA
-Phalacrocorax capillatus,japcor1
-Phalacrocorax carbo,grecor
+Phalacrocorax capillatus,Phalacrocorax capillatus
+Phalacrocorax carbo,Phalacrocorax carbo
 Phalacrocorax coronat,NA
-Phalacrocorax fuscescens,blfcor1
+Phalacrocorax fuscescens,Phalacrocorax fuscescens
 Phalacrocorax neglect,NA
-Phalacrocorax pelagicus,pelcor
-Phalacrocorax penicillatus,bracor
+Phalacrocorax pelagicus,Phalacrocorax pelagicus
+Phalacrocorax penicillatus,Phalacrocorax penicillatus
 Phalacroma cuneolus,NA
 Phalacroma dens,NA
 Phalacroma mitra,NA
@@ -31840,16 +31840,16 @@ Phalacroma rotundatum,NA
 Phalacroma rudgei,NA
 Phalacroma,NA
 Phalacrophorus pictus,NA
-Phalaenoptilus nuttallii,compoo
+Phalaenoptilus nuttallii,Phalaenoptilus nuttallii
 Phalangipus australiensis,NA
 Phalangipus filiformis,NA
 Phalangipus hystrix,NA
 Phalaropodidae,NA
 Phalaropus,NA
 Phalaropus fulicaria,NA
-Phalaropus fulicarius,redpha1
-Phalaropus lobatus,renpha
-Phalaropus tricolor,wilpha
+Phalaropus fulicarius,Phalaropus fulicarius
+Phalaropus lobatus,Phalaropus lobatus
+Phalaropus tricolor,Phalaropus tricolor
 Phalera bucephala,NA
 Phalium angasi,NA
 Phalium bandatum,NA
@@ -31888,7 +31888,7 @@ Phascolosomatidae,NA
 Phasianella ventricosa,NA
 Phasianidae,NA
 Phasianotrochus eximius,NA
-Phasianus colchicus,rinphe
+Phasianus colchicus,Phasianus colchicus
 Phasmatopsis,NA
 Phaxas pellucidus,NA
 Phelliactis americana,NA
@@ -31922,8 +31922,8 @@ Pherusa plumosa,NA
 Pherusa,NA
 Pherusella,NA
 Pherusina gulsonae,NA
-Pheucticus ludovicianus,robgro
-Pheucticus melanocephalus,bkhgro
+Pheucticus ludovicianus,Pheucticus ludovicianus
+Pheucticus melanocephalus,Pheucticus melanocephalus
 Phialella quadrata,NA
 Phialidium,NA
 Phialidium languidum,NA
@@ -32038,13 +32038,13 @@ Phoca vitulina,NA
 Phocidae,NA
 Phocoena phocoena,NA
 Phocoenoides dalli,NA
-Phoebastria nigripes,bkfalb
-Phoebetria fusca,sooalb1
-Phoebetria palpebrata,limalb1
+Phoebastria nigripes,Phoebastria nigripes
+Phoebetria fusca,Phoebetria fusca
+Phoebetria palpebrata,Phoebetria palpebrata
 Phoebetria,NA
-Phoenicurus auroreus,daured1
-Phoenicurus ochruros,blared1
-Phoenicurus phoenicurus,comred2
+Phoenicurus auroreus,Phoenicurus auroreus
+Phoenicurus ochruros,Phoenicurus ochruros
+Phoenicurus phoenicurus,Phoenicurus phoenicurus
 Phoesia gnoma,NA
 Phoesia tremula,NA
 Phoetaliotes nebrascensis,NA
@@ -32358,16 +32358,16 @@ Phyllopus bidentatus,NA
 Phyllopus helgae,NA
 Phyllopus impar,NA
 Phylloscopus,NA
-Phylloscopus borealoides,salwar1
-Phylloscopus collybita,comchi1
-Phylloscopus coronatus,eacwar1
-Phylloscopus ijimae,ijlwar1
-Phylloscopus inornatus,yebwar3
-Phylloscopus sibilatrix,woowar
+Phylloscopus borealoides,Phylloscopus borealoides
+Phylloscopus collybita,Phylloscopus collybita
+Phylloscopus coronatus,Phylloscopus coronatus
+Phylloscopus ijimae,Phylloscopus ijimae
+Phylloscopus inornatus,Phylloscopus inornatus
+Phylloscopus sibilatrix,Phylloscopus sibilatrix
 Phylloscopus,NA
-Phylloscopus trochiloides,grewar3
-Phylloscopus trochilus,wlwwar
-Phylloscopus xanthodryas,arcwar3
+Phylloscopus trochiloides,Phylloscopus trochiloides
+Phylloscopus trochilus,Phylloscopus trochilus
+Phylloscopus xanthodryas,Phylloscopus xanthodryas
 Phyllosoma,NA
 Phyllospadix iwatensis,NA
 Phyllospadix torreyi,NA
@@ -32381,14 +32381,14 @@ Phylloxeridae,NA
 Phylocentropus,NA
 Phylo felix,NA
 Phylo kupferi,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
-Phylum,NA
+Brachiopoda,NA
+Chaetognatha,NA
+Ctenophora,NA
+Nemata,NA
+Nemertea,NA
+Rotifera,NA
+Sipuncula,NA
+Tardigrada,NA
 Phymatodes testaceus,NA
 Phymatolithon,NA
 Phymatolithon calcareum,NA
@@ -32455,9 +32455,9 @@ Phytoflagellate,NA
 Phytolacca americana,NA
 Piabina argentea,NA
 Picadae,NA
-Pica hudsonia,bkbmag1
-Pica nuttalli,yebmag
-Pica pica,eurmag1
+Pica hudsonia,Pica hudsonia
+Pica nuttalli,Pica nuttalli
+Pica pica,Pica pica
 Picea abies,NA
 Picea engelmannii,NA
 Picea glauca,NA
@@ -32475,14 +32475,14 @@ NA,NA
 NA,NA
 Picidae,NA
 Picoides albolarvatus,NA
-Picoides arcticus,bkbwoo
+Picoides arcticus,Picoides arcticus
 Picoides arizonae,NA
 Picoides borealis,NA
-Picoides dorsalis,attwoo1
+Picoides dorsalis,Picoides dorsalis
 Picoides nuttallii,NA
 Picoides pubescens,NA
 Picoides scalaris,NA
-Picoides tridactylus,ettwoo1
+Picoides tridactylus,Picoides tridactylus
 Picoides villosus,NA
 NA,NA
 Picramnia glazioviana,NA
@@ -32495,9 +32495,9 @@ Picrocerus armatus,NA
 Pictiblennius yatabei,NA
 Pictilabrus laticlavius,NA
 Pictilabrus viridis,NA
-Picus awokera,japwoo1
-Picus canus,gyfwoo1
-Picus viridis,eugwoo2
+Picus awokera,Picus awokera
+Picus canus,Picus canus
+Picus viridis,Picus viridis
 Pidonia,NA
 Pied-billed,NA
 Pieridae,NA
@@ -32593,7 +32593,7 @@ Pinguipes,NA
 Pinguipes chilensis,NA
 Pinguitellina pinguis,NA
 Pinguitellina,NA
-Pinicola enucleator,pingro
+Pinicola enucleator,Pinicola enucleator
 Piniphila bifasciana,NA
 Pinjalo pinjalo,NA
 Pink encrusting-bryozoan,NA
@@ -32709,11 +32709,11 @@ Piper,NA
 Piper,NA
 Pipilio chlorurus,NA
 Pipilo aberti,NA
-Pipilo chlorurus,gnttow
+Pipilo chlorurus,Pipilo chlorurus
 Pipilo crissalis,NA
-Pipilo erythrophthalmus,eastow
+Pipilo erythrophthalmus,Pipilo erythrophthalmus
 Pipilo fuscus,NA
-Pipilo maculatus,spotow
+Pipilo maculatus,Pipilo maculatus
 Pipilo spec,NA
 Piptadenia gonoacantha,NA
 Piptocarpha axilaris,NA
@@ -32722,10 +32722,10 @@ Piptocarpha sellowii,NA
 Piptochaetium montevidensis,NA
 Pirakia,NA
 Pirakia punctifera,NA
-Piranga flava,heptan
-Piranga ludoviciana,westan
-Piranga olivacea,scatan
-Piranga rubra,sumtan
+Piranga flava,Piranga flava
+Piranga ludoviciana,Piranga ludoviciana
+Piranga olivacea,Piranga olivacea
+Piranga rubra,Piranga rubra
 Pirimela,NA
 Pirimela denticulata,NA
 Piromis,NA
@@ -32786,7 +32786,7 @@ Pista percyi,NA
 Pista quadrilobata,NA
 Pista,NA
 Pista wui,NA
-Pitangus sulphuratus,grekis
+Pitangus sulphuratus,Pitangus sulphuratus
 Pitar,NA
 Pitar albidus,NA
 Pitar cordatus,NA
@@ -32927,8 +32927,8 @@ Plantago rugelii,NA
 Plantago,NA
 Plantago virginica,NA
 Plapita vitrealis,NA
-Platalea leucorodia,eurspo1
-Platalea minor,blfspo1
+Platalea leucorodia,Platalea leucorodia
+Platalea minor,Platalea minor
 Platanthera hyperborea,NA
 Platanus occidentalis,NA
 Platax batavianus,NA
@@ -33069,7 +33069,7 @@ Plectroglyphidodon johnstonianus,NA
 Plectroglyphidodon lacrymatus,NA
 Plectroglyphidodon leucozonus,NA
 Plectroglyphidodon,NA
-Plectrophenax nivalis,snobun
+Plectrophenax nivalis,Plectrophenax nivalis
 Plectropomus areolatus,NA
 Plectropomus laevis,NA
 Plectropomus leopardus,NA
@@ -33284,10 +33284,10 @@ Plutonaster complexus,NA
 Plutonaster fragilis,NA
 Plutonaster knoxi,NA
 Plutonaster,NA
-Pluvialis apricaria,eugplo
+Pluvialis apricaria,Pluvialis apricaria
 Pluvialis apricarius,NA
-Pluvialis fulva,pagplo
-Pluvialis squatarola,bkbplo
+Pluvialis fulva,Pluvialis fulva
+Pluvialis squatarola,Pluvialis squatarola
 NA,NA
 Plylloscopus trochilus,NA
 Pneophyllum concollum,NA
@@ -33354,13 +33354,13 @@ Podarkeopsis,NA
 Podarke pallida,NA
 Podarke pugettensis,NA
 Podarke,NA
-Podiceps auritus,horgre
+Podiceps auritus,Podiceps auritus
 Podiceps cornutus,NA
-Podiceps cristatus,grcgre1
-Podiceps grisegena,rengre
-Podiceps nigricollis,eargre
+Podiceps cristatus,Podiceps cristatus
+Podiceps grisegena,Podiceps grisegena
+Podiceps nigricollis,Podiceps nigricollis
 Podicipediformes,NA
-Podilymbus podiceps,pibgre
+Podilymbus podiceps,Podilymbus podiceps
 Podocarpus grayae,NA
 Podocarpus lambertii,NA
 Podocarpus motleyi,NA
@@ -33432,15 +33432,15 @@ Poduridae,NA
 Poecilasma inaequilaterale,NA
 Poecile,NA
 Poecile atrcapillus,NA
-Poecile atricapillus,bkcchi
-Poecile carolinensis,carchi
-Poecile gambeli,mouchi
+Poecile atricapillus,Poecile atricapillus
+Poecile carolinensis,Poecile carolinensis
+Poecile gambeli,Poecile gambeli
 Poecile hudsonica,NA
-Poecile hudsonicus,borchi2
-Poecile montanus,wiltit1
-Poecile palustris,martit2
+Poecile hudsonicus,Poecile hudsonicus
+Poecile montanus,Poecile montanus
+Poecile palustris,Poecile palustris
 Poecilepalustris,NA
-Poecile rufescens,chbchi
+Poecile rufescens,Poecile rufescens
 Poecile varius,NA
 Poecilia latipinna,NA
 Poecilia reticulata,NA
@@ -33508,8 +33508,8 @@ Polinices,NA
 Polinices spa,NA
 Polinices triseriata,NA
 Polinicinae,NA
-Polioptila caerulea,buggna
-Polioptila melanura,bktgna
+Polioptila caerulea,Polioptila caerulea
+Polioptila melanura,Polioptila melanura
 Polioptilidae,NA
 Polites mystic,NA
 Polites peckius,NA
@@ -33852,7 +33852,7 @@ Polysiphonia subulifera,NA
 Polysiphonia urceolata,NA
 Polysiphonia variegata,NA
 Polysiphonia violacea,NA
-Polysticta stelleri,steeid
+Polysticta stelleri,Polysticta stelleri
 Polystira,NA
 Polystira albida,NA
 Polystira tellea,NA
@@ -34043,7 +34043,7 @@ Pontosphaera,NA
 Pontosphaera stagnicola,NA
 Pontosphaera syracusana,NA
 Ponyalis quadricollis,NA
-Pooecetes gramineus,vesspa
+Pooecetes gramineus,Pooecetes gramineus
 Popowia pisocarpa,NA
 Popowia tomentosa,NA
 NA,NA
@@ -34203,7 +34203,7 @@ Portunus spinipes,NA
 Portunus tenuipes,NA
 Portunus tuberculatus,NA
 Portunus tuberculosus,NA
-Porzana carolina,sora
+Porzana carolina,Porzana carolina
 Porzana fusca,NA
 Posoqueria coriacea,NA
 Posoqueria latifolia,NA
@@ -34474,10 +34474,10 @@ Probythinella louisianae,NA
 Procambarus,NA
 Procampylaspis caenosa,NA
 Procellaria aequinoct,NA
-Procellaria aequinoctialis,whcpet1
-Procellaria cinerea,grapet
-Procellaria parkinsoni,parpet1
-Procellaria westlandica,wespet1
+Procellaria aequinoctialis,Procellaria aequinoctialis
+Procellaria cinerea,Procellaria cinerea
+Procellaria parkinsoni,Procellaria parkinsoni
+Procellaria westlandica,Procellaria westlandica
 Procellariformes,NA
 Procellariidae,NA
 Procellariiformes,NA
@@ -34538,7 +34538,7 @@ Progeryon,NA
 Prognathodes aculeatus,NA
 Prognathodes aya,NA
 Prognathodes guyanensis,NA
-Progne subis,purmar
+Progne subis,Progne subis
 Prognichthys brevipinnis,NA
 Prognichthys occidentalis,NA
 Progoniada,NA
@@ -34716,7 +34716,7 @@ Protonemura intricata,NA
 Protonemura meyeri,NA
 Protonemura nitida,NA
 Protonibea diacanthus,NA
-Protonotaria citrea,prowar
+Protonotaria citrea,Protonotaria citrea
 Protopalythoa,NA
 Protopalythoa,NA
 Protoperidinium,NA
@@ -34791,9 +34791,9 @@ Provannidae,NA
 Provocator mirabilis,NA
 Prumnopitys ladei,NA
 Prumus myrtifolia,NA
-Prunella collaris,alpacc1
-Prunella modularis,dunnoc1
-Prunella rubida,japacc1
+Prunella collaris,Prunella collaris
+Prunella modularis,Prunella modularis
+Prunella rubida,Prunella rubida
 Prunella vulgaris,NA
 Prunum,NA
 Prunum apicinum,NA
@@ -34829,7 +34829,7 @@ Prymnesium,NA
 Psalidaster nsp,NA
 Psalidopus huxleyi,NA
 Psaliotops corozali,NA
-Psaltriparus minimus,bushti
+Psaltriparus minimus,Psaltriparus minimus
 Psammacora digitata,NA
 Psammacora profundacella,NA
 Psammacora superficialis,NA
@@ -35308,7 +35308,7 @@ Psilostrophe tagetina,NA
 Psiloteredo megotara,NA
 Psinidia,NA
 Psinidia fenestralis,NA
-Psittacula krameri,rorpar
+Psittacula krameri,Psittacula krameri
 NA,NA
 Psocoptera,NA
 Psolidium bullatum,NA
@@ -35450,28 +35450,28 @@ Pterocypridina sex,NA
 Pterodoma nigripennis,NA
 Pterodroma,NA
 Pterodroma arminjonia,NA
-Pterodroma arminjoniana,tripet1
-Pterodroma baraui,barpet1
-Pterodroma cookii,coopet
+Pterodroma arminjoniana,Pterodroma arminjoniana
+Pterodroma baraui,Pterodroma baraui
+Pterodroma cookii,Pterodroma cookii
 Pterodroma cookilaria,NA
-Pterodroma externa,jufpet
-Pterodroma hasitata,bkcpet
-Pterodroma incerta,atlpet1
+Pterodroma externa,Pterodroma externa
+Pterodroma hasitata,Pterodroma hasitata
+Pterodroma incerta,Pterodroma incerta
 Pterodroma inexpectat,NA
-Pterodroma inexpectata,motpet
-Pterodroma lessonii,whhpet1
-Pterodroma leucoptera,goupet1
-Pterodroma longirostris,stepet
-Pterodroma macroptera,grwpet3
-Pterodroma mollis,soppet1
-Pterodroma neglecta,kerpet
-Pterodroma phaeopygia,galpet
+Pterodroma inexpectata,Pterodroma inexpectata
+Pterodroma lessonii,Pterodroma lessonii
+Pterodroma leucoptera,Pterodroma leucoptera
+Pterodroma longirostris,Pterodroma longirostris
+Pterodroma macroptera,Pterodroma macroptera
+Pterodroma mollis,Pterodroma mollis
+Pterodroma neglecta,Pterodroma neglecta
+Pterodroma phaeopygia,Pterodroma phaeopygia
 Pterodroma rostrata,NA
-Pterodroma sandwichensis,hawpet1
-Pterodroma solandri,solpet1
+Pterodroma sandwichensis,Pterodroma sandwichensis
+Pterodroma solandri,Pterodroma solandri
 Pterodroma,NA
 Pterodroma,NA
-Pterodroma ultima,murpet
+Pterodroma ultima,Pterodroma ultima
 Pterogogus cryptus,NA
 Pterogogus enneacanthus,NA
 Pterogyne nitens,NA
@@ -35615,7 +35615,7 @@ Ptycholoma lecheana,NA
 Ptycholomoides aeriferana,NA
 Ptychopyxis caput-medusae,NA
 Ptychopyxis costata,NA
-Ptychoramphus aleuticus,casauk
+Ptychoramphus aleuticus,Ptychoramphus aleuticus
 Puberella intapurpurea,NA
 Puellina biavicularia,NA
 Puellina innominata,NA
@@ -35624,24 +35624,24 @@ Puellina,NA
 Puellina venusta,NA
 Puerulus angulatus,NA
 Puffinus,NA
-Puffinus assimilis,litshe8
+Puffinus assimilis,Puffinus assimilis
 Puffinus atrodorsalis,NA
-Puffinus auricularis,towshe1
-Puffinus baroli,litshe1
+Puffinus auricularis,Puffinus auricularis
+Puffinus baroli,Puffinus baroli
 Puffinus bulleri,NA
 Puffinus carneipes,NA
 Puffinus creatopus,NA
-Puffinus gavia,flushe1
+Puffinus gavia,Puffinus gavia
 Puffinus gravis,NA
 Puffinus griseus,NA
-Puffinus lherminieri,audshe
-Puffinus opisthomelas,bkvshe
+Puffinus lherminieri,Puffinus lherminieri
+Puffinus opisthomelas,Puffinus opisthomelas
 Puffinus pacificus,NA
-Puffinus puffinus,manshe
+Puffinus puffinus,Puffinus puffinus
 Puffinus,NA
 Puffinus,NA
 Puffinus tenuirostris,NA
-Puffinus yelkouan,levshe1
+Puffinus yelkouan,Puffinus yelkouan
 Pugettia gracilis,NA
 Pugettia producta,NA
 Pugnus serrei,NA
@@ -35688,13 +35688,13 @@ Pycnogonum littorale,NA
 Pycnogonum,NA
 Pycnomerus vilis,NA
 Pycnonotidae,NA
-Pycnonotus sinensis,livbul1
+Pycnonotus sinensis,Pycnonotus sinensis
 Pycnopodia helianthoides,NA
 Pygoplites diacanthus,NA
-Pygoscelis adeliae,adepen1
+Pygoscelis adeliae,Pygoscelis adeliae
 Pygoscelis antarctica,NA
 Pygoscelis antartica,NA
-Pygoscelis papua,genpen1
+Pygoscelis papua,Pygoscelis papua
 Pygospio californica,NA
 Pygospio elegans,NA
 Pygospio muscularis,NA
@@ -35755,7 +35755,7 @@ Pyrgus scriptura,NA
 Pyrhila pisum,NA
 Pyrichaperia pyriformis,NA
 Pyripora catenularia,NA
-Pyrocephalus rubinus,verfly
+Pyrocephalus rubinus,Pyrocephalus rubinus
 Pyrocystis fusiformis,NA
 Pyrocystis lunula,NA
 Pyrocystis noctiluca,NA
@@ -35790,10 +35790,10 @@ Pyrrhalta viburni,NA
 Pyrrharctia isabella,NA
 Pyrrhia exprimens,NA
 Pyrrhia umbra,NA
-Pyrrhocorax pyrrhocorax,rebcho1
+Pyrrhocorax pyrrhocorax,Pyrrhocorax pyrrhocorax
 Pyrrhophyta,NA
 Pyrrhosoma nymphula,NA
-Pyrrhula pyrrhula,eurbul
+Pyrrhula pyrrhula,Pyrrhula pyrrhula
 Pyrrhulina australis,NA
 Pyrrophyta,NA
 Pyrunculus caelatus,NA
@@ -35865,9 +35865,9 @@ Quietula y-cauda,NA
 Quiina schippii,NA
 Quillaja brasiliensis,NA
 Quinquelaophonte wellsi,NA
-Quiscalus major,botgra
-Quiscalus mexicanus,grtgra
-Quiscalus quiscula,comgra
+Quiscalus major,Quiscalus major
+Quiscalus mexicanus,Quiscalus mexicanus
+Quiscalus quiscula,Quiscalus quiscula
 Quistadrilus multisetosus,NA
 Quistradrilus multisetosus,NA
 Quollastria capricornae,NA
@@ -35934,7 +35934,7 @@ Ralfsia fungiformis,NA
 Ralfsiales,NA
 Ralfsia,NA
 Ralfsia verrucosa,NA
-Rallus aquaticus,watrai1
+Rallus aquaticus,Rallus aquaticus
 Ramalina,NA
 Ramalina siliquosa,NA
 Ramellogammarus oregonensis,NA
@@ -36045,8 +36045,8 @@ NA,NA
 Reciprocus regalis,NA
 Recurvaria leucatella,NA
 Recurvaria nanella,NA
-Recurvirostra americana,ameavo
-Recurvirostra avosetta,pieavo1
+Recurvirostra americana,Recurvirostra americana
+Recurvirostra avosetta,Recurvirostra avosetta
 Red algae,NA
 Red,NA
 Red-bellied woodpecker,NA
@@ -36072,12 +36072,12 @@ Regalicus glesne,NA
 Regina,NA
 Reginella vas,NA
 Reginelloides stolonifera,NA
-Regulus calendula,ruckin
-Regulus ignicapilla,firecr1
+Regulus calendula,Regulus calendula
+Regulus ignicapilla,Regulus ignicapilla
 Regulus ignicapillus,NA
 Regulus regules,NA
-Regulus regulus,goldcr1
-Regulus satrapa,gockin
+Regulus regulus,Regulus regulus
+Regulus satrapa,Regulus satrapa
 Reinhardtius hippoglossoides,NA
 Reinhardtius stomias,NA
 Reinwardtiodendron anaimalaiense,NA
@@ -36088,7 +36088,7 @@ Reithrodontomys megalotus,NA
 Reithrodontomys montanus,NA
 Relbunium richardianum,NA
 NA,NA
-Remiz pendulinus,euptit1
+Remiz pendulinus,Remiz pendulinus
 Remora brachyptera,NA
 Remora remora,NA
 Remora,NA
@@ -36569,11 +36569,11 @@ Rinorea horneri,NA
 Rinorea sclerocarpa,NA
 Rinorea sylvatica,NA
 Rioraja agassizii,NA
-Riparia riparia,banswa
+Riparia riparia,Riparia riparia
 Riscodopa parva,NA
 Risor ruber,NA
-Rissa brevirostris,relkit
-Rissa tridactyla,bklkit
+Rissa brevirostris,Rissa brevirostris
+Rissa tridactyla,Rissa tridactyla
 Rissoa,NA
 Rissoa arenaria,NA
 Rissoacea,NA
@@ -36701,8 +36701,8 @@ Rostanga bifurcata,NA
 Rostanga crawfordi,NA
 Rostanga rubra,NA
 Rostraria,NA
-Rostratula benghalensis,grpsni1
-Rostrhamus sociabilis,snakit
+Rostratula benghalensis,Rostratula benghalensis
+Rostrhamus sociabilis,Rostrhamus sociabilis
 Rosy-finch unidentified,NA
 Rotalia beccarii,NA
 Rotaria,NA
@@ -36803,7 +36803,7 @@ Rutidermatidae,NA
 Rutilus rutilus,NA
 Ruvettus pretiosus,NA
 NA,NA
-Rynchops niger,blkski
+Rynchops niger,Rynchops niger
 Ryparosa acuminata,NA
 Ryparosa fasciculata,NA
 Ryparosa javanica,NA
@@ -37015,7 +37015,7 @@ Salpa thompsoni,NA
 Salpa zonaria-cordiformis,NA
 Salpida,NA
 Salpidae,NA
-Salpinctes obsoletus,rocwre
+Salpinctes obsoletus,Salpinctes obsoletus
 Salpingella,NA
 Salpingella acuminata,NA
 Salpingella,NA
@@ -37265,9 +37265,9 @@ Saxicavella jeffreysi,NA
 Saxicavella nybakkeni,NA
 Saxicavella pacifica,NA
 Saxicavella,NA
-Saxicola rubetra,whinch1
+Saxicola rubetra,Saxicola rubetra
 Saxicola torquata,NA
-Saxicola torquatus,afrsto1
+Saxicola torquatus,Saxicola torquatus
 Saxicolinae,NA
 Saxidomus gigantea,NA
 Saxidomus giganteus,NA
@@ -37296,9 +37296,9 @@ Sayella livida,NA
 Sayella producta,NA
 Sayella,NA
 Sayella unifasciata,NA
-Sayornis nigricans,blkpho
-Sayornis phoebe,easpho
-Sayornis saya,saypho
+Sayornis nigricans,Sayornis nigricans
+Sayornis phoebe,Sayornis phoebe
+Sayornis saya,Sayornis saya
 Sayornis spec,NA
 Says,NA
 Scabiosa africana,NA
@@ -37779,7 +37779,7 @@ Scolitantides orion,NA
 Scolmyia,NA
 Scolomyia,NA
 Scolopacidae,NA
-Scolopax rusticola,eurwoo
+Scolopax rusticola,Scolopax rusticola
 Scolopendromorpha,NA
 Scolopia braunii,NA
 Scolopia spinosa,NA
@@ -38156,7 +38156,7 @@ Seguieria floribunda,NA
 Seila adamsi,NA
 Seirospora interrupta,NA
 Seirospora seirosperma,NA
-Seiurus aurocapilla,ovenbi1
+Seiurus aurocapilla,Seiurus aurocapilla
 Seiurus aurocapillus,NA
 Seiurus motacilla,NA
 Seiurus noveboracensis,NA
@@ -38168,9 +38168,9 @@ Selago luxurians,NA
 Selar boops,NA
 Selar crumenophthalmus,NA
 Selaroides leptolepis,NA
-Selasphorus platycercus,brthum
-Selasphorus rufus,rufhum
-Selasphorus sasin,allhum
+Selasphorus platycercus,Selasphorus platycercus
+Selasphorus rufus,Selasphorus rufus
+Selasphorus sasin,Selasphorus sasin
 Selenanthias analis,NA
 Selenaria concinna,NA
 Selenaria maculata,NA
@@ -38461,18 +38461,18 @@ Setaria vaginata,NA
 Setaria viridis,NA
 Setipinna paxtoni,NA
 Setipinna tenuifilis,NA
-Setophaga americana,norpar
-Setophaga caerulescens,btbwar
-Setophaga castanea,babwar
-Setophaga coronata,yerwar
-Setophaga fusca,bkbwar
-Setophaga magnolia,magwar
-Setophaga pensylvanica,chswar
-Setophaga pinus,pinwar
-Setophaga ruticilla,amered
-Setophaga striata,bkpwar
-Setophaga tigrina,camwar
-Setophaga virens,btnwar
+Setophaga americana,Setophaga americana
+Setophaga caerulescens,Setophaga caerulescens
+Setophaga castanea,Setophaga castanea
+Setophaga coronata,Setophaga coronata
+Setophaga fusca,Setophaga fusca
+Setophaga magnolia,Setophaga magnolia
+Setophaga pensylvanica,Setophaga pensylvanica
+Setophaga pinus,Setophaga pinus
+Setophaga ruticilla,Setophaga ruticilla
+Setophaga striata,Setophaga striata
+Setophaga tigrina,Setophaga tigrina
+Setophaga virens,Setophaga virens
 NA,NA
 Sharp-shinned,NA
 NA,NA
@@ -38504,9 +38504,9 @@ Shorea parvifolia,NA
 Shorea pauciflora,NA
 Shorea roxburghii,NA
 Siagonium gracile,NA
-Sialia currucoides,moublu
-Sialia mexicana,wesblu
-Sialia sialis,easblu
+Sialia currucoides,Sialia currucoides
+Sialia mexicana,Sialia mexicana
+Sialia sialis,Sialia sialis
 Sialia spec,NA
 Sialis,NA
 Sialis mohri,NA
@@ -38781,11 +38781,11 @@ Sitochroa palealis,NA
 Sitochroa verticalis,NA
 Sitona humeralis,NA
 Sitona lineatus,NA
-Sitta canadensis,rebnut
-Sitta carolinensis,whbnut
-Sitta europaea,eurnut2
-Sitta pusilla,bnhnut
-Sitta pygmaea,pygnut
+Sitta canadensis,Sitta canadensis
+Sitta carolinensis,Sitta carolinensis
+Sitta europaea,Sitta europaea
+Sitta pusilla,Sitta pusilla
+Sitta pygmaea,Sitta pygmaea
 Sittidae,NA
 Skaptopus brychius,NA
 Skeletocutis amorpha,NA
@@ -39032,9 +39032,9 @@ Solorina crocea,NA
 Solorina,NA
 Solorina spongiosa,NA
 Somateria,NA
-Somateria fischeri,speeid
-Somateria mollissima,comeid
-Somateria spectabilis,kineid
+Somateria fischeri,Somateria fischeri
+Somateria mollissima,Somateria mollissima
+Somateria spectabilis,Somateria spectabilis
 Somatogyrus depresus,NA
 Somniosus micocephalis,NA
 Somniosus microcephalus,NA
@@ -39330,10 +39330,10 @@ Sphyraena,NA
 Sphyraena sphyraena,NA
 Sphyraena viridensis,NA
 Sphyraenidae,NA
-Sphyrapicus nuchalis,rensap
-Sphyrapicus ruber,rebsap
-Sphyrapicus thyroideus,wilsap
-Sphyrapicus varius,yebsap
+Sphyrapicus nuchalis,Sphyrapicus nuchalis
+Sphyrapicus ruber,Sphyrapicus ruber
+Sphyrapicus thyroideus,Sphyrapicus thyroideus
+Sphyrapicus varius,Sphyrapicus varius
 Sphyrion,NA
 Sphyrion lumpi,NA
 Sphyrna,NA
@@ -39359,7 +39359,7 @@ Spilosoma urticae,NA
 Spilosoma vestalis,NA
 Spilosoma virginica,NA
 Spinachia spinachia,NA
-Spindalis zena,wesspi
+Spindalis zena,Spindalis zena
 Spindasis lohita,NA
 Spinocalanidae,NA
 Spinocalanus,NA
@@ -39393,8 +39393,8 @@ Spinther,NA
 Spinther citrinus,NA
 Spinther oniscoides,NA
 Spinularia spinularia,NA
-Spinus pinus,pinsis
-Spinus tristis,amegfi
+Spinus pinus,Spinus pinus
+Spinus tristis,Spinus tristis
 Spio,NA
 Spio arctica,NA
 Spio armata,NA
@@ -39510,17 +39510,17 @@ Spisula solida,NA
 Spisula solidissima,NA
 Spisula spec,NA
 Spisula subtruncata,NA
-Spiza americana,dickci
+Spiza americana,Spiza americana
 Spizella arborea,NA
-Spizella atrogularis,bkcspa
-Spizella breweri,brespa
-Spizella pallida,clcspa
-Spizella passerina,chispa
-Spizella pusilla,fiespa
+Spizella atrogularis,Spizella atrogularis
+Spizella breweri,Spizella breweri
+Spizella pallida,Spizella pallida
+Spizella passerina,Spizella passerina
+Spizella pusilla,Spizella pusilla
 Splendrillia fucata,NA
 Splendrillia janetae,NA
 NA,NA
-Spodiopsar cineraceus,whcsta1
+Spodiopsar cineraceus,Spodiopsar cineraceus
 Spodoptera exigua,NA
 Spodoptera praefica,NA
 Spondervilia bisculpta,NA
@@ -39729,7 +39729,7 @@ Stegostoma fasciatum,NA
 Steindachnerina brevipinna,NA
 Steindachnerina insculpta,NA
 Stelechocarpus cauliflorus,NA
-Stelgidopteryx serripennis,nrwswa
+Stelgidopteryx serripennis,Stelgidopteryx serripennis
 Stelidota multiguttata,NA
 Stellaria alsine,NA
 Stellaria crassipes,NA
@@ -39888,12 +39888,12 @@ Steptopelia orientalis,NA
 Steraechmella neozelanica,NA
 Stercorariidae,NA
 Stercorarius,NA
-Stercorarius longicaudus,lotjae
+Stercorarius longicaudus,Stercorarius longicaudus
 Stercorarius parasiti,NA
-Stercorarius parasiticus,parjae
+Stercorarius parasiticus,Stercorarius parasiticus
 Stercorarius pomarinu,NA
-Stercorarius pomarinus,pomjae
-Stercorarius skua,gresku1
+Stercorarius pomarinus,Stercorarius pomarinus
+Stercorarius skua,Stercorarius skua
 Sterculia apetala,NA
 Sterculia chicha,NA
 Sterculia coccinea,NA
@@ -39930,24 +39930,24 @@ Sterna balaenarum,NA
 Sterna bengalensis,NA
 Sterna bergii,NA
 Sterna caspia,NA
-Sterna dougallii,roster
+Sterna dougallii,Sterna dougallii
 Sterna elegans,NA
-Sterna forsteri,forter
+Sterna forsteri,Sterna forsteri
 Sterna fuscata,NA
-Sterna hirundo,comter
+Sterna hirundo,Sterna hirundo
 Sterna,NA
 Sterna maxima,NA
-Sterna paradisaea,arcter
+Sterna paradisaea,Sterna paradisaea
 Sterna,NA
-Sterna repressa,whcter1
+Sterna repressa,Sterna repressa
 Sterna sandvicensis,NA
 Sternaspidae,NA
 Sternaspis,NA
 Sternaspis fossor,NA
 Sternaspis scutata,NA
-Sterna sumatrana,blnter1
-Sterna virgata,kerter1
-Sterna vittata,antter1
+Sterna sumatrana,Sterna sumatrana
+Sterna virgata,Sterna virgata
+Sterna vittata,Sterna vittata
 Sterninae,NA
 Sternoptichidae,NA
 Sternoptychidae,NA
@@ -39958,7 +39958,7 @@ Sternoptyx pseudobscura,NA
 Sternoptyx pseudodiaphana,NA
 Sternoptyx,NA
 Sternopygus macrurus,NA
-Sternula albifrons,litter1
+Sternula albifrons,Sternula albifrons
 Steroenepthya,NA
 Stethojulis albovittata,NA
 Stethojulis balteata,NA
@@ -40137,9 +40137,9 @@ Streblus glaber,NA
 Streetsia challengeri,NA
 Streetsia porcella,NA
 Streptoneura,NA
-Streptopelia decaocto,eucdov
-Streptopelia orientalis,ortdov
-Streptopelia turtur,eutdov
+Streptopelia decaocto,Streptopelia decaocto
+Streptopelia orientalis,Streptopelia orientalis
+Streptopelia turtur,Streptopelia turtur
 Streptopus amplexifolius,NA
 Streptospinigera heteroseta,NA
 Streptosyllis,NA
@@ -40171,11 +40171,11 @@ Strigilla mirabilis,NA
 Strigilla pisiformis,NA
 Strigilla,NA
 Striodentalium rhabdotum,NA
-Strix aluco,tawowl1
-Strix nebulosa,grgowl
-Strix occidentalis,spoowl
-Strix uralensis,uraowl1
-Strix varia,brdowl
+Strix aluco,Strix aluco
+Strix nebulosa,Strix nebulosa
+Strix occidentalis,Strix occidentalis
+Strix uralensis,Strix uralensis
+Strix varia,Strix varia
 Stromateidae,NA
 Stromateoidei,NA
 Stromateus,NA
@@ -40256,11 +40256,11 @@ Studeriotes,NA
 Studeriotes,NA
 Studeriotes,NA
 Studeriotes,NA
-Sturnella magna,easmea
-Sturnella neglecta,wesmea
+Sturnella magna,Sturnella magna
+Sturnella neglecta,Sturnella neglecta
 Sturnira lilium,NA
 Sturnira tildae,NA
-Sturnus vulgaris,eursta
+Sturnus vulgaris,Sturnus vulgaris
 Styela,NA
 Styela canopus,NA
 Styela clava,NA
@@ -40356,8 +40356,8 @@ Subadyte,NA
 Subadyte mexicana,NA
 Subadyte pellucida,NA
 Subcancilla interlirata,NA
-Subclass,NA
-Subclass,NA
+Hirudinea,NA
+Podocopa,NA
 Subergorgia juvenile,NA
 Subergorgia,NA
 Subergorgia suberosa,NA
@@ -40379,8 +40379,8 @@ Subeucalanus pileatus,NA
 Subeucalanus,NA
 Subeucalanus subcrassus,NA
 Subeucalanus subtenuis,NA
-Suborder,NA
-Subphylum,NA
+Cladocera,NA
+Crustacea,NA
 Subulina octana,NA
 Succisa pratensis,NA
 Sudis hyalina,NA
@@ -40401,9 +40401,9 @@ Suggrundus macracanthus,NA
 Suggrundus meerdervoortii,NA
 Sula,NA
 Sula bedouti,NA
-Sula dactylatra,masboo
-Sula leucogaster,brnboo
-Sula sula,refboo
+Sula dactylatra,Sula dactylatra
+Sula leucogaster,Sula leucogaster
+Sula sula,Sula sula
 Sulcanus conflictus,NA
 Sulculeolaria angusta,NA
 Sulculeolaria biloba,NA
@@ -40424,13 +40424,13 @@ Sundanella sibogae,NA
 Sunesta setigera,NA
 Sunetta contempta,NA
 Sunira decipiens,NA
-Superfamily,NA
+Chalcidoidea,NA
 Suphrodytes dorsalis,NA
 Suregada multiflora,NA
 Surirella,NA
 Surirella minuta,NA
 Surirella,NA
-Surnia ulula,nohowl
+Surnia ulula,Surnia ulula
 Sus scrofa,NA
 NA,NA
 Sutorectus tentaculatus,NA
@@ -40518,10 +40518,10 @@ Syllis,NA
 Syllis,NA
 Syllis,NA
 Syllis typosyllis,NA
-Sylvia atricapilla,blackc1
-Sylvia borin,garwar1
-Sylvia communis,grewhi1
-Sylvia curruca,leswhi4
+Sylvia atricapilla,Sylvia atricapilla
+Sylvia borin,Sylvia borin
+Sylvia communis,Sylvia communis
+Sylvia curruca,Sylvia curruca
 Sylviidae,NA
 Sylvilagus audubonii,NA
 Symbolophorus barnardi,NA
@@ -40809,9 +40809,9 @@ Synopiidae,NA
 Synopiidae,NA
 Synoum glandulosum,NA
 Synthliboramphus,NA
-Synthliboramphus antiquus,ancmur
-Synthliboramphus craveri,cramur
-Synthliboramphus hypoleucus,xanmur1
+Synthliboramphus antiquus,Synthliboramphus antiquus
+Synthliboramphus craveri,Synthliboramphus craveri
+Synthliboramphus hypoleucus,Synthliboramphus hypoleucus
 Synuchus agonus,NA
 Synuchus arcuaticollis,NA
 Synuchus atricolor,NA
@@ -40850,7 +40850,7 @@ Syrbula admirabilis,NA
 Syrbula montezuma,NA
 Syringodium isoetifolium,NA
 Syrinx aruanus,NA
-Syrmaticus soemmerringii,copphe1
+Syrmaticus soemmerringii,Syrmaticus soemmerringii
 Syrphid,NA
 Syrrhoe,NA
 Syrrhoe crenulata,NA
@@ -40933,9 +40933,9 @@ Tachinus sharpi,NA
 Tachinus,NA
 Tachinus,NA
 Tachinus,NA
-Tachybaptus ruficollis,litgre1
-Tachycineta bicolor,treswa
-Tachycineta thalassina,vigswa
+Tachybaptus ruficollis,Tachybaptus ruficollis
+Tachycineta bicolor,Tachycineta bicolor
+Tachycineta thalassina,Tachycineta thalassina
 Tachyporinae,NA
 Tachyporus hypnorum,NA
 Tachyporus nitidulus,NA
@@ -40946,7 +40946,7 @@ Tachysurus,NA
 Tachytrypane,NA
 Tachytrypane jeffreysi,NA
 Tachytrypane jeffreysii,NA
-Tadorna tadorna,comshe
+Tadorna tadorna,Tadorna tadorna
 Taenianotus triacanthus,NA
 Taenioides cirratus,NA
 Taenioides,NA
@@ -41072,7 +41072,7 @@ Tarenna,NA
 Tarenna,NA
 Tarletonbeania,NA
 Tarphops oligolepis,NA
-Tarsiger cyanurus,refblu
+Tarsiger cyanurus,Tarsiger cyanurus
 Tasmanogobius gloveri,NA
 Taterillus harringtoni,NA
 Tathicarpus butleri,NA
@@ -41312,7 +41312,7 @@ Ternstroemia corneri,NA
 Ternstroemia tepezapote,NA
 Tern unidentified,NA
 Terpios fugax,NA
-Terpsiphone atrocaudata,japfly1
+Terpsiphone atrocaudata,Terpsiphone atrocaudata
 Terrapene ornata,NA
 Tervia abyssicola,NA
 Tesagrotis atrifrons,NA
@@ -41379,8 +41379,8 @@ Tetraneuris argentea,NA
 Tetraodontidae,NA
 Tetraodontidae,NA
 Tetraodontiformes,NA
-Tetrao tetrix,blagro1
-Tetrao urogallus,wescap1
+Tetrao tetrix,Tetrao tetrix
+Tetrao urogallus,Tetrao urogallus
 Tetraphis pellucida,NA
 Tetraplaria immersa,NA
 Tetraplaria,NA
@@ -41420,7 +41420,7 @@ Tetrastemma,NA
 Tetrastemma,NA
 Tetrastemmatidae,NA
 Tetrastemma vermiculus,NA
-Tetrastes bonasia,hazgro1
+Tetrastes bonasia,Tetrastes bonasia
 Tetrastrum heteracanthum,NA
 Tetrastrum,NA
 Tetrastrum staurogeniaeforme,NA
@@ -41498,14 +41498,14 @@ Thalamoporella,NA
 Thalamoporella,NA
 Thalamotreptos expansum,NA
 Thalassarachna basteri,NA
-Thalassarche bulleri,bulalb2
+Thalassarche bulleri,Thalassarche bulleri
 Thalassarche carteri,NA
-Thalassarche cauta,whcalb1
-Thalassarche chrysostoma,gyhalb
-Thalassarche eremita,shyalb2
+Thalassarche cauta,Thalassarche cauta
+Thalassarche chrysostoma,Thalassarche chrysostoma
+Thalassarche eremita,Thalassarche eremita
 Thalassarche melanoph,NA
 Thalassarche melanophrys,NA
-Thalassarche salvini,salalb1
+Thalassarche salvini,Thalassarche salvini
 Thalassarche steadi,NA
 Thalassema,NA
 Thalassema hartmani,NA
@@ -41578,7 +41578,7 @@ Thalassodendron ciliatum,NA
 Thalassodrilides belli,NA
 Thalassodrilides gurwitschi,NA
 Thalassodrilides,NA
-Thalassoica antarctica,antpet1
+Thalassoica antarctica,Thalassoica antarctica
 Thalassoma amblycephalum,NA
 Thalassoma bifasciatum,NA
 Thalassoma cupido,NA
@@ -41771,8 +41771,8 @@ Thrinacophora,NA
 Thrinacophora,NA
 Thromidia catalai,NA
 Thrush unidentified,NA
-Thryomanes bewickii,bewwre
-Thryothorus ludovicianus,carwre
+Thryomanes bewickii,Thryomanes bewickii
+Thryothorus ludovicianus,Thryothorus ludovicianus
 Thryssa baelama,NA
 Thryssa chefuensis,NA
 Thryssa dussumieri,NA
@@ -41974,7 +41974,7 @@ Todarodes filippovae,NA
 Todarodes pacificus,NA
 Todarodes sagittatus,NA
 Todarodes,NA
-Todus mexicanus,purtod1
+Todus mexicanus,Todus mexicanus
 Toechima daemelianum,NA
 Toechima erythrocarpum,NA
 Toechima monticola,NA
@@ -42068,13 +42068,13 @@ Toxopneustes,NA
 Toxopneustes,NA
 Toxorchis kellneri,NA
 Toxorhynchites,NA
-Toxostoma bendirei,benthr
-Toxostoma crissale,crithr
-Toxostoma curvirostre,cubthr
-Toxostoma lecontei,lecthr
-Toxostoma longirostre,lobthr
-Toxostoma redivivum,calthr
-Toxostoma rufum,brnthr
+Toxostoma bendirei,Toxostoma bendirei
+Toxostoma crissale,Toxostoma crissale
+Toxostoma curvirostre,Toxostoma curvirostre
+Toxostoma lecontei,Toxostoma lecontei
+Toxostoma longirostre,Toxostoma longirostre
+Toxostoma redivivum,Toxostoma redivivum
+Toxostoma rufum,Toxostoma rufum
 Tozeuma carolinense,NA
 Tozeuma cornutum,NA
 Tozeuma serratum,NA
@@ -42245,8 +42245,8 @@ Tremoctopus violaceus,NA
 Trephionus kinoshitai,NA
 Trephionus nikkoensis,NA
 Trephionus,NA
-Treron formosae,whgpig1
-Treron sieboldii,whbpig1
+Treron formosae,Treron formosae
+Treron sieboldii,Treron sieboldii
 NA,NA
 Tresus nuttallii,NA
 Tresus,NA
@@ -42442,16 +42442,16 @@ Trinectes maculatus,NA
 Trinectes microphthalmus,NA
 Trinectes paulistanus,NA
 Tringa,NA
-Tringa erythropus,spored
-Tringa flavipes,lesyel
-Tringa glareola,woosan
-Tringa guttifer,norgre1
-Tringa melanoleuca,greyel
-Tringa nebularia,comgre
-Tringa ochropus,grnsan
-Tringa solitaria,solsan
-Tringa stagnatilis,marsan
-Tringa totanus,comred1
+Tringa erythropus,Tringa erythropus
+Tringa flavipes,Tringa flavipes
+Tringa glareola,Tringa glareola
+Tringa guttifer,Tringa guttifer
+Tringa melanoleuca,Tringa melanoleuca
+Tringa nebularia,Tringa nebularia
+Tringa ochropus,Tringa ochropus
+Tringa solitaria,Tringa solitaria
+Tringa stagnatilis,Tringa stagnatilis
+Tringa totanus,Tringa totanus
 Trinorfolkia clarkei,NA
 Trinycteris nicefori,NA
 Triodanis leptocarpa,NA
@@ -42578,12 +42578,12 @@ Trochosodon multiarmatus,NA
 Trochosphaera solstitialis,NA
 Trochus hanleyanus,NA
 Trochus maculatus,NA
-Troglodytes aedon,houwre
-Troglodytes hiemalis,winwre3
-Troglodytes troglodytes,winwre4
+Troglodytes aedon,Troglodytes aedon
+Troglodytes hiemalis,Troglodytes hiemalis
+Troglodytes troglodytes,Troglodytes troglodytes
 Troglodytidae,NA
 Trogoderma angustum,NA
-Trogon elegans,eletro
+Trogon elegans,Trogon elegans
 Troides aeacus,NA
 Troides helena,NA
 Troides,NA
@@ -42831,19 +42831,19 @@ Turbo,NA
 Turbo torquatus,NA
 Turbo undulatus,NA
 Turdidae,NA
-Turdus cardis,japthr1
-Turdus chrysolaus,brhthr1
-Turdus iliacus,redwin
-Turdus merula,eurbla
-Turdus migratorius,amerob
-Turdus naumanni,dusthr1
-Turdus obscurus,eyethr
-Turdus pallidus,palthr1
-Turdus philomelos,sonthr1
-Turdus pilaris,fieldf
-Turdus plumbeus,relthr1
-Turdus torquatus,rinouz1
-Turdus viscivorus,misthr1
+Turdus cardis,Turdus cardis
+Turdus chrysolaus,Turdus chrysolaus
+Turdus iliacus,Turdus iliacus
+Turdus merula,Turdus merula
+Turdus migratorius,Turdus migratorius
+Turdus naumanni,Turdus naumanni
+Turdus obscurus,Turdus obscurus
+Turdus pallidus,Turdus pallidus
+Turdus philomelos,Turdus philomelos
+Turdus pilaris,Turdus pilaris
+Turdus plumbeus,Turdus plumbeus
+Turdus torquatus,Turdus torquatus
+Turdus viscivorus,Turdus viscivorus
 Turkey,NA
 Turpinia occidentalis,NA
 Turpinia ovalifolia,NA
@@ -42883,9 +42883,9 @@ Tylosurus,NA
 Tylotus lichenoides,NA
 Tympanocryptis adelaidensis,NA
 Tympanophorus sauteri,NA
-Tympanuchus cupido,grpchi
-Tympanuchus pallidicinctus,lepchi
-Tympanuchus phasianellus,shtgro
+Tympanuchus cupido,Tympanuchus cupido
+Tympanuchus pallidicinctus,Tympanuchus pallidicinctus
+Tympanuchus phasianellus,Tympanuchus phasianellus
 Tyonidium pellucidum,NA
 Typha,NA
 Typhlocarcinops stephenseni,NA
@@ -42943,17 +42943,17 @@ Typton prionurus,NA
 Typton tortugae,NA
 Typton vulcanus,NA
 Tyrannochthonius,NA
-Tyrannus couchii,coukin
-Tyrannus crassirostris,thbkin
-Tyrannus dominicensis,grykin
-Tyrannus forficatus,sctfly
-Tyrannus melancholicus,trokin
-Tyrannus tyrannus,easkin
-Tyrannus verticalis,weskin
-Tyrannus vociferans,caskin
+Tyrannus couchii,Tyrannus couchii
+Tyrannus crassirostris,Tyrannus crassirostris
+Tyrannus dominicensis,Tyrannus dominicensis
+Tyrannus forficatus,Tyrannus forficatus
+Tyrannus melancholicus,Tyrannus melancholicus
+Tyrannus tyrannus,Tyrannus tyrannus
+Tyrannus verticalis,Tyrannus verticalis
+Tyrannus vociferans,Tyrannus vociferans
 Tyria jacobaeae,NA
 Tyromyces floriformis,NA
-Tyto alba,brnowl
+Tyto alba,Tyto alba
 Tytthocope pygmaea,NA
 Tytus,NA
 Uca,NA
@@ -43324,7 +43324,7 @@ Upogebia spinistipula,NA
 Upogebia stellata,NA
 Upogebia yokoyai,NA
 Upogebiidae,NA
-Upupa epops,hoopoe
+Upupa epops,Upupa epops
 Uragus sibiricus,NA
 Uranoscopidae,NA
 Uranoscopus,NA
@@ -43346,8 +43346,8 @@ Urera baccifera,NA
 Urera bacifera,NA
 Urgorri complanatus,NA
 Uria,NA
-Uria aalge,commur
-Uria lomvia,thbmur
+Uria aalge,Uria aalge
+Uria lomvia,Uria lomvia
 Uria,NA
 Uristes entalladurus,NA
 Urnalana margaritata,NA
@@ -43405,7 +43405,7 @@ Urosalpinx perrugata,NA
 Urosalpinx tampaensis,NA
 Urosolenia eriensis,NA
 Urosolenia longiseta,NA
-Urosphena squameiceps,asistu1
+Urosphena squameiceps,Urosphena squameiceps
 Urospora,NA
 Urospora bangioides,NA
 Urospora penicilliformis,NA
@@ -43492,8 +43492,8 @@ Vampyrosternus kratochvili,NA
 Vampyroteuthis infernalis,NA
 Vampyrum spectrum,NA
 Vanacampus margaritifer,NA
-Vanellus cinereus,gyhlap1
-Vanellus vanellus,norlap
+Vanellus cinereus,Vanellus cinereus
+Vanellus vanellus,Vanellus vanellus
 Vanessa atalanta,NA
 Vanessa cardui,NA
 Vanessa indica,NA
@@ -43615,8 +43615,8 @@ Vermiliopsis infundibulum,NA
 Vermiliopsis multiannulata,NA
 Vermis,NA
 Vermivora celata,NA
-Vermivora chrysoptera,gowwar
-Vermivora cyanoptera,buwwar
+Vermivora chrysoptera,Vermivora chrysoptera
+Vermivora cyanoptera,Vermivora cyanoptera
 Vermivora luciae,NA
 Vermivora peregrina,NA
 Vermivora pinus,NA
@@ -43749,22 +43749,22 @@ Viola tricolor,NA
 Violet-green,NA
 NA,NA
 Vireo,NA
-Vireo altiloquus,bkwvir
+Vireo altiloquus,Vireo altiloquus
 Vireo atricapillus,NA
-Vireo bellii,belvir
-Vireo cassinii,casvir
-Vireo flavifrons,yetvir
-Vireo gilvus,warvir
-Vireo griseus,whevir
-Vireo huttoni,hutvir
+Vireo bellii,Vireo bellii
+Vireo cassinii,Vireo cassinii
+Vireo flavifrons,Vireo flavifrons
+Vireo gilvus,Vireo gilvus
+Vireo griseus,Vireo griseus
+Vireo huttoni,Vireo huttoni
 Vireo olivaceu,NA
-Vireo olivaceus,reevir1
-Vireo philadelphicus,phivir
-Vireo plumbeus,plsvir
-Vireo solitarius,buhvir
+Vireo olivaceus,Vireo olivaceus
+Vireo philadelphicus,Vireo philadelphicus
+Vireo plumbeus,Vireo plumbeus
+Vireo solitarius,Vireo solitarius
 Vireo spec,NA
 Vireo unidentified,NA
-Vireo vicinior,gryvir
+Vireo vicinior,Vireo vicinior
 Virginias,NA
 Virgularia agassizi,NA
 Virgularia californica,NA
@@ -43992,7 +43992,7 @@ Xanthocalanus kurilensis,NA
 Xanthocalanus paululus,NA
 Xanthocalanus polaris,NA
 Xanthocalanus subagilis,NA
-Xanthocephalus xanthocephalus,yehbla
+Xanthocephalus xanthocephalus,Xanthocephalus xanthocephalus
 Xanthoidea,NA
 Xantho incisus,NA
 Xantholinini,NA
@@ -44029,7 +44029,7 @@ Xanthoria parietina,NA
 Xanthosoma,NA
 Xanthostemon chrysanthus,NA
 Xanthostemon whitei,NA
-Xema sabini,sabgul
+Xema sabini,Xema sabini
 Xenanthura,NA
 Xenanthura brevitelson,NA
 Xeneretmus latifrons,NA
@@ -44064,7 +44064,7 @@ Xenospongia,NA
 Xenostrobus atratus,NA
 Xenosyllis scabra,NA
 Xenoturris,NA
-Xenus cinereus,tersan
+Xenus cinereus,Xenus cinereus
 Xererpes fucorum,NA
 Xeromphis spinosa,NA
 Xerospermum noronhianum,NA
@@ -44288,8 +44288,8 @@ Zeiraphera rufimitrana,NA
 Zelatomys hildegardeae,NA
 Zelleria hepariella,NA
 Zemeros flegyas,NA
-Zenaida asiatica,whwdov
-Zenaida macroura,moudov
+Zenaida asiatica,Zenaida asiatica
+Zenaida macroura,Zenaida macroura
 Zenion hololepis,NA
 Zenion leptolepis,NA
 Zenion,NA
@@ -44342,12 +44342,12 @@ Zoila venusta,NA
 Zonaria diesingiana,NA
 Zonaria farlowii,NA
 Zonosagitta bedoti,NA
-Zonotrichia albicollis,whtspa
-Zonotrichia leucophrys,whcspa
-Zonotrichia querula,harspa
+Zonotrichia albicollis,Zonotrichia albicollis
+Zonotrichia leucophrys,Zonotrichia leucophrys
+Zonotrichia querula,Zonotrichia querula
 Zoobotryon pellucida,NA
 Zoobotryon verticillatum,NA
-Zoothera dauma,scathr8
+Zoothera dauma,Zoothera dauma
 Zoothera naevia,NA
 Zoothera sibirica,NA
 Zophodia grossulariella,NA
@@ -44362,7 +44362,7 @@ Zostera,NA
 Zostera marina,NA
 Zostera noltei,NA
 Zosteropoda hirtipes,NA
-Zosterops japonicus,warwhe1
+Zosterops japonicus,Zosterops japonicus
 Zotheca tranquilla,NA
 NA,NA
 Zu,NA
