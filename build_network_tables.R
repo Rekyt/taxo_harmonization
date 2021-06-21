@@ -156,6 +156,10 @@ all_edges = bind_rows(
 all_nodes = bind_rows(
   # Packages list with metadata
   included_pkg %>%
+    # Remove remaining packages used for dependency detection in table
+    filter(
+      !(network_name %in% c("joelnitta/jntools", "gustavobio/tpldata"))
+    ) %>%
     select(1, 5) %>%
     rename(
       id = `Package Name`,
