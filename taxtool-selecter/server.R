@@ -13,8 +13,9 @@ shinyServer(function(input, output, session) {
   
   
   # legend preparation
-  ledges <- data.frame(color = c("97C2FC", "lawngreen"), 
-                       label = c("Gives to", "Takes from"), arrows = c("to", "from"), 
+  ledges <- data.frame(color = c("#F1A340", "998EC3"), 
+                       label = c("Gives to", "Takes from"),
+                       arrows = c("to", "from"), 
                        font.align = "top")
   
   
@@ -22,18 +23,18 @@ shinyServer(function(input, output, session) {
     visNetwork(all_nodes, all_edges) %>% 
       
       visGroups(groupname = "db", shape = "dot", color = list(
-        background = "lawngreen",
-        border = "limegreen",
+        background = "#F1A340",
+        border = "#B35806",
         highlight = list(
-          background = "lawngreen",
-          border = "white"
+          background = "#B35806",
+          border = "#F1A340"
         ))) %>%
       visGroups(groupname = "package", shape = "dot", color = list(
-        background = "#97C2FC",
-        border = "#2B7CE9",
+        background = "#998EC3",
+        border = "#542788",
         highlight = list(
-          background = "#97C2FC",
-          border = "white"
+          background = "#542788",
+          border = "#998EC3"
         ))) %>%
       
       visEdges(
@@ -59,7 +60,7 @@ shinyServer(function(input, output, session) {
         enabled = TRUE,
         useGroups = TRUE,
         zoom = FALSE,
-        addEdges =  ledges) %>%
+        addEdges = ledges) %>%
       visLayout(randomSeed = 42L)
   )
   
