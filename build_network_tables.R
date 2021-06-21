@@ -51,18 +51,7 @@ access_df = included_pkg %>%
   mutate(db_list = purrr::map(db_list, stringr::str_trim, side = "both")) %>%
   select(-`Which authority?`) %>%
   mutate(type = "accesses") %>%
-  tidyr::unnest(c(db_list)) %>%
-  mutate(db_list = case_when(
-    db_list == "FishBase (Eschmeyer's Catalog of Fishes)" ~ "FishBase",
-    db_list == "WikiData" ~ "Wikidata",
-    db_list == "INPI"     ~ "IPNI",
-    db_list == "World Flora Online" ~ "WorldFlora",
-    db_list == "vegetplant" ~ "GermanSL",
-    db_list == "Plants of the World" ~ "POWO",
-    db_list == "multiple" ~ "FinBIF",
-    db_list == "Tropics" ~ "Tropicos",
-    TRUE ~ db_list
-  ))
+  tidyr::unnest(c(db_list))
 
 db_links = tibble::tribble(
   ~source_db, ~target_db, ~link_type,
@@ -83,8 +72,7 @@ db_links = tibble::tribble(
   "Wikidata",       "GNR",         "populates",
   "TPL",            "WorldFlora",  "populates",
   "WorldFlora",     "TNRS",        "populates",
-  "eBird/Clements", "GNR",         "populates",
-  "BirdLife",       "GNR",         "populates",
+  "eBird",           "GNR",         "populates",
   "ZooBank",        "GNR",         "populates",
   "POWO",           "WCPS",        "populates",
   "POWO",           "IPNI",        "populates",
