@@ -1,9 +1,13 @@
 # Script to generate nodes and edges data.frame for use in shiny app
 # Comprise links between packages, between databases, and between both
-# Package igraph network -------------------------------------------------------
+# Needed packages --------------------------------------------------------------
+library("dplyr")
+
+# Load initial data ------------------------------------------------------------
 pkg_deps_df <- readRDS("data_cleaned/pkg_deps_df.Rds")
 included_pkg <- readRDS("data_cleaned/included_pkg.Rds")
 
+# Extract network in two data.frames -------------------------------------------
 # Edge list data.frame
 dependencies_edge_df = pkg_deps_df %>%
   select(pkg = ref, deps) %>%
@@ -29,13 +33,6 @@ pkg_info_df = bind_rows(
     by = c("pkg")
   )
 
-if (FALSE) {
-  # Actual graph object
-  dependency_graph = dependencies_edge_df %>%
-    filter(dependency_type != "enhances", dependency_type != "linkingto") %>%
-    igraph::graph_from_data_frame(vertices = pkg_info_df)
-}
-
 # Make smaller graph with only taxonomic packages that directly depends
 # from each other
 taxonomy_dependencies_edge_df = dependencies_edge_df %>%
@@ -46,39 +43,8 @@ taxonomy_dependencies_edge_df = dependencies_edge_df %>%
       # are written only with package name)
       dependency %in% included_pkg$`Package Name`)
 
-if (FALSE) {
-  taxonomy_pkg_graph = igraph::graph_from_data_frame(
-    taxonomy_dependencies_edge_df,
-    vertices = pkg_info_df %>%
-      filter(pkg %in% c(included_pkg$network_name, included_pkg$`Package Name`)))
-  
-  saveRDS(taxonomy_pkg_graph, "data_cleaned/taxonomy_pkg_graph.Rds",
-          compress = TRUE)
-  
-  saveRDS(taxonomy_pkg_graph,
-          "taxtool-selecter/shiny_data/taxonomy_pkg_graph.Rds")
-}
-
-# Viz. Package Network ---------------------------------------------------------
-# Visualize the network
-if (FALSE) {
-  taxonomy_pkg_graph %>%
-    ggraph(layout = "igraph", algorithm = "nicely") +
-    geom_edge_link(
-      arrow = arrow(type = "closed", length = unit(4, "mm"), angle = 7),
-      alpha = 1/2
-    ) +
-    geom_node_point(
-      aes(
-        fill = category
-      ),
-      shape = 21, color = "white", size = 3) +
-    geom_node_label(aes(label = name), family = "monospace", repel = TRUE) +
-    theme_void() +
-    theme(legend.position = "top")
-}
 # Database network -------------------------------------------------------------
-# Make an attribute df with database
+# Make an attribute df with databases
 access_df = included_pkg %>%
   select(`Package Name`, `Which authority?`) %>%
   mutate(db_list = stringr::str_split(`Which authority?`, ",")) %>%
@@ -150,12 +116,10 @@ all_db = access_df %>%
   distinct() %>%
   filter(!is.na(db_list))
 
-if (FALSE) {
-  db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
-  
-  saveRDS(db_graph, "data_cleaned/db_igraph.Rds", compress = TRUE)
-  saveRDS(db_graph, "taxtool-selecter/shiny_data/db_igraph.Rds")
-}
+db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
+
+saveRDS(db_graph, "data_cleaned/db_igraph.Rds", compress = TRUE)
+
 # Viz. DB network --------------------------------------------------------------
 if (FALSE) {
   db_graph %>%
@@ -170,6 +134,7 @@ if (FALSE) {
 
 # Joining both networks --------------------------------------------------------
 
+# Combine all edges
 all_edges = bind_rows(
   # Links between pkgs
   taxonomy_dependencies_edge_df %>%
@@ -191,6 +156,7 @@ all_edges = bind_rows(
   db_links %>%
     rename(from = source_db, to = target_db, type = link_type)
 ) %>%
+  # Define some columns for use in visNetwork in shiny app
   mutate(arrows = case_when(type == "depends" ~ "to",
                             type == "accesses" ~ "to",
                             type == "populates" ~ "to"),
@@ -198,6 +164,7 @@ all_edges = bind_rows(
                            type == "accesses" ~ "steelblue",
                            type == "populates" ~ "#B35806")) 
 
+# Combine all nodes
 all_nodes = bind_rows(
   # Packages list with metadata
   included_pkg %>%
@@ -233,41 +200,7 @@ all_nodes$`Package name` <- all_nodes$label <- all_nodes$id
 all_nodes$`Object type` <- all_nodes$node_type
 
 all_nodes <- rename(all_nodes, group = node_type) %>%
+  # Rename node type for ease of use in shiny app
   mutate(group = ifelse(group == "db", "database", group))
 
 save(all_nodes, all_edges, file = "taxtool-selecter/shiny_data/full_network.Rdata")
-
-if (FALSE) {
-  all_graph = igraph::graph_from_data_frame(
-    all_edges, vertices = all_nodes
-  )
-  
-  saveRDS(all_graph, "taxtool-selecter/shiny_data/full_network.Rds")
-  
-  plot_full_network = all_graph %>%
-    ggraph(layout = "igraph", algorithm = "nicely") +
-    geom_edge_link(
-      aes(color = type), alpha = 2/3,
-      arrow = arrow(type = "closed", length = unit(2, "mm"), angle = 7),
-      end_cap = circle(2, 'mm')
-    ) +
-    # Package & DBpoints
-    geom_node_point(
-      aes(shape = node_type), color = "white", fill = "black", size = 3,
-    ) +
-    # Labels
-    geom_node_text(
-      aes(label = name,
-          family = ifelse(node_type == "package", "Consolas", "Helvetica")
-      ), check_overlap = TRUE, repel = TRUE
-    ) +
-    scale_shape_manual(values = c(db = 22, package = 21),
-                       labels = c(db = "Database", package = "Package"),
-                       name = "bla") +
-    scale_edge_color_brewer(type = "qual") +
-    theme_void() +
-    theme(legend.position = "top")
-  
-  plot_full_network
-}
-
