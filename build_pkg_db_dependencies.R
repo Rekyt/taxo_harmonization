@@ -1,5 +1,4 @@
-# Companion script to taxonomic harmonization project
-
+# Script to generate list of dependencies of packages
 # Load packages ----------------------------------------------------------------
 library("dplyr")
 
@@ -48,4 +47,4 @@ pkg_deps$draw()
 pkg_deps_df = pkg_deps$get_resolution()
 
 saveRDS(pkg_deps_df, "data_cleaned/pkg_deps_df.Rds", compress = TRUE)
-
+saveRDS(included_pkg, "data_cleaned/included_pkg.Rds")

@@ -1,5 +1,8 @@
+# Script to generate nodes and edges data.frame for use in shiny app
+# Comprise links between packages, between databases, and between both
 # Package igraph network -------------------------------------------------------
 pkg_deps_df <- readRDS("data_cleaned/pkg_deps_df.Rds")
+included_pkg <- readRDS("data_cleaned/included_pkg.Rds")
 
 # Edge list data.frame
 dependencies_edge_df = pkg_deps_df %>%
@@ -187,7 +190,13 @@ all_edges = bind_rows(
   # Links between DBs
   db_links %>%
     rename(from = source_db, to = target_db, type = link_type)
-)
+) %>%
+  mutate(arrows = case_when(type == "depends" ~ "to",
+                            type == "accesses" ~ "to",
+                            type == "populates" ~ "to"),
+         color = case_when(type == "depends" ~ "#998EC3",
+                           type == "accesses" ~ "steelblue",
+                           type == "populates" ~ "#B35806")) 
 
 all_nodes = bind_rows(
   # Packages list with metadata
@@ -223,18 +232,8 @@ all_nodes$title <- paste0("<p><b>", all_nodes$id,"</b><br>Some website</p>")
 all_nodes$`Package name` <- all_nodes$label <- all_nodes$id
 all_nodes$`Object type` <- all_nodes$node_type
 
-
-# all_nodes <- all_nodes %>% mutate(shape = case_when(
-#   node_type == "db" ~ "diamond",
-#   node_type == "package" ~ "dot",
-#   TRUE ~ node_type
-# )) %>% mutate(color = case_when(
-#   node_type == "db" ~ "blue",
-#   node_type == "package"~ "green",
-#   TRUE ~ node_type
-# ))
-
-all_nodes <- rename(all_nodes, group = node_type)
+all_nodes <- rename(all_nodes, group = node_type) %>%
+  mutate(group = ifelse(group == "db", "database", group))
 
 save(all_nodes, all_edges, file = "taxtool-selecter/shiny_data/full_network.Rdata")
 
