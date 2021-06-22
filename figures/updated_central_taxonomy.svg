@@ -2093,11 +2093,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.254137"
-     inkscape:cx="353.91912"
-     inkscape:cy="281.34521"
+     inkscape:zoom="1.6862748"
+     inkscape:cx="361.88234"
+     inkscape:cy="276.39231"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1920"
@@ -2119,7 +2119,6 @@
   </metadata>
   <g
      transform="translate(-1.2342792,4.4425423)"
-     sodipodi:insensitive="true"
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Hexagone"
@@ -2155,7 +2154,6 @@
   </g>
   <g
      transform="translate(-1.2342792,4.4425423)"
-     sodipodi:insensitive="true"
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Taxonomic Central Chip"
@@ -2166,20 +2164,20 @@
        width="33.149204"
        height="39.502445"
        x="89.635841"
-       y="58.220577" />
+       y="58.05645" />
     <text
        xml:space="preserve"
        id="text10767"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.34999999999999964px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;white-space:pre;shape-inside:url(#rect10769);fill:#b3bef0;fill-opacity:1;stroke:#172772;stroke-width:0.14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.34999999999999964px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;white-space:pre;shape-inside:url(#rect10769);fill:#b3bef0;fill-opacity:1;stroke:#172772;stroke-width:0.05;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        transform="translate(55.587921,10.372657)"
        x="22.945887"
        y="0"><tspan
          x="34.073145"
          y="35.012759"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#b3bef0;fill-opacity:1;stroke:#172772;stroke-width:0.14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Taxonomic </tspan></tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#b3bef0;fill-opacity:1;stroke:#172772;stroke-width:0.05;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Taxonomic </tspan></tspan><tspan
          x="28.547901"
          y="42.950259"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#b3bef0;fill-opacity:1;stroke:#172772;stroke-width:0.14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Harmonization</tspan></tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#b3bef0;fill-opacity:1;stroke:#172772;stroke-width:0.05;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Harmonization</tspan></tspan></text>
     <g
        aria-label="I"
        transform="translate(23.617401,94.23223)"
@@ -2196,7 +2194,7 @@
        inkscape:label="Central Text"
        style="display:inline">
       <g
-         transform="translate(0,6.3500003)"
+         transform="translate(0,6.1390319)"
          id="g4487">
         <g
            id="g4238"
@@ -2324,7 +2322,6 @@
       </g>
     </g>
     <g
-       sodipodi:insensitive="true"
        inkscape:label="Connect dataset"
        id="layer4"
        inkscape:groupmode="layer">

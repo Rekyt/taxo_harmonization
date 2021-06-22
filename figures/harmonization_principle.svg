@@ -7,6 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="200"
+   inkscape:export-xdpi="200"
+   inkscape:export-filename="/Users/Rekyt/Documents/Postdoc iDiv/pd_projects/taxo_harmonization/figures/harmonization_principle.png"
    sodipodi:docname="harmonization_principle.svg"
    inkscape:version="1.0 (4035a4f, 2020-05-01)"
    id="svg6517"
@@ -717,7 +720,7 @@
          id="rect10073"
          width="10.331985"
          height="39.412086"
-         x="144.43398"
+         x="144.43396"
          y="52.366482" />
       <rect
          y="52.366482"
@@ -727,7 +730,7 @@
          id="rect10069"
          style="fill:#f1a340;fill-opacity:1;stroke:none;stroke-width:0.0499999;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000" />
       <g
-         transform="translate(-2.4837712)"
+         transform="translate(-1.7807581)"
          id="g4238">
         <path
            sodipodi:nodetypes="cccc"
@@ -980,7 +983,7 @@
              style="font-weight:normal;font-size:4.93889px;text-align:center;text-anchor:middle;fill:#121212;fill-opacity:1">Database</tspan></tspan></text>
       <g
          id="g8829"
-         transform="matrix(-1,0,0,1,241.42799,0)">
+         transform="matrix(-1,0,0,1,240.72499,0)">
         <path
            style="fill:none;stroke:#000000;stroke-width:0.750046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker8833);marker-end:url(#marker8873)"
            d="m 98.457117,61.943532 h 2.541063 l 10.37379,6.591429 h 2.54106"
