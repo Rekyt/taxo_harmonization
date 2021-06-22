@@ -3,7 +3,7 @@ library(shiny)
 fluidPage(
   tabsetPanel(
     # Introduction panel ----
-    tabPanel("Introduction", includeMarkdown("introduction.md")),
+    tabPanel("App Description", includeMarkdown("app_description.md")),
     tabPanel("Full Network",
              fillPage(
                # selectInput(inputId = "selnodes", label = "Nodes selection", choices = 1:15, multiple = TRUE),
