@@ -5,7 +5,13 @@ navbarPage("taxtool selecter",
            # Introduction panel ----
            tabPanel(
              "Description",
-             includeMarkdown("app_description.md")
+             fluidRow(
+               style = "max-height: 100vh; overflow-y: auto;",
+               column(width = 2L),
+               column(width = 8L,
+                      includeMarkdown("app_description.md")),
+               column(width = 2L)
+             )
            ),
            # Actual Network tab ----
            tabPanel(
