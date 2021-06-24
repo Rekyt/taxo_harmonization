@@ -7,7 +7,7 @@ load("shiny_data/full_network.Rdata")
 shinyServer(function(input, output, session) {
   # Full network
   output$full_table <- DT::renderDT(
-    all_nodes[, c("Package name","Object type")],
+    all_nodes[, c("Package Name","Object type")],
     options = list(target = "row")
   )
   

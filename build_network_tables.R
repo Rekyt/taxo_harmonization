@@ -4,8 +4,11 @@
 library("dplyr")
 
 # Load initial data ------------------------------------------------------------
-pkg_deps_df <- readRDS("data_cleaned/pkg_deps_df.Rds")
-included_pkg <- readRDS("data_cleaned/included_pkg.Rds")
+pkg_deps_df = readRDS("data_cleaned/pkg_deps_df.Rds")
+included_pkg = readRDS("data_cleaned/included_pkg.Rds")
+
+database_df = readxl::read_xlsx("data_raw/Table comparing taxonomic tools.xlsx",
+                                sheet = 4, na = c("", "NA"))
 
 # Extract network in two data.frames -------------------------------------------
 # Edge list data.frame
@@ -74,9 +77,9 @@ db_links = tibble::tribble(
   "WorldFlora",     "TNRS",        "populates",
   "eBird",           "GNR",         "populates",
   "ZooBank",        "GNR",         "populates",
-  "POWO",           "WCPS",        "populates",
+  "POWO",           "WCSP",        "populates",
   "POWO",           "IPNI",        "populates",
-  "WCPS",           "COL",         "populates",
+  "WCSP",           "COL",         "populates",
   "IPNI",           "GNR",         "populates",
   "AlgaeBase",      "SeaLifeBase", "populates",
   "ITIS",           "GNR",         "populates",
@@ -185,43 +188,57 @@ all_nodes = bind_rows(
   add_row(id = "alexpiper/taxreturn", workflow_importance = "secondary",
           node_type = "package") %>%
   add_row(id = "ropensci/taxview", workflow_importance = "secondary",
-          node_type = "package")
-
-all_nodes$title <- paste0("<p><b>", all_nodes$id,"</b><br>Some website</p>")
-all_nodes$`Package name` <- all_nodes$label <- all_nodes$id
-all_nodes$`Object type` <- all_nodes$node_type
-
-all_nodes <- rename(all_nodes, group = node_type) %>%
+          node_type = "package") %>%
+  mutate(title = paste0("<p><b>", id,"</b><br>Some website</p>"),
+         `Package Name` = id,
+         label = id,
+         `Object type` = node_type) %>%
+  rename(group = node_type) %>%
   mutate(
   # Remove trailing user name when specifying node labels
     label = gsub(".*/", "", label),
     # Rename node type for ease of use in shiny app
     group = ifelse(group == "db", "database", group),
     # Make package labels bold
-    label = ifelse(group == "package", paste0("<b>", label, "</b>"), label))
+    label = ifelse(group == "package", paste0("<b>", label, "</b>"), label)) %>%
+  filter(!(id %in% c("taxastand", "taxonomyCleanr", "taxreturn", "taxview")))
 
 
-# Node Description -------------------------------------------------------------
+# Node Descriptions ------------------------------------------------------------
 
-node_description = included_pkg %>%
-  semi_join(all_nodes, by = c("Package Name" = "id")) %>%
+# Package Description
+pkg_description = included_pkg %>%
+  mutate(`Package Name` = case_when(
+    `Package Name` == "TNRS"           ~ "TNRS_pkg",
+    `Package Name` == "WorldFlora"     ~ "WorldFlora_pkg",
+    `Package Name` == "taxastand"      ~ "joelnitta/taxastand",
+    `Package Name` == "taxonomyCleanr" ~ "EDIorg/taxonomyCleanr",
+    `Package Name` == "taxreturn"      ~ "alexpiper/taxreturn",
+    `Package Name` == "taxview"        ~ "ropensci/taxview",
+    TRUE ~ `Package Name`
+  )) %>%
+  semi_join(all_nodes %>%
+              filter(group == "package"),
+            by = c("Package Name" = "id")) %>%
   select(
     pkg_name    = `Package Name`,
-    actively    = `Actively Maintained (most recent activity on development version < 1 year)`,
+    actively    = 
+      `Actively Maintained (most recent activity on development version < 1 year)`,
     release_url = `Release URL (CRAN / Bioconductor)`,
     dev_url     = `Development Version`,
     step        = `At which step can it be used`
   ) %>%
   mutate(
     html_info = paste0(
-      "Node name: <tt>", pkg_name, "</tt><br />",
+      "Node Name: <tt>", pkg_name, "</tt><br />",
       "Type: package<br />",
-      "Actively maintained: ", actively, "<br />",
+      "Actively Maintained: ", actively, "<br />",
+      "Workflow Step(s): ", step, "<br />",
       ifelse(
         !is.na(release_url),
         paste0(
           "Release URL: ",
-          "<a href='", release_url, ">", release_url,
+          "<a href='", release_url, "'>", release_url,
           "</a><br />"
         ),
         ""
@@ -230,7 +247,7 @@ node_description = included_pkg %>%
         !is.na(dev_url),
         paste0(
           "Development URL: ",
-          "<a href='", dev_url, ">", dev_url,
+          "<a href='", dev_url, "'>", dev_url,
           "</a><br />"
         ),
         ""
@@ -238,10 +255,35 @@ node_description = included_pkg %>%
     )
   )
 
+# Create HTML info tag for databases
+db_description = all_nodes %>%
+  filter(group == "database") %>%
+  select(id) %>%
+  full_join(database_df, by = c(id = "Abbreviated Database Name")) %>%
+  mutate(
+    html_info = paste0(
+      "Node Name: ", id, "<br />",
+      "Full Name: ", `Name in full`, "<br />",
+      "Type: database<br />",
+      "Taxonomic Group: ", `Taxonomic group`, "<br />",
+      "Spatial Scale: ", `Spatial Scale`, "<br />",
+      "Taxonomic Breadth: ", `Taxonomic Breadth`, "<br />",
+      "URL: <a href='", URL, "'>", URL, "</a><br />"
+    )
+  )
+  
+
+# Add Node Descriptions
 all_nodes = all_nodes %>%
-  full_join(node_description %>%
-              select(pkg_name, html_info),
-            by = c(id = "pkg_name"))
+  full_join(
+    bind_rows(
+      pkg_description %>%
+        select(id = pkg_name, html_info),
+      db_description %>%
+        select(id, html_info)
+    ),
+    by = "id"
+  )
 
 # Saving object ----------------------------------------------------------------
 
