@@ -93,10 +93,10 @@ shinyServer(function(input, output, session) {
   # Render information about selected node
   output$network_return <- renderUI({
     
-    info = ifelse(is.null(input$current_node_id$nodes[[1]]), "none",
+    info <- ifelse(is.null(input$current_node_id$nodes[[1]]), "none",
            all_nodes %>%
-             filter(id == input$current_node_id$nodes[[1]]) %>%
-             pull(html_info))
+             dplyr::filter(id == input$current_node_id$nodes[[1]]) %>%
+             dplyr::pull(html_info))
     
     HTML("<b>Selected Node Information</b><br />",
          info)
