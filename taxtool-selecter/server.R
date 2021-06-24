@@ -76,17 +76,32 @@ shinyServer(function(input, output, session) {
         zoom = FALSE,
         addEdges = ledges
       ) %>%
-      visLayout(randomSeed = 42L)
+      visLayout(randomSeed = 42L) %>%
+      visEvents(
+      selectNode = "function(nodes) {
+        Shiny.onInputChange('current_node_id', nodes);
+      ;}")
   )
   
-  # Debugging code
-  # observe(output$debug_DT_row_number <- renderText(input$full_table_rows_selected))
-  
+  # Select nodes in network based on selection in DT
   observe({
     visNetworkProxy("full_network_interactive") %>%
       visSelectNodes(id = all_nodes[input$full_table_rows_selected, ][["id"]],
                      highlightEdges = FALSE)
   })
   
+  # Render information about selected node
+  output$network_return <- renderUI({
+    
+    info = ifelse(is.null(input$current_node_id$nodes[[1]]), "none",
+           all_nodes %>%
+             filter(id == input$current_node_id$nodes[[1]]) %>%
+             pull(html_info))
+    
+    HTML("<b>Selected Node Information</b><br />",
+         info)
+  })
   
+  # Debugging code
+  # observe(output$debug_DT_row_number <- renderText(input$full_table_rows_selected))
 })

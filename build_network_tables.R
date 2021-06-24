@@ -200,4 +200,49 @@ all_nodes <- rename(all_nodes, group = node_type) %>%
     # Make package labels bold
     label = ifelse(group == "package", paste0("<b>", label, "</b>"), label))
 
+
+# Node Description -------------------------------------------------------------
+
+node_description = included_pkg %>%
+  semi_join(all_nodes, by = c("Package Name" = "id")) %>%
+  select(
+    pkg_name    = `Package Name`,
+    actively    = `Actively Maintained (most recent activity on development version < 1 year)`,
+    release_url = `Release URL (CRAN / Bioconductor)`,
+    dev_url     = `Development Version`,
+    step        = `At which step can it be used`
+  ) %>%
+  mutate(
+    html_info = paste0(
+      "Node name: <tt>", pkg_name, "</tt><br />",
+      "Type: package<br />",
+      "Actively maintained: ", actively, "<br />",
+      ifelse(
+        !is.na(release_url),
+        paste0(
+          "Release URL: ",
+          "<a href='", release_url, ">", release_url,
+          "</a><br />"
+        ),
+        ""
+      ),
+      ifelse(
+        !is.na(dev_url),
+        paste0(
+          "Development URL: ",
+          "<a href='", dev_url, ">", dev_url,
+          "</a><br />"
+        ),
+        ""
+      )
+    )
+  )
+
+all_nodes = all_nodes %>%
+  full_join(node_description %>%
+              select(pkg_name, html_info),
+            by = c(id = "pkg_name"))
+
+# Saving object ----------------------------------------------------------------
+
 save(all_nodes, all_edges, file = "taxtool-selecter/shiny_data/full_network.Rdata")
