@@ -1,56 +1,16 @@
-# Companion script to taxonomic harmonization project
-
-# Load packages ----------------------------------------------------------------
+# Script to generate nodes and edges data.frame for use in shiny app
+# Comprise links between packages, between databases, and between both
+# Needed packages --------------------------------------------------------------
 library("dplyr")
 
-# Load and wrangle data --------------------------------------------------------
+# Load initial data ------------------------------------------------------------
+pkg_deps_df = readRDS("data_cleaned/pkg_deps_df.Rds")
+included_pkg = readRDS("data_cleaned/included_pkg.Rds")
 
-# Raw data from the Google Doc sheets exported as XLSX file
-raw_pkg_table = readxl::read_xlsx("data_raw/Table comparing taxonomic tools.xlsx",
-                                  na = c("", "NA"))
+database_df = readxl::read_xlsx("data_raw/Table comparing taxonomic tools.xlsx",
+                                sheet = 4, na = c("", "NA"))
 
-# Get the list of packages that are included in the review
-included_pkg = raw_pkg_table %>%
-  filter(`Should we include this package in our review?` == "include")
-
-# List of included packages that are on CRAN
-cran_pkg = included_pkg %>%
-  filter(!is.na(`Release URL (CRAN / Bioconductor)`))
-
-
-# Dependency network with {pkgdepends} -----------------------------------------
-
-# Create column 'network_name' to extract deps with pkgdepends
-included_pkg = included_pkg %>%
-  mutate(network_name = case_when(
-    # Change taxizedb to be compatible with ropensci/taxview dependency
-    `Package Name` == "taxizedb" ~ "ropensci/taxizedb",
-    # If package on CRAN directly use its name
-    !is.na(`Release URL (CRAN / Bioconductor)`) ~ `Package Name`,
-    # Otherwise get GitHub andle
-    !is.na(`Development Version`) ~ gsub("https://github.com/", "",
-                                         `Development Version`),
-    TRUE ~ NA_character_
-  )) %>%
-  # Additional dependencies not mentioned explicitly in packages
-  add_row(network_name = "joelnitta/jntools") %>%
-  add_row(network_name = "gustavobio/tpldata")
-
-# Retrieve dependencies for all included packages
-pkg_deps = included_pkg %>%
-  pull(network_name) %>%
-  pkgdepends::new_pkg_deps()
-
-pkg_deps$resolve()
-pkg_deps$solve()
-pkg_deps$draw()
-
-pkg_deps_df = pkg_deps$get_resolution()
-
-saveRDS(pkg_deps_df, "data_cleaned/pkg_deps_df.Rds", compress = TRUE)
-
-
-# Package igraph network -------------------------------------------------------
+# Extract network in two data.frames -------------------------------------------
 # Edge list data.frame
 dependencies_edge_df = pkg_deps_df %>%
   select(pkg = ref, deps) %>%
@@ -76,13 +36,6 @@ pkg_info_df = bind_rows(
     by = c("pkg")
   )
 
-if (FALSE) {
-  # Actual graph object
-  dependency_graph = dependencies_edge_df %>%
-    filter(dependency_type != "enhances", dependency_type != "linkingto") %>%
-    igraph::graph_from_data_frame(vertices = pkg_info_df)
-}
-
 # Make smaller graph with only taxonomic packages that directly depends
 # from each other
 taxonomy_dependencies_edge_df = dependencies_edge_df %>%
@@ -93,57 +46,15 @@ taxonomy_dependencies_edge_df = dependencies_edge_df %>%
       # are written only with package name)
       dependency %in% included_pkg$`Package Name`)
 
-if (FALSE) {
-  taxonomy_pkg_graph = igraph::graph_from_data_frame(
-    taxonomy_dependencies_edge_df,
-    vertices = pkg_info_df %>%
-      filter(pkg %in% c(included_pkg$network_name, included_pkg$`Package Name`)))
-  
-  saveRDS(taxonomy_pkg_graph, "data_cleaned/taxonomy_pkg_graph.Rds",
-          compress = TRUE)
-  
-  saveRDS(taxonomy_pkg_graph,
-          "taxtool-selecter/shiny_data/taxonomy_pkg_graph.Rds")
-}
-
-# Viz. Package Network ---------------------------------------------------------
-# Visualize the network
-if (FALSE) {
-  taxonomy_pkg_graph %>%
-    ggraph(layout = "igraph", algorithm = "nicely") +
-    geom_edge_link(
-      arrow = arrow(type = "closed", length = unit(4, "mm"), angle = 7),
-      alpha = 1/2
-    ) +
-    geom_node_point(
-      aes(
-        fill = category
-      ),
-      shape = 21, color = "white", size = 3) +
-    geom_node_label(aes(label = name), family = "monospace", repel = TRUE) +
-    theme_void() +
-    theme(legend.position = "top")
-}
 # Database network -------------------------------------------------------------
-# Make an attribute df with database
+# Make an attribute df with databases
 access_df = included_pkg %>%
   select(`Package Name`, `Which authority?`) %>%
   mutate(db_list = stringr::str_split(`Which authority?`, ",")) %>%
   mutate(db_list = purrr::map(db_list, stringr::str_trim, side = "both")) %>%
   select(-`Which authority?`) %>%
   mutate(type = "accesses") %>%
-  tidyr::unnest(c(db_list)) %>%
-  mutate(db_list = case_when(
-    db_list == "FishBase (Eschmeyer's Catalog of Fishes)" ~ "FishBase",
-    db_list == "WikiData" ~ "Wikidata",
-    db_list == "INPI"     ~ "IPNI",
-    db_list == "World Flora Online" ~ "WorldFlora",
-    db_list == "vegetplant" ~ "GermanSL",
-    db_list == "Plants of the World" ~ "POWO",
-    db_list == "multiple" ~ "FinBIF",
-    db_list == "Tropics" ~ "Tropicos",
-    TRUE ~ db_list
-  ))
+  tidyr::unnest(c(db_list))
 
 db_links = tibble::tribble(
   ~source_db, ~target_db, ~link_type,
@@ -164,12 +75,11 @@ db_links = tibble::tribble(
   "Wikidata",       "GNR",         "populates",
   "TPL",            "WorldFlora",  "populates",
   "WorldFlora",     "TNRS",        "populates",
-  "eBird/Clements", "GNR",         "populates",
-  "BirdLife",       "GNR",         "populates",
+  "eBird",           "GNR",         "populates",
   "ZooBank",        "GNR",         "populates",
-  "POWO",           "WCPS",        "populates",
+  "POWO",           "WCSP",        "populates",
   "POWO",           "IPNI",        "populates",
-  "WCPS",           "COL",         "populates",
+  "WCSP",           "COL",         "populates",
   "IPNI",           "GNR",         "populates",
   "AlgaeBase",      "SeaLifeBase", "populates",
   "ITIS",           "GNR",         "populates",
@@ -197,12 +107,10 @@ all_db = access_df %>%
   distinct() %>%
   filter(!is.na(db_list))
 
-if (FALSE) {
-  db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
-  
-  saveRDS(db_graph, "data_cleaned/db_igraph.Rds", compress = TRUE)
-  saveRDS(db_graph, "taxtool-selecter/shiny_data/db_igraph.Rds")
-}
+db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
+
+saveRDS(db_graph, "data_cleaned/db_igraph.Rds", compress = TRUE)
+
 # Viz. DB network --------------------------------------------------------------
 if (FALSE) {
   db_graph %>%
@@ -217,6 +125,7 @@ if (FALSE) {
 
 # Joining both networks --------------------------------------------------------
 
+# Combine all edges
 all_edges = bind_rows(
   # Links between pkgs
   taxonomy_dependencies_edge_df %>%
@@ -237,11 +146,23 @@ all_edges = bind_rows(
   # Links between DBs
   db_links %>%
     rename(from = source_db, to = target_db, type = link_type)
-)
+) %>%
+  # Define some columns for use in visNetwork in shiny app
+  mutate(arrows = case_when(type == "depends" ~ "to",
+                            type == "accesses" ~ "to",
+                            type == "populates" ~ "to"),
+         color = case_when(type == "depends" ~ "#998EC3",
+                           type == "accesses" ~ "steelblue",
+                           type == "populates" ~ "#B35806")) 
 
+# Combine all nodes
 all_nodes = bind_rows(
   # Packages list with metadata
   included_pkg %>%
+    # Remove remaining packages used for dependency detection in table
+    filter(
+      !(network_name %in% c("joelnitta/jntools", "gustavobio/tpldata"))
+    ) %>%
     select(1, 5) %>%
     rename(
       id = `Package Name`,
@@ -267,43 +188,103 @@ all_nodes = bind_rows(
   add_row(id = "alexpiper/taxreturn", workflow_importance = "secondary",
           node_type = "package") %>%
   add_row(id = "ropensci/taxview", workflow_importance = "secondary",
-          node_type = "package")
+          node_type = "package") %>%
+  mutate(title = paste0("<p><b>", id,"</b><br>Some website</p>"),
+         `Package Name` = id,
+         label = id,
+         `Object type` = node_type) %>%
+  rename(group = node_type) %>%
+  mutate(
+  # Remove trailing user name when specifying node labels
+    label = gsub(".*/", "", label),
+    # Rename node type for ease of use in shiny app
+    group = ifelse(group == "db", "database", group),
+    # Make package labels bold
+    label = ifelse(group == "package", paste0("<b>", label, "</b>"), label)) %>%
+  filter(!(id %in% c("taxastand", "taxonomyCleanr", "taxreturn", "taxview")))
 
-all_nodes$title <- all_nodes$id
 
-save(all_nodes, all_edges, file = "taxtool-selecter/shiny_data/full_network.Rdata")
+# Node Descriptions ------------------------------------------------------------
 
-if (FALSE) {
-  all_graph = igraph::graph_from_data_frame(
-    all_edges, vertices = all_nodes
+# Package Description
+pkg_description = included_pkg %>%
+  mutate(`Package Name` = case_when(
+    `Package Name` == "TNRS"           ~ "TNRS_pkg",
+    `Package Name` == "WorldFlora"     ~ "WorldFlora_pkg",
+    `Package Name` == "taxastand"      ~ "joelnitta/taxastand",
+    `Package Name` == "taxonomyCleanr" ~ "EDIorg/taxonomyCleanr",
+    `Package Name` == "taxreturn"      ~ "alexpiper/taxreturn",
+    `Package Name` == "taxview"        ~ "ropensci/taxview",
+    TRUE ~ `Package Name`
+  )) %>%
+  semi_join(all_nodes %>%
+              filter(group == "package"),
+            by = c("Package Name" = "id")) %>%
+  select(
+    pkg_name    = `Package Name`,
+    actively    = 
+      `Actively Maintained (most recent activity on development version < 1 year)`,
+    release_url = `Release URL (CRAN / Bioconductor)`,
+    dev_url     = `Development Version`,
+    step        = `At which step can it be used`
+  ) %>%
+  mutate(
+    html_info = paste0(
+      "Node Name: <tt>", pkg_name, "</tt><br />",
+      "Type: package<br />",
+      "Actively Maintained: ", actively, "<br />",
+      "Workflow Step(s): ", step, "<br />",
+      ifelse(
+        !is.na(release_url),
+        paste0(
+          "Release URL: ",
+          "<a href='", release_url, "'>", release_url,
+          "</a><br />"
+        ),
+        ""
+      ),
+      ifelse(
+        !is.na(dev_url),
+        paste0(
+          "Development URL: ",
+          "<a href='", dev_url, "'>", dev_url,
+          "</a><br />"
+        ),
+        ""
+      )
+    )
+  )
+
+# Create HTML info tag for databases
+db_description = all_nodes %>%
+  filter(group == "database") %>%
+  select(id) %>%
+  full_join(database_df, by = c(id = "Abbreviated Database Name")) %>%
+  mutate(
+    html_info = paste0(
+      "Node Name: ", id, "<br />",
+      "Full Name: ", `Name in full`, "<br />",
+      "Type: database<br />",
+      "Taxonomic Group: ", `Taxonomic group`, "<br />",
+      "Spatial Scale: ", `Spatial Scale`, "<br />",
+      "Taxonomic Breadth: ", `Taxonomic Breadth`, "<br />",
+      "URL: <a href='", URL, "'>", URL, "</a><br />"
+    )
   )
   
-  saveRDS(all_graph, "taxtool-selecter/shiny_data/full_network.Rds")
-  
-  plot_full_network = all_graph %>%
-    ggraph(layout = "igraph", algorithm = "nicely") +
-    geom_edge_link(
-      aes(color = type), alpha = 2/3,
-      arrow = arrow(type = "closed", length = unit(2, "mm"), angle = 7),
-      end_cap = circle(2, 'mm')
-    ) +
-    # Package & DBpoints
-    geom_node_point(
-      aes(shape = node_type), color = "white", fill = "black", size = 3,
-    ) +
-    # Labels
-    geom_node_text(
-      aes(label = name,
-          family = ifelse(node_type == "package", "Consolas", "Helvetica")
-      ), check_overlap = TRUE, repel = TRUE
-    ) +
-    scale_shape_manual(values = c(db = 22, package = 21),
-                       labels = c(db = "Database", package = "Package"),
-                       name = "bla") +
-    scale_edge_color_brewer(type = "qual") +
-    theme_void() +
-    theme(legend.position = "top")
-  
-  plot_full_network
-}
 
+# Add Node Descriptions
+all_nodes = all_nodes %>%
+  full_join(
+    bind_rows(
+      pkg_description %>%
+        select(id = pkg_name, html_info),
+      db_description %>%
+        select(id, html_info)
+    ),
+    by = "id"
+  )
+
+# Saving object ----------------------------------------------------------------
+
+save(all_nodes, all_edges, file = "taxtool-selecter/shiny_data/full_network.Rdata")
