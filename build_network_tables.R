@@ -192,7 +192,12 @@ all_nodes$`Package name` <- all_nodes$label <- all_nodes$id
 all_nodes$`Object type` <- all_nodes$node_type
 
 all_nodes <- rename(all_nodes, group = node_type) %>%
-  # Rename node type for ease of use in shiny app
-  mutate(group = ifelse(group == "db", "database", group))
+  mutate(
+  # Remove trailing user name when specifying node labels
+    label = gsub(".*/", "", label),
+    # Rename node type for ease of use in shiny app
+    group = ifelse(group == "db", "database", group),
+    # Make package labels bold
+    label = ifelse(group == "package", paste0("<b>", label, "</b>"), label))
 
 save(all_nodes, all_edges, file = "taxtool-selecter/shiny_data/full_network.Rdata")

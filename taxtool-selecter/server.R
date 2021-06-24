@@ -22,7 +22,11 @@ shinyServer(function(input, output, session) {
   
   
   output$full_network_interactive <-  visNetwork::renderVisNetwork(
-    visNetwork(all_nodes, all_edges) %>%
+    visNetwork(
+      all_nodes, all_edges,
+      # Network title
+      main = "Relationships between taxonomic R packages and databases"
+      ) %>%
       # Databases
       visGroups(groupname = "database", shape = "dot", color = list(
         background = "#F1A340",
@@ -40,7 +44,7 @@ shinyServer(function(input, output, session) {
           background = "#542788",
           border = "#998EC3"
         )),
-        font = list(face = "Courier New")) %>%
+        font = list(face = "Courier New", multi = TRUE)) %>%
       
       # Interaction Options
       visInteraction(dragNodes = TRUE, 
