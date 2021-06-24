@@ -1,4 +1,5 @@
 library("shiny")
+library("markdown")
 
 navbarPage("taxtool selecter",
            # Introduction panel ----
