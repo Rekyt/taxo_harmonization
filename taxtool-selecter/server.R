@@ -54,7 +54,7 @@ shinyServer(function(input, output, session) {
                      hideEdgesOnDrag = TRUE,
                      hideNodesOnDrag = FALSE,
                      navigationButtons = TRUE,
-                     tooltipStay = 60000L,
+                     tooltipStay = 3000L,
                      tooltipDelay = 300L) %>%
       
       # Other options
@@ -80,6 +80,9 @@ shinyServer(function(input, output, session) {
       visEvents(
       selectNode = "function(nodes) {
         Shiny.onInputChange('current_node_id', nodes);
+      ;}",
+      deselectNode = "function(nodes) {
+          Shiny.setInputValue('current_node_id', null)
       ;}")
   )
   
@@ -93,15 +96,17 @@ shinyServer(function(input, output, session) {
   # Render information about selected node
   output$network_return <- renderUI({
     
-    info <- ifelse(is.null(input$current_node_id$nodes[[1]]), "none",
-           all_nodes %>%
-             dplyr::filter(id == input$current_node_id$nodes[[1]]) %>%
-             dplyr::pull(html_info))
+    info <- ifelse(
+      is.null(input$current_node_id), "none",
+      ifelse(
+        is.null(input$current_node_id) |
+          is.null(input$current_node_id$nodes[[1]]),
+        "none",
+        subset(all_nodes, id == input$current_node_id$nodes[[1]])[["html_info"]]
+      )
+    )
     
     HTML("<b>Selected Node Information</b><br />",
          info)
   })
-  
-  # Debugging code
-  # observe(output$debug_DT_row_number <- renderText(input$full_table_rows_selected))
 })
