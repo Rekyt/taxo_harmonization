@@ -3,8 +3,6 @@ library("visNetwork")
 
 load("shiny_data/full_network.Rdata")
 
-all_nodes <- rename(all_nodes, `Node Name` = `Package Name`)
-
 # Define server logic for tabs
 shinyServer(function(input, output, session) {
   # Full network

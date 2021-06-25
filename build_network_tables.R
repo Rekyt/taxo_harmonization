@@ -283,7 +283,8 @@ all_nodes = all_nodes %>%
         select(id, html_info)
     ),
     by = "id"
-  )
+  ) %>%
+  rename(`Node Name` = `Package Name`)
 
 # Saving object ----------------------------------------------------------------
 
