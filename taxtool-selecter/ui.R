@@ -22,7 +22,9 @@ navbarPage("taxtool selecter",
                  width = 4L,
                  # textOutput("debug_DT_row_number"),
                  DT::dataTableOutput("full_table"),
-                 htmlOutput("network_return")
+                 htmlOutput("network_return",
+                            style = "background: #EEE; border-radius: 3px;
+                                     padding: 2px")
                ),
                column(
                  width = 8L,
