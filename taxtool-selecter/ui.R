@@ -16,7 +16,8 @@ navbarPage("taxtool selecter",
            # Actual Network tab ----
            tabPanel(
              "Network",
-             fillPage(
+             fluidRow(
+               style = "max-height: 100vh; overflow-y: auto;",
                column(
                  width = 4L,
                  # textOutput("debug_DT_row_number"),
