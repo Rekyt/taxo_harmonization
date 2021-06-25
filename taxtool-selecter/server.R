@@ -3,11 +3,13 @@ library("visNetwork")
 
 load("shiny_data/full_network.Rdata")
 
+all_nodes <- rename(all_nodes, `Node Name` = `Package Name`)
+
 # Define server logic for tabs
 shinyServer(function(input, output, session) {
   # Full network
   output$full_table <- DT::renderDT(
-    all_nodes[, c("Package Name","Object type")],
+    all_nodes[, c("Node Name","Object type")],
     options = list(target = "row")
   )
   
@@ -20,15 +22,15 @@ shinyServer(function(input, output, session) {
     arrows = c("to", "to", "to"), 
     font.align = "middle")
   
-  
+  # Network visualization
   output$full_network_interactive <-  visNetwork::renderVisNetwork(
     visNetwork(
       all_nodes, all_edges,
       # Network title
       main = "Relationships between taxonomic R packages and databases"
-      ) %>%
+    ) %>%
       # Databases
-      visGroups(groupname = "database", shape = "dot", color = list(
+      visGroups(groupname = "database", shape = "triangle", color = list(
         background = "#F1A340",
         border = "#B35806",
         highlight = list(
@@ -54,8 +56,9 @@ shinyServer(function(input, output, session) {
                      hideEdgesOnDrag = TRUE,
                      hideNodesOnDrag = FALSE,
                      navigationButtons = TRUE,
+                     keyboard = TRUE,
                      tooltipStay = 3000L,
-                     tooltipDelay = 300L) %>%
+                     tooltipDelay = 100L) %>%
       
       # Other options
       visOptions(
@@ -78,12 +81,14 @@ shinyServer(function(input, output, session) {
       ) %>%
       visLayout(randomSeed = 42L) %>%
       visEvents(
-      selectNode = "function(nodes) {
+        # Functions to get information about selected node
+        selectNode = "function(nodes) {
         Shiny.onInputChange('current_node_id', nodes);
       ;}",
-      deselectNode = "function(nodes) {
+        deselectNode = "function(nodes) {
           Shiny.setInputValue('current_node_id', null)
-      ;}")
+      ;}") %>%
+      visPhysics(stabilization = FALSE)
   )
   
   # Select nodes in network based on selection in DT

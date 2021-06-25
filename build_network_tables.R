@@ -189,8 +189,7 @@ all_nodes = bind_rows(
           node_type = "package") %>%
   add_row(id = "ropensci/taxview", workflow_importance = "secondary",
           node_type = "package") %>%
-  mutate(title = paste0("<p><b>", id,"</b><br>Some website</p>"),
-         `Package Name` = id,
+  mutate(`Package Name` = id,
          label = id,
          `Object type` = node_type) %>%
   rename(group = node_type) %>%
@@ -200,7 +199,8 @@ all_nodes = bind_rows(
     # Rename node type for ease of use in shiny app
     group = ifelse(group == "db", "database", group),
     # Make package labels bold
-    label = ifelse(group == "package", paste0("<b>", label, "</b>"), label)) %>%
+    label = ifelse(group == "package", paste0("<b>", label, "</b>"), label),
+    title = ifelse(group == "database", paste0("<b>", label, "</b>"), label)) %>%
   filter(!(id %in% c("taxastand", "taxonomyCleanr", "taxreturn", "taxview")))
 
 

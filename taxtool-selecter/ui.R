@@ -7,10 +7,10 @@ navbarPage("taxtool selecter",
              "Description",
              fluidRow(
                style = "max-height: 100vh; overflow-y: auto;",
-               column(width = 2L),
-               column(width = 8L,
+               column(width = 1L),
+               column(width = 10L,
                       includeMarkdown("app_description.md")),
-               column(width = 2L)
+               column(width = 1L)
              )
            ),
            # Actual Network tab ----
@@ -21,6 +21,7 @@ navbarPage("taxtool selecter",
                column(
                  width = 4L,
                  # textOutput("debug_DT_row_number"),
+                 p("Select node(s) to focus on in the network:"),
                  DT::dataTableOutput("full_table"),
                  htmlOutput("network_return",
                             style = "background: #EEE; border-radius: 3px;
