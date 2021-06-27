@@ -46,6 +46,9 @@ taxonomy_dependencies_edge_df = dependencies_edge_df %>%
       # are written only with package name)
       dependency %in% included_pkg$`Package Name`)
 
+saveRDS(taxonomy_dependencies_edge_df,
+        "data_cleaned/taxonomy_pkg_dependencies.Rds")
+
 # Database network -------------------------------------------------------------
 # Make an attribute df with databases
 access_df = included_pkg %>%
