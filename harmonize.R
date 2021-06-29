@@ -1,3 +1,9 @@
+# Script to harmonize taxonomy in BioTIME
+# Author: Emilio Berti
+
+
+# Needed Packages --------------------------------------------------------------
+
 library(tidyverse)
 library(magrittr)
 library(rgnparser)
@@ -6,6 +12,9 @@ library(lcvplants)
 library(rfishbase)
 library(rebird)
 library(parallel)
+
+
+# Functions --------------------------------------------------------------------
 
 "%out%" <- Negate("%in%")
 assign_group <- function(x){
@@ -23,7 +32,11 @@ assign_group <- function(x){
           NA)
 }
 
-biotime <- read_csv("~/Documents/databases/biotime.txt", col_names = "BioTIME") %>%
+
+# Load data --------------------------------------------------------------------
+
+biotime <- read_csv("~/Documents/databases/biotime.txt",
+                    col_names = "BioTIME") %>%
   mutate(BioTIME = gsub("Family ", "", BioTIME),
          BioTIME = gsub("Order ", "", BioTIME),
          BioTIME = gsub("Suborder ", "", BioTIME),
@@ -33,13 +46,14 @@ biotime <- read_csv("~/Documents/databases/biotime.txt", col_names = "BioTIME") 
          BioTIME = gsub("Superfamily ", "", BioTIME),
          BioTIME = gsub("Subclass ", "", BioTIME),
          BioTIME = gsub("Class ", "", BioTIME))
+
 biotime %<>% mutate(parsed = gn_parse_tidy(BioTIME)$canonicalsimple)
 
 cl <- makeCluster(5) #parallize operation thought the whole script
 
-#============================
-# TORINO PIPELINE
-#============================
+
+# TORINO Step 1 --------------------------------------------------------------
+# Get taxonomic groups
 
 message(" --- TORINO ---")
 
@@ -78,7 +92,10 @@ biotime %<>% left_join(
   )
 write_csv(biotime, "~/Documents/biotime_common.csv")
 
-# harmonizing against databases ---------------------
+
+# TORINO Step 2 ----------------------------------------------------------------
+# Harmonize against each database depending on identified group
+
 d <- read_csv("~/Documents/biotime_common.csv")
 
 # vascular plants
@@ -155,7 +172,10 @@ bind_rows(gbif) %>%
    write_csv("~/Documents/torino_gbif.csv")
 message("     ", Sys.time() - T0)
 
-# combine results --------------------
+
+# TORINO Step 3 ----------------------------------------------------------------
+# Combine results
+
 biotime <- read_csv("~/Documents/biotime_common.csv") %>%
   mutate(species_level = modify(parsed, function(x) {
       len <- str_split(x, " ", simplify = TRUE) %>% length()
@@ -216,12 +236,13 @@ length(unique(biotime$parsed))
 
 res %>% write_csv("~/Documents/torino_final.csv")
 
-#============================
-# BOGOTA PIPELINE
-#============================
+
+# BOGOTA Step 1 ----------------------------------------------------------------
 message(" --- BOGOTA")
 d <- read_csv("~/Documents/biotime_common.csv") %>%
-   select(-class, -phylum, -common) #not needed in this pipeline
+   select(-class, -phylum, -common)  # not needed in this pipeline
+
+# Against LCVP
 message("     LCVP")
 T0 <- Sys.time()
 lcvp <- parLapply(
@@ -245,7 +266,7 @@ lcvp %>%
    write_csv("~/Documents/bogota_lcvp.csv")
 message("     ", Sys.time() - T0)
 
-# fishses
+# Against FishBase
 message("     FishBase")
 T0 <- Sys.time()
 fishbase <- parSapply(
@@ -257,7 +278,7 @@ fishbase <- tibble(parsed = d$parsed, fishbase = fishbase)
 write_csv(fishbase, "~/Documents/bogota_fishbase.csv")
 message("     ", Sys.time() - T0)
 
-# birds
+# Against eBird
 message("     ebird")
 T0 <- Sys.time()
 ebird <- parSapply(
@@ -275,7 +296,10 @@ birds <- tibble(parsed = d$parsed,
 write_csv(birds, "~/Documents/bogota_ebird.csv")
 message("     ", Sys.time() - T0)
 
-# combine results --------------------
+
+# BOGOTA Step 2 ----------------------------------------------------------------
+# Combine results
+
 biotime <- read_csv("~/Documents/biotime_common.csv") %>%
   mutate(species_level = modify(parsed, function(x) {
       len <- str_split(x, " ", simplify = TRUE) %>% length()
@@ -341,9 +365,10 @@ length(unique(biotime$parsed))
 
 res %>% write_csv("~/Documents/bogota_final.csv")
 
-#============================
-# GBIF only
-#============================
+
+# GBIF only --------------------------------------------------------------------
+# Match names only with GBIF taxonomic backbone
+
 d <- read_csv("~/Documents/biotime_common.csv") %>%
    select(-class, -phylum, -common) #not needed in this pipeline
 gbif <- parSapply(
@@ -362,7 +387,6 @@ tibble(parsed = d$parsed, gbif = unlist(gbif)) %>%
 
 stopCluster(cl)
 
-# GBIF results -----
 biotime <- read_csv("~/Documents/biotime_common.csv")
 gbif <- read_csv("~/Documents/bogota_gbif.csv")
 gbif %>%
@@ -381,9 +405,9 @@ gbif %>%
   filter(!is.na(gbif)) %>%
   tally()
 
-########################
-# COMPARISON WORKFLOW
-########################
+
+# Workflow Comparison ----------------------------------------------------------
+
 biotime <- read_csv("~/Documents/biotime_common.csv") %>%
   mutate(species_level = modify(parsed, function(x) {
       len <- str_split(x, " ", simplify = TRUE) %>% length()
