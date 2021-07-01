@@ -65,7 +65,7 @@ shinyServer(function(input, output, session) {
         # selectedBy = "group", 
         highlightNearest = list(
           enabled = TRUE, algorithm = "hierarchical",
-          degree = list(from = 1, to = 1), hover = FALSE
+          degree = 1, hover = FALSE
         ),
         nodesIdSelection = TRUE
       ) %>%
