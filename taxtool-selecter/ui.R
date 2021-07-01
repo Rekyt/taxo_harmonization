@@ -21,11 +21,11 @@ navbarPage("taxtool selecter",
                column(
                  width = 4L,
                  # textOutput("debug_DT_row_number"),
-                 p("Select node(s) to focus on in the network:"),
-                 DT::dataTableOutput("full_table"),
                  htmlOutput("network_return",
                             style = "background: #EEE; border-radius: 3px;
-                                     padding: 2px")
+                                     padding: 2px"),
+                 p("Select node(s) to focus on in the network:"),
+                 DT::dataTableOutput("full_table")
                ),
                column(
                  width = 8L,
