@@ -229,7 +229,8 @@ pkg_description = included_pkg %>%
       `Actively Maintained (most recent activity on development version < 1 year)`,
     release_url = `Release URL (CRAN / Bioconductor)`,
     dev_url     = `Development Version`,
-    step        = `At which step can it be used`
+    step        = `At which step can it be used`,
+    tax_group   = `If taxon-specific which taxon/taxa?`
   ) %>%
   mutate(
     html_info = paste0(
@@ -255,7 +256,8 @@ pkg_description = included_pkg %>%
         ),
         ""
       )
-    )
+    ),
+    tax_group = ifelse(is.na(tax_group), "No taxonomic restriction", tax_group)
   )
 
 # Create HTML info tag for databases
@@ -272,6 +274,10 @@ db_description = all_nodes %>%
       "<b>Spatial Scale</b>: ", `Spatial Scale`, "<br />",
       "<b>Taxonomic Breadth</b>: ", `Taxonomic Breadth`, "<br />",
       "<b>URL</b>: <a href='", URL, "'>", URL, "</a><br />"
+    ),
+    tax_group = case_when(
+      `Taxonomic group` == "All life" ~ "No taxonomic restriction",
+      TRUE ~ `Taxonomic group`
     )
   )
   
@@ -281,13 +287,14 @@ all_nodes = all_nodes %>%
   full_join(
     bind_rows(
       pkg_description %>%
-        select(id = pkg_name, html_info),
+        select(id = pkg_name, html_info, tax_group),
       db_description %>%
-        select(id, html_info)
+        select(id, html_info, tax_group)
     ),
     by = "id"
   ) %>%
-  rename(`Node Name` = `Package Name`) %>%
+  rename(`Node Name`  = `Package Name`,
+         `Tax. Group` = tax_group) %>%
   mutate(`Node Name` = case_when(
     `Node Name` ==  "TNRS_pkg"             ~ "TNRS",
     `Node Name` ==  "WorldFlora_pkg"       ~ "WorldFlora",

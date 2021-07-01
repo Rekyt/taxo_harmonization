@@ -10,7 +10,7 @@ all_nodes$Type <- as.factor(all_nodes$group)
 shinyServer(function(input, output, session) {
   # Full network
   output$full_table <- DT::renderDT(
-    all_nodes[, c("Name", "Type")],
+    all_nodes[, c("Name", "Type", "Tax. Group")],
     options = list(target = "row", searchHighlight = TRUE, scroller = TRUE, deferRender = TRUE,
                    scrollY = 200),
     extensions = "Scroller"
