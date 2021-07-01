@@ -3,12 +3,17 @@ library("visNetwork")
 
 load("shiny_data/full_network.Rdata")
 
+all_nodes$Name <- all_nodes$`Node Name`
+all_nodes$Type <- as.factor(all_nodes$group)
+
 # Define server logic for tabs
 shinyServer(function(input, output, session) {
   # Full network
   output$full_table <- DT::renderDT(
-    all_nodes[, c("Node Name","Object type")],
-    options = list(target = "row")
+    all_nodes[, c("Name", "Type")],
+    options = list(target = "row", searchHighlight = TRUE, scroller = TRUE, deferRender = TRUE,
+                   scrollY = 200),
+    extensions = "Scroller"
   )
   
   
@@ -66,8 +71,7 @@ shinyServer(function(input, output, session) {
         highlightNearest = list(
           enabled = TRUE, algorithm = "hierarchical",
           degree = 1, hover = FALSE
-        ),
-        nodesIdSelection = TRUE
+        )
       ) %>%
       
       # Legend options
@@ -109,7 +113,9 @@ shinyServer(function(input, output, session) {
       )
     )
     
-    HTML("<b>Selected Node Information</b><br />",
-         info)
+    HTML(
+      "<p style='text-align:center;'><b>Selected Node Information</b></p>",
+      info
+    )
   })
 })

@@ -19,16 +19,16 @@ navbarPage("taxtool selecter",
              fluidRow(
                style = "max-height: 100vh; overflow-y: auto;",
                column(
-                 width = 4L,
+                 width = 5L,
                  # textOutput("debug_DT_row_number"),
                  htmlOutput("network_return",
                             style = "background: #EEE; border-radius: 3px;
                                      padding: 2px"),
-                 p("Select node(s) to focus on in the network:"),
+                 p("Click on one (several) node(s) to highlight it (them) in the network:"),
                  DT::dataTableOutput("full_table")
                ),
                column(
-                 width = 8L,
+                 width = 7L,
                  visNetwork::visNetworkOutput("full_network_interactive",
                                               height = "85vh")
                )
