@@ -233,14 +233,14 @@ pkg_description = included_pkg %>%
   ) %>%
   mutate(
     html_info = paste0(
-      "Node Name: <tt>", pkg_name, "</tt><br />",
-      "Type: package<br />",
-      "Actively Maintained: ", actively, "<br />",
-      "Workflow Step(s): ", step, "<br />",
+      "<b>Node Name</b>: <tt>", pkg_name, "</tt><br />",
+      "<b>Type</b>: package<br />",
+      "<b>Actively Maintained</b>: ", actively, "<br />",
+      "<b>Workflow Step(s)</b>:<br />", step, "<br />",
       ifelse(
         !is.na(release_url),
         paste0(
-          "Release URL: ",
+          "<b>Release URL</b>:<br />",
           "<a href='", release_url, "'>", release_url,
           "</a><br />"
         ),
@@ -249,7 +249,7 @@ pkg_description = included_pkg %>%
       ifelse(
         !is.na(dev_url),
         paste0(
-          "Development URL: ",
+          "<b>Development URL</b>:<br />",
           "<a href='", dev_url, "'>", dev_url,
           "</a><br />"
         ),
@@ -265,13 +265,13 @@ db_description = all_nodes %>%
   full_join(database_df, by = c(id = "Abbreviated Database Name")) %>%
   mutate(
     html_info = paste0(
-      "Node Name: ", id, "<br />",
-      "Full Name: ", `Name in full`, "<br />",
-      "Type: database<br />",
-      "Taxonomic Group: ", `Taxonomic group`, "<br />",
-      "Spatial Scale: ", `Spatial Scale`, "<br />",
-      "Taxonomic Breadth: ", `Taxonomic Breadth`, "<br />",
-      "URL: <a href='", URL, "'>", URL, "</a><br />"
+      "<b>Name</b>: ", id, "<br />",
+      "<b>Full Name</b>: ", `Name in full`, "<br />",
+      "<b>Type</b>: database<br />",
+      "<b>Taxonomic Group</b>: ", `Taxonomic group`, "<br />",
+      "<b>Spatial Scale</b>: ", `Spatial Scale`, "<br />",
+      "<b>Taxonomic Breadth</b>: ", `Taxonomic Breadth`, "<br />",
+      "<b>URL</b>: <a href='", URL, "'>", URL, "</a><br />"
     )
   )
   
@@ -287,7 +287,15 @@ all_nodes = all_nodes %>%
     ),
     by = "id"
   ) %>%
-  rename(`Node Name` = `Package Name`)
+  rename(`Node Name` = `Package Name`) %>%
+  mutate(`Node Name` = case_when(
+    `Node Name` ==  "TNRS_pkg"             ~ "TNRS",
+    `Node Name` ==  "WorldFlora_pkg"       ~ "WorldFlora",
+    `Node Name` ==  "joelnitta/taxastand"  ~ "taxastand",
+    `Node Name` == "EDIorg/taxonomyCleanr" ~ "taxonomyCleanr",
+    `Node Name` ==  "alexpiper/taxreturn"  ~ "taxreturn",
+    `Node Name` ==  "ropensci/taxview"     ~ "taxview",
+    TRUE ~ `Node Name`))
 
 # Saving object ----------------------------------------------------------------
 
