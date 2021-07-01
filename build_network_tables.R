@@ -277,6 +277,8 @@ db_description = all_nodes %>%
     ),
     tax_group = case_when(
       `Taxonomic group` == "All life" ~ "No taxonomic restriction",
+      `Taxonomic group` == "All life but Bacteria and Archea" ~ "No taxonomic restriction",
+      `Taxonomic group` == "All life but mainly animals, plants, and fungi" ~ "No taxonomic restriction",
       TRUE ~ `Taxonomic group`
     )
   )
