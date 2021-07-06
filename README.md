@@ -4,9 +4,9 @@
 
 This repository contains the companion code and the associated shiny app `taxharmonizexplorer` of Grenié et al. (2021, in prep.). It contains the associated figures of the paper, the code to generate the ones made from code, as well as the workflow code.
 
-## Running `taxharmonizexplorerr`
+## Running `taxharmonizexplorerr` (companion shiny app)
 
-The companion shiny app has a hosted version on https://mgrenie.shinyapps.io/taxtool-selecter/
+The companion shiny app has a hosted version on https://mgrenie.shinyapps.io/taxharmonizexplorer/
 The development version of the shiny app can be run with the following command in RStudio:
 
 ```
@@ -23,8 +23,7 @@ Grenié M., Berti E., Carvajal-Quintero J., Winter M., Sagouis A., Matching spec
 ```
 
 
-## BioTIME harmonization
+## Harmonizing BioTIME species data
 
-The script `harmonize.R` perform the two workflows (called respectivaly torino and bogota). Paths are still relative to my machine. 
-Results from cleaning are saved in the folder biotime_results as csv. Two columns are present in the csv, the "parsed" is the input name as obtained using rgnparser on BioTIME species names. The second column is the match in the specific database.
-*biotime_common.csv* is the original biotime names with the parsed version from rngparser and the class and phylum to which they belong obtained using rgbif. The last colmn "common" refer to how the high taxonomies are referred (e.g. "vascular plants" for "Trachephyta").
+This repository also contains the script `harmonize.R` perform two different workflows (called respectively "Torino" and "Bogota"") to harmonize the taxonomy of BioTIME. Results from cleaning are saved in the folder `biotime_results/` as csv files. Two columns are present in the csv, `parsed` is the input name as obtained using `rgnparser` on BioTIME species names; the second column is the named matched in a specific database.
+`biotime_common.csv` is the original BioTIME names with the parsed version from `rngparser` and the class and phylum to which they belong obtained using `rgbif`. The last column `common` refer to how the high taxonomies are referred (e.g. "vascular plants" for "Trachephyta").
