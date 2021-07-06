@@ -119,8 +119,10 @@ if (FALSE) {
   db_graph %>%
     tidygraph::as_tbl_graph() %>%
     ggraph(layout = "igraph", algorithm = "nicely") +
-    geom_edge_link(arrow = arrow(type = "closed",
-                                 length = unit(4, "mm"), angle = 7), alpha = 1/2) +
+    geom_edge_link(
+      arrow = arrow(type = "closed", length = unit(4, "mm"), angle = 7),
+      alpha = 1/2
+    ) +
     geom_node_point(shape = 21, color = "white", fill  = "black") +
     geom_node_text(aes(label = name), check_overlap = TRUE, repel = TRUE) +
     theme_void()
@@ -277,8 +279,10 @@ db_description = all_nodes %>%
     ),
     tax_group = case_when(
       `Taxonomic group` == "All life" ~ "No taxonomic restriction",
-      `Taxonomic group` == "All life but Bacteria and Archea" ~ "No taxonomic restriction",
-      `Taxonomic group` == "All life but mainly animals, plants, and fungi" ~ "No taxonomic restriction",
+      `Taxonomic group` == "All life but Bacteria and Archea" ~
+        "No taxonomic restriction",
+      `Taxonomic group` == "All life but mainly animals, plants, and fungi" ~
+        "No taxonomic restriction",
       TRUE ~ `Taxonomic group`
     )
   )
@@ -308,4 +312,5 @@ all_nodes = all_nodes %>%
 
 # Saving object ----------------------------------------------------------------
 
-save(all_nodes, all_edges, file = "taxtool-selecter/shiny_data/full_network.Rdata")
+save(all_nodes, all_edges,
+     file = "taxharmonizexplorer/shiny_data/full_network.Rdata")
