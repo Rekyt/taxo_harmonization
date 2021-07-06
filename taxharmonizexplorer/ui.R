@@ -10,7 +10,7 @@ tagList(
   navbarPage("taxharmonizexplorer",
              # Introduction panel ----------------------------------------------
              tabPanel(
-               "Description", value = "home",
+               "Description", value = "home", icon = icon("home"),
                fluidRow(
                  style = "max-height: 100vh; overflow-y: auto;",
                  column(width = 1L),
@@ -44,7 +44,7 @@ tagList(
              ),
              # Help Panel ------------------------------------------------------
              tabPanel(
-               "Help", value = "help",
+               "Help", value = "help", icon = icon("question-circle"),
                fluidRow(
                  style = "max-height: 100vh; overflow-y: auto;",
                  column(width = 1L),
