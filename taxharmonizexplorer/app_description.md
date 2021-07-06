@@ -5,7 +5,9 @@
 Taxonomic harmonization is the needed step when merging dataset that were matched against different taxonomies. It consists in homogenizing the list of species names from all datasets against a common reference. However, understanding what tools can be used to do can be cumbersome for users.
 `taxharmonizexplorer` has been developed to help users of taxonomic information better understand the links that exist between taxonomic reference databases, R packages that manipulate taxonomy, and both of them.
 
-You can access a view of the full network of tools in the next tab available on the top of this page called "Network".
+You can access a view of the full network of tools in the <a onclick="customHref(&#39;network&#39;)">next tab</a> available on the top of this page called <a onclick="customHref(&#39;network&#39;)">"Network"</a>.
+
+You can get guidance in how to read the Network panel in the <a onclick="customHref(&#39;help&#39;)">"Help" tab</a>.
 
 ## Running the app
 
