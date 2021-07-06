@@ -1,7 +1,7 @@
 library("shiny")
 library("markdown")
 
-navbarPage("taxtool selecter",
+navbarPage("taxharmonizexplorer",
            # Introduction panel ----
            tabPanel(
              "Description",

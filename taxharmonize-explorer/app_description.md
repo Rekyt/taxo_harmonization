@@ -1,9 +1,9 @@
-# `taxtool selecter` - Navigate the Taxonomic Harmonization landscape
+# `taxharmonizexplorer` - Navigate the Taxonomic Harmonization landscape
 
 ## Description
 
-Taxonomic harmonization is the needed step when merging dataset that were matched against different taxonomies. It consists in homogeneising the list of species names from all datasets against a common reference. However, understanding what tools can be used to do can be cumbersome for users.
-`taxtool selecter` has been developed to help users of taxonomic information better understand the links that exist between taxonomic reference databases, R packages that manipulate taxonomy, and both of them.
+Taxonomic harmonization is the needed step when merging dataset that were matched against different taxonomies. It consists in homogenizing the list of species names from all datasets against a common reference. However, understanding what tools can be used to do can be cumbersome for users.
+`taxharmonizexplorer` has been developed to help users of taxonomic information better understand the links that exist between taxonomic reference databases, R packages that manipulate taxonomy, and both of them.
 
 You can access a view of the full network of tools in the next tab available on the top of this page called "Network".
 
@@ -15,7 +15,7 @@ The code and data of the app is stored at (https://github.com/Rekyt/taxo_harmoni
 The shiny app can also be run using the following command.
 
 ```r
-shiny::runGitHub("Rekyt/taxo_harmonization", subdir = "taxtool-selecter")
+shiny::runGitHub("Rekyt/taxo_harmonization", subdir = "taxharmonizexplorer")
 ```
 
 
