@@ -9,7 +9,7 @@ You can access a view of the full network of tools in the next tab available on 
 
 ## Running the app
 
-The app can be used through shinyapps.io at the following address: XXXX.
+The app can be used through [shinyapps.io](https://shinyapps.io) at the following address: https://mgrenie.shinyapps.io/taxharmonizexplorer/.
 
 The code and data of the app is stored at (https://github.com/Rekyt/taxo_harmonization/).
 The shiny app can also be run using the following command.
