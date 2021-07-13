@@ -27,11 +27,10 @@ pkg_info_df = bind_rows(
   distinct() %>%
   full_join(
     included_pkg %>%
-      select(network_name, 4:5) %>%
+      select(network_name, `Should we include this package in our review?`) %>%
       rename(
         pkg = network_name,
-        inclusion = `Should we include this package in our review?`,
-        category  = `Is this package central in taxonomic harmonization workflow?`
+        inclusion = `Should we include this package in our review?`
       ),
     by = c("pkg")
   )
@@ -168,12 +167,8 @@ all_nodes = bind_rows(
     filter(
       !(network_name %in% c("joelnitta/jntools", "gustavobio/tpldata"))
     ) %>%
-    select(1, 5) %>%
-    rename(
-      id = `Package Name`,
-      workflow_importance =
-        `Is this package central in taxonomic harmonization workflow?`
-    ) %>%
+    select(1) %>%
+    rename(id = `Package Name`) %>%
     mutate(node_type = "package",
            id = case_when(
              id == "TNRS" ~ "TNRS_pkg",
@@ -183,17 +178,13 @@ all_nodes = bind_rows(
   # Database list
   all_db %>%
     rename(id = db_list) %>%
-    mutate(workflow_importance = "other", node_type = "db")
+    mutate(node_type = "db")
 ) %>%
   distinct() %>%
-  add_row(id = "joelnitta/taxastand", workflow_importance = "secondary",
-          node_type = "package") %>%
-  add_row(id = "EDIorg/taxonomyCleanr", workflow_importance = "secondary",
-          node_type = "package") %>%
-  add_row(id = "alexpiper/taxreturn", workflow_importance = "secondary",
-          node_type = "package") %>%
-  add_row(id = "ropensci/taxview", workflow_importance = "secondary",
-          node_type = "package") %>%
+  add_row(id = "joelnitta/taxastand",   node_type = "package") %>%
+  add_row(id = "EDIorg/taxonomyCleanr", node_type = "package") %>%
+  add_row(id = "alexpiper/taxreturn",   node_type = "package") %>%
+  add_row(id = "ropensci/taxview",      node_type = "package") %>%
   mutate(`Package Name` = id,
          label = id,
          `Object type` = node_type) %>%
