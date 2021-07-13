@@ -1,0 +1,5 @@
+step,pkgs
+Data Visualization,"metacoder, taxview"
+Data Wrangling,"metacoder, monographaR, rgnparser, splister, taxastand, taxreturn, taxspell, traitdataform, vegdata, vegtable, yatah"
+Database Access,"algaeClassify, AmphiNom, dyntaxa, finbif, flora, lcvplants, mammals, natserv, ncbit, neotoma2, paleobioDB, plantlist, rcol, rebird, rentrez, rfishbase, rgbif, ritis, Rocc, rotl, rredlist, rtaxref, SP2000, taxadb, taxalight, taxastand, taxize, taxizedb, taxonlookup, taxonomizr, taxonomyCleanr, Taxonstand, taxotools, taxreturn, TNRS, tpl, twn, vegdata, wikitaxa, WorldFlora, worms, worrms, zbank"
+Infrastructure,"taxa, taxlist, taxview"

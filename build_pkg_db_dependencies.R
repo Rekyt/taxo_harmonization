@@ -69,3 +69,4 @@ pkgs_step = included_pkg %>%
 
 saveRDS(pkg_deps_df, "data_cleaned/pkg_deps_df.Rds", compress = TRUE)
 saveRDS(included_pkg, "data_cleaned/included_pkg.Rds")
+readr::write_csv(pkgs_step, "data_cleaned/pkgs_step.csv")
