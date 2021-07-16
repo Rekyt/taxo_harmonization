@@ -20,6 +20,12 @@ The shiny app can also be run using the following command.
 shiny::runGitHub("Rekyt/taxo_harmonization", subdir = "taxharmonizexplorer")
 ```
 
+If you have a **local copy** of the repository you can run the app with:
+
+```r
+shiny::runApp("taxharmonizexplorer")
+```
+
 
 ## Data used
 
