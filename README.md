@@ -10,8 +10,14 @@ The shiny app is hosted on [shinyapps.io](https://shinyapps.io) on https://mgren
 
 The development version of the shiny app can be run with the following command in RStudio:
 
-```
+```r
 shiny::runGitHub("Rekyt/taxo_harmonization", subdir = "taxharmonizexplorer")
+```
+
+If you have a **local copy** of the repository you can run the app with:
+
+```r
+shiny::runApp("taxharmonizexplorer")
 ```
 
 ## Harmonizing BioTIME species data
@@ -24,6 +30,4 @@ This repository also contains the script `harmonize.R` perform two different wor
 
 This repository accompanies the following article:
 
-```
-Grenié M., Berti E., Carvajal-Quintero J., Winter M., Sagouis A., Matching species names in biodiversity databases: database relationships, tools, pitfalls and best practices. In preparation. doi: XXXX/XXXX 2021.
-```
+> Grenié M., Berti E., Carvajal-Quintero J., Winter M., Sagouis A., Matching species names in biodiversity databases: database relationships, tools, pitfalls and best practices. In preparation. doi: XXXX/XXXX 2021.
