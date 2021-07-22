@@ -1,5 +1,10 @@
 # Taxonomic Harmonization
 
+<!--Badges: starts-->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5121244.svg)](https://doi.org/10.5281/zenodo.5121244)
+<!--Badges: end-->
+
+
 ## Description
 
 This repository contains the companion code and the associated shiny app `taxharmonizexplorer` of Grenié et al. (2021, in prep.). It contains the associated figures of the paper, the code to generate the ones made from code, as well as the workflow code.
@@ -31,3 +36,12 @@ This repository also contains the script `harmonize.R` perform two different wor
 This repository accompanies the following article:
 
 > Grenié M., Berti E., Carvajal-Quintero J., Winter M., Sagouis A., Matching species names in biodiversity databases: database relationships, tools, pitfalls and best practices. In preparation. doi: XXXX/XXXX 2021.
+
+Version of the code available in this repository have been archived on Zenodo: 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5121244.svg)](https://doi.org/10.5281/zenodo.5121244)
+
+Refer to the above mentioned DOI to get the last up-to-date version or use the following citation:
+
+> Matthias Grenié, Alban Sagouis, & Emilio Berti. (2021, July 22). Rekyt/taxo_harmonization: First release (Version v0.1). Zenodo. http://doi.org/10.5281/zenodo.5121245.
+
