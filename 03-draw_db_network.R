@@ -29,4 +29,4 @@ plot_graph_db = ggraph(biggest_component, layout = "kk") +
 # Save plot --------------------------------------------------------------------
 
 ggsave("figures/fig3_databases_network.png", plot_graph_db, width = 700,
-       height = 400, units = "px")
+       height = 400, units = "px", dpi = 300, scale = 4)
