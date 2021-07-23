@@ -9752,18 +9752,18 @@ Clanculus sp2,Clanculus,Gastropoda,Mollusca,NA
 Clangula hyemalis,Clangula hyemalis,Aves,Chordata,birds
 Claoxylon tenerifolium,Claoxylon tenerifolium,Magnoliopsida,Tracheophyta,vascular plants
 Clarias batrachus,Clarias batrachus,Actinopterygii,Chordata,fishes
-Class Anthozoa,Class,NA,NA,NA
-Class Appendicularia,Class,NA,NA,NA
-Class Asteroidea,Class,NA,NA,NA
-Class Bivalvia,Class,NA,NA,NA
-Class Cirripedia,Class,NA,NA,NA
-Class Echinoidea,Class,NA,NA,NA
-Class Gastropoda,Class,NA,NA,NA
-Class Hydrozoa,Class,NA,NA,NA
-Class Insecta,Class,NA,NA,NA
-Class Maxillopoda,Class,NA,NA,NA
-Class Ostracoda,Class,NA,NA,NA
-Class Polychaeta,Class,NA,NA,NA
+Anthozoa,Anthozoa,Anthozoa,Cnidaria,NA
+Appendicularia,Appendicularia,NA,NA,NA
+Asteroidea,Asteroidea,Asteroidea,Echinodermata,NA
+Bivalvia,Bivalvia,Bivalvia,Mollusca,NA
+Cirripedia,Cirripedia,NA,NA,NA
+Echinoidea,Echinoidea,Echinoidea,Echinodermata,NA
+Gastropoda,Gastropoda,Gastropoda,Mollusca,NA
+Hydrozoa,Hydrozoa,Hydrozoa,Cnidaria,NA
+Insecta,Insecta,Insecta,Arthropoda,NA
+Maxillopoda,Maxillopoda,Maxillopoda,Arthropoda,NA
+Ostracoda,Ostracoda,Ostracoda,Arthropoda,NA
+Polychaeta,Polychaeta,NA,NA,NA
 Clathraria sp1,Clathraria,Anthozoa,Cnidaria,NA
 Clathria barleei,Clathria barleei,Demospongiae,Porifera,NA
 Clathria cervicornis,Clathria cervicornis,Demospongiae,Porifera,NA
@@ -16600,54 +16600,54 @@ Fallacia sp,Fallacia,NA,NA,NA
 Fallosquilla fallax,Fallosquilla fallax,Malacostraca,Arthropoda,NA
 Fallotritella biscaynensis,Fallotritella biscaynensis,Malacostraca,Arthropoda,NA
 Fallugia paradoxa,Fallugia paradoxa,Magnoliopsida,Tracheophyta,vascular plants
-Family Aetideidae,Family,NA,NA,NA
-Family Anthomyiidae,Family,NA,NA,NA
-Family Aphididae,Family,NA,NA,NA
-Family Baetidae,Family,NA,NA,NA
-Family Bibonidae,Family,NA,NA,NA
-Family Braconidae,Family,NA,NA,NA
-Family Calliopiidae,Family,NA,NA,NA
-Family Canaceidae,Family,NA,NA,NA
-Family Cecidomyiidae,Family,NA,NA,NA
-Family Ceratopogonidae,Family,NA,NA,NA
-Family Chironomidae,Family,NA,NA,NA
-Family Cicadellidae,Family,NA,NA,NA
-Family Corixidae,Family,NA,NA,NA
-Family Culicidae,Family,NA,NA,NA
-Family Cynipidae,Family,NA,NA,NA
-Family Cypridae,Family,NA,NA,NA
-Family Cyprididae,Family,NA,NA,NA
-Family Dixidae,Family,NA,NA,NA
-Family Dytiscidae,Family,NA,NA,NA
-Family Ectinosomatidae,Family,NA,NA,NA
-Family Ectinosomidae,Family,NA,NA,NA
-Family Empididae,Family,NA,NA,NA
-Family Ephemeridae,Family,NA,NA,NA
-Family Formicidae,Family,NA,NA,NA
-Family Gracillariidae,Family,NA,NA,NA
-Family Halocyprididae,Family,NA,NA,NA
-Family Hemerobiidae,Family,NA,NA,NA
-Family Heptageniidae,Family,NA,NA,NA
-Family Hydropsychidae,Family,NA,NA,NA
-Family Ichneumonidae,Family,NA,NA,NA
-Family Limnephilidae,Family,NA,NA,NA
-Family Lysianassidae,Family,NA,NA,NA
-Family Macrocyprididae,Family,NA,NA,NA
-Family Milichiidae,Family,NA,NA,NA
-Family Miridae,Family,NA,NA,NA
-Family Muscidae,Family,NA,NA,NA
-Family Mycetophilidae,Family,NA,NA,NA
-Family Orthocladiinae,Family,NA,NA,NA
-Family Pachyneuridae,Family,NA,NA,NA
-Family Paguridae,Family,NA,NA,NA
-Family Perlodidae,Family,NA,NA,NA
-Family Phoridae,Family,NA,NA,NA
-Family Psyllidae,Family,NA,NA,NA
-Family Scatophagidae,Family,NA,NA,NA
-Family Sciaridae,Family,NA,NA,NA
-Family Simuliidae,Family,NA,NA,NA
-Family Staphylinidae,Family,NA,NA,NA
-Family Tipulidae,Family,NA,NA,NA
+Aetideidae,Aetideidae,Hexanauplia,Arthropoda,NA
+Anthomyiidae,Anthomyiidae,Insecta,Arthropoda,NA
+Aphididae,Aphididae,Insecta,Arthropoda,NA
+Baetidae,Baetidae,Insecta,Arthropoda,NA
+Bibonidae,Bibonidae,NA,NA,NA
+Braconidae,Braconidae,Insecta,Arthropoda,NA
+Calliopiidae,Calliopiidae,Malacostraca,Arthropoda,NA
+Canaceidae,Canaceidae,Insecta,Arthropoda,NA
+Cecidomyiidae,Cecidomyiidae,NA,NA,NA
+Ceratopogonidae,Ceratopogonidae,Insecta,Arthropoda,NA
+Chironomidae,Chironomidae,Insecta,Arthropoda,NA
+Cicadellidae,Cicadellidae,Insecta,Arthropoda,NA
+Corixidae,Corixidae,Insecta,Arthropoda,NA
+Culicidae,Culicidae,Insecta,Arthropoda,NA
+Cynipidae,Cynipidae,Insecta,Arthropoda,NA
+Cypridae,Cypridae,Ostracoda,Arthropoda,NA
+Cyprididae,Cyprididae,Ostracoda,Arthropoda,NA
+Dixidae,Dixidae,Insecta,Arthropoda,NA
+Dytiscidae,Dytiscidae,Insecta,Arthropoda,NA
+Ectinosomatidae,Ectinosomatidae,Hexanauplia,Arthropoda,NA
+Ectinosomidae,Ectinosomidae,Hexanauplia,Arthropoda,NA
+Empididae,Empididae,Insecta,Arthropoda,NA
+Ephemeridae,Ephemeridae,Insecta,Arthropoda,NA
+Formicidae,Formicidae,Insecta,Arthropoda,NA
+Gracillariidae,Gracillariidae,NA,NA,NA
+Halocyprididae,Halocyprididae,Ostracoda,Arthropoda,NA
+Hemerobiidae,Hemerobiidae,Insecta,Arthropoda,NA
+Heptageniidae,Heptageniidae,Insecta,Arthropoda,NA
+Hydropsychidae,Hydropsychidae,Insecta,Arthropoda,NA
+Ichneumonidae,Ichneumonidae,Insecta,Arthropoda,NA
+Limnephilidae,Limnephilidae,Insecta,Arthropoda,NA
+Lysianassidae,Lysianassidae,Malacostraca,Arthropoda,NA
+Macrocyprididae,Macrocyprididae,Ostracoda,Arthropoda,NA
+Milichiidae,Milichiidae,Insecta,Arthropoda,NA
+Miridae,Miridae,Insecta,Arthropoda,NA
+Muscidae,Muscidae,Insecta,Arthropoda,NA
+Mycetophilidae,Mycetophilidae,Insecta,Arthropoda,NA
+Orthocladiinae,Orthocladiinae,NA,NA,NA
+Pachyneuridae,Pachyneuridae,Insecta,Arthropoda,NA
+Paguridae,Paguridae,Malacostraca,Arthropoda,NA
+Perlodidae,Perlodidae,Insecta,Arthropoda,NA
+Phoridae,Phoridae,Insecta,Arthropoda,NA
+Psyllidae,Psyllidae,Insecta,Arthropoda,NA
+Scatophagidae,Scatophagidae,Actinopterygii,Chordata,fishes
+Sciaridae,Sciaridae,Insecta,Arthropoda,NA
+Simuliidae,Simuliidae,Insecta,Arthropoda,NA
+Staphylinidae,Staphylinidae,Insecta,Arthropoda,NA
+Tipulidae,Tipulidae,Insecta,Arthropoda,NA
 Faradaya splendida,Faradaya splendida,Magnoliopsida,Tracheophyta,vascular plants
 Faramea calyptrata,Faramea calyptrata,Magnoliopsida,Tracheophyta,vascular plants
 Faramea coffeoides,Faramea coffeoides,Magnoliopsida,Tracheophyta,vascular plants
@@ -17657,7 +17657,7 @@ Gentianella aurea,Gentianella aurea,Magnoliopsida,Tracheophyta,vascular plants
 Gentianella campestris,Gentianella campestris,Magnoliopsida,Tracheophyta,vascular plants
 Gentianella tenella,Gentianella tenella,Magnoliopsida,Tracheophyta,vascular plants
 Gentoo penguin,Gentoo penguin,NA,NA,NA
-Genus nov spA,Genus nov,Insecta,Arthropoda,NA
+nov spA,NA,NA,NA,NA
 GENUS SPECIES,NA,NA,NA,NA
 Genyagnus monopterygius,Genyagnus monopterygius,Actinopterygii,Chordata,fishes
 Genyatremus luteus,Genyatremus luteus,Actinopterygii,Chordata,fishes
@@ -27116,7 +27116,7 @@ Nauclea officinalis,Nauclea officinalis,Magnoliopsida,Tracheophyta,vascular plan
 Nauclea orientalis,Nauclea orientalis,Magnoliopsida,Tracheophyta,vascular plants
 Naucleopsis naga,Naucleopsis naga,Magnoliopsida,Tracheophyta,vascular plants
 Naucrates ductor,Naucrates ductor,Actinopterygii,Chordata,fishes
-NA/unknown,NA,NA,NA,NA
+"NA/unknown",NA,NA,NA,NA
 Naushonia,Naushonia,Malacostraca,Arthropoda,NA
 Naushonia crangonoides,Naushonia crangonoides,Malacostraca,Arthropoda,NA
 Naushonia macginitiei,Naushonia macginitiei,Malacostraca,Arthropoda,NA
@@ -27162,7 +27162,7 @@ Navicula transitans,Navicula transitans,Bacillariophyceae,Ochrophyta,NA
 Navicula tripunctata,Navicula tripunctata,Bacillariophyceae,Ochrophyta,NA
 Navicula vanhoeffenii,Navicula vanhoeffenii,Bacillariophyceae,Ochrophyta,NA
 Navicula viridula,Navicula viridula,Bacillariophyceae,Ochrophyta,NA
-NAWA,NA,NA,NA,NA
+"NAWA",NA,NA,NA,NA
 Naxoides carnarvon,Naxoides carnarvon,Malacostraca,Arthropoda,NA
 Naxoides hirta,Naxoides hirta,Malacostraca,Arthropoda,NA
 Naxoides sp024302,Naxoides,NA,NA,NA
@@ -29555,23 +29555,23 @@ Orchomene sp,Orchomene,Malacostraca,Arthropoda,NA
 Orchomene sp2,Orchomene,Malacostraca,Arthropoda,NA
 Orchomene sp6,Orchomene,Malacostraca,Arthropoda,NA
 Orcinus orca,Orcinus orca,Mammalia,Chordata,mammals
-Order Amphipoda,Order,NA,NA,NA
-Order Calanoida,Order,NA,NA,NA
-Order Cumacea,Order,NA,NA,NA
-Order Cyclopoida,Order,NA,NA,NA
-Order Decapoda,Order,NA,NA,NA
-Order Diptera,Order,NA,NA,NA
-Order Ephemeroptera,Order,NA,NA,NA
-Order Euphausiacea,Order,NA,NA,NA
-Order Foraminiferida,Order,NA,NA,NA
-Order Harpacticoida,Order,NA,NA,NA
-Order Hymenoptera,Order,NA,NA,NA
-Order Isopoda,Order,NA,NA,NA
-Order lsopoda,Order lsopoda,NA,NA,NA
-Order Myodocopida,Order,NA,NA,NA
-Order Mysidacea,Order,NA,NA,NA
-Order Podocopa,Order,NA,NA,NA
-Order Trichoptera,Order,NA,NA,NA
+Amphipoda,Amphipoda,Malacostraca,Arthropoda,NA
+Calanoida,Calanoida,Hexanauplia,Arthropoda,NA
+Cumacea,Cumacea,Malacostraca,Arthropoda,NA
+Cyclopoida,Cyclopoida,Hexanauplia,Arthropoda,NA
+Decapoda,Decapoda,Malacostraca,Arthropoda,NA
+Diptera,Diptera,Insecta,Arthropoda,NA
+Ephemeroptera,Ephemeroptera,Insecta,Arthropoda,NA
+Euphausiacea,Euphausiacea,Malacostraca,Arthropoda,NA
+Foraminiferida,Foraminiferida,NA,NA,NA
+Harpacticoida,Harpacticoida,Hexanauplia,Arthropoda,NA
+Hymenoptera,Hymenoptera,Insecta,Arthropoda,NA
+Isopoda,Isopoda,Malacostraca,Arthropoda,NA
+lsopoda,NA,NA,NA,NA
+Myodocopida,Myodocopida,Ostracoda,Arthropoda,NA
+Mysidacea,Mysidacea,NA,NA,NA
+Podocopa,Podocopa,NA,NA,NA
+Trichoptera,Trichoptera,NA,NA,NA
 Oreaster reticulatus,Oreaster reticulatus,Asteroidea,Echinodermata,NA
 Orectolobus halei,Orectolobus halei,Elasmobranchii,Chordata,fishes
 Orectolobus japonicus,Orectolobus japonicus,Elasmobranchii,Chordata,fishes
@@ -32381,14 +32381,14 @@ Phylloxeridae sp,Phylloxeridae,Insecta,Arthropoda,NA
 Phylocentropus,Phylocentropus,Insecta,Arthropoda,NA
 Phylo felix,Phylo felix,Polychaeta,NA,NA
 Phylo kupferi,Phylo kupferi,Polychaeta,NA,NA
-Phylum Brachiopoda,Phylum,NA,NA,NA
-Phylum Chaetognatha,Phylum,NA,NA,NA
-Phylum Ctenophora,Phylum,NA,NA,NA
-Phylum Nemata,Phylum,NA,NA,NA
-Phylum Nemertea,Phylum,NA,NA,NA
-Phylum Rotifera,Phylum,NA,NA,NA
-Phylum Sipuncula,Phylum,NA,NA,NA
-Phylum Tardigrada,Phylum,NA,NA,NA
+Brachiopoda,Brachiopoda,NA,NA,NA
+Chaetognatha,Chaetognatha,NA,NA,NA
+Ctenophora,Ctenophora,NA,NA,NA
+Nemata,Nemata,NA,NA,NA
+Nemertea,Nemertea,NA,NA,NA
+Rotifera,Rotifera,NA,NA,NA
+Sipuncula,Sipuncula,NA,NA,NA
+Tardigrada,Tardigrada,NA,NA,NA
 Phymatodes testaceus,Phymatodes testaceus,Insecta,Arthropoda,NA
 Phymatolithon,Phymatolithon,Florideophyceae,Rhodophyta,NA
 Phymatolithon calcareum,Phymatolithon calcareum,Florideophyceae,Rhodophyta,NA
@@ -40356,8 +40356,8 @@ Subadyte,Subadyte,Polychaeta,NA,NA
 Subadyte mexicana,Subadyte mexicana,Polychaeta,NA,NA
 Subadyte pellucida,Subadyte pellucida,Polychaeta,NA,NA
 Subcancilla interlirata,Subcancilla interlirata,Gastropoda,Mollusca,NA
-Subclass Hirudinea,Subclass,NA,NA,NA
-Subclass Podocopa,Subclass,NA,NA,NA
+Hirudinea,Hirudinea,NA,NA,NA
+Podocopa,Podocopa,NA,NA,NA
 Subergorgia juvenile,Subergorgia juvenile,Anthozoa,Cnidaria,NA
 Subergorgia sp1,Subergorgia,Anthozoa,Cnidaria,NA
 Subergorgia suberosa,Subergorgia suberosa,Anthozoa,Cnidaria,NA
@@ -40379,8 +40379,8 @@ Subeucalanus pileatus,Subeucalanus pileatus,Hexanauplia,Arthropoda,NA
 Subeucalanus sp,Subeucalanus,Hexanauplia,Arthropoda,NA
 Subeucalanus subcrassus,Subeucalanus subcrassus,Hexanauplia,Arthropoda,NA
 Subeucalanus subtenuis,Subeucalanus subtenuis,Hexanauplia,Arthropoda,NA
-Suborder Cladocera,Suborder,NA,NA,NA
-Subphylum Crustacea,Subphylum,NA,NA,NA
+Cladocera,Cladocera,NA,NA,NA
+Crustacea,Crustacea,Insecta,Arthropoda,NA
 Subulina octana,Subulina octana,Gastropoda,Mollusca,NA
 Succisa pratensis,Succisa pratensis,Magnoliopsida,Tracheophyta,vascular plants
 Sudis hyalina,Sudis hyalina,Actinopterygii,Chordata,fishes
@@ -40424,7 +40424,7 @@ Sundanella sibogae,Sundanella sibogae,Gymnolaemata,Bryozoa,NA
 Sunesta setigera,Sunesta setigera,Insecta,Arthropoda,NA
 Sunetta contempta,Sunetta contempta,Bivalvia,Mollusca,NA
 Sunira decipiens,Sunira decipiens,Insecta,Arthropoda,NA
-Superfamily Chalcidoidea,Superfamily,NA,NA,NA
+Chalcidoidea,Chalcidoidea,NA,NA,NA
 Suphrodytes dorsalis,Suphrodytes dorsalis,Insecta,Arthropoda,NA
 Suregada multiflora,Suregada multiflora,Magnoliopsida,Tracheophyta,vascular plants
 Surirella,Surirella,Bacillariophyceae,Ochrophyta,NA
