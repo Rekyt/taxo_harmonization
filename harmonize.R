@@ -99,3 +99,6 @@ tibble(biotime = names(gbif), gbif = as.vector(gbif)) %>%
   write_csv("biotime_results/gbif_only.csv")
 
 stopCluster(cl)
+
+# Combine all results ----------------------------------------------------------
+source("scripts/combine-results-workflows.R")

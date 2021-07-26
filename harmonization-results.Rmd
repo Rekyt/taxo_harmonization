@@ -16,8 +16,12 @@ library(tidyverse)
 ```
 
 ```{r load data}
-d <- read_rds("biotime_results/harmonized.rds")
-common <- read_csv("biotime_results/biotime_common.csv") %>% 
+d <- read_rds(
+  here::here("data/data_cleaned/biotime_results/harmonized.rds")
+)
+common <- read_csv(
+  here::here("data/data_cleaned/biotime_results/biotime_common.csv")
+  ) %>% 
   select(-class, -phylum) %>% 
   mutate(common = modify(common, function(x)
     ifelse(is.na(x) | x == "mammals", "other", x)))

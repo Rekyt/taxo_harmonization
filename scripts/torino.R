@@ -35,10 +35,12 @@ biotime %<>% left_join(
                                         ifelse(is.na(x), y, x)
                                       }))
 )
-write_csv(biotime, "biotime_results/biotime_common.csv")
+write_csv(biotime, "data/data_cleaned/biotime_results/biotime_common.csv")
 
 # harmonizing against databases
-d <- suppressMessages(read_csv("biotime_results/biotime_common.csv"))
+d <- suppressMessages(
+  read_csv("data/data_cleaned/biotime_results/biotime_common.csv")
+)
 
 # vascular plants ------------
 message("     LCVP")
@@ -58,7 +60,7 @@ lcvp %>%
   group_by(parsed) %>%
   slice(1) %>%
   ungroup() %>%
-  write_csv("biotime_results/torino_lcvp.csv")
+  write_csv("data/data_cleaned/biotime_results/torino_lcvp.csv")
 
 # fishes -----------
 message("     FishBase")
@@ -71,7 +73,7 @@ fishbase <- parSapply(
   function(x) rfishbase::validate_names(x)[1]
 )
 fishbase <- fishes %>% mutate(fishbase = fishbase)
-write_csv(fishbase, "biotime_results/torino_fishbase.csv")
+write_csv(fishbase, "data/data_cleaned/biotime_results/torino_fishbase.csv")
 message("     ", Sys.time() - T0)
 
 # birds ---------------
@@ -92,5 +94,5 @@ birds <- tibble(parsed = birds,
               filter(speciesCode %in% ebird) %>%
               transmute(code = speciesCode, ebird = sciName)) %>%
   select(-code)
-write_csv(birds, "biotime_results/torino_ebird.csv")
+write_csv(birds, "data/data_cleaned/biotime_results/torino_ebird.csv")
 message("      Torino running time:", Sys.time() - T0)

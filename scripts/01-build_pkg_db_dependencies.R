@@ -1,12 +1,15 @@
 # Script to generate list of dependencies of packages
+# Author: Matthias Grenié
 # Load packages ----------------------------------------------------------------
 library("dplyr")
 
 # Load and wrangle data --------------------------------------------------------
 
 # Raw data from the Google Doc sheets exported as XLSX file
-raw_pkg_table = readxl::read_xlsx("data_raw/Table comparing taxonomic tools.xlsx",
-                                  na = c("", "NA"))
+raw_pkg_table = readxl::read_xlsx(
+  "data/data_raw/Table comparing taxonomic tools.xlsx",
+  na = c("", "NA")
+  )
 
 # Get the list of packages that are included in the review
 included_pkg = raw_pkg_table %>%
@@ -67,6 +70,6 @@ pkgs_step = included_pkg %>%
 
 # Save data --------------------------------------------------------------------
 
-saveRDS(pkg_deps_df, "data_cleaned/pkg_deps_df.Rds", compress = TRUE)
-saveRDS(included_pkg, "data_cleaned/included_pkg.Rds")
-readr::write_csv(pkgs_step, "data_cleaned/pkgs_step.csv")
+saveRDS(pkg_deps_df, "data/data_cleaned/pkg_deps_df.Rds", compress = TRUE)
+saveRDS(included_pkg, "data/data_cleaned/included_pkg.Rds")
+readr::write_csv(pkgs_step, "data/data_cleaned/pkgs_step.csv")

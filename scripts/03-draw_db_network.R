@@ -7,7 +7,7 @@ library("ggraph")
 library("tidygraph")
 
 # Load data --------------------------------------------------------------------
-db_igraph = readRDS("data_cleaned/db_igraph.Rds")
+db_igraph = readRDS("data/data_cleaned/db_igraph.Rds")
 db_graph = tidygraph::as_tbl_graph(db_igraph)
 
 biggest_component = db_graph %>%

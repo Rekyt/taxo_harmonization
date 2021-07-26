@@ -4,11 +4,13 @@
 library("dplyr")
 
 # Load initial data ------------------------------------------------------------
-pkg_deps_df = readRDS("data_cleaned/pkg_deps_df.Rds")
-included_pkg = readRDS("data_cleaned/included_pkg.Rds")
+pkg_deps_df = readRDS("data/data_cleaned/pkg_deps_df.Rds")
+included_pkg = readRDS("data/data_cleaned/included_pkg.Rds")
 
-database_df = readxl::read_xlsx("data_raw/Table comparing taxonomic tools.xlsx",
-                                sheet = 4, na = c("", "NA"))
+database_df = readxl::read_xlsx(
+  "data/data_raw/Table comparing taxonomic tools.xlsx",
+  sheet = 4, na = c("", "NA")
+)
 
 # Extract network in two data.frames -------------------------------------------
 # Edge list data.frame
@@ -46,7 +48,7 @@ taxonomy_dependencies_edge_df = dependencies_edge_df %>%
       dependency %in% included_pkg$`Package Name`)
 
 saveRDS(taxonomy_dependencies_edge_df,
-        "data_cleaned/taxonomy_pkg_dependencies.Rds")
+        "data/data_cleaned/taxonomy_pkg_dependencies.Rds")
 
 # Database network -------------------------------------------------------------
 # Make an attribute df with databases
@@ -111,7 +113,7 @@ all_db = access_df %>%
 
 db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
 
-saveRDS(db_graph, "data_cleaned/db_igraph.Rds", compress = TRUE)
+saveRDS(db_graph, "data/data_cleaned/db_igraph.Rds", compress = TRUE)
 
 # Viz. DB network --------------------------------------------------------------
 if (FALSE) {
