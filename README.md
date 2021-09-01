@@ -59,7 +59,7 @@ Results from cleaning are saved in the folder `data/data_cleaned/biotime_results
 
 ### Running the workflow
 
-You can run the entire workflow thanks to the `harmonize.R` script available at the root of the repository.
+You can run the entire workflow thanks to the `harmonize.R` script available in the *scripts* folder.
 To run the workflow run the following code:
 
 ```{r}

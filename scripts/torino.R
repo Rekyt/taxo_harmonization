@@ -35,11 +35,11 @@ biotime %<>% left_join(
                                         ifelse(is.na(x), y, x)
                                       }))
 )
-write_csv(biotime, "data/data_cleaned/biotime_results/biotime_common.csv")
+write_csv(biotime, "../data/data_cleaned/biotime_results/biotime_common.csv")
 
 # harmonizing against databases
 d <- suppressMessages(
-  read_csv("data/data_cleaned/biotime_results/biotime_common.csv")
+  read_csv("../data/data_cleaned/biotime_results/biotime_common.csv")
 )
 
 # vascular plants ------------

@@ -36,7 +36,7 @@ assign_group <- function(x){
 
 # Load data --------------------------------------------------------------------
 
-biotime <- read_csv("data_raw/biotime.txt", col_names = "BioTIME") %>%
+biotime <- read_csv("../data/data_raw/biotime.txt", col_names = "BioTIME") %>%
   as_tibble() %>%
   mutate(BioTIME = gsub("Family ", "", BioTIME),
          BioTIME = gsub("Order ", "", BioTIME),
@@ -65,7 +65,7 @@ source("bogota.R") #conflicts are resolved in combine-results-workflows.R
 
 # Workflow 3: GBIF only with pre-processing ------------------------------------
 
-d <- read_csv("biotime_results/biotime_common.csv") %>%
+d <- read_csv("../data/data_cleaned/biotime_results/biotime_common.csv") %>%
    select(-class, -phylum, -common) #not needed in this pipeline
 gbif <- parSapply(
   cl,
@@ -79,7 +79,7 @@ gbif <- parSapply(
   }
 )
 tibble(parsed = d$parsed, gbif = unlist(gbif)) %>%
-   write_csv("biotime_results/gbif_preproc.csv")
+   write_csv("../data/data_cleaned/biotime_results/gbif_preproc.csv")
 
 
 # Workflow 4: GBIF only (no pre-processing) ------------------------------------
@@ -96,9 +96,9 @@ gbif <- parSapply(
   }
 )
 tibble(biotime = names(gbif), gbif = as.vector(gbif)) %>%
-  write_csv("biotime_results/gbif_only.csv")
+  write_csv("../data/data_cleaned/biotime_results/gbif_only.csv")
 
 stopCluster(cl)
 
 # Combine all results ----------------------------------------------------------
-source("scripts/combine-results-workflows.R")
+source("combine-results-workflows.R")

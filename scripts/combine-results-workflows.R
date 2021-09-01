@@ -19,16 +19,16 @@ make_binomial <- function(x) {
 
 # Merge results from Workflow 1 (Torino = high tax. group) ---------------------
 
-torino <- read_csv("data/data_cleaned/biotime_results/biotime_common.csv") %>%
+torino <- read_csv("../data/data_cleaned/biotime_results/biotime_common.csv") %>%
   select(-class, -phylum) %>%
-  left_join(read_csv("data/data_cleaned/biotime_results/torino_ebird.csv") %>% 
+  left_join(read_csv("../data/data_cleaned/biotime_results/torino_ebird.csv") %>% 
               distinct_all(),
             by = "parsed") %>% 
   left_join(
-    read_csv("data/data_cleaned/biotime_results/torino_fishbase.csv") %>% 
+    read_csv("../data/data_cleaned/biotime_results/torino_fishbase.csv") %>% 
       distinct_all(),
     by = "parsed") %>% 
-  left_join(read_csv("data/data_cleaned/biotime_results/torino_lcvp.csv") %>% 
+  left_join(read_csv("../data/data_cleaned/biotime_results/torino_lcvp.csv") %>% 
               distinct_all() %>% 
               mutate(lcvp = modify(lcvp, function(x)
                 ifelse(x == "unresolved", NA, x))),
@@ -53,16 +53,16 @@ torino <- torino %>%
 
 # Merge results from Workflow 2 (Bogota, all list against dbs) -----------------
 
-bogota <- read_csv("data/data_cleaned/biotime_results/biotime_common.csv") %>%
+bogota <- read_csv("../data/data_cleaned/biotime_results/biotime_common.csv") %>%
   select(-class, -phylum) %>%
-  left_join(read_csv("data/data_cleaned/biotime_results/bogota_ebird.csv") %>% 
+  left_join(read_csv("../data/data_cleaned/biotime_results/bogota_ebird.csv") %>% 
               distinct_all(),
             by = "parsed") %>% 
   left_join(
-    read_csv("data/data_cleaned/biotime_results/bogota_fishbase.csv") %>% 
+    read_csv("../data/data_cleaned/biotime_results/bogota_fishbase.csv") %>% 
       distinct_all(),
     by = "parsed") %>% 
-  left_join(read_csv("data/data_cleaned/biotime_results/bogota_lcvp.csv") %>% 
+  left_join(read_csv("../data/data_cleaned/biotime_results/bogota_lcvp.csv") %>% 
               distinct_all() %>% 
               mutate(lcvp = modify(lcvp, function(x)
                 ifelse(x == "unresolved", NA, x))),
@@ -87,10 +87,10 @@ bogota <- bogota %>%
 
 # Merge results from workflow 3 (GBIF only pre-processed) ----------------------
 gbif_preproc <- read_csv(
-  "data/data_cleaned/biotime_results/biotime_common.csv"
+  "../data/data_cleaned/biotime_results/biotime_common.csv"
   ) %>%
   left_join(
-    read_csv("data/data_cleaned/biotime_results/gbif_preproc.csv") %>%
+    read_csv("../data/data_cleaned/biotime_results/gbif_preproc.csv") %>%
       transmute(parsed, matched = gbif) %>% 
       distinct_all()
   )
@@ -98,8 +98,8 @@ gbif_preproc <- read_csv(
 
 # Merge results from workflow 4 (GBIF only no pre-processing) ------------------
 
-gbif <-  read_csv("data/data_cleaned/biotime_results/biotime_common.csv") %>%
-  left_join(read_csv("data/data_cleaned/biotime_results/gbif_only.csv") %>%
+gbif <-  read_csv("../data/data_cleaned/biotime_results/biotime_common.csv") %>%
+  left_join(read_csv("../data/data_cleaned/biotime_results/gbif_only.csv") %>%
               transmute(BioTIME = biotime, matched = gbif) %>% 
               distinct_all())
 
@@ -117,4 +117,4 @@ write_rds(list(bogota       = bogota,
                torino       = torino,
                gbif_preproc = gbif_preproc,
                gbif         = gbif),
-          "data/data_cleaned/biotime_results/harmonized.rds")
+          "../data/data_cleaned/biotime_results/harmonized.rds")
