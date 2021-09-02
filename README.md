@@ -21,7 +21,7 @@ Version of the code available in this repository have been archived on Zenodo:
 
 Refer to the above mentioned DOI to get the last up-to-date version or use the following citation:
 
-> Matthias Grenié, Alban Sagouis, & Emilio Berti. (2021, July 22). Rekyt/taxo_harmonization: First release (Version v0.1). Zenodo. http://doi.org/10.5281/zenodo.5121245.
+> Matthias Grenié, Alban Sagouis, & Emilio Berti. (2021, July 22). Rekyt/taxo_harmonization: Submitted version (Version submitted). Zenodo. https://doi.org/10.5281/zenodo.5380285.
 
 ## Running `taxharmonizexplorer` (companion shiny app)
 
