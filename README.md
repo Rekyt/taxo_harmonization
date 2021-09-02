@@ -13,7 +13,7 @@ This repository contains the companion code and the associated shiny app `taxhar
 
 This repository accompanies the following article:
 
-> Grenié M., Berti E., Carvajal-Quintero J., Winter M., Sagouis A., Matching species names in biodiversity databases: database relationships, tools, pitfalls and best practices. In preparation. doi: XXXX/XXXX 2021.
+> Grenié M., Berti E., Carvajal-Quintero J., Sagouis A., Winter M. Harmonizing taxon names in biodiversity data: a review of tools, databases, and best practices. Submitted. doi: XXXX/XXXX 2021.
 
 Version of the code available in this repository have been archived on Zenodo: 
 
@@ -63,7 +63,7 @@ You can run the entire workflow thanks to the `harmonize.R` script available in 
 To run the workflow run the following code:
 
 ```{r}
-source("harmonize.R")
+source("scripts/harmonize.R")
 ```
 
 ### Getting the results
