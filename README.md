@@ -1,19 +1,20 @@
 # Taxonomic Harmonization
 
 <!--Badges: starts-->
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5121244.svg)](https://doi.org/10.5281/zenodo.5121244)
+[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5121244.svg)](https://doi.org/10.5281/zenodo.5121244)
+[![EcoevoRxiv Preprint](https://img.shields.io/badge/EcoEvoRxiv%20preprint-10.32942%2Fosf.io%2Fe3qnz-brightgreen)](https://doi.org/10.32942/osf.io/e3qnz)
 <!--Badges: end-->
-
 
 ## Description
 
-This repository contains the companion code and the associated shiny app `taxharmonizexplorer` of Grenié et al. (2021, in prep.). It contains the associated figures of the paper, the code to generate the ones made from code, as well as the code to run the taxonomic harmonization workflows used in the paper.
+This repository contains the companion code and the associated shiny app `taxharmonizexplorer` of Grenié et al. (2021, in revision). It contains the associated figures of the paper, the code to generate the ones made from code, as well as the code to run the taxonomic harmonization workflows used in the paper.
+
 
 ## Citation
 
 This repository accompanies the following article:
 
-> Grenié M., Berti E., Carvajal-Quintero J., Sagouis A., Winter M. Harmonizing taxon names in biodiversity data: a review of tools, databases, and best practices. Submitted. doi: XXXX/XXXX 2021.
+> Grenié, M., Berti, E., Carvajal-Quintero, J. D., Sagouis, A., Mona, G. M. L., & Winter, M. (2021, September 3). Harmonizing taxon names in biodiversity data: a review of tools, databases, and best practices. https://doi.org/10.32942/osf.io/e3qnz
 
 Version of the code available in this repository have been archived on Zenodo: 
 
@@ -22,6 +23,7 @@ Version of the code available in this repository have been archived on Zenodo:
 Refer to the above mentioned DOI to get the last up-to-date version or use the following citation:
 
 > Matthias Grenié, Alban Sagouis, & Emilio Berti. (2021, July 22). Rekyt/taxo_harmonization: Submitted version (Version submitted). Zenodo. https://doi.org/10.5281/zenodo.5380285.
+
 
 ## Running `taxharmonizexplorer` (companion shiny app)
 
@@ -38,6 +40,7 @@ If you have a **local copy** of the repository you can run the app with:
 ```r
 shiny::runApp("taxharmonizexplorer")
 ```
+
 
 ### Scripts used to build the network of tools
 
@@ -65,7 +68,3 @@ To run the workflow run the following code:
 ```{r}
 source("scripts/harmonize.R")
 ```
-
-### Getting the results
-
-We compare all workflows quantitatively as shown in the `harmonization-results.Rmd` file.
