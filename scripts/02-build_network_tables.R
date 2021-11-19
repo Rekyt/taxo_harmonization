@@ -3,6 +3,7 @@
 # Needed packages --------------------------------------------------------------
 library("dplyr")
 
+
 # Load initial data ------------------------------------------------------------
 pkg_deps_df = readRDS("data/data_cleaned/pkg_deps_df.Rds")
 included_pkg = readRDS("data/data_cleaned/included_pkg.Rds")
@@ -11,6 +12,12 @@ database_df = readxl::read_xlsx(
   "data/data_raw/Table comparing taxonomic tools.xlsx",
   sheet = 4, na = c("", "NA")
 )
+
+raw_db_links_df = readxl::read_xlsx(
+  "data/data_raw/Table comparing taxonomic tools.xlsx",
+  sheet = 6, na = c("", "NA")
+)
+
 
 # Extract network in two data.frames -------------------------------------------
 # Edge list data.frame
@@ -60,46 +67,13 @@ access_df = included_pkg %>%
   mutate(type = "accesses") %>%
   tidyr::unnest(c(db_list))
 
-db_links = tibble::tribble(
-  ~source_db, ~target_db, ~link_type,
-  "COL",            "GBIF",        "populates",
-  "COL",            "SeaLifeBase", "populates",
-  "COL",            "EOL",         "populates",
-  "COL",            "GNR",         "populates",
-  "Index Fungorum", "Wikidata",    "populates",
-  "Index Fungorum", "COL",         "populates",
-  "FishBase",       "COL",         "populates",
-  "FishBase",       "GNR",         "populates",
-  "WoRMS",          "COL",         "populates",
-  "WoRMS",          "Wikidata",    "populates",
-  "Wikispecies",    "Wikipedia",   "populates",
-  "Wikispecies",    "Wikidata",    "populates",
-  "Wikispecies",    "GNR",         "populates",
-  "Wikipedia",      "GNR",         "populates",
-  "Wikidata",       "GNR",         "populates",
-  "TPL",            "WorldFlora",  "populates",
-  "WorldFlora",     "TNRS",        "populates",
-  "eBird",           "GNR",         "populates",
-  "ZooBank",        "GNR",         "populates",
-  "POWO",           "WCSP",        "populates",
-  "POWO",           "IPNI",        "populates",
-  "WCSP",           "COL",         "populates",
-  "IPNI",           "GNR",         "populates",
-  "AlgaeBase",      "SeaLifeBase", "populates",
-  "ITIS",           "GNR",         "populates",
-  "ITIS",           "EOL",         "populates",
-  "ITIS",           "Tropicos",    "populates",
-  "ITIS",           "NatureServe", "populates",
-  "ITIS",           "COL",         "populates",
-  "Tropicos",       "USDA",        "populates",
-  "Tropicos",       "TNRS",        "populates",
-  "Tropicos",       "GNR",         "populates",
-  "USDA",           "TNRS",        "populates",
-  "NCBI",           "GNR",         "populates",
-  "GBIF",           "GNR",         "populates",
-  "EOL",            "GNR",         "populates"
-)
+# data.frame of links between databases
+db_links = raw_db_links_df %>%
+  select(source_db = `Source database (= from)`,
+         target_db = `Target database (= to)`) %>%
+  mutate(link_type = "populates")
 
+# Make a list of all databases (linked in network or accessed by package)
 all_db = access_df %>%
   distinct(db_list) %>%
   bind_rows(
@@ -111,6 +85,7 @@ all_db = access_df %>%
   distinct() %>%
   filter(!is.na(db_list))
 
+# Database graph
 db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
 
 saveRDS(db_graph, "data/data_cleaned/db_igraph.Rds", compress = TRUE)
@@ -259,7 +234,7 @@ pkg_description = included_pkg %>%
 db_description = all_nodes %>%
   filter(group == "database") %>%
   select(id) %>%
-  full_join(database_df, by = c(id = "Abbreviated Database Name")) %>%
+  full_join(database_df, by = c(id = "Abbreviated name")) %>%
   mutate(
     html_info = paste0(
       "<b>Name</b>: ", id, "<br />",
