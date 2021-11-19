@@ -14,7 +14,7 @@ This repository contains the companion code and the associated shiny app `taxhar
 
 This repository accompanies the following article:
 
-> Grenié, M., Berti, E., Carvajal-Quintero, J. D., Sagouis, A., Mona, G. M. L., & Winter, M. (2021, September 3). Harmonizing taxon names in biodiversity data: a review of tools, databases, and best practices. https://doi.org/10.32942/osf.io/e3qnz
+> Grenié, M., Berti, E., Carvajal-Quintero, J. D., Sagouis, A., Dädlow, G. M. L., & Winter, M. (2021, September 3). Harmonizing taxon names in biodiversity data: a review of tools, databases, and best practices. https://doi.org/10.32942/osf.io/e3qnz
 
 Version of the code available in this repository have been archived on Zenodo: 
 

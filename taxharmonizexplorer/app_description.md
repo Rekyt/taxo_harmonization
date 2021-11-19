@@ -54,21 +54,21 @@ The development of this shiny app has been led by Alban Sagouis and Matthias Gre
 If you use this shiny app in academic work and/or want to reference it please cite the following:
 
 ```
-Grenié M., Berti E., Carvajal-Quintero J., Winter M., Sagouis A., Matching species names in biodiversity databases: database relationships, tools, pitfalls and best practices. doi: XXXX/XXXX 2021.
+Grenié, M., Berti, E., Carvajal-Quintero, J. D., Sagouis, A., Dädlow, G. M. L., & Winter, M. (2021, September 3). Harmonizing taxon names in biodiversity data: a review of tools, databases, and best practices. https://doi.org/10.32942/osf.io/e3qnz
 ```
 
 We also provide the BibTeX citation
 
 ```
 @article {GrenieMatching2021,
-	author = {Grenié, Matthias and Berti, Emilio and Carvajal-Quintero, Juan and Winter, Marten and Sagouis, Alban},
+	author = {Grenié, Matthias and Berti, Emilio and Carvajal-Quintero, Juan and Sagouis, Alban and Dädlow, Gala Mona Louise and Winter, Marten},
 	title = {Matching species names in biodiversity databases: database relationships, tools, pitfalls and best practices},
 	year = {2021},
-	doi = {10.XXXX/XXXX},
+	doi = {10.32942/osf.io/e3qnz},
 	abstract = {},
 	URL = {},
 	eprint = {},
-	journal = {XX}
+	journal = {EcoEvoRxiv}
 }
 
 ```
