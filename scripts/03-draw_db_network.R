@@ -18,13 +18,15 @@ biggest_component = db_graph %>%
 # Plot data --------------------------------------------------------------------
 
 plot_graph_db = ggraph(biggest_component, layout = "kk") + 
-  geom_edge_link(edge_width = 2/3, colour = "#88b4da",
-                 arrow = arrow(length = unit(2.8, 'mm'), angle = 12,
-                               type = "closed")) + 
-  geom_node_point(size = 3, shape = 21, colour = "white", fill = "black") +
-  geom_node_text(aes(label = name), family = "Consolas",
+  geom_edge_link(
+    edge_width = 1, colour = "#88b4da",
+    arrow = arrow(length = unit(5, 'mm'), angle = 4, type = "closed")
+  ) + 
+  geom_node_point(size = 3, shape = 21, colour = "white", fill = "black", stroke = 1.5) +
+  geom_node_text(aes(label = name),
                  fontface = "bold", vjust = 2, size = 4) +
   theme_void()
+
 
 # Save plot --------------------------------------------------------------------
 
