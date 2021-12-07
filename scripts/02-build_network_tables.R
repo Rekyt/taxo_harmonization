@@ -153,7 +153,7 @@ all_nodes = bind_rows(
          `Object type` = node_type) %>%
   rename(group = node_type) %>%
   mutate(
-  # Remove trailing user name when specifying node labels
+    # Remove trailing user name when specifying node labels
     label = gsub(".*/", "", label),
     # Rename node type for ease of use in shiny app
     group = ifelse(group == "db", "database", group),
@@ -221,14 +221,49 @@ db_description = all_nodes %>%
   filter(group == "database") %>%
   select(id) %>%
   full_join(database_df, by = c(id = "Abbreviated name")) %>%
+  # Rename columns for easier reuse
+  rename(
+    update_freq    = `Standardized update/versions frequency`,
+    taxa_n         = `Standardized number of taxa names`,
+    taxa_level     = `Standardized level of taxa names`,
+    accepted_n     = `Standardized number of accepted taxa`,
+    accepted_level = `Standardized level of accepted names`,
+    synonyms_n     = `Standardized number of synonyms`,
+    synonyms_level = `Standardized synonym level`
+  ) %>%
   mutate(
     html_info = paste0(
       "<b>Name</b>: ", id, "<br />",
       "<b>Full Name</b>: ", `Name in full`, "<br />",
       "<b>Type</b>: database<br />",
-      "<b>Taxonomic Group</b>: ", `Taxonomic group`, "<br />",
       "<b>Spatial Scale</b>: ", `Spatial Scale`, "<br />",
       "<b>Taxonomic Breadth</b>: ", `Taxonomic Breadth`, "<br />",
+      "<b>Taxonomic Group</b>: ", `Taxonomic group`, "<br />",
+      "<b>Last known update</b>: ",
+      ifelse(
+        !is.na(`Last update (YYYY-MM)`),
+        `Last update (YYYY-MM)`,
+        "Unknown"
+      ),
+      "<br />",
+      "<b>Update Frequency</b>: ",
+      ifelse(!is.na(update_freq), update_freq, "Unknown"),
+      "<br />",
+      # Spefic chunk to nicely display the number of names available
+      # in the databases
+      "<b>Number of names</b>: ",
+      case_when(
+        !is.na(taxa_n) & !is.na(accepted_n) & !is.na(synonyms_n) ~
+          paste0(taxa_n, " names (", taxa_level, "), of which ",
+                 accepted_n, " accepted (", accepted_level, ") and ",
+                 synonyms_n, " synonyms (", synonyms_level, ")"),
+        !is.na(taxa_n) & !is.na(accepted_n) ~
+          paste0(taxa_n, " names (", taxa_level, "), of which ",
+                 accepted_n, " accepted (", accepted_level, ")"),
+        !is.na(taxa_n) ~ paste0(taxa_n, " names (", taxa_level, ")"),
+        TRUE ~ "Unknown"
+      ),
+      "<br />",
       "<b>URL</b>: <a href='", URL, "'>", URL, "</a><br />"
     ),
     tax_group = case_when(
@@ -240,7 +275,7 @@ db_description = all_nodes %>%
       TRUE ~ `Taxonomic group`
     )
   )
-  
+
 
 # Add Node Descriptions
 all_nodes = all_nodes %>%
