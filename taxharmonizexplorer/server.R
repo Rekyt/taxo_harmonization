@@ -88,7 +88,7 @@ shinyServer(function(input, output, session) {
         deselectNode = "function(nodes) {
           Shiny.setInputValue('current_node_id', null)
       ;}") %>%
-      visPhysics(stabilization = FALSE)
+      visPhysics(stabilization = TRUE, minVelocity = 30, maxVelocity = 31)
   )
   
   # Select nodes in network based on selection in DT
