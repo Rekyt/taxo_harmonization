@@ -90,20 +90,6 @@ db_graph = igraph::graph_from_data_frame(db_links, vertices = all_db)
 
 saveRDS(db_graph, "data/data_cleaned/db_igraph.Rds", compress = TRUE)
 
-# Viz. DB network --------------------------------------------------------------
-if (FALSE) {
-  db_graph %>%
-    tidygraph::as_tbl_graph() %>%
-    ggraph(layout = "igraph", algorithm = "nicely") +
-    geom_edge_link(
-      arrow = arrow(type = "closed", length = unit(4, "mm"), angle = 7),
-      alpha = 1/2
-    ) +
-    geom_node_point(shape = 21, color = "white", fill  = "black") +
-    geom_node_text(aes(label = name), check_overlap = TRUE, repel = TRUE) +
-    theme_void()
-}
-
 # Joining both networks --------------------------------------------------------
 
 # Combine all edges

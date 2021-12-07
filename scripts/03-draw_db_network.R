@@ -35,8 +35,8 @@ plot_graph_db
 
 # Save plot --------------------------------------------------------------------
 
-ggsave("figures/fig3_databases_network.png", plot_graph_db, width = 700,
+ggsave("figures/figX_databases_network.png", plot_graph_db, width = 700,
        height = 400, units = "px", dpi = 300, scale = 4)
 
-ggsave("figures/fig3_databases_network.svg", plot_graph_db, width = 700,
+ggsave("figures/figX_databases_network.svg", plot_graph_db, width = 700,
        height = 400, units = "px", dpi = 300, scale = 4)
