@@ -2,7 +2,7 @@
 
 <!--Badges: starts-->
 [![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5121244.svg)](https://doi.org/10.5281/zenodo.5121244)
-[![MEE Paper DOI](https://img.shields.io/badge/MEE%20Paper%20DOI-10.1111%2F2041-210X.13802-red)](https://doi.org/10.1111/2041-210X.13802)
+[![MEE Paper DOI](https://img.shields.io/badge/MEE%20Paper%20DOI-10.1111%2F2041--210X.13802-red)](https://doi.org/10.1111/2041-210X.13802)
 [![EcoevoRxiv Preprint](https://img.shields.io/badge/EcoEvoRxiv%20preprint-10.32942%2Fosf.io%2Fe3qnz-brightgreen)](https://doi.org/10.32942/osf.io/e3qnz)
 <!--Badges: end-->
 
