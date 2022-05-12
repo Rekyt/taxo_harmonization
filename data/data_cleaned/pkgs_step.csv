@@ -1,5 +1,5 @@
 step,pkgs
-Data Visualization,"metacoder, taxview"
-Data Wrangling,"metacoder, monographaR, rgnparser, splister, taxastand, taxreturn, taxspell, traitdataform, vegdata, vegtable, yatah"
-Database Access,"algaeClassify, AmphiNom, arakno, dyntaxa, finbif, flattax, flora, kewr, lcvplants, mammals, natserv, ncbit, neotoma2, paleobioDB, plantlist, rcol, rebird, rentrez, rfishbase, rgbif, ritis, Rocc, rotl, rredlist, rreptiledb, rtaxref, SP2000, taxadb, taxalight, taxastand, taxize, taxizedb, taxonlookup, taxonomizr, taxonomyCleanr, Taxonstand, taxotools, taxreturn, TNRS, tpl, twn, vegdata, wikitaxa, WorldFlora, worms, worrms, zbank"
+Data Visualization,"metacoder, taxonbridge, taxview"
+Data Wrangling,"dwctaxon, metacoder, monographaR, plantR, rgnparser, splister, taxastand, taxonbridge, taxreturn, taxspell, traitdataform, vegdata, vegtable, yatah"
+Database Access,"algaeClassify, AmphiNom, arakno, dyntaxa, finbif, FishPhyloMaker, flattax, flora, kewr, lcvplants, mammals, natserv, ncbit, neotoma2, paleobioDB, plantlist, plantR, pteridocat, rcol, rebird, rentrez, rfishbase, rgbif, ritis, Rocc, rotl, rredlist, rreptiledb, rtaxref, SP2000, taxadb, taxalight, taxastand, taxize, taxizedb, taxonbridge, taxonlookup, taxonomizr, taxonomyCleanr, Taxonstand, taxotools, taxreturn, TNRS, tpl, twn, vegdata, wikitaxa, WorldFlora, worms, worrms, zbank"
 Infrastructure,"taxa, taxlist, taxview"
