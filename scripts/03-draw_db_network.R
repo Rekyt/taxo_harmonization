@@ -10,11 +10,6 @@ library("tidygraph")
 db_igraph = readRDS("data/data_cleaned/db_igraph.Rds")
 db_graph = tidygraph::as_tbl_graph(db_igraph)
 
-biggest_component = db_graph %>%
-  activate(nodes) %>%
-  mutate(component = group_components()) %>%
-  filter(component == 1)
-
 # Plot data --------------------------------------------------------------------
 
 plot_graph_db = ggraph(db_graph, layout = "nicely") + 
