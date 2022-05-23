@@ -64,9 +64,9 @@ access_tpl = included_pkg %>%
   select(network_name, `Which authority?`) %>%
   mutate(
     network_name = ifelse(
-    network_name == "ropensci/taxizedb", "taxizedb", network_name
-  ),
-  access_tpl = grepl("TPL", `Which authority?`, fixed = TRUE)
+      network_name == "ropensci/taxizedb", "taxizedb", network_name
+    ),
+    access_tpl = grepl("TPL", `Which authority?`, fixed = TRUE)
   ) %>%
   filter(access_tpl) %>%
   pull(network_name)
@@ -106,4 +106,70 @@ ggsave("figures/figX_packages_network.svg", plot_pkg_network, width = 700,
        height = 400, units = "px", dpi = 300, scale = 4)
 
 ggsave("figures/figX_packages_network.png", plot_pkg_network, width = 700,
+       height = 400, units = "px", dpi = 300, scale = 4)
+
+
+# Focus on plant databases and tools -------------------------------------------
+
+# Load Database network
+db_igraph = readRDS("data/data_cleaned/db_igraph.Rds")
+db_graph = tidygraph::as_tbl_graph(db_igraph)
+
+# Load full network
+load("taxharmonizexplorer/shiny_data/full_network.Rdata")
+
+# Extract plant specific databases
+plant_dbs = database_df %>%
+  filter(
+    grepl("plants", `Taxonomic group`, ignore.case = TRUE)
+  )
+
+# Plant-specific packages
+plant_pkgs = pkg_description %>%
+  filter(grepl("plant", tax_group, ignore.case = TRUE))
+
+
+# Retrieve nodes accessing plant-databases
+
+
+all_plant_nodes = all_nodes %>%
+  filter(
+    id %in% plant_dbs$`Abbreviated name` |
+      id %in% plant_pkgs$pkg_name |
+      id %in% {
+        all_edges %>%
+          filter(type == "accesses", to %in% plant_dbs$`Abbreviated name`) %>%
+          pull(from)
+      }
+  ) %>%
+  mutate(family = ifelse(group == "database", "sans", "mono"))
+
+all_plant_edges = all_edges %>%
+  filter(from %in% all_plant_nodes$id, to %in% all_plant_nodes$id)
+
+plant_graph = tbl_graph(all_plant_nodes, all_plant_edges, node_key = "id")
+
+fig_plant_graph = ggraph(plant_graph, layout = "nicely") +
+  geom_edge_link(
+    edge_width = 1.5, alpha = 1/3,
+    arrow = arrow(length = unit(5, 'mm'), angle = 15, type = "closed")
+  ) + 
+  geom_node_point(aes(fill = group, shape = group),
+                  colour = "white", stroke = 0.01, size = 8) +
+  geom_node_text(
+    aes(label = id, family = family),
+    fontface = "bold", vjust = 2, size = 4, check_overlap = TRUE
+  ) +
+  scale_fill_manual(
+    "Node Type", values = c(database = "#F1A340", package = "#998EC3")
+  ) +
+  scale_shape_manual(
+    "Node Type", values = c(database = 24, package = 21)) +
+  theme_void(12) +
+  theme(legend.position = "none")
+
+ggsave("figures/figX_plant_network.svg", fig_plant_graph, width = 700,
+       height = 400, units = "px", dpi = 300, scale = 4)
+
+ggsave("figures/figX_plant_network.png", fig_plant_graph, width = 700,
        height = 400, units = "px", dpi = 300, scale = 4)
