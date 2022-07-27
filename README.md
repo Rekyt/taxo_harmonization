@@ -52,7 +52,7 @@ The scrips used to build the networks of tools are available in the `scripts` fo
 
 This repository also contains scripts to harmonize the taxonomy of [the BioTIME database](https://biotime.st-andrews.ac.uk/). We here present four different workflows on the raw taxonomy from BioTIME (available at `data/data_raw/biotime.txt`):
 
-1. Workflow 1 (**Torino**): morking with higher taxonomic groups (standardize species names through higher taxonomic group assignation).
+1. Workflow 1 (**Torino**): working with higher taxonomic groups (standardize species names through higher taxonomic group assignation).
 1. Workflow 2 (**Bogota**): matching the entire list of species on different taxon-specific databases.
 1. Workflow 3 (**GBIF only with pre-processed**): pre-process the species names and then match the obtained list against GBIF.
 1. Wrofklow 4 (**GBIF only no pre-processing**): match raw species list on GBIF.
