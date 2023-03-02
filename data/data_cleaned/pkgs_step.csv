@@ -1,5 +1,6 @@
 step,pkgs
+Data Visualizatio,rWCVP
 Data Visualization,"fossilbrush, metacoder, taxonbridge, taxview"
-Data Wrangling,"dwctaxon, fossilbrush, metacoder, monographaR, plantR, rgnparser, splister, taxastand, taxonbridge, taxreturn, taxspell, traitdataform, vegdata, vegtable, yatah"
-Database Access,"algaeClassify, AmphiNom, arakno, dyntaxa, finbif, FishPhyloMaker, flattax, flora, fossilbrush, kewr, lcvplants, mammals, natserv, ncbit, neotoma2, paleobioDB, plantlist, plantR, pteridocat, rcol, rebird, rentrez, rfishbase, rgbif, ritis, Rocc, rotl, rredlist, rreptiledb, rtaxref, SP2000, taxadb, taxalight, taxastand, taxize, taxizedb, taxonbridge, taxonlookup, taxonomizr, taxonomyCleanr, Taxonstand, taxotools, taxreturn, TNRS, tpl, twn, vegdata, wikitaxa, WorldFlora, worms, worrms, zbank"
+Data Wrangling,"dwctaxon, fossilbrush, metacoder, monographaR, plantR, rgnparser, splister, taxastand, taxonbridge, taxreturn, taxspell, traitdataform, vegdata, vegtable, yatah, U.Taxonstand"
+Database Access,"algaeClassify, AmphiNom, arakno, dyntaxa, finbif, FishPhyloMaker, flattax, flora, fossilbrush, kewr, lcvplants, mammals, natserv, ncbit, neotoma2, paleobioDB, plantlist, plantR, pteridocat, rcol, rebird, rentrez, rfishbase, rgbif, ritis, Rocc, rotl, rredlist, rreptiledb, rtaxref, SP2000, taxadb, taxalight, taxastand, taxize, taxizedb, taxonbridge, taxonlookup, taxonomizr, taxonomyCleanr, Taxonstand, taxotools, taxreturn, TNRS, tpl, twn, vegdata, wikitaxa, WorldFlora, worms, worrms, zbank, rWCVP"
 Infrastructure,"taxa, taxlist, taxview"
