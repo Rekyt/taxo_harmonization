@@ -47,9 +47,9 @@ pkg_deps = included_pkg %>%
 
 pkg_deps$resolve()
 pkg_deps$solve()
-pkg_deps$draw()
 
 pkg_deps_df = pkg_deps$get_resolution()
+
 
 # Get list of packages per workflow step ---------------------------------------
 
